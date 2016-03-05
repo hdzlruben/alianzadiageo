@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">aliadosdiageo</string>
     <string name="action_settings">Settings</string>
+    <!--TEXTS-->
+    <string name="txt_pass">Password</string>
+    <string name="txt_send">INGRESAR</string>
+    <string name="txt_error">Error</string>
+    <string name="txt_error_pass">Contraseña incorrecta</string>
+    <string name="txt_cerrar">Cerrar</string>
+
 </resources>

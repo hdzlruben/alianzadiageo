@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50sp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo_menu"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_init_sesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_gravity="center"
+            android:background="@drawable/boton_diageo"
+            android:padding="10sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:layout_gravity="center"
+            android:background="@drawable/boton_familias"
+            android:padding="10sp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:layout_gravity="center"
+            android:background="@drawable/boton_categorias"
+            android:padding="10sp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:layout_gravity="center"
+            android:background="@drawable/boton_procesos"
+            android:padding="10sp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:layout_gravity="center"
+            android:background="@drawable/boton_plataformas"
+            android:padding="10sp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5sp"
+            android:background="@drawable/boton_servicio"
+            android:padding="10sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="130sp"
+            android:background="@drawable/back_agua"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
