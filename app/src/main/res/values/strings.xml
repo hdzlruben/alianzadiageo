@@ -8,4 +8,21 @@
     <string name="txt_error_pass">Contraseña incorrecta</string>
     <string name="txt_cerrar">Cerrar</string>
 
+
+    <!-- FAMILYS -->
+    <string name="txt_family_zacapa">
+        Ron Zacapa nace en una pequeña comunidad Guatemalteca llamada Zacapa, durante la celebración de su centenario.
+        Para su elaboración, utilizamos la delicada miel virgen de caña, la cual se obtiene del primer prensado de la caña de azúcar.
+        El complejo añejamiento de Zacapa le dan un carácter y personalidad única, ya que se lleva a más de 2300 m de altura en la casa por encima de las
+        nubes donde el frio ayuda al pausado y lento añejamiento .
+
+        Cada botella de Ron Zacapa es una pieza de Artesanía, ya que el aro de petate que la adorna es elaborado por manos de mujeres indígenas que
+        plasman la gran tradición maya que se vive en Guatemala.
+
+        Ron Zacapa 23 ha sido reconocido a nivel internacional, siendo galardonado por 5 años consecutivos como el
+        mejor Ron del mundo, ganando así el único lugar en el “Hall de la fama de los Rones” y el titulo vitalicio de Ron Zacapa el Mejor Ron del Mundo.
+
+
+    </string>
+
 </resources>

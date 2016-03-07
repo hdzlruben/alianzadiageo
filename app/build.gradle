@@ -31,4 +31,5 @@ dependencies {
     compile 'com.android.support:design:23.1.0'
     compile 'com.loopj.android:android-async-http:1.4.9'
     compile 'com.afollestad:material-dialogs:0.7.6.0'
+    compile 'com.github.bluejamesbond:textjustify-android:2.1.1'
 }

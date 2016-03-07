@@ -20,11 +20,11 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/logo_menu"
+            android:background="@drawable/logo_login"
             android:layout_gravity="center"/>
 
         <Button
-            android:id="@+id/btn_init_sesion"
+            android:id="@+id/btn_diageo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5sp"
@@ -33,6 +33,7 @@
             android:padding="10sp" />
 
         <Button
+            android:id="@+id/btn_family"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4sp"
