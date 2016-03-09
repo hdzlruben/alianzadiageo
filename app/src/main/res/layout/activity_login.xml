@@ -18,10 +18,9 @@
         android:gravity="center">
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="65sp"
-            android:paddingRight="65sp"
+            android:gravity="center"
             android:hint="@string/txt_pass"
             android:background="@drawable/line_bottom_textfield_activated_holo_light"
             android:id="@+id/pass_user"/>
@@ -40,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
-            android:background="@drawable/boton_entrar"
+            android:background="@drawable/boton_registrate"
             android:padding="10sp" />
     </LinearLayout>
 

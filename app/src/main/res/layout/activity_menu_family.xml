@@ -2,22 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center">
 
     <include
         android:id="@+id/tab_menu_diageo"
         layout="@layout/ui_family" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/btn_back_home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/flecha" />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,44 +27,50 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/btn_diageo"
-                    android:layout_width="match_parent"
+                    android:id="@+id/btn_family_zacapa"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="4sp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="5sp"
-                    android:text="zacapa"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="20sp"
+                    android:background="@drawable/boton_zacapa"
                     android:padding="10sp" />
 
                 <Button
+                    android:id="@+id/btn_family_walker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/boton_walker"
+                    android:padding="10sp" />
+
+                <Button
+                    android:id="@+id/btn_family_buchanans"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
-                    android:text="jhonny"
+                    android:background="@drawable/boton_buchanans"
                     android:padding="10sp" />
 
                 <Button
+                    android:id="@+id/btn_family_tanqueray"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4sp"
+                    android:background="@drawable/boton_tanqueray"
+                    android:padding="10sp" />
+
+                <Button
+                    android:id="@+id/btn_family_don_julio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
-                    android:text="buachanas"
-                    android:padding="10sp" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="4sp"
-                    android:text="Tanqueray"
-                    android:padding="10sp" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="4sp"
-                    android:text="Don julio"
+                    android:background="@drawable/boton_donjulio"
                     android:padding="10sp" />
             </LinearLayout>
 

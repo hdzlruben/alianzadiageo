@@ -38,7 +38,10 @@ public class LoginActivity extends AppCompatActivity {
 
     public void initSesion(View v) {
 
-       if (pass_user.getText().toString().equals("123Abc!")){
+        Intent btns_home = new Intent(LoginActivity.this, MenuActivity.class);
+        startActivity(btns_home);
+
+       /*if (pass_user.getText().toString().equals("123Abc!")){
 
            Intent btns_home = new Intent(LoginActivity.this, MenuActivity.class);
            startActivity(btns_home);
@@ -51,7 +54,7 @@ public class LoginActivity extends AppCompatActivity {
                    .positiveText(R.string.txt_cerrar)
                    .theme(Theme.LIGHT)
                    .show();
-       }
+       }*/
     }
 
 }

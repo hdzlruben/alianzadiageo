@@ -8,14 +8,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.afollestad.materialdialogs.Theme;
 import com.ioblok.aliadosdiageo.diageo.DiageoActivity;
 import com.ioblok.aliadosdiageo.family.MenuFamilyActivity;
+import com.ioblok.aliadosdiageo.procesos.MenuProcesosActivity;
+
+import com.ioblok.aliadosdiageo.R;
 
 public class MenuActivity extends AppCompatActivity {
 
-    Button btn_diageo,btn_family;
+    Button btn_diageo,btn_family,btn_proceso;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +29,14 @@ public class MenuActivity extends AppCompatActivity {
 
         btn_diageo.setOnClickListener(menu);
         btn_family.setOnClickListener(menu);
+        btn_proceso.setOnClickListener(menu);
     }
 
 
     public void initialize(){
         btn_diageo = (Button) findViewById(R.id.btn_diageo);
         btn_family = (Button) findViewById(R.id.btn_family);
+        btn_proceso = (Button) findViewById(R.id.btn_proceso);
     }
 
     View.OnClickListener menu = new View.OnClickListener() {
@@ -44,6 +50,10 @@ public class MenuActivity extends AppCompatActivity {
 
                 case R.id.btn_family:
                     intent = new Intent(MenuActivity.this, MenuFamilyActivity.class);
+                    break;
+
+                case R.id.btn_proceso:
+                    intent = new Intent(MenuActivity.this, MenuProcesosActivity.class);
                     break;
             }
 

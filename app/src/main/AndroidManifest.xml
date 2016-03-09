@@ -32,5 +32,40 @@
             android:name=".family.MenuFamilyActivity"
             android:theme="@style/AppTheme.NoActionBar.FullScreen">
         </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".contentfamily.ZacapaActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".contentfamily.WalkerActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".contentfamily.BuchanansActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".contentfamily.TanquerayActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".contentfamily.DonJulioActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.MenuCategoriasActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.MenuProcesossActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
     </application>
 </manifest>
