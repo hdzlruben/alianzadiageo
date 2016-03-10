@@ -7,6 +7,7 @@
 
 
         <ScrollView
+            android:layout_marginTop="80sp"
             android:layout_below="@+id/head"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -16,14 +17,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <TextView
+
+                <com.bluejamesbond.text.DocumentView
                     android:layout_below="@+id/head"
-                    android:textAlignment="center"
-                    android:padding="20sp"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/txt_family_zacapa"/>
+                    android:layout_marginLeft="40sp"
+                    android:layout_marginRight="40sp"
+                    android:layout_marginBottom="20sp"
+                    android:id="@+id/txt_zacapa_text">
+
+                </com.bluejamesbond.text.DocumentView>
+
                 <ImageView
+                    android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20sp"
@@ -35,6 +42,9 @@
     <include
         android:id="@+id/head"
         layout="@layout/ui_family_zacapa">
+    </include>
+    <include
+        layout="@layout/ui_back_family_desc">
     </include>
 
 </RelativeLayout>

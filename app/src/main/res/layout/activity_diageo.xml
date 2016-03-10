@@ -6,11 +6,12 @@
     android:orientation="vertical">
 
     <include layout="@layout/ui_historia"></include>
+    <include layout="@layout/ui_back_diageo"></include>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
+        android:paddingTop="20sp"
         android:orientation="vertical">
 
         <ImageView

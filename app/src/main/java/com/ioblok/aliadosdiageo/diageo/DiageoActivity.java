@@ -11,11 +11,21 @@ import com.ioblok.aliadosdiageo.MenuActivity;
 import com.ioblok.aliadosdiageo.R;
 
 public class DiageoActivity extends AppCompatActivity {
+    Button backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diageo);
+
+        backButton = (Button)this.findViewById(R.id.backButton_diageo);
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
     }
 

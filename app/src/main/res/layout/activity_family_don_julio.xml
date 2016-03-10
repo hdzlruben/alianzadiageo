@@ -3,10 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:background="#fff"
     android:orientation="vertical">
 
 
         <ScrollView
+            android:layout_marginTop="50sp"
             android:layout_below="@+id/head"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -29,6 +31,7 @@
                     android:layout_marginTop="20sp"
                     android:background="@drawable/icono_camara"/>
                 <ImageView
+                    android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20sp"
@@ -40,6 +43,9 @@
     <include
         android:id="@+id/head"
         layout="@layout/ui_family_don_julio">
+    </include>
+    <include
+        layout="@layout/ui_back_family_desc">
     </include>
 
 </RelativeLayout>

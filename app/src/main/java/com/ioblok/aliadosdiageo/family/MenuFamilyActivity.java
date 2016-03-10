@@ -15,7 +15,7 @@ import com.ioblok.aliadosdiageo.contentfamily.ZacapaActivity;
 
 public class MenuFamilyActivity extends AppCompatActivity {
 
-    Button btn_back_home,btn_family_zacapa,btn_family_walker,btn_family_buchanans,btn_family_tanqueray,btn_family_don_julio;
+    Button backButton,btn_family_zacapa,btn_family_walker,btn_family_buchanans,btn_family_tanqueray,btn_family_don_julio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,13 @@ public class MenuFamilyActivity extends AppCompatActivity {
         btn_family_buchanans.setOnClickListener(menu);
         btn_family_tanqueray.setOnClickListener(menu);
         btn_family_don_julio.setOnClickListener(menu);
+        backButton = (Button)this.findViewById(R.id.backButton_diageo);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
 

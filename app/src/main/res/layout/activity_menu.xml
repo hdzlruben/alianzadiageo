@@ -14,13 +14,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="50sp"
+        android:layout_marginTop="110sp"
         android:layout_gravity="center">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/logo_login"
+            android:background="@drawable/logo_menu_new"
             android:layout_gravity="center"/>
 
         <Button
@@ -41,6 +41,7 @@
             android:background="@drawable/boton_familias"
             android:padding="10sp" />
         <Button
+            android:id="@+id/btn_categorias"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4sp"
@@ -56,6 +57,7 @@
             android:background="@drawable/boton_procesos"
             android:padding="10sp" />
         <Button
+            android:id="@+id/btn_plataformas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4sp"
@@ -63,6 +65,7 @@
             android:background="@drawable/boton_plataformas"
             android:padding="10sp" />
         <Button
+            android:id="@+id/btn_servicio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4sp"
@@ -72,6 +75,7 @@
             android:padding="10sp" />
 
         <ImageView
+
             android:layout_width="wrap_content"
             android:layout_height="130sp"
             android:background="@drawable/back_agua"

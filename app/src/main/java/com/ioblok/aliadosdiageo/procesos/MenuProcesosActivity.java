@@ -15,22 +15,34 @@ import com.ioblok.aliadosdiageo.contentfamily.ZacapaActivity;
 
 public class MenuProcesosActivity extends AppCompatActivity {
 
-    Button btn_back_home,btn_family_zacapa,btn_family_walker,btn_family_buchanans,btn_family_tanqueray,btn_family_don_julio;
+    Button btns_back_home,btn_family_zacapa,btn_family_walker,btn_family_buchanans,btn_family_tanqueray,btn_family_don_julio;
+
+
+    Button btn_back_home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_procesos);
-        initialize();
+/*        initialize();
 
         btn_family_zacapa.setOnClickListener(menu);
         btn_family_walker.setOnClickListener(menu);
         btn_family_buchanans.setOnClickListener(menu);
         btn_family_tanqueray.setOnClickListener(menu);
-        btn_family_don_julio.setOnClickListener(menu);
+        btn_family_don_julio.setOnClickListener(menu);*/
+        btn_back_home = (Button)this.findViewById(R.id.btn_back_proceso);
+
+        btn_back_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
     }
 
-
+/*
     public void initialize(){
         btn_family_zacapa = (Button) findViewById(R.id.btn_family_zacapa);
         btn_family_walker = (Button) findViewById(R.id.btn_family_walker);
@@ -64,6 +76,6 @@ public class MenuProcesosActivity extends AppCompatActivity {
             }
             startActivity(intent);
         }
-    };
+    };*/
 
 }

@@ -27,51 +27,55 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/btn_family_zacapa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4sp"
                     android:layout_gravity="center"
                     android:paddingLeft="20sp"
                     android:paddingRight="20sp"
-                    android:background="@drawable/head_whisky"
+                    android:background="@drawable/boton_categoria_whisky"
                     android:padding="10sp" />
 
                 <Button
-                    android:id="@+id/btn_family_walker"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4sp"
                     android:layout_gravity="center"
-                    android:background="@drawable/boton_walker"
+                    android:background="@drawable/boton_categoria_tequila"
                     android:padding="10sp" />
 
                 <Button
-                    android:id="@+id/btn_family_buchanans"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
-                    android:background="@drawable/boton_buchanans"
+                    android:background="@drawable/boton_categoria_ron"
                     android:padding="10sp" />
 
                 <Button
-                    android:id="@+id/btn_family_tanqueray"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
-                    android:background="@drawable/boton_tanqueray"
+                    android:background="@drawable/boton_categoria_vodka"
                     android:padding="10sp" />
 
                 <Button
-                    android:id="@+id/btn_family_don_julio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
-                    android:background="@drawable/boton_donjulio"
+                    android:background="@drawable/boton_categoria_gin"
                     android:padding="10sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4sp"
+                    android:background="@drawable/boton_categoria_licor"
+                    android:padding="10sp" />
+
             </LinearLayout>
 
         </ScrollView>

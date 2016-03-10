@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="20sp"
+    android:id="@+id/tab_btn_back">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/backButton_servicio"
+            android:layout_width="40sp"
+            android:layout_height="30sp"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/flecha_naranja"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

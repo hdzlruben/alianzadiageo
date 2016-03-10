@@ -8,9 +8,9 @@
     android:id="@+id/tab_menu_diageo">
     <ImageView
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60sp"
         android:layout_weight="5"
-        android:background=""
+        android:background="@drawable/headprocesos"
         />
     <Button
         android:layout_width="0dp"
