@@ -69,6 +69,36 @@
         </activity>
         <activity
             android:screenOrientation="portrait"
+            android:name=".categorias.MenuWhiskyActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.MenuTequilaActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.MenuRonActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.MenuVodkaActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.MenuGinActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.MenuLicorActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
             android:name=".procesos.MenuProcesosActivity"
             android:theme="@style/AppTheme.NoActionBar.FullScreen">
         </activity>
@@ -82,5 +112,15 @@
             android:name=".servicio.MenuServicioActivity"
             android:theme="@style/AppTheme.NoActionBar.FullScreen">
         </activity>
+
+
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.CaptainMorganContainerActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+
+
     </application>
 </manifest>

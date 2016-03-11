@@ -6,11 +6,10 @@
     android:gravity="center">
 
     <include
-        android:id="@+id/tab_menu_diageo"
-        layout="@layout/ui_categorias" />
+        layout="@layout/ui_ron" />
     <include
         android:id="@+id/tab_menu_diageo"
-        layout="@layout/ui_back_categorias" />
+        layout="@layout/ui_back_categorias_int" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,59 +29,45 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/btn_menu_whisky"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4sp"
                     android:layout_gravity="center"
                     android:paddingLeft="20sp"
                     android:paddingRight="20sp"
-                    android:background="@drawable/boton_categoria_whisky"
+                    android:background="@drawable/boton_zacapaxo"
                     android:padding="10sp" />
 
                 <Button
-                    android:id="@+id/btn_menu_tequila"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4sp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/boton_categoria_tequila"
-                    android:padding="10sp" />
-
-                <Button
-                    android:id="@+id/btn_menu_ron"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
-                    android:background="@drawable/boton_categoria_ron"
+                    android:background="@drawable/boton_zacapa23"
                     android:padding="10sp" />
 
                 <Button
-                    android:id="@+id/btn_menu_vodka"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
-                    android:background="@drawable/boton_categoria_vodka"
+                    android:background="@drawable/boton_captainmorgan"
                     android:padding="10sp" />
 
                 <Button
-                    android:id="@+id/btn_menu_gin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
-                    android:background="@drawable/boton_categoria_gin"
+                    android:background="@drawable/boton_cptainmb"
                     android:padding="10sp" />
-
                 <Button
-                    android:id="@+id/btn_menu_licor"
+                    android:id="@+id/btn_captain_morgan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
-                    android:background="@drawable/boton_categoria_licor"
+                    android:background="@drawable/boton_captainmorganwhite"
                     android:padding="10sp" />
 
             </LinearLayout>
