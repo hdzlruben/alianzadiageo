@@ -1,61 +1,45 @@
-package com.ioblok.aliadosdiageo.diageo;
+package com.ioblok.aliadosdiageo.menu_principal;
 
-import android.content.Intent;
-import android.graphics.Color;
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.ioblok.aliadosdiageo.MenuActivity;
 import com.ioblok.aliadosdiageo.R;
-import com.ioblok.aliadosdiageo.utilis.addItemNav;
 
-import java.util.ArrayList;
+/**
+ * Created by Admin on 10/03/16.
+ */
+public class MenuPrincipalActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
-public class DiageoActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
-    Button backButton,menu_desplegable;
+    Button menu_desplegable;
     private DrawerLayout mDrawer;
     private ListView mDrawerOptions;
-    private ArrayList navDrawerItems;
-    private static final String[] values = {"Diageo", "Familias", "Categorias" ,"Proceso de Elaboracion","Plataformas","Servicio Responsable"};
-    private int[] colors = new int[] { 0x30FF0000, 0x300000FF };
-    //private String[] values;
+    private static final String[] values = {"Drawer 1", "Drawer 2", "Drawer 3"};
 
+    /**
+     * Called when the activity is first created.
+     */
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_diageo);
-
-        backButton = (Button)this.findViewById(R.id.backButton_diageo);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        setContentView(R.layout.activity_menu_principal);
 
         mDrawerOptions = (ListView) findViewById(R.id.left_drawer);
         mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         mDrawerOptions.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, values));
         mDrawerOptions.setOnItemClickListener(this);
-        
     }
-
-    /*@Override
-    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        Toast.makeText(this, "Pulsado " + values[i], Toast.LENGTH_SHORT).show();
-        mDrawer.closeDrawers();
-    }*/
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -79,7 +63,7 @@ public class DiageoActivity extends AppCompatActivity implements AdapterView.OnI
     }
 
     public void openMenu(View v) {
-        Log.e("abrir boton", " ");
+        Log.e("abrir boton" , " " );
         mDrawer.openDrawer(mDrawerOptions);
     }
 
