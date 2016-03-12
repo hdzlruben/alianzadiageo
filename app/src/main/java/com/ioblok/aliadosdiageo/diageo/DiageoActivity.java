@@ -23,6 +23,7 @@ import android.widget.VideoView;
 
 import com.ioblok.aliadosdiageo.MenuActivity;
 import com.ioblok.aliadosdiageo.R;
+import com.ioblok.aliadosdiageo.adapter.AdapterActivity;
 import com.ioblok.aliadosdiageo.utilis.Constants;
 import com.ioblok.aliadosdiageo.utilis.URLVideosDataBase;
 import com.ioblok.aliadosdiageo.utilis.VideoPlayer;
@@ -34,13 +35,13 @@ import java.util.ArrayList;
 import io.realm.Realm;
 import io.realm.RealmResults;
 
-public class DiageoActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
+public class DiageoActivity extends AppCompatActivity{
     Button backButton,menu_desplegable;
     private DrawerLayout mDrawer;
     private ListView mDrawerOptions;
     private ArrayList navDrawerItems;
-    private static final String[] values = {"Diageo", "Familias", "Categorias" ,"Proceso de Elaboracion","Plataformas","Servicio Responsable"};
-    private int[] colors = new int[] { 0x30FF0000, 0x300000FF };
+    public String[] values = {"DIAGEO", "Familias", "Categorias" ,"Proceso de Elaboracion","Plataformas","Servicio Responsable"};
+
     //private String[] values;
 
 
@@ -56,7 +57,7 @@ public class DiageoActivity extends AppCompatActivity implements AdapterView.OnI
     private int position = 0;
     Realm realm;
     String urlVideo = "";
-
+    AdapterActivity adapterActivity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,7 +65,21 @@ public class DiageoActivity extends AppCompatActivity implements AdapterView.OnI
 
         realm = Realm.getInstance(getBaseContext());
 
-        btnVideo    = (Button)findViewById(R.id.btn_video);
+        backButton  = (Button)this.findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+        mDrawerOptions = (ListView) findViewById(R.id.left_drawer);
+        mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
+        adapterActivity = new AdapterActivity(this,values);
+        mDrawerOptions.setAdapter(adapterActivity);
+
+        btnVideo = (Button)findViewById(R.id.btn_video);
         String btnTagVideo = btnVideo.getTag().toString();
 
         RealmResults<URLVideosDataBase> results = realm.where(URLVideosDataBase.class).findAll();
@@ -78,36 +93,21 @@ public class DiageoActivity extends AppCompatActivity implements AdapterView.OnI
             }
 
         }
-
-        backButton  = (Button)this.findViewById(R.id.backButton_diageo);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-
-        mDrawerOptions = (ListView) findViewById(R.id.left_drawer);
-        mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-
-        mDrawerOptions.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, values));
-        mDrawerOptions.setOnItemClickListener(this);
-        
     }
+
+    public void openMenu(View v) {
+        mDrawer.openDrawer(mDrawerOptions);
+    }
+
 
     /*@Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        Toast.makeText(this, "Pulsado " + values[i], Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Pulsado " + [i], Toast.LENGTH_SHORT).show();
         mDrawer.closeDrawers();
     }*/
 
-    @Override
-    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        Toast.makeText(this, "Pulsado " + values[i], Toast.LENGTH_SHORT).show();
-        mDrawer.closeDrawers();
-    }
 
-    @Override
+/*    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case android.R.id.home:
@@ -120,12 +120,9 @@ public class DiageoActivity extends AppCompatActivity implements AdapterView.OnI
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 
-    public void openMenu(View v) {
-        Log.e("abrir boton", " ");
-        mDrawer.openDrawer(mDrawerOptions);
-    }
+
 
     public void playVideo(View view){
 

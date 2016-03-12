@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
      * Add video URL
      **/
 
-    private long enqueue;
+    public long enqueue;
     private DownloadManager dm;
     public String url_video = "";
     public ArrayList<URLVideosDataBase> arrayVideos;
@@ -207,6 +207,8 @@ public class LoginActivity extends AppCompatActivity {
 
     public void initSesion(View v) {
 
+        //Intent btns_home = new Intent(LoginActivity.this, MenuActivity.class);
+        //startActivity(btns_home);
         downloadVideos();
         //startActivity(btns_home);
 
