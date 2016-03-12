@@ -3,6 +3,7 @@ package com.ioblok.aliadosdiageo.procesos;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
@@ -34,7 +35,8 @@ public class MenuProcesosActivity extends AppCompatActivity {
     private Button btnClose;
     private int position = 0;
     Realm realm;
-    String urlVideo = "";
+    String urlVideo = "NO VIDEO";
+
     Button btnProcessIntro, btnProcessCognac, btnProcessGinebra, btnProcessRon,
             btnProcessVodka, btnProcessWhisky, btnProcessTequila;
 
@@ -76,16 +78,33 @@ public class MenuProcesosActivity extends AppCompatActivity {
 
         String btnTagVideo = view.getTag().toString();
 
-        RealmResults<URLVideosDataBase> results = realm.where(URLVideosDataBase.class).findAll();
-
-        for (int i = 0; i < results.size(); i++) {
-
-            URLVideosDataBase u = results.get(i);
-            if(u.getUrlFileStorage().contains(btnTagVideo)){
-                urlVideo = u.getUrlFileStorage();
-            }
-
+        switch (view.getId()){
+            case  R.id.btn_process_intro:
+                urlVideo = getTagFromDB(btnTagVideo);
+                break;
+            case R.id.btn_process_cognac:
+                urlVideo = getTagFromDB(btnTagVideo);
+                break;
+            case R.id.btn_process_ginebra:
+                urlVideo = getTagFromDB(btnTagVideo);
+                break;
+            case R.id.btn_process_ron:
+                urlVideo = getTagFromDB(btnTagVideo);
+                break;
+            case R.id.btn_process_vodka:
+                urlVideo = getTagFromDB(btnTagVideo);
+                break;
+            case R.id.btn_process_whisky:
+                urlVideo = getTagFromDB(btnTagVideo);
+                break;
+            case R.id.btn_process_tequila:
+                urlVideo = getTagFromDB(btnTagVideo);
+                break;
+            default:
+                urlVideo = "NO VIDEO";
         }
+
+        Log.e("TAG RETURNED", urlVideo);
 
         myVideoView = (VideoView) findViewById(R.id.video_view);
         rlVideoView = (RelativeLayout) findViewById(R.id.rl_video_view);
@@ -94,6 +113,22 @@ public class MenuProcesosActivity extends AppCompatActivity {
         rlVideoView.setVisibility(View.VISIBLE);
         VideoPlayer.playVideo(myVideoView, rlVideoView, btnClose, urlVideo,  this);
 
+    }
+
+    public String getTagFromDB(String tag){
+        RealmResults<URLVideosDataBase> results = realm.where(URLVideosDataBase.class).findAll();
+
+        for (int i = 0; i < results.size(); i++) {
+
+            URLVideosDataBase u = results.get(i);
+            if(u.getUrlFileStorage().contains(tag)){
+                tag = u.getUrlFileStorage();
+                return tag;
+            }
+
+        }
+
+        return "NOVIDEO";
     }
 
 /*

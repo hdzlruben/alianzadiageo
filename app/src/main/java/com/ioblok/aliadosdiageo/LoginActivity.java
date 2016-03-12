@@ -58,6 +58,7 @@ public class LoginActivity extends AppCompatActivity {
                                 "familia_bn",
                                 "familia_jw",
                                 "familia_tr",
+                                "familia_dj",
                                 "proceso_cognac",
                                 "proceso_ginebra",
                                 "proceso_introduccion",
