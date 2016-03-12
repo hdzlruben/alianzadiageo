@@ -54,8 +54,16 @@ public class LoginActivity extends AppCompatActivity {
     public String url_video = "";
     public ArrayList<URLVideosDataBase> arrayVideos;
     public String base_url = "http://ioblok.com.mx/Testing/video/";
-    public String[] videos = {
+    public String[] videos = {"diajeo_aliados",
+                                "familia_bn",
+                                "familia_jw",
+                                "familia_tr",
                                 "proceso_cognac",
+                                "proceso_ginebra",
+                                "proceso_introduccion",
+                                "proceso_ron",
+                                "proceso_tequila",
+                                "proceso_vodka",
                                 "proceso_whisky"};
     public String[] videos2 =
 
