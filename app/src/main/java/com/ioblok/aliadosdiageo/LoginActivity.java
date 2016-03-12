@@ -10,6 +10,7 @@ import android.content.IntentFilter;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
@@ -53,9 +54,10 @@ public class LoginActivity extends AppCompatActivity {
     public String url_video = "";
     public ArrayList<URLVideosDataBase> arrayVideos;
     public String base_url = "http://ioblok.com.mx/Testing/video/";
-    public String[] videos =
-            {"file.txt",
-                    "categorias_bc_12",
+    public String[] videos = {"categorias_bc_12"};
+    public String[] videos2 =
+
+            {       "categorias_bc_12",
                     "categorias_bc_master",
                     "categorias_bulleit",
                     "categorias_jb",
@@ -98,13 +100,11 @@ public class LoginActivity extends AppCompatActivity {
         realm = Realm.getInstance(getBaseContext());
         realm.beginTransaction();
 
-        //for (int i = 0; i < videos.length; i--) {
-        for (int i = 0; i < 2; i++) {
-            File file = new File(getBaseContext().getFilesDir(), "video" + Integer.toString(i));
-            //Log.e("FILE", file.toString());
+        //for (int i = 0; i < videos.length; i++) {
+        for (int i = 0; i < 1; i++) {
 
             RealmResults<URLVideosDataBase> validate = realm.where(URLVideosDataBase.class)
-                    .equalTo("urlVideo", videos[i]).findAll();
+                    .equalTo("urlVideo", base_url + videos[i]).findAll();
 
             if (validate.isEmpty()) {
                 URLVideosDataBase urlVideos = realm.createObject(URLVideosDataBase.class);
@@ -112,7 +112,6 @@ public class LoginActivity extends AppCompatActivity {
                 urlVideos.setUrlVideo(base_url + videos[i]);
                 urlVideos.setUrlFileStorage(videos[i]);
             }
-            //http://ioblok.com.mx/Testing/video/video.mp4
         }
         realm.commitTransaction();
 
@@ -140,16 +139,14 @@ public class LoginActivity extends AppCompatActivity {
                     query.setFilterById(enqueue);
                     Cursor c = dm.query(query);
                     if (c.moveToFirst()) {
-                        int columnIndex = c
-                                .getColumnIndex(DownloadManager.COLUMN_STATUS);
-                        if (DownloadManager.STATUS_SUCCESSFUL == c
-                                .getInt(columnIndex)) {
+                        int columnIndex = c.getColumnIndex(DownloadManager.COLUMN_STATUS);
+                        if (DownloadManager.STATUS_SUCCESSFUL == c.getInt(columnIndex)) {
+
                             //ImageView view = (ImageView) findViewById(R.id.imageView1);
-                            String uriString = c.getString(c
-                                    .getColumnIndex(DownloadManager.COLUMN_LOCAL_URI));
+                            String uriString = c.getString(c.getColumnIndex(DownloadManager.COLUMN_LOCAL_URI));
                             Log.e("String path", uriString);
-                            replaceURLVideos.add(uriString);
                             Constants.setBaseURL(uriString);
+                            showProgress(false, false);
                             //view.setImageURI(Uri.parse(uriString));
                         }
                     }
@@ -164,6 +161,8 @@ public class LoginActivity extends AppCompatActivity {
 
         initialize();
     }
+
+
 
     public void showProgress(boolean show, boolean flag) {
 
@@ -181,6 +180,7 @@ public class LoginActivity extends AppCompatActivity {
 
         if(!show && !flag){
             Intent btns_home = new Intent(LoginActivity.this, MenuActivity.class);
+            btns_home.putExtra("Download", true);
             startActivity(btns_home);
         }
     }
@@ -208,8 +208,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void initSesion(View v) {
 
-        Intent btns_home = new Intent(LoginActivity.this, MenuActivity.class);
-        dowloadVideos();
+        downloadVideos();
         //startActivity(btns_home);
 
        /*if (pass_user.getText().toString().equals("123Abc!")){
@@ -228,23 +227,31 @@ public class LoginActivity extends AppCompatActivity {
        }*/
     }
 
-    public void dowloadVideos() {
+    public void downloadVideos() {
         dm = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
 
         if (!arrayVideos.isEmpty()) {
 
             showProgress(true, true);
 
-            for (URLVideosDataBase videos : arrayVideos) {
+            for (int i = 0; i <arrayVideos.size(); i++) {
 
+                URLVideosDataBase videos = arrayVideos.get(i);
 
                 DownloadManager.Request request = new DownloadManager.Request(
                         Uri.parse(videos.getUrlVideo()));
+                request.setDestinationInExternalFilesDir(this, Environment.DIRECTORY_DOWNLOADS, this.videos[i] + ".mp4");
+
+                String pathStorage = getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS).getAbsolutePath() + this.videos[i] + ".mp4";
+                Constants.addReplaceURLVideos(pathStorage);
+
                 enqueue = dm.enqueue(request);
-                
             }
 
-            //showProgress(false, false);
+        }else {
+            Intent btns_home = new Intent(LoginActivity.this, MenuActivity.class);
+            btns_home.putExtra("Download", false);
+            startActivity(btns_home);
         }
 
     }

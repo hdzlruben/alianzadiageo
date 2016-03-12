@@ -33,12 +33,15 @@ public class MenuActivity extends AppCompatActivity {
     Button btn_diageo,btn_family,btn_categorias,btn_proceso,btn_plataformas,btn_servicio;
 
     Realm realm;
+    Boolean enableDownload;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
+        Intent i = getIntent();
+        enableDownload = i.getBooleanExtra("Download", false);
         initialize();
 
         btn_diageo.setOnClickListener(menu);
@@ -48,28 +51,30 @@ public class MenuActivity extends AppCompatActivity {
         btn_plataformas.setOnClickListener(menu);
         btn_servicio.setOnClickListener(menu);
 
-
     }
 
 
     public void initialize(){
 
-        realm = Realm.getInstance(getBaseContext());
-        realm.beginTransaction();
+        if(enableDownload){
+            realm = Realm.getInstance(getBaseContext());
+            realm.beginTransaction();
 
-        RealmResults<URLVideosDataBase> results = realm.where(URLVideosDataBase.class).findAll();
+            RealmResults<URLVideosDataBase> results = realm.where(URLVideosDataBase.class).findAll();
 
-        for (int i = 0; i < results.size(); i++) {
+            for (int i = 0; i < results.size(); i++) {
 
-            URLVideosDataBase u = results.get(i);
-            String strVideo = u.getUrlFileStorage();
-            u.setUrlFileStorage(Constants.getBaseURL() + strVideo);
-            Log.e("URL", u.getUrlVideo());
-            Log.e("boolena", u.isDownloaded() + "");
-            Log.e("STORAGE", u.getUrlFileStorage());
-            // ... do something with the object ...
+                URLVideosDataBase u = results.get(i);
+                u.setUrlFileStorage(Constants.getBaseURL());
+                u.setDownloaded(true);
+                Log.e("URL", u.getUrlVideo());
+                Log.e("boolena", u.isDownloaded() + "");
+                Log.e("STORAGE", u.getUrlFileStorage());
+                // ... do something with the object ...
+            }
+            realm.commitTransaction();
+
         }
-        realm.commitTransaction();
 
         btn_diageo = (Button) findViewById(R.id.btn_diageo);
         btn_family = (Button) findViewById(R.id.btn_family);
