@@ -19,15 +19,29 @@ import com.ioblok.aliadosdiageo.procesos.MenuProcesosActivity;
 
 import com.ioblok.aliadosdiageo.R;
 import com.ioblok.aliadosdiageo.servicio.MenuServicioActivity;
+import com.ioblok.aliadosdiageo.utilis.Constants;
+import com.ioblok.aliadosdiageo.utilis.URLVideosDataBase;
+
+import java.net.URL;
+
+import io.realm.Realm;
+import io.realm.RealmConfiguration;
+import io.realm.RealmResults;
 
 public class MenuActivity extends AppCompatActivity {
 
     Button btn_diageo,btn_family,btn_categorias,btn_proceso,btn_plataformas,btn_servicio;
 
+    Realm realm;
+    Boolean enableDownload;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
+        Intent i = getIntent();
+        enableDownload = i.getBooleanExtra("Download", false);
         initialize();
 
         btn_diageo.setOnClickListener(menu);
@@ -36,16 +50,39 @@ public class MenuActivity extends AppCompatActivity {
         btn_proceso.setOnClickListener(menu);
         btn_plataformas.setOnClickListener(menu);
         btn_servicio.setOnClickListener(menu);
+
     }
 
 
     public void initialize(){
+
+        if(enableDownload){
+            realm = Realm.getInstance(getBaseContext());
+            realm.beginTransaction();
+
+            RealmResults<URLVideosDataBase> results = realm.where(URLVideosDataBase.class).findAll();
+
+            for (int i = 0; i < results.size(); i++) {
+
+                URLVideosDataBase u = results.get(i);
+                u.setUrlFileStorage(Constants.getReplaceURLVideos().get(i));
+                u.setDownloaded(true);
+                Log.e("URL", u.getUrlVideo());
+                Log.e("boolena", u.isDownloaded() + "");
+                Log.e("STORAGE", u.getUrlFileStorage());
+                // ... do something with the object ...
+            }
+            realm.commitTransaction();
+
+        }
+
         btn_diageo = (Button) findViewById(R.id.btn_diageo);
         btn_family = (Button) findViewById(R.id.btn_family);
         btn_categorias = (Button) findViewById(R.id.btn_categorias);
         btn_proceso = (Button) findViewById(R.id.btn_proceso);
         btn_plataformas = (Button) findViewById(R.id.btn_plataformas);
         btn_servicio = (Button) findViewById(R.id.btn_servicio);
+
     }
 
     View.OnClickListener menu = new View.OnClickListener() {
