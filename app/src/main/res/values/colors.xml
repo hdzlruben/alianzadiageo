@@ -4,4 +4,10 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="text_zacapa">#FF0000</color>
+    <color name="menu_one_part">#cb246b</color>
+    <color name="menu_two_part">#64cd8e</color>
+    <color name="menu_three_part">#73afac</color>
+    <color name="menu_four_part">#f4c32b</color>
+    <color name="menu_five_part">#52e2d1</color>
+    <color name="menu_six_part">#f9635e</color>
 </resources>

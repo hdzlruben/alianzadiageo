@@ -1,7 +1,9 @@
 package com.ioblok.aliadosdiageo.diageo;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -17,17 +19,26 @@ import android.widget.Toast;
 
 import com.ioblok.aliadosdiageo.MenuActivity;
 import com.ioblok.aliadosdiageo.R;
+import com.ioblok.aliadosdiageo.adapter.AdapterActivity;
 import com.ioblok.aliadosdiageo.utilis.addItemNav;
 
 import java.util.ArrayList;
 
-public class DiageoActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
+public class DiageoActivity extends AppCompatActivity{
     Button backButton,menu_desplegable;
+
     private DrawerLayout mDrawer;
     private ListView mDrawerOptions;
+
+    AdapterActivity adapterActivity;
+
     private ArrayList navDrawerItems;
-    private static final String[] values = {"Diageo", "Familias", "Categorias" ,"Proceso de Elaboracion","Plataformas","Servicio Responsable"};
-    private int[] colors = new int[] { 0x30FF0000, 0x300000FF };
+    public String[] values = {"DIAGEO", "Familias", "Categorias" ,"Proceso de Elaboracion","Plataformas","Servicio Responsable"};
+    Integer[] imageId = {
+            R.drawable.arrow_back,
+            R.drawable.icon_home,
+            R.drawable.close
+    };
     //private String[] values;
 
     @Override
@@ -46,8 +57,18 @@ public class DiageoActivity extends AppCompatActivity implements AdapterView.OnI
         mDrawerOptions = (ListView) findViewById(R.id.left_drawer);
         mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
-        mDrawerOptions.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, values));
-        mDrawerOptions.setOnItemClickListener(this);
+        adapterActivity = new AdapterActivity(this,values);
+        mDrawerOptions.setAdapter(adapterActivity);
+
+        mDrawerOptions.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            public void onItemClick(AdapterView<?> item, View view, int posicion, long id) {
+                Toast.makeText(getApplicationContext(), "Pulsado " + posicion, Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        /*mDrawerOptions.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, values));
+        mDrawerOptions.setOnItemClickListener(this);*/
         
     }
 
@@ -57,7 +78,7 @@ public class DiageoActivity extends AppCompatActivity implements AdapterView.OnI
         mDrawer.closeDrawers();
     }*/
 
-    @Override
+    /*@Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         Toast.makeText(this, "Pulsado " + values[i], Toast.LENGTH_SHORT).show();
         mDrawer.closeDrawers();
@@ -76,10 +97,9 @@ public class DiageoActivity extends AppCompatActivity implements AdapterView.OnI
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 
     public void openMenu(View v) {
-        Log.e("abrir boton", " ");
         mDrawer.openDrawer(mDrawerOptions);
     }
 
