@@ -54,7 +54,9 @@ public class LoginActivity extends AppCompatActivity {
     public String url_video = "";
     public ArrayList<URLVideosDataBase> arrayVideos;
     public String base_url = "http://ioblok.com.mx/Testing/video/";
-    public String[] videos = {"categorias_bc_12"};
+    public String[] videos = {
+                                "proceso_cognac",
+                                "proceso_whisky"};
     public String[] videos2 =
 
             {       "categorias_bc_12",
@@ -69,19 +71,8 @@ public class LoginActivity extends AppCompatActivity {
                     "categorias_whisky_pl",
                     "categorias_whisky_rl",
                     "consumo_responsable",
-                    "diajeo_aliados",
                     "diajeo_aliados_new",
-                    "familia_bn",
-                    "familia_jw",
-                    "familia_tr",
                     "plataforma",
-                    "proceso_cognac",
-                    "proceso_ginebra",
-                    "proceso_introduccion",
-                    "proceso_ron",
-                    "proceso_tequila",
-                    "proceso_vodka",
-                    "proceso_whisky",
                     "video_dj_video"};
 
     public ArrayList<String> replaceURLVideos;
@@ -100,8 +91,8 @@ public class LoginActivity extends AppCompatActivity {
         realm = Realm.getInstance(getBaseContext());
         realm.beginTransaction();
 
-        //for (int i = 0; i < videos.length; i++) {
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < videos.length; i++) {
+        //for (int i = 0; i < 1; i++) {
 
             RealmResults<URLVideosDataBase> validate = realm.where(URLVideosDataBase.class)
                     .equalTo("urlVideo", base_url + videos[i]).findAll();
@@ -242,7 +233,7 @@ public class LoginActivity extends AppCompatActivity {
                         Uri.parse(videos.getUrlVideo()));
                 request.setDestinationInExternalFilesDir(this, Environment.DIRECTORY_DOWNLOADS, this.videos[i] + ".mp4");
 
-                String pathStorage = getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS).getAbsolutePath() + this.videos[i] + ".mp4";
+                String pathStorage = getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS).getAbsolutePath() + "/" + this.videos[i] + ".mp4";
                 Constants.addReplaceURLVideos(pathStorage);
 
                 enqueue = dm.enqueue(request);

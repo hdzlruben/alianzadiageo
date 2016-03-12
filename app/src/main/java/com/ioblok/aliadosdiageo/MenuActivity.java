@@ -65,7 +65,7 @@ public class MenuActivity extends AppCompatActivity {
             for (int i = 0; i < results.size(); i++) {
 
                 URLVideosDataBase u = results.get(i);
-                u.setUrlFileStorage(Constants.getBaseURL());
+                u.setUrlFileStorage(Constants.getReplaceURLVideos().get(i));
                 u.setDownloaded(true);
                 Log.e("URL", u.getUrlVideo());
                 Log.e("boolena", u.isDownloaded() + "");

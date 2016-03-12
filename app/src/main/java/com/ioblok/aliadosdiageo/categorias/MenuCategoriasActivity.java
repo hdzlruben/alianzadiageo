@@ -42,7 +42,6 @@ public class MenuCategoriasActivity extends AppCompatActivity {
 
     }
 
-
     public void initialize(){
         btn_menu_whisky = (Button) findViewById(R.id.btn_menu_whisky);
         btn_menu_tequila = (Button) findViewById(R.id.btn_menu_tequila);

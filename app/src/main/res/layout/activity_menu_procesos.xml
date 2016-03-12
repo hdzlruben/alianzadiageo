@@ -34,53 +34,77 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4sp"
                     android:layout_gravity="center"
+                    android:id="@+id/btn_process_intro"
                     android:background="@drawable/botonintroduccion"
-                    android:padding="10sp" />
+                    android:padding="10sp"
+                    android:onClick="playVideo"
+                    android:tag="proceso_introduccion"/>
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4sp"
+                    android:id="@+id/btn_process_cognac"
                     android:background="@drawable/botoncognac"
                     android:layout_gravity="center"
+                    android:tag="proceso_cognac"
+                    android:onClick="playVideo"
                     android:padding="10sp" />
+
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
+                    android:id="@+id/btn_process_ginebra"
                     android:background="@drawable/botonginebra"
-                    android:padding="10sp" />
+                    android:padding="10sp"
+                    android:onClick="playVideo"
+                    android:tag="proceso_ginebra"/>
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
+                    android:id="@+id/btn_process_ron"
                     android:background="@drawable/botonron"
-                    android:padding="10sp" />
+                    android:padding="10sp"
+                    android:onClick="playVideo"
+                    android:tag="proceso_ron"/>
+
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
+                    android:id="@+id/btn_process_vodka"
                     android:background="@drawable/botonvodka"
-                    android:padding="10sp" />
+                    android:padding="10sp"
+                    android:onClick="playVideo"
+                    android:tag="proceso_vodka"/>
+
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
                     android:background="@drawable/boton_whisky"
-                    android:padding="10sp" />
+                    android:padding="10sp"
+                    android:id="@+id/btn_process_whisky"
+                    android:onClick="playVideo"
+                    android:tag="proceso_whisky"/>
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
+                    android:id="@+id/btn_process_tequila"
                     android:background="@drawable/boton_tequila"
-                    android:padding="10sp" />
+                    android:padding="10sp"
+                    android:onClick="playVideo"
+                    android:tag="proceso_tequila"/>
 
             </LinearLayout>
 

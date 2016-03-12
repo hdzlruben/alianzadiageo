@@ -22,7 +22,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/boton_video"
-                    android:layout_marginTop="20sp"/>
+                    android:layout_marginTop="20sp"
+                    android:onClick="playVideo"
+                    android:id="@+id/btn_video"
+                    android:tag="familia_jw"/>
                 <ImageButton
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
@@ -60,6 +63,7 @@
             </LinearLayout>
 
         </ScrollView>
+
     <include
         android:id="@+id/head"
         layout="@layout/ui_family_walker">
@@ -68,4 +72,5 @@
         layout="@layout/ui_back_family_desc">
     </include>
 
+    <include layout="@layout/ui_video"/>
 </RelativeLayout>

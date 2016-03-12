@@ -45,11 +45,13 @@
                         android:orientation="vertical">
 
                         <Button
-                            android:id="@+id/btn_init_sesion"
+                            android:id="@+id/btn_video"
                             android:layout_width="80sp"
                             android:layout_height="80sp"
                             android:layout_gravity="center"
                             android:layout_marginTop="80sp"
+                            android:onClick="playVideo"
+                            android:tag="diajeo_aliados"
                             android:background="@drawable/boton_video"
                             android:padding="0sp" />
 
@@ -59,6 +61,9 @@
             </LinearLayout>
 
         </LinearLayout>
+
+        <include layout="@layout/ui_video"/>
+
     </FrameLayout>
     <!-- The navigation drawer -->
     <ListView
