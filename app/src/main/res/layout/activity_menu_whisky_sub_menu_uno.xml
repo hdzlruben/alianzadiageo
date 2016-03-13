@@ -47,70 +47,91 @@
                         android:layout_gravity="center"
                         android:background="@drawable/boton_jwbl"
                         android:padding="10sp"
+                        android:tag="NO VIDEO"
                         android:paddingLeft="20sp"
                         android:paddingRight="20sp" />
 
                     <Button
+                        android:id="@+id/btn_jw_king"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:tag="NO VIDEO"
                         android:layout_marginTop="4sp"
                         android:background="@drawable/botonjwkgv"
                         android:padding="10sp" />
 
                     <Button
+
+                        android:id="@+id/btn_jw_double"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:tag="NO VIDEO"
                         android:layout_gravity="center"
                         android:layout_marginTop="4sp"
                         android:background="@drawable/botonjwdoublebl"
                         android:padding="10sp" />
 
                     <Button
+                        android:id="@+id/btn_jw_platinum"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:tag="NO VIDEO"
                         android:layout_gravity="center"
                         android:layout_marginTop="4sp"
                         android:background="@drawable/botonjwpl"
                         android:padding="10sp" />
 
+
                     <Button
+                        android:id="@+id/btn_jw_red"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:tag="NO VIDEO"
                         android:layout_gravity="center"
                         android:layout_marginTop="4sp"
                         android:background="@drawable/botonjwrl"
                         android:padding="10sp" />
 
+
                     <Button
+                        android:id="@+id/btn_jw_gold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:tag="NO VIDEO"
                         android:layout_gravity="center"
                         android:layout_marginTop="4sp"
                         android:background="@drawable/botonjwglr"
                         android:padding="10sp" />
 
+
                     <Button
+                        android:id="@+id/btn_buchanas_red"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:tag="NO VIDEO"
                         android:layout_marginTop="4sp"
                         android:background="@drawable/botonbrs"
                         android:padding="10sp" />
 
                     <Button
+                        android:id="@+id/btn_jw_black"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:tag="NO VIDEO"
                         android:layout_marginTop="4sp"
                         android:background="@drawable/botonjwblb"
                         android:padding="10sp" />
 
                     <Button
+                        android:id="@+id/btn_buchanas_18"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="4sp"
+                        android:tag="categorias_whisky_bc_18"
                         android:background="@drawable/botonbuchanan18"
                         android:padding="10sp" />
 
