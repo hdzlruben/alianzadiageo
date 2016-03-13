@@ -10,10 +10,9 @@
         android:layout_width="0dp"
         android:layout_height="50sp"
         android:layout_weight="5"
-        android:background="@drawable/head_plataformas"
+        android:background="@drawable/headjwblabel"
         />
     <Button
-        android:onClick="openMenu"
         android:layout_width="0dp"
         android:layout_height="20sp"
         android:layout_weight="0.4"

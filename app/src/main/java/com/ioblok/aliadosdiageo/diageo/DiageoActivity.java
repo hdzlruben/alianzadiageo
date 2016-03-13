@@ -37,11 +37,12 @@ import io.realm.RealmResults;
 
 public class DiageoActivity extends AppCompatActivity{
     Button backButton,menu_desplegable;
+
     private DrawerLayout mDrawer;
     private ListView mDrawerOptions;
     private ArrayList navDrawerItems;
     public String[] values = {"DIAGEO", "Familias", "Categorias" ,"Proceso de Elaboracion","Plataformas","Servicio Responsable"};
-
+    AdapterActivity adapterActivity;
     //private String[] values;
 
 
@@ -57,7 +58,7 @@ public class DiageoActivity extends AppCompatActivity{
     private int position = 0;
     Realm realm;
     String urlVideo = "";
-    AdapterActivity adapterActivity;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

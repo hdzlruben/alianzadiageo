@@ -10,4 +10,5 @@
     <color name="menu_four_part">#f4c32b</color>
     <color name="menu_five_part">#52e2d1</color>
     <color name="menu_six_part">#f9635e</color>
+    <color name="background_menu_int">#000</color>
 </resources>
