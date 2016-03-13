@@ -109,8 +109,6 @@
             android:theme="@style/AppTheme.NoActionBar.FullScreen">
         </activity>
 
-
-
         <activity
             android:screenOrientation="portrait"
             android:name=".categorias.CaptainMorganContainerActivity"

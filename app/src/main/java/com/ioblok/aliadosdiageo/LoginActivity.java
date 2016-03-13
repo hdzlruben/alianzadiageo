@@ -54,7 +54,9 @@ public class LoginActivity extends AppCompatActivity {
     public String url_video = "";
     public ArrayList<URLVideosDataBase> arrayVideos;
     public String base_url = "http://ioblok.com.mx/Testing/video/";
-    public String[] videos = {"diajeo_aliados",
+    public String[] videos = {
+            "consumo_responsable",
+            "diajeo_aliados",
                                 "familia_bn",
                                 "familia_jw",
                                 "familia_tr",
@@ -79,10 +81,8 @@ public class LoginActivity extends AppCompatActivity {
                     "categorias_whisky_kg",
                     "categorias_whisky_pl",
                     "categorias_whisky_rl",
-                    "consumo_responsable",
                     "diajeo_aliados_new",
-                    "plataforma",
-                    "video_dj_video"};
+                    "plataforma"};
 
     public ArrayList<String> replaceURLVideos;
 
@@ -100,8 +100,8 @@ public class LoginActivity extends AppCompatActivity {
         realm = Realm.getInstance(getBaseContext());
         realm.beginTransaction();
 
-        for (int i = 0; i < videos.length; i++) {
-        //for (int i = 0; i < 1; i++) {
+        //for (int i = 0; i < videos.length; i++) {
+        for (int i = 0; i < 1; i++) {
 
             RealmResults<URLVideosDataBase> validate = realm.where(URLVideosDataBase.class)
                     .equalTo("urlVideo", base_url + videos[i]).findAll();

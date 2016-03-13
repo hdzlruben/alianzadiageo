@@ -4,18 +4,33 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
-    <ScrollView
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="none"
-        android:background="@android:color/transparent">
+        android:layout_marginTop="20sp"
+        android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/txt_play_video"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="video"
-            android:textSize="40sp"
-            android:layout_gravity="center"/>
-    </ScrollView>
+            android:gravity="center"
+            android:text="@string/txt_rep_video"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_below="@+id/txt_play_video"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30sp"
+            android:tag="consumo_responsable"
+            android:id="@+id/btn_video"
+            android:background="@drawable/boton_video" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/ui_video" />
 
 </RelativeLayout>
