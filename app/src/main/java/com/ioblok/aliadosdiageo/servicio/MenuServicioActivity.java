@@ -1,43 +1,88 @@
 package com.ioblok.aliadosdiageo.servicio;
 
 import android.os.Bundle;
-import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.TableLayout;
 
 import com.ioblok.aliadosdiageo.R;
+
+import io.realm.Realm;
 
 public class MenuServicioActivity extends AppCompatActivity {
 
     Button backButton_servicio;
     TabLayout tabLayout;
-
+    Realm realm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
-
         setContentView(R.layout.activity_servicio);
 
-        int px = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 50, getResources().getDisplayMetrics());
+        final ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
+
+        int px = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 40, getResources().getDisplayMetrics());
 
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(px, px);
 
-        Button tabVideos    = (Button) LayoutInflater.from(this).inflate(R.layout.tab_videos, null);
-        Button tabsr1       = (Button) LayoutInflater.from(this).inflate(R.layout.tab_sr1, null);
-        Button tabsr2       = (Button) LayoutInflater.from(this).inflate(R.layout.tab_sr2, null);
-        Button tabsr3       = (Button) LayoutInflater.from(this).inflate(R.layout.tab_sr3, null);
-        Button tabsr4       = (Button) LayoutInflater.from(this).inflate(R.layout.tab_sr4, null);
-        Button tabLogo      = (Button) LayoutInflater.from(this).inflate(R.layout.tab_logo_service, null);
+        realm = Realm.getInstance(getBaseContext());
+        realm.beginTransaction();
+
+        ImageButton tabVideos    = (ImageButton) LayoutInflater.from(this).inflate(R.layout.tab_videos, null);
+        ImageButton tabsr1       = (ImageButton) LayoutInflater.from(this).inflate(R.layout.tab_sr1, null);
+        ImageButton tabsr2       = (ImageButton) LayoutInflater.from(this).inflate(R.layout.tab_sr2, null);
+        ImageButton tabsr3       = (ImageButton) LayoutInflater.from(this).inflate(R.layout.tab_sr3, null);
+        ImageButton tabsr4       = (ImageButton) LayoutInflater.from(this).inflate(R.layout.tab_sr4, null);
+        ImageButton tabLogo      = (ImageButton) LayoutInflater.from(this).inflate(R.layout.tab_logo_service, null);
+
+        tabVideos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                viewPager.setCurrentItem(0);
+            }
+        });
+
+        tabsr1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                viewPager.setCurrentItem(1);
+            }
+        });
+
+        tabsr2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                viewPager.setCurrentItem(2);
+            }
+        });
+
+        tabsr3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                viewPager.setCurrentItem(3);
+            }
+        });
+
+        tabsr4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                viewPager.setCurrentItem(4);
+            }
+        });
+
+        tabLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                viewPager.setCurrentItem(5);
+            }
+        });
 
         tabVideos.setLayoutParams(params);
         tabsr1.setLayoutParams(params);
@@ -54,10 +99,9 @@ public class MenuServicioActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setCustomView(tabsr4));
         tabLayout.addTab(tabLayout.newTab().setCustomView(tabLogo));
 
-        final ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
-        final FragmentAdapterServices adapterKpis = new FragmentAdapterServices
+        final FragmentAdapterServices adapterServices = new FragmentAdapterServices
                 (getSupportFragmentManager(), tabLayout.getTabCount());
-        viewPager.setAdapter(adapterKpis);
+        viewPager.setAdapter(adapterServices);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
@@ -85,6 +129,10 @@ public class MenuServicioActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    public Realm getRealm(){
+        return realm;
     }
 
 }
