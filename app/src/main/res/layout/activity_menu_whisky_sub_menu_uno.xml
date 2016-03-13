@@ -51,6 +51,7 @@
                         android:paddingRight="20sp" />
 
                     <Button
+                        android:id="@+id/btn_jw_kg"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -59,6 +60,7 @@
                         android:padding="10sp" />
 
                     <Button
+                        android:id="@+id/btn_jw_dbl"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -67,6 +69,7 @@
                         android:padding="10sp" />
 
                     <Button
+                        android:id="@+id/btn_jw_pl"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
@@ -75,6 +78,7 @@
                         android:padding="10sp" />
 
                     <Button
+                        android:id="@+id/btn_jw_rd"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -83,6 +87,7 @@
                         android:padding="10sp" />
 
                     <Button
+                        android:id="@+id/btn_jw_glr"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -91,6 +96,7 @@
                         android:padding="10sp" />
 
                     <Button
+                        android:id="@+id/btn_bc_rl"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -99,6 +105,7 @@
                         android:padding="10sp" />
 
                     <Button
+                        android:id="@+id/btn_jw_bl_l"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -107,6 +114,7 @@
                         android:padding="10sp" />
 
                     <Button
+                        android:id="@+id/btn_bc_18"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"

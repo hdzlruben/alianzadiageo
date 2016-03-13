@@ -29,6 +29,7 @@
                 android:orientation="vertical">
 
                 <Button
+                    android:id="@+id/btn_donjulio_blanco"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4sp"
@@ -39,6 +40,7 @@
                     android:padding="10sp" />
 
                 <Button
+                    android:id="@+id/btn_donjulio_anejado"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -47,6 +49,7 @@
                     android:padding="10sp" />
 
                 <Button
+                    android:id="@+id/btn_donjulio_reposado"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -55,6 +58,7 @@
                     android:padding="10sp" />
 
                 <Button
+                    android:id="@+id/btn_donjulio_70"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -63,6 +67,7 @@
                     android:padding="10sp" />
 
                 <Button
+                    android:id="@+id/btn_donjulio_1942"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -70,6 +75,7 @@
                     android:background="@drawable/botondj1942"
                     android:padding="10sp" />
                 <Button
+                    android:id="@+id/btn_donjulio_real"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
