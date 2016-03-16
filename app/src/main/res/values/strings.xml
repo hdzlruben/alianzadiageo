@@ -57,4 +57,28 @@
     <string name="title_como_servir_baileys">Baileys con Café</string>
     <string name="parrafo_uno_como_servir_baileys">60 ml de Baileys servido en tu café favorito ya sea frío o en las rocas</string>
     <string name="parrafo_dos_como_servir_baileys">También se recomienda en las rocas, con hielo frappe , postres o sobre helado</string>
+
+    <!-- Baileys Dulce-->
+
+    <string name="txt_mensaje_baileys_dulce_uno">Mezcla para consentir .-  Deliciosa combinación del Bailey´s de siempre con el rico sabor de Dulce de Leche</string>
+    <string name="txt_mensaje_baileys_dulce_dos">Garantía de Calidad.- Mantiene los más altos estándares de calidad y la perfección de la mezcla de Baileys Original</string>
+    <string name="txt_mensaje_baileys_dulce_tres">Paladar Latino.- Desarrollado exclusivamente para Latinoamérica, una variante más Premium creada para consentir a la mujer latina</string>
+    <string name="parrafo_uno_como_servir_baileys_dulce">Baileys Dulce de Leche, Servido con hielo, hielo frappé o simplemente frío</string>
+
+    <!-- Tanqueray London -->
+
+    <string name="txt_mensaje_tanqueray_london_uno">4 Destilaciones y 4 extractos botánicos dan como resultado un sabor sólido, suave y perfectamente balanceado.</string>
+    <string name="txt_mensaje_tanqueray_london_dos">Es la ginebra más premiada y más vendida del mundo.</string>
+    <string name="txt_mensaje_tanqueray_london_tres">Ginebra con más de 180 años de herencia y experiencia en destilación iniciadas por Charles Tanqueray en 1830.</string>
+    <string name="parrafo_uno_como_servir_tanqueray_london">Gin &amp; Tonic en copa globo alta.</string>
+
+    <!-- Tanqueray London -->
+
+    <string name="txt_mensaje_tanqueray_ten_uno">Es la única Ginebra que en el Salón de la Fama de San Francisco, es un líquido de clase mundial.</string>
+    <string name="txt_mensaje_tanqueray_ten_dos">Es la única Ginebra que usa frutos cítricos enteros (naranjas, toronjas y limón mexicano) en el proceso de destilación.</string>
+    <string name="txt_mensaje_tanqueray_ten_tres">Creada con casi 200 años de conocimiento en destilación, manteniendo la búsqueda de la perfección del fundador Charles Tanqueray.</string>
+    <string name="parrafo_uno_como_servir_tanqueray_ten">Gin &amp; Tonic en copa globo alta.</string>
+
+
+
 </resources>

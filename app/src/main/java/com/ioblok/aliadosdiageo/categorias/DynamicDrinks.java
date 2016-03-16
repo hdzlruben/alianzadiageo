@@ -17,9 +17,18 @@ import android.widget.RelativeLayout;
 import android.widget.VideoView;
 
 import com.ioblok.aliadosdiageo.R;
+import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayLondon.TanquerayLondonMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayLondon.TanquerayLondonServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayLondon.TanquerayLondonTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayTen.TanquerayTenMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayTen.TanquerayTenServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayTen.TanquerayTenTourFragment;
 import com.ioblok.aliadosdiageo.categorias.content_licor.Baileys.BaileysMensajesFragment;
 import com.ioblok.aliadosdiageo.categorias.content_licor.Baileys.BaileysServirFragment;
 import com.ioblok.aliadosdiageo.categorias.content_licor.Baileys.BaileysTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_licor.BaileysDulceDeLeche.BaileysDulceMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_licor.BaileysDulceDeLeche.BaileysDulceServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_licor.BaileysDulceDeLeche.BaileysDulceTourFragment;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelMensajesFragment;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelServirFragment;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelTourFragment;
@@ -180,7 +189,7 @@ public class DynamicDrinks extends AppCompatActivity {
 
     public void howToPrepare() {
 
-        BaileysServirFragment newFragment = new BaileysServirFragment();
+        TanquerayTenServirFragment newFragment = new TanquerayTenServirFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragment_container, newFragment);
         transaction.addToBackStack(null);
@@ -190,7 +199,7 @@ public class DynamicDrinks extends AppCompatActivity {
 
     public void bottleTour() {
 
-        BaileysTourFragment newFragment = new BaileysTourFragment();
+        TanquerayTenTourFragment newFragment = new TanquerayTenTourFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragment_container, newFragment);
         transaction.addToBackStack(null);
@@ -199,7 +208,7 @@ public class DynamicDrinks extends AppCompatActivity {
     }
 
     public void keyMessage() {
-        BaileysMensajesFragment newFragment = new BaileysMensajesFragment();
+        TanquerayTenMensajesFragment newFragment = new TanquerayTenMensajesFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragment_container, newFragment);
         transaction.addToBackStack(null);
