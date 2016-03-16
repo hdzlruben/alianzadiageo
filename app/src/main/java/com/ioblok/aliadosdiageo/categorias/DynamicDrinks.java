@@ -17,6 +17,9 @@ import android.widget.RelativeLayout;
 import android.widget.VideoView;
 
 import com.ioblok.aliadosdiageo.R;
+import com.ioblok.aliadosdiageo.categorias.content_licor.Baileys.BaileysMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_licor.Baileys.BaileysServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_licor.Baileys.BaileysTourFragment;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelMensajesFragment;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelServirFragment;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelTourFragment;
@@ -177,7 +180,7 @@ public class DynamicDrinks extends AppCompatActivity {
 
     public void howToPrepare() {
 
-        JwBlueLabelServirFragment newFragment = new JwBlueLabelServirFragment();
+        BaileysServirFragment newFragment = new BaileysServirFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragment_container, newFragment);
         transaction.addToBackStack(null);
@@ -187,7 +190,7 @@ public class DynamicDrinks extends AppCompatActivity {
 
     public void bottleTour() {
 
-        JwBlueLabelTourFragment newFragment = new JwBlueLabelTourFragment();
+        BaileysTourFragment newFragment = new BaileysTourFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragment_container, newFragment);
         transaction.addToBackStack(null);
@@ -196,7 +199,7 @@ public class DynamicDrinks extends AppCompatActivity {
     }
 
     public void keyMessage() {
-        JwBlueLabelMensajesFragment newFragment = new JwBlueLabelMensajesFragment();
+        BaileysMensajesFragment newFragment = new BaileysMensajesFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragment_container, newFragment);
         transaction.addToBackStack(null);

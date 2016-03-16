@@ -51,5 +51,10 @@
 
     <!-- Baileys-->
     <string name="popupuno">Elegante botella alta y femenina de vidrio oscuro que permite proteger la calidad del contenido, perfecta para cualquier refrigerador</string>
-
+    <string name="txt_mensaje_baileys_uno">Mezcla única.- Crema de whiskey irlandesa, hecha a base de chocolate, vainilla, azúcar, crema de leche irlandesa y whiskey irlandés</string>
+    <string name="txt_mensaje_baileys_dos">Natural.- Es un producto 100% natural y no contiene conservadores.</string>
+    <string name="txt_mensaje_baileys_tres">Líder mundial.- Marca de licor número 1 en ventas en México y en el mundo</string>
+    <string name="title_como_servir_baileys">Baileys con Café</string>
+    <string name="parrafo_uno_como_servir_baileys">60 ml de Baileys servido en tu café favorito ya sea frío o en las rocas</string>
+    <string name="parrafo_dos_como_servir_baileys">También se recomienda en las rocas, con hielo frappe , postres o sobre helado</string>
 </resources>
