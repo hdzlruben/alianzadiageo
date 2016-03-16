@@ -208,18 +208,19 @@ public class LoginActivity extends AppCompatActivity {
 
     public void initSesion(View v) {
 
+
+        downloadVideos();
+
         //Intent btns_home = new Intent(LoginActivity.this, MenuActivity.class);
         //startActivity(btns_home);
-        downloadVideos();
+
         //startActivity(btns_home);
 
        /*if (pass_user.getText().toString().equals("123Abc!")){
 
-           Intent btns_home = new Intent(LoginActivity.this, MenuActivity.class);
-           startActivity(btns_home);
+           downloadVideos();
 
        } else {
-           Log.e("Fuera", pass_user.getText().toString());
            new MaterialDialog.Builder(this)
                    .title(R.string.txt_error)
                    .content(R.string.txt_error_pass)

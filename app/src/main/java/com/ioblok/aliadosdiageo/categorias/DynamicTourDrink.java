@@ -15,7 +15,7 @@ public class DynamicTourDrink extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.tour_drink_fragment, container, false);
+        View root = inflater.inflate(R.layout.activity_jw_blue_tour, container, false);
 
         // Inflate the layout for this fragment
         return root;

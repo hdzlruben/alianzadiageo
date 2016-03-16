@@ -15,11 +15,15 @@ import com.ioblok.aliadosdiageo.servicio.FragmentAdapterServices;
  */
 public class DynamicMessages extends Fragment {
 
+
+    View v;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.messages_fragment, container, false);
+
+        v = inflater.inflate(R.layout.activity_jw_blue_label_mensajes, null);
 
         // Inflate the layout for this fragment
-        return root;
+        return v;
     }
 }

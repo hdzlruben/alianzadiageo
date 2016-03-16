@@ -23,7 +23,20 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import com.ioblok.aliadosdiageo.R;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.Buchanans18.Buchanans18ContainerActivity;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.BuchanansRedSeal.BuchanansRedSealContainerActivity;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlackLabel.JwBlackLabelContainerActivity;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelContainerActivity;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwDoubleBlackLabel.JwDoubleBlackLabelContainerActivity;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwGoldLabelReserve.JwGoldLabelReserveContainerActivity;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwKingGeorgeActivity.JwKingGeorgeContainerActivity;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwPlatinumLabel.JwPlatinumLabelContainerActivity;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwRedLabel.JwRedLabelContainerActivity;
+import com.ioblok.aliadosdiageo.diageo.DiageoActivity;
+import com.ioblok.aliadosdiageo.family.MenuFamilyActivity;
+import com.ioblok.aliadosdiageo.plataformas.procesos.MenuPlataformasActivity;
+import com.ioblok.aliadosdiageo.procesos.MenuProcesosActivity;
+import com.ioblok.aliadosdiageo.servicio.MenuServicioActivity;
 
 public class MenuWhiskyFragmentUnoActivity extends Fragment {
 
@@ -173,5 +186,9 @@ public class MenuWhiskyFragmentUnoActivity extends Fragment {
                 break;
 
         }
+    }
+
+    public void launchDynamicTour(View view, String idVideo){
+
     }
 }
