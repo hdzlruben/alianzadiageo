@@ -1,32 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#fff"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <include layout="@layout/ui_jw_bl" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
 
-    <include
-        android:id="@+id/tab_menu_diageo"
-        layout="@layout/ui_btn_dots" />
+        <!--<include layout="@layout/ui_jw_bl" />
 
-    <include
-        android:id="@+id/tab_menu_diageo"
-        layout="@layout/ui_back_categorias_int" />
+        <include
+            android:id="@+id/tab_menu_diageo"
+            layout="@layout/ui_btn_dots" />
 
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scrollbars="none">
+        <include
+            android:id="@+id/tab_menu_diageo"
+            layout="@layout/ui_back_categorias_int" />-->
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:gravity="center"
-            android:background="@drawable/back_bluelabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
 
-        </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botella_botonesblabel"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

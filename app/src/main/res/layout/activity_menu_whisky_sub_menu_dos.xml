@@ -47,76 +47,103 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:background="@drawable/botonbm"
+                        android:tag="NO VIDEO"
                         android:padding="10sp"
+                        android:id="@+id/btn_buchanas_master"
                         android:paddingLeft="20sp"
                         android:paddingRight="20sp" />
 
                     <Button
+                        android:id="@+id/btn_black_and_white"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:tag="NO VIDEO"
                         android:layout_gravity="center"
                         android:layout_marginTop="4sp"
                         android:background="@drawable/botonbw"
                         android:padding="10sp" />
 
                     <Button
+                        android:id="@+id/buchanas_12"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:tag="NO VIDEO"
                         android:layout_gravity="center"
                         android:layout_marginTop="4sp"
                         android:background="@drawable/botonbuchanans"
                         android:padding="10sp" />
 
+
                     <Button
+                        android:id="@+id/btn_cardhu"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:tag="NO VIDEO"
                         android:layout_gravity="center"
                         android:layout_marginTop="4sp"
                         android:background="@drawable/botoncardhu"
                         android:padding="10sp" />
 
+
                     <Button
+                        android:id="@+id/btn_old_parr"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:tag="NO VIDEO"
                         android:layout_gravity="center"
                         android:layout_marginTop="4sp"
                         android:background="@drawable/botonoldparr"
                         android:padding="10sp" />
 
+
+
                     <Button
+                        android:id="@+id/btn_old_parr_silver"
                         android:layout_width="match_parent"
+                        android:tag="NO VIDEO"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="4sp"
                         android:background="@drawable/botonops"
                         android:padding="10sp" />
 
+
                     <Button
+                        android:id="@+id/btn_jb"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:tag="NO VIDEO"
                         android:layout_gravity="center"
                         android:layout_marginTop="4sp"
                         android:background="@drawable/botonjb"
                         android:padding="10sp" />
 
+
                     <Button
+                        android:id="@+id/btn_bulleit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:tag="NO VIDEO"
                         android:layout_gravity="center"
                         android:layout_marginTop="4sp"
                         android:background="@drawable/bulleit"
                         android:padding="10sp" />
 
+
                     <Button
+                        android:id="@+id/btn_cr"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:tag="NO VIDEO"
                         android:layout_gravity="center"
                         android:layout_marginTop="4sp"
                         android:background="@drawable/botoncr"
                         android:padding="10sp" />
 
                     <Button
+                        android:id="@+id/btn_vat69"
                         android:layout_width="match_parent"
+                        android:tag="NO VIDEO"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="4sp"

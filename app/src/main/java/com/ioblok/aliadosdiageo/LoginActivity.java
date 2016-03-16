@@ -55,8 +55,9 @@ public class LoginActivity extends AppCompatActivity {
     public ArrayList<URLVideosDataBase> arrayVideos;
     public String base_url = "http://ioblok.com.mx/Testing/video/";
     public String[] videos = {
-            "consumo_responsable",
-            "diajeo_aliados",
+                                "categorias_whisky_bc_18",
+                                "consumo_responsable",
+                                "diajeo_aliados",
                                 "familia_bn",
                                 "familia_jw",
                                 "familia_tr",
@@ -75,7 +76,6 @@ public class LoginActivity extends AppCompatActivity {
                     "categorias_bulleit",
                     "categorias_jb",
                     "categorias_old_par",
-                    "categorias_whisky_bc_18",
                     "categorias_whisky_bl",
                     "categorias_whisky_db",
                     "categorias_whisky_kg",
@@ -208,18 +208,19 @@ public class LoginActivity extends AppCompatActivity {
 
     public void initSesion(View v) {
 
+
+        downloadVideos();
+
         //Intent btns_home = new Intent(LoginActivity.this, MenuActivity.class);
         //startActivity(btns_home);
-        downloadVideos();
+
         //startActivity(btns_home);
 
        /*if (pass_user.getText().toString().equals("123Abc!")){
 
-           Intent btns_home = new Intent(LoginActivity.this, MenuActivity.class);
-           startActivity(btns_home);
+           downloadVideos();
 
        } else {
-           Log.e("Fuera", pass_user.getText().toString());
            new MaterialDialog.Builder(this)
                    .title(R.string.txt_error)
                    .content(R.string.txt_error_pass)
