@@ -3,7 +3,9 @@ package com.ioblok.aliadosdiageo.categorias;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -12,10 +14,24 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 import android.widget.VideoView;
 
 import com.ioblok.aliadosdiageo.R;
+import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayLondon.TanquerayLondonMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayLondon.TanquerayLondonServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayLondon.TanquerayLondonTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayTen.TanquerayTenMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayTen.TanquerayTenServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayTen.TanquerayTenTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_licor.Baileys.BaileysMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_licor.Baileys.BaileysServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_licor.Baileys.BaileysTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_licor.BaileysDulceDeLeche.BaileysDulceMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_licor.BaileysDulceDeLeche.BaileysDulceServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_licor.BaileysDulceDeLeche.BaileysDulceTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelTourFragment;
 import com.ioblok.aliadosdiageo.utilis.Constants;
 import com.ioblok.aliadosdiageo.utilis.URLVideosDataBase;
 import com.ioblok.aliadosdiageo.utilis.VideoPlayer;
@@ -32,7 +48,11 @@ public class DynamicDrinks extends AppCompatActivity {
     ListView listView;
     LinearLayout llDots;
     Boolean isHideMyListView = true;
+    View v;
+    ViewPager viewPager;
 
+
+    CoordinatorLayout rootLayout;
     String[] valuesWith     = new String[]{"SPOT", "VIDEO", "MENSAJES\nClAVE", "TOUR DE\nBOTELLAS", "COMO\nSERVIR"};
     String[] valuesWithout  = new String[]{"VIDEO", "MENSAJES\nClAVE", "TOUR DE\nBOTELLAS", "COMO\nSERVIR"};
 
@@ -166,22 +186,33 @@ public class DynamicDrinks extends AppCompatActivity {
 
     }
 
+
     public void howToPrepare() {
 
-        Toast.makeText(DynamicDrinks.this, "AQUÍ VA EL FRAGMENT DE CÓMO SERVIRLO", Toast.LENGTH_LONG).show();
+        TanquerayTenServirFragment newFragment = new TanquerayTenServirFragment();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_container, newFragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
 
     }
 
     public void bottleTour() {
 
-        Toast.makeText(DynamicDrinks.this, "AQUÍ VA EL FRAGMENT TOUR DE BOTELLAS", Toast.LENGTH_LONG).show();
+        TanquerayTenTourFragment newFragment = new TanquerayTenTourFragment();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_container, newFragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
 
     }
 
     public void keyMessage() {
-
-        Toast.makeText(DynamicDrinks.this, "AQUÍ VA EL FRAGMENT DE MENSAJES CLAVE", Toast.LENGTH_LONG).show();
-
+        TanquerayTenMensajesFragment newFragment = new TanquerayTenMensajesFragment();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_container, newFragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 
     public void openYoutube(String idVideo){

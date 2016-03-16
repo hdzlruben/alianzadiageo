@@ -17,12 +17,6 @@
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.FullScreen">
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
         </activity>
         <activity
             android:name=".MenuActivity"
@@ -68,6 +62,10 @@
             android:screenOrientation="portrait"
             android:name=".categorias.MenuCategoriasActivity"
             android:theme="@style/AppTheme.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:screenOrientation="portrait"
@@ -126,25 +124,50 @@
             android:theme="@style/AppTheme.NoActionBar.FullScreen">
         </activity>
 
-        <!-- INTERIORES CATEGORIES WHISKY -->
+        <!-- INTERIORES CATEGORIES WHISKY BLUE LABEL-->
 
         <activity
             android:screenOrientation="portrait"
             android:name=".categorias.content_whisky.JwBlueLabelContainerActivity"
             android:theme="@style/AppTheme.NoActionBar.FullScreen">
         </activity>
-
         <activity
             android:screenOrientation="portrait"
-            android:name=".categorias.content_whisky.JwBlueLabelMensajesActivity"
+            android:name=".categorias.content_whisky.JwBlueLabelMensajesFragment"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.content_whisky.JwBlueLabelServirFragment"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.content_whisky.JwBlueLabelTourFragment"
             android:theme="@style/AppTheme.NoActionBar.FullScreen">
         </activity>
 
         <!-- - - - - - - - - - - - - - - - - - - - - - - -->
 
+        <!-- INTERIORES CATEGORIES WHISKY KING GEORGE -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.content_whisky.JwKingGeorgeActivity.JwKingGeorgeContainerActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
 
-        <!-- DROPLIST -->
+        <!-- INTERIORES CATEGORIES WHISKY DOUBLE BLACK LABEL -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.content_whisky.JwDoubleBlackLabel.JwDoubleBlackLabelContainerActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
 
+        <!-- INTERIORES CATEGORIES WHISKY PLATINUM LABEL -->
         <activity
             android:screenOrientation="portrait"
             android:name=".drop_list"
@@ -157,10 +180,93 @@
             android:theme="@style/AppTheme.NoActionBar.FullScreen">
         </activity>
 
+        <!-- INTERIORES CATEGORIES WHISKY RED LABEL -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.content_whisky.JwRedLabel.JwRedLabelContainerActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
 
+
+        <!-- INTERIORES CATEGORIES WHISKY GOLD LABEL RESERVE -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.content_whisky.JwGoldLabelReserve.JwGoldLabelReserveContainerActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+
+        <!-- INTERIORES CATEGORIES WHISKY BUCHANANS RED SEAL -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.content_whisky.BuchanansRedSeal.BuchanansRedSealContainerActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+
+        <!-- INTERIORES CATEGORIES WHISKY BLACKLABEL -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.content_whisky.JwBlackLabel.JwBlackLabelContainerActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+
+        <!-- INTERIORES CATEGORIES WHISKY BUCHANANS 18 -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.content_whisky.Buchanans18.Buchanans18ContainerActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+
+
+        <!-- INTERIORES CATEGORIES TEQUILA DON JULIO BLANCO -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.content_tequila.DonJulioBlanco.DonJulioBlancoContainerActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+
+        <!-- INTERIORES CATEGORIES TEQUILA DON JULIO AÑEJO -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.content_tequila.DonJulioAnejo.DonJulioAnejoContainerActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+
+        <!-- INTERIORES CATEGORIES TEQUILA DON JULIO REPOSADO -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.content_tequila.DonJulioReposado.DonJulioReposadoContainerActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+
+        <!-- INTERIORES CATEGORIES TEQUILA DON JULIO 70 -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.content_tequila.DonJulio70.DonJulio70ContainerActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+
+        <!-- INTERIORES CATEGORIES TEQUILA DON JULIO 1942 -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.content_tequila.DonJulio1942.DonJulio1942ContainerActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+
+        <!-- INTERIORES CATEGORIES TEQUILA DON JULIO ReaL -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.content_tequila.DonJulioReal.DonJulioRealContainerActivity"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
+
+        <!-- TOUR DE BOTELLAS BAILEYS  -->
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".categorias.content_licor.Baileys.BaileysTourFragment"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        </activity>
         <!-- - - - - - - - - - - - - - - - - - - - - - - -->
-
-
 
     </application>
 </manifest>

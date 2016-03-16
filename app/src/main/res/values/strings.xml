@@ -42,5 +42,43 @@
     <string name="txt_bl_two">Jim Beveridge, Maestro Mezclador usa 190 años de la experiencia que tiene la Casa Walker para mezclar y madurar cuidadosamente en pequeñas barricas.</string>
     <string name="txt_bl_three">Johnnie Walker® Blue Label® recrea el sabor de los whiskys del siglo XIX, una poderosa ola con un sedoso y poderoso final.</string>
 
+    <string name="text_title_seccion">Como Servir</string>
+    <string name="text_title_drink">Johnnie Walker Blue Label </string>
+    <string name="text_content_drink">El intenso sabor a frutas secas, chocolate obscuro y ricas especias de Johnnie Walker Etiqueta Azul® debe disfrutarse lentamente…</string>
+    <string name="text_sub_title">Preparación:</string>
+    <string name="text_content_subtitle">Debe ser disfrutado junto a un vaso de agua con hielo, que debe ser probado primero para limpiar el paladar y agudizar los sentidos.</string>
+
+
+    <!-- Baileys-->
+    <string name="popupuno">Elegante botella alta y femenina de vidrio oscuro que permite proteger la calidad del contenido, perfecta para cualquier refrigerador</string>
+    <string name="txt_mensaje_baileys_uno">Mezcla única.- Crema de whiskey irlandesa, hecha a base de chocolate, vainilla, azúcar, crema de leche irlandesa y whiskey irlandés</string>
+    <string name="txt_mensaje_baileys_dos">Natural.- Es un producto 100% natural y no contiene conservadores.</string>
+    <string name="txt_mensaje_baileys_tres">Líder mundial.- Marca de licor número 1 en ventas en México y en el mundo</string>
+    <string name="title_como_servir_baileys">Baileys con Café</string>
+    <string name="parrafo_uno_como_servir_baileys">60 ml de Baileys servido en tu café favorito ya sea frío o en las rocas</string>
+    <string name="parrafo_dos_como_servir_baileys">También se recomienda en las rocas, con hielo frappe , postres o sobre helado</string>
+
+    <!-- Baileys Dulce-->
+
+    <string name="txt_mensaje_baileys_dulce_uno">Mezcla para consentir .-  Deliciosa combinación del Bailey´s de siempre con el rico sabor de Dulce de Leche</string>
+    <string name="txt_mensaje_baileys_dulce_dos">Garantía de Calidad.- Mantiene los más altos estándares de calidad y la perfección de la mezcla de Baileys Original</string>
+    <string name="txt_mensaje_baileys_dulce_tres">Paladar Latino.- Desarrollado exclusivamente para Latinoamérica, una variante más Premium creada para consentir a la mujer latina</string>
+    <string name="parrafo_uno_como_servir_baileys_dulce">Baileys Dulce de Leche, Servido con hielo, hielo frappé o simplemente frío</string>
+
+    <!-- Tanqueray London -->
+
+    <string name="txt_mensaje_tanqueray_london_uno">4 Destilaciones y 4 extractos botánicos dan como resultado un sabor sólido, suave y perfectamente balanceado.</string>
+    <string name="txt_mensaje_tanqueray_london_dos">Es la ginebra más premiada y más vendida del mundo.</string>
+    <string name="txt_mensaje_tanqueray_london_tres">Ginebra con más de 180 años de herencia y experiencia en destilación iniciadas por Charles Tanqueray en 1830.</string>
+    <string name="parrafo_uno_como_servir_tanqueray_london">Gin &amp; Tonic en copa globo alta.</string>
+
+    <!-- Tanqueray London -->
+
+    <string name="txt_mensaje_tanqueray_ten_uno">Es la única Ginebra que en el Salón de la Fama de San Francisco, es un líquido de clase mundial.</string>
+    <string name="txt_mensaje_tanqueray_ten_dos">Es la única Ginebra que usa frutos cítricos enteros (naranjas, toronjas y limón mexicano) en el proceso de destilación.</string>
+    <string name="txt_mensaje_tanqueray_ten_tres">Creada con casi 200 años de conocimiento en destilación, manteniendo la búsqueda de la perfección del fundador Charles Tanqueray.</string>
+    <string name="parrafo_uno_como_servir_tanqueray_ten">Gin &amp; Tonic en copa globo alta.</string>
+
+
 
 </resources>
