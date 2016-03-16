@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -13,7 +14,39 @@
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <LinearLayout
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/app_bar"
+            app:elevation="0dp"
+            android:background="#FFFFFF">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:tabBackground="@android:color/transparent"
+                app:tabIndicatorColor="@android:color/transparent"
+                app:tabMode="fixed"
+                android:scrollbars="none"
+                android:layout_gravity="center"
+                app:tabGravity="fill"
+                app:tabPaddingStart="-1sp"
+                app:paddingEnd="-1sp"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_below="@id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:background="@android:color/transparent"/>
+        <!--LinearLayout
             android:id="@+id/btn_menu"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
@@ -76,7 +109,7 @@
                 android:layout_width="80sp"
                 android:layout_height="80sp"
                 android:background="@drawable/boton_video"/>
-        </LinearLayout>
+        </LinearLayout-->
 
     </RelativeLayout>
 

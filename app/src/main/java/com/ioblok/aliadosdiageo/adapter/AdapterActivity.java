@@ -15,7 +15,7 @@ import android.widget.TextView;
 import com.ioblok.aliadosdiageo.R;
 
 /**
- * Created by kreativeco on 11/03/16.
+ * Created by io on 11/03/16.
  */
 public class AdapterActivity extends BaseAdapter {
     // Declare Variables

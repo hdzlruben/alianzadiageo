@@ -19,52 +19,13 @@ import com.ioblok.aliadosdiageo.R;
 /**
  * Created by Admin on 10/03/16.
  */
-public class MenuPrincipalActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class MenuPrincipalActivity extends AppCompatActivity {
 
-    Button menu_desplegable;
-    private DrawerLayout mDrawer;
-    private ListView mDrawerOptions;
-    private static final String[] values = {"Drawer 1", "Drawer 2", "Drawer 3"};
-
-    /**
-     * Called when the activity is first created.
-     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal);
-
-        mDrawerOptions = (ListView) findViewById(R.id.left_drawer);
-        mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-
-        mDrawerOptions.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, values));
-        mDrawerOptions.setOnItemClickListener(this);
     }
 
-    @Override
-    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        Toast.makeText(this, "Pulsado " + values[i], Toast.LENGTH_SHORT).show();
-        mDrawer.closeDrawers();
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-            case android.R.id.home:
-                if (mDrawer.isDrawerOpen(mDrawerOptions)){
-                    mDrawer.closeDrawers();
-                }else{
-                    mDrawer.openDrawer(mDrawerOptions);
-                }
-                return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    public void openMenu(View v) {
-        Log.e("abrir boton" , " " );
-        mDrawer.openDrawer(mDrawerOptions);
-    }
 
 }

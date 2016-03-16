@@ -22,6 +22,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/boton_video"
+                    android:onClick="playVideo"
+                    android:tag="familia_tr"
+                    android:id="@+id/btn_video"
                     android:layout_marginTop="20sp"/>
                 <ImageButton
                     android:layout_gravity="center"
@@ -39,13 +42,12 @@
             </LinearLayout>
 
         </ScrollView>
-    <include
-        android:id="@+id/head"
-        layout="@layout/ui_family_tanqueray">
-    </include>
 
-    <include
-        layout="@layout/ui_back_family_desc">
-    </include>
+    <include android:id="@+id/head"
+        layout="@layout/ui_family_tanqueray"/>
+
+    <include layout="@layout/ui_back_family_desc"/>
+
+    <include layout="@layout/ui_video"/>
 
 </RelativeLayout>
