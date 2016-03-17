@@ -1,0 +1,95 @@
+package com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio70;
+
+import android.graphics.Typeface;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.bluejamesbond.text.DocumentView;
+import com.bluejamesbond.text.style.TextAlignment;
+import com.ioblok.aliadosdiageo.R;
+
+public class DonJulio70MensajesFragment extends Fragment {
+    String text,textdos,texttres,title_zacapa_23_uno,title_zacapa_23_dos,title_zacapa_23_tres,title_zacapa_24_tres;
+    TextView titleUno;
+    TextView titleDos;
+    TextView titleTres,titleCuatro;
+    String textcuatro;
+    View v;
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        v = inflater.inflate(R.layout.fragment_don_julio_setenta_mensajes, null);
+        initialize();
+        return v;
+    }
+
+    public void initialize(){
+        Typeface myFont = Typeface.createFromAsset(getActivity().getAssets(), "acaslonpro-regular-webfont.ttf");
+
+        text = getString(R.string.title_don_julio_setenta_content_uno);
+        textdos = getString(R.string.title_don_julio_setenta_content_dos);
+        texttres = getString(R.string.title_don_julio_setenta_content_tres);
+        textcuatro = getString(R.string.title_don_julio_setenta_content_cuatro);
+
+        title_zacapa_23_uno = getString(R.string.title_don_julio_setenta_one);
+        title_zacapa_23_dos = getString(R.string.title_don_julio_setenta_dos);
+        title_zacapa_23_tres = getString(R.string.title_don_julio_setenta_tres);
+        title_zacapa_24_tres = getString(R.string.title_don_julio_setenta_cuatro);
+
+        titleUno = (TextView)v.findViewById(R.id.title_zacapa_23_one);
+        titleUno.setText(title_zacapa_23_uno);
+        titleUno.setTextColor(0xFF333333);
+        titleUno.setTypeface(myFont);
+
+        titleDos = (TextView)v.findViewById(R.id.title_zacapa_23_dos);
+        titleDos.setText(title_zacapa_23_dos);
+        titleDos.setTextColor(0xFF333333);
+        titleDos.setTypeface(myFont);
+
+        titleTres = (TextView)v.findViewById(R.id.title_zacapa_23_tres);
+        titleTres.setText(title_zacapa_23_tres);
+        titleTres.setTextColor(0xFF333333);
+        titleTres.setTypeface(myFont);
+
+        titleCuatro = (TextView)v.findViewById(R.id.title_zacapa_23_cuatro);
+        titleCuatro.setText(title_zacapa_24_tres);
+        titleCuatro.setTextColor(0xFF333333);
+        titleCuatro.setTypeface(myFont);
+
+
+        DocumentView documentView = (DocumentView)v.findViewById(R.id.txt_bl_one);
+        DocumentView documentViewtwo = (DocumentView)v.findViewById(R.id.txt_bl_two);
+        DocumentView documentViewthree = (DocumentView)v.findViewById(R.id.txt_bl_three);
+        DocumentView documentViewfour = (DocumentView)v.findViewById(R.id.txt_bl_four);
+
+        documentView.setText(text);
+        documentView.getDocumentLayoutParams().setTextAlignment(TextAlignment.JUSTIFIED);
+        documentView.getDocumentLayoutParams().setTextColor(0xFF333333);
+
+        documentView.getDocumentLayoutParams().setTextTypeface(myFont);
+
+        documentViewtwo.setText(textdos);
+        documentViewtwo.getDocumentLayoutParams().setTextAlignment(TextAlignment.JUSTIFIED);
+        documentViewtwo.getDocumentLayoutParams().setTextColor(0xFF333333);
+
+        documentViewtwo.getDocumentLayoutParams().setTextTypeface(myFont);
+
+        documentViewthree.setText(texttres);
+        documentViewthree.getDocumentLayoutParams().setTextAlignment(TextAlignment.JUSTIFIED);
+        documentViewthree.getDocumentLayoutParams().setTextColor(0xFF333333);
+
+        documentViewthree.getDocumentLayoutParams().setTextTypeface(myFont);
+
+        documentViewfour.setText(textcuatro);
+        documentViewfour.getDocumentLayoutParams().setTextAlignment(TextAlignment.JUSTIFIED);
+        documentViewfour.getDocumentLayoutParams().setTextColor(0xFF333333);
+
+        documentViewfour.getDocumentLayoutParams().setTextTypeface(myFont);
+    }
+
+}
