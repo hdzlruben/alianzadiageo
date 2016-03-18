@@ -17,9 +17,54 @@ import android.widget.RelativeLayout;
 import android.widget.VideoView;
 
 import com.ioblok.aliadosdiageo.R;
+import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayLondon.TanquerayLondonMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayLondon.TanquerayLondonServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayLondon.TanquerayLondonTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayTen.TanquerayTenMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayTen.TanquerayTenServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayTen.TanquerayTenTourFragment;
 import com.ioblok.aliadosdiageo.categorias.content_licor.Baileys.BaileysMensajesFragment;
 import com.ioblok.aliadosdiageo.categorias.content_licor.Baileys.BaileysServirFragment;
 import com.ioblok.aliadosdiageo.categorias.content_licor.Baileys.BaileysTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_licor.BaileysDulceDeLeche.BaileysDulceMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_licor.BaileysDulceDeLeche.BaileysDulceServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_licor.BaileysDulceDeLeche.BaileysDulceTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorgan.CaptainMorganMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorgan.CaptainMorganServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorgan.CaptainMorganTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorganBlack.CaptainMorganBlackMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorganBlack.CaptainMorganBlackServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorganBlack.CaptainMorganBlackTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorganWhite.CaptainMorganWhiteMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorganWhite.CaptainMorganWhiteServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorganWhite.CaptainMorganWhiteTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.ZacapaVeintitres.ZacapaVeintitresMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.ZacapaVeintitres.ZacapaVeintitresServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.ZacapaVeintitres.ZacapaVeintitresTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.ZacapaXo.ZacapaMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio1942.DonJulio1942MensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio1942.DonJulio1942ServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio1942.DonJulio1942TourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio70.DonJulio70MensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio70.DonJulio70ServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio70.DonJulio70TourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioAnejo.DonJulioAnejoMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioAnejo.DonJulioAnejoServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioAnejo.DonJulioAnejoTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioBlanco.DonJulioBlancoMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioBlanco.DonJulioBlancoServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioBlanco.DonJulioBlancoTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReal.DonJulioRealMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReal.DonJulioRealServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReal.DonJulioRealTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReposado.DonJulioReposadoMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReposado.DonJulioReposadoServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReposado.DonJulioReposadoTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.Buchanans18.BuchanansUnoOchoMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.Buchanans18.BuchanansUnoOchoServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.Buchanans18.BuchanansUnoOchoTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.BuchanansRedSeal.BuchanansRedSealMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.BuchanansRedSeal.BuchanansRedSealTourFragment;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelMensajesFragment;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelServirFragment;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelTourFragment;
@@ -180,7 +225,7 @@ public class DynamicDrinks extends AppCompatActivity {
 
     public void howToPrepare() {
 
-        BaileysServirFragment newFragment = new BaileysServirFragment();
+        BuchanansUnoOchoServirFragment newFragment = new BuchanansUnoOchoServirFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragment_container, newFragment);
         transaction.addToBackStack(null);
@@ -190,7 +235,7 @@ public class DynamicDrinks extends AppCompatActivity {
 
     public void bottleTour() {
 
-        BaileysTourFragment newFragment = new BaileysTourFragment();
+        BuchanansRedSealTourFragment newFragment = new BuchanansRedSealTourFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragment_container, newFragment);
         transaction.addToBackStack(null);
@@ -199,7 +244,7 @@ public class DynamicDrinks extends AppCompatActivity {
     }
 
     public void keyMessage() {
-        BaileysMensajesFragment newFragment = new BaileysMensajesFragment();
+        BuchanansRedSealMensajesFragment newFragment = new BuchanansRedSealMensajesFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragment_container, newFragment);
         transaction.addToBackStack(null);

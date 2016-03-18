@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root_servir"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.bluejamesbond.text.DocumentView
+                    android:id="@+id/text_title_seccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20sp"
+                    android:layout_marginLeft="40sp"
+                    android:layout_marginRight="40sp">
+                </com.bluejamesbond.text.DocumentView>
+
+                <com.bluejamesbond.text.DocumentView
+                    android:id="@+id/text_subtitle_seccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20sp"
+                    android:layout_marginLeft="40sp"
+                    android:layout_marginRight="40sp">
+                </com.bluejamesbond.text.DocumentView>
+
+
+                <com.bluejamesbond.text.DocumentView
+                    android:id="@+id/text_content_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40sp"
+                    android:layout_marginLeft="40sp"
+                    android:layout_marginRight="40sp">
+
+                </com.bluejamesbond.text.DocumentView>
+
+                <com.bluejamesbond.text.DocumentView
+                    android:id="@+id/text_subtitle_seccion_dos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20sp"
+                    android:layout_marginLeft="40sp"
+                    android:layout_marginRight="40sp">
+                </com.bluejamesbond.text.DocumentView>
+
+                <com.bluejamesbond.text.DocumentView
+                    android:id="@+id/text_content_subtitle_dos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20sp"
+                    android:layout_marginLeft="40sp"
+                    android:layout_marginRight="40sp">
+                </com.bluejamesbond.text.DocumentView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/servicio_capitanmorgan" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
