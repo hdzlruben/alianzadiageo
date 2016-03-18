@@ -27,6 +27,8 @@ public class MenuLicorActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        initialize();
     }
 
 
@@ -40,7 +42,7 @@ public class MenuLicorActivity extends AppCompatActivity {
                 final String idVideo = v.getTag().toString();
                 launchDynamicDrinks(v, idVideo);}});
 
-        btn_baileys.setOnClickListener(new View.OnClickListener() {
+        btn_baileys_d.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 final String idVideo = v.getTag().toString();
                 launchDynamicDrinks(v, idVideo);}});
