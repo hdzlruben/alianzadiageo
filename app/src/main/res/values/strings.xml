@@ -216,4 +216,32 @@
     <string name="txt_como_tomar_buchanans_red_seal">Buchanan’s Red Seal es ideal para disfrutarse en un vaso Old Fashion con una roca de Hielo</string>
 
 
+    <!-- Jw BlackLabel-->
+
+    <string name="title_jw_black_label_one">Es el whisky deluxe que ha ganado más premios internacionales que cualquier otro.</string>
+    <string name="title_jw_black_label_dos">Mezcla de whiskies añejados al menos 12 años.</string>
+    <string name="title_jw_black_label_tres">Corona certificado de proveedor de la casa británica.</string>
+
+    <string name="txt_como_tomar_jw_black_label">En un vaso highball acompañado de agua natural o mineral helada.</string>
+
+    <!-- Jw Double BlackLabel-->
+
+    <string name="title_jw_double_black_label_one">Una expresión más intensa y obscura del whisky más vendido en el mundo,Johnnie Walker Etiqueta Negra </string>
+    <string name="title_jw_double_black_label_dos">Su sabor rico y ahumado único se obtiene a través de la combinación de whiskies añejados y naturalmente ahumados que han sido madurados en viejas barricas de roble quemadas.</string>
+    <string name="title_jw_double_black_label_tres">Uno de los productos más exitosos que han sido lanzados durante la historia de la industria de las bebidas, el cuál ha sido un ganador de múltiples premios, año tras año, desde su presentación en 2009.</string>
+
+    <string name="txt_como_tomar_jw_double_black_label">Johnnie Walker Double Black \nes ideal para disfrutarse solo en un vaso Old Fashion.</string>
+
+    <!-- Jw Gold Label-->
+
+    <string name="title_jw_gold_label_one">Johnnie Walker Gold Label Reserve contiene el prestigioso whisky escocés de malta Clynelish® Single Malt Scotch Whisky, donde tradicionalmente se encontraban depósitos de oro en el río que alimenta a la destilería.</string>
+    <string name="title_jw_gold_label_dos">El maestro mezclador selecciona las reservas de whisky para crear un sabor generoso e indulgente en Johnnie Walker Gold Label Reserve, el regalo perfecto para las celebraciones de oro.</string>
+    <string name="title_jw_gold_label_tres">Johnnie Walker Gold Label Reserve es una celebración de un arte de 190 años del maestro mezclador Johnnie Walker.</string>
+
+
+    <string name="txt_como_tomar_title_jw_gold_label">Johnnie Walker Gold Reserve®</string>
+    <string name="txt_como_tomar_subtitle_jw_gold_label">Preparacion</string>
+    <string name="txt_como_tomar_contenido_jw_gold_label">Copa flauta como representación del whisky para celebrar en todo momento.</string>
+    <string name="txt_como_tomar_contenido_dos_jw_gold_label">Servido helado para resaltar la cremosidad y densidad del Gold Label junto al chocolate amargo.</string>
+
 </resources>
