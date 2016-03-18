@@ -65,9 +65,18 @@ import com.ioblok.aliadosdiageo.categorias.content_whisky.Buchanans18.BuchanansU
 import com.ioblok.aliadosdiageo.categorias.content_whisky.Buchanans18.BuchanansUnoOchoTourFragment;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.BuchanansRedSeal.BuchanansRedSealMensajesFragment;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.BuchanansRedSeal.BuchanansRedSealTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlackLabel.JwBlackLabelMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlackLabel.JwBlackLabelServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlackLabel.JwBlackLabelTourFragment;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelMensajesFragment;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelServirFragment;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwDoubleBlackLabel.JwDoubleBlackLabelMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwDoubleBlackLabel.JwDoubleBlackLabelServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwDoubleBlackLabel.JwDoubleBlackLabelTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwGoldLabelReserve.JwGoldLabelMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwGoldLabelReserve.JwGoldLabelServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwGoldLabelReserve.JwGoldLabelTourFragment;
 import com.ioblok.aliadosdiageo.utilis.Constants;
 import com.ioblok.aliadosdiageo.utilis.URLVideosDataBase;
 import com.ioblok.aliadosdiageo.utilis.VideoPlayer;
@@ -225,7 +234,7 @@ public class DynamicDrinks extends AppCompatActivity {
 
     public void howToPrepare() {
 
-        BuchanansUnoOchoServirFragment newFragment = new BuchanansUnoOchoServirFragment();
+        JwGoldLabelServirFragment newFragment = new JwGoldLabelServirFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragment_container, newFragment);
         transaction.addToBackStack(null);
@@ -235,7 +244,7 @@ public class DynamicDrinks extends AppCompatActivity {
 
     public void bottleTour() {
 
-        BuchanansRedSealTourFragment newFragment = new BuchanansRedSealTourFragment();
+        JwGoldLabelTourFragment newFragment = new JwGoldLabelTourFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragment_container, newFragment);
         transaction.addToBackStack(null);
@@ -244,7 +253,7 @@ public class DynamicDrinks extends AppCompatActivity {
     }
 
     public void keyMessage() {
-        BuchanansRedSealMensajesFragment newFragment = new BuchanansRedSealMensajesFragment();
+        JwGoldLabelMensajesFragment newFragment = new JwGoldLabelMensajesFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragment_container, newFragment);
         transaction.addToBackStack(null);
