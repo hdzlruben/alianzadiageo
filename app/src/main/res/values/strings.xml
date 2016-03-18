@@ -244,4 +244,62 @@
     <string name="txt_como_tomar_contenido_jw_gold_label">Copa flauta como representación del whisky para celebrar en todo momento.</string>
     <string name="txt_como_tomar_contenido_dos_jw_gold_label">Servido helado para resaltar la cremosidad y densidad del Gold Label junto al chocolate amargo.</string>
 
+    <!-- Jw King George-->
+
+    <string name="title_jw_king_george_one">Celebra la concesión del Sello Real a John Walker &amp; Sons en 1934 de manos del Rey George V.</string>
+    <string name="title_jw_king_george_dos">Utilizando solo whiskies únicos de destilerías que existían durante el reinado del Rey George V (1910-1936)</string>
+    <string name="title_jw_king_george_tres">Una combinación exquisita de whiskies únicos al estilo del gusto de los años 30, los años dorados del whisky.</string>
+
+    <string name="txt_como_tomar_jw_king_george">Los exquisitos sabores de frutos secos tostados, intensas frutas y especias en John Walker &amp; Sons King George V™ se saborean mejor si se toma solo…</string>
+
+    <!-- Jw Platinium-->
+
+    <string name="title_jw_platinium_one">Inspirada por la tradición de crear “mezclas privadas” de la familia Walker, Johnnie Walker Platinum Label es un whisky escocés de mezcla moderno que se debe disfrutar en celebraciones exclusivas.</string>
+    <string name="title_jw_platinium_dos">Preciados, como el metal noble del platino, todos los whiskies utilizados en Johnnie Walker Platinum Label son cuidadosamente envejecidos durante un mínimo de 18 años.</string>
+    <string name="title_jw_platinium_tres">Johnnie Walker Platinum Label es la combinación más rica y perfecta de 18 años elaborada artesanalmente que John Walker &amp; Sons ha creado nunca.</string>
+
+    <string name="txt_como_tomar_jw_platinium">Johnnie Walker® Platinum Label™ tiene seguridad en nariz, en un primer trago, se disfruta mejor si se toma solo.</string>
+
+
+    <!-- Jw Red Label-->
+
+    <string name="title_jw_red_label_one">JOHNNIE WALKER RED LABEL nace en 1820 y desde entonces es la mezcla pionera de la familia Walker.</string>
+    <string name="title_jw_red_label_dos">Alexander Walker creó la mezcla de JWRL para disfrutarse sola o mezclada con distintos sabores alrededor del mundo.</string>
+    <string name="title_jw_red_label_tres">JOHNNIE WALKER RED LABEL es hoy el whisky escocés No. 1 del mundo.</string>
+
+    <string name="txt_como_tomar_jw_red_label">Johnnie Ginger</string>
+    <string name="txt_como_content_title_jw_red_label">Johnnie Walker Red Label®.</string>
+    <string name="txt_como_subtitle_jw_red_label">Preparación:</string>
+    <string name="txt_como_content_subtitle_jw_red_label">50 ml. de Johnnie Walker Red Label \n150 ml. De Ginger Ale\n1 Rodaja de limón. </string>
+
+
+
+    <!-- Buchanans Master-->
+
+    <string name="title_buchanans_master_one">Expresión moderna de casa Buchanans para el consumidor contemporáneo</string>
+    <string name="title_buchanans_master_dos">Una mezcla de maltas de las reservas exclusivas de casa Buchanans</string>
+    <string name="title_buchanans_master_tres">Creado por nuestro Master blender Keith Law quien mediante su selección personal de maltas obtuvo un whisky suave y lleno de sabores</string>
+
+    <string name="txt_como_tomar_buchanans_master">Se puede tomar en las rocas o con agua mineral, en ocasiones casuales con los amigos cercanos</string>
+
+
+    <!-- Buchanans Doce -->
+
+    <string name="title_buchanans_doce_one">El clásico Whisky 12 años más vendido en México.</string>
+    <string name="title_buchanans_doce_dos">Es el corazón del portafolio de la casa Buchanan´s.</string>
+    <string name="title_buchanans_doce_tres">Fue creado con un sabor suave y afrutado para ser compartido en todo tipo de ocasiones.</string>
+
+    <string name="txt_como_tomar_buchanan_doce">Vaso old fashion con hielo y agua mineral</string>
+
+
+    <!-- Old Par -->
+
+    <string name="title_old_par_one">La mezcla de Old Parr ha pasado de generación en generación y no ha cambiado desde hace más de 200 años.</string>
+    <string name="title_old_par_dos">Los creadores de la mezcla cambiaron la tradición de ponerle el nombre de un Inglés al Whisky Escocés.</string>
+    <string name="title_old_par_tres">El Líquido de Old Parr tiene un sabor neutro en donde puedes apreciar las notas de miel y vainilla.</string>
+
+    <string name="txt_como_tomar_old_par">En las Rocas.</string>
+
+
+
 </resources>
