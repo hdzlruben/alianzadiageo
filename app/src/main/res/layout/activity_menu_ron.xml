@@ -29,6 +29,7 @@
                 android:orientation="vertical">
 
                 <Button
+                    android:id="@+id/zacapa_xo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4sp"
@@ -36,39 +37,48 @@
                     android:paddingLeft="20sp"
                     android:paddingRight="20sp"
                     android:background="@drawable/boton_zacapaxo"
-                    android:padding="10sp" />
+                    android:padding="10sp"
+                    android:tag="NO VIDEO"/>
 
                 <Button
+                    android:id="@+id/zacapa_23"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
                     android:background="@drawable/boton_zacapa23"
-                    android:padding="10sp" />
+                    android:padding="10sp"
+                    android:tag="NO VIDEO"/>
 
                 <Button
+                    android:id="@+id/btn_captain_morgan"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
                     android:background="@drawable/boton_captainmorgan"
-                    android:padding="10sp" />
+                    android:padding="10sp"
+                    android:tag="NO VIDEO"/>
 
                 <Button
+                    android:id="@+id/btn_captain_morgan_black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
                     android:background="@drawable/boton_cptainmb"
-                    android:padding="10sp" />
+                    android:padding="10sp"
+                    android:tag="NO VIDEO"/>
+
                 <Button
-                    android:id="@+id/btn_captain_morgan"
+                    android:id="@+id/btn_captain_morgan_white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
                     android:background="@drawable/boton_captainmorganwhite"
-                    android:padding="10sp" />
+                    android:padding="10sp"
+                    android:tag="NO VIDEO"/>
 
             </LinearLayout>
 

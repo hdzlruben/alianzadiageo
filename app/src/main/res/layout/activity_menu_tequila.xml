@@ -36,6 +36,7 @@
                     android:layout_gravity="center"
                     android:paddingLeft="20sp"
                     android:paddingRight="20sp"
+                    android:tag="NO VIDEO"
                     android:background="@drawable/botondjblanco"
                     android:padding="10sp" />
 
@@ -45,6 +46,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
+                    android:tag="NO VIDEO"
                     android:background="@drawable/botondjanejado"
                     android:padding="10sp" />
 
@@ -54,6 +56,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
+                    android:tag="NO VIDEO"
                     android:background="@drawable/djreposado"
                     android:padding="10sp" />
 
@@ -63,6 +66,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
+                    android:tag="NO VIDEO"
                     android:background="@drawable/botondj70"
                     android:padding="10sp" />
 
@@ -72,14 +76,17 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
+                    android:tag="NO VIDEO"
                     android:background="@drawable/botondj1942"
                     android:padding="10sp" />
+
                 <Button
                     android:id="@+id/btn_donjulio_real"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
+                    android:tag="NO VIDEO"
                     android:background="@drawable/botondjreal"
                     android:padding="10sp" />
 
