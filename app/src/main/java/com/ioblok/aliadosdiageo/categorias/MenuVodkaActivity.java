@@ -62,13 +62,13 @@ public class MenuVodkaActivity extends AppCompatActivity {
             case R.id.btn_vodka_ciroc:
                 intent.putExtra("idYT", 30);
                 intent.putExtra("isListEnable", true);
-                intent.putExtra("hasSpot", true);
+                intent.putExtra("hasSpot", false);
                 intent.putExtra("idVideo", idVideo);
                 startActivity(intent);
                 break;
             case R.id.btn_vodka_ketel:
                 intent.putExtra("idYT", 31);
-                intent.putExtra("isListEnable", false);
+                intent.putExtra("isListEnable", true);
                 intent.putExtra("hasSpot", false);
                 intent.putExtra("idVideo", idVideo);
                 startActivity(intent);
@@ -82,7 +82,7 @@ public class MenuVodkaActivity extends AppCompatActivity {
                 break;
             default:
                 intent.putExtra("idYT", 30);
-                intent.putExtra("isListEnable", false);
+                intent.putExtra("isListEnable", true);
                 intent.putExtra("hasSpot", false);
                 intent.putExtra("idVideo", idVideo);
                 startActivity(intent);

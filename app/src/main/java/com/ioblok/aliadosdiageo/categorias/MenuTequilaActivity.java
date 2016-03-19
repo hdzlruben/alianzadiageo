@@ -7,12 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.ioblok.aliadosdiageo.R;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio1942.DonJulio1942ContainerActivity;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio70.DonJulio70ContainerActivity;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioAnejo.DonJulioAnejoContainerActivity;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioBlanco.DonJulioBlancoContainerActivity;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReal.DonJulioRealContainerActivity;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReposado.DonJulioReposadoContainerActivity;
 
 public class MenuTequilaActivity extends AppCompatActivity {
 
@@ -88,13 +82,13 @@ public class MenuTequilaActivity extends AppCompatActivity {
             case R.id.btn_donjulio_blanco:
                 intent.putExtra("idYT", 19);
                 intent.putExtra("isListEnable", true);
-                intent.putExtra("hasSpot", true);
+                intent.putExtra("hasSpot", false);
                 intent.putExtra("idVideo", idVideo);
                 startActivity(intent);
                 break;
             case R.id.btn_donjulio_anejado:
                 intent.putExtra("idYT", 20);
-                intent.putExtra("isListEnable", false);
+                intent.putExtra("isListEnable", true);
                 intent.putExtra("hasSpot", false);
                 intent.putExtra("idVideo", idVideo);
                 startActivity(intent);
@@ -108,7 +102,7 @@ public class MenuTequilaActivity extends AppCompatActivity {
                 break;
             case R.id.btn_donjulio_70:
                 intent.putExtra("idYT", 22);
-                intent.putExtra("isListEnable", false);
+                intent.putExtra("isListEnable", true);
                 intent.putExtra("hasSpot", false);
                 intent.putExtra("idVideo", idVideo);
                 startActivity(intent);
@@ -116,7 +110,7 @@ public class MenuTequilaActivity extends AppCompatActivity {
             case R.id.btn_donjulio_1942:
                 intent.putExtra("idYT", 23);
                 intent.putExtra("isListEnable", true);
-                intent.putExtra("hasSpot", true);
+                intent.putExtra("hasSpot", false);
                 intent.putExtra("idVideo", idVideo);
                 startActivity(intent);
                 break;
@@ -129,7 +123,7 @@ public class MenuTequilaActivity extends AppCompatActivity {
                 break;
             default:
                 intent.putExtra("idYT", 19);
-                intent.putExtra("isListEnable", false);
+                intent.putExtra("isListEnable", true);
                 intent.putExtra("hasSpot", false);
                 intent.putExtra("idVideo", idVideo);
                 startActivity(intent);

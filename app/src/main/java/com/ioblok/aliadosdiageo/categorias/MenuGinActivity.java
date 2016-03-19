@@ -61,15 +61,15 @@ public class MenuGinActivity extends AppCompatActivity {
                 break;
             case R.id.btn_gin_tanqueray_t:
                 intent.putExtra("idYT", 34);
-                intent.putExtra("isListEnable", false);
+                intent.putExtra("isListEnable", true);
                 intent.putExtra("hasSpot", false);
                 intent.putExtra("idVideo", idVideo);
                 startActivity(intent);
                 break;
             default:
                 intent.putExtra("idYT", 33);
-                intent.putExtra("isListEnable", false);
-                intent.putExtra("hasSpot", false);
+                intent.putExtra("isListEnable", true);
+                intent.putExtra("hasSpot", true);
                 intent.putExtra("idVideo", idVideo);
                 startActivity(intent);
                 break;

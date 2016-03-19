@@ -62,15 +62,15 @@ public class MenuLicorActivity extends AppCompatActivity {
                 break;
             case R.id.btn_baileys_d:
                 intent.putExtra("idYT", 36);
-                intent.putExtra("isListEnable", false);
-                intent.putExtra("hasSpot", false);
+                intent.putExtra("isListEnable", true);
+                intent.putExtra("hasSpot", true);
                 intent.putExtra("idVideo", idVideo);
                 startActivity(intent);
                 break;
             default:
                 intent.putExtra("idYT", 35);
-                intent.putExtra("isListEnable", false);
-                intent.putExtra("hasSpot", false);
+                intent.putExtra("isListEnable", true);
+                intent.putExtra("hasSpot", true);
                 intent.putExtra("idVideo", idVideo);
                 startActivity(intent);
                 break;

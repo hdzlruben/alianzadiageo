@@ -75,14 +75,14 @@ public class MenuRonActivity extends AppCompatActivity {
         switch (view.getId()){
             case R.id.zacapa_xo:
                 intent.putExtra("idYT", 25);
-                intent.putExtra("isListEnable", true);
-                intent.putExtra("hasSpot", true);
+                intent.putExtra("isListEnable", false);
+                intent.putExtra("hasSpot", false);
                 intent.putExtra("idVideo", idVideo);
                 startActivity(intent);
                 break;
             case R.id.zacapa_23:
                 intent.putExtra("idYT", 26);
-                intent.putExtra("isListEnable", false);
+                intent.putExtra("isListEnable", true);
                 intent.putExtra("hasSpot", false);
                 intent.putExtra("idVideo", idVideo);
                 startActivity(intent);
@@ -96,7 +96,7 @@ public class MenuRonActivity extends AppCompatActivity {
                 break;
             case R.id.btn_captain_morgan_black:
                 intent.putExtra("idYT", 28);
-                intent.putExtra("isListEnable", false);
+                intent.putExtra("isListEnable", true);
                 intent.putExtra("hasSpot", false);
                 intent.putExtra("idVideo", idVideo);
                 startActivity(intent);
@@ -110,8 +110,8 @@ public class MenuRonActivity extends AppCompatActivity {
                 break;
             default:
                 intent.putExtra("idYT", 25);
-                intent.putExtra("isListEnable", false);
-                intent.putExtra("hasSpot", false);
+                intent.putExtra("isListEnable", true);
+                intent.putExtra("hasSpot", true);
                 intent.putExtra("idVideo", idVideo);
                 startActivity(intent);
                 break;

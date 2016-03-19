@@ -15,71 +15,40 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
-import android.widget.Switch;
 import android.widget.VideoView;
 
 import com.ioblok.aliadosdiageo.R;
-import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayLondon.TanquerayLondonMensajesFragment;
-import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayLondon.TanquerayLondonServirFragment;
-import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayLondon.TanquerayLondonTourFragment;
-import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayTen.TanquerayTenMensajesFragment;
-import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayTen.TanquerayTenServirFragment;
-import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayTen.TanquerayTenTourFragment;
-import com.ioblok.aliadosdiageo.categorias.content_licor.Baileys.BaileysMensajesFragment;
-import com.ioblok.aliadosdiageo.categorias.content_licor.Baileys.BaileysServirFragment;
-import com.ioblok.aliadosdiageo.categorias.content_licor.Baileys.BaileysTourFragment;
-import com.ioblok.aliadosdiageo.categorias.content_licor.BaileysDulceDeLeche.BaileysDulceMensajesFragment;
-import com.ioblok.aliadosdiageo.categorias.content_licor.BaileysDulceDeLeche.BaileysDulceServirFragment;
-import com.ioblok.aliadosdiageo.categorias.content_licor.BaileysDulceDeLeche.BaileysDulceTourFragment;
-import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorgan.CaptainMorganMensajesFragment;
-import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorgan.CaptainMorganServirFragment;
-import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorgan.CaptainMorganTourFragment;
-import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorganBlack.CaptainMorganBlackMensajesFragment;
-import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorganBlack.CaptainMorganBlackServirFragment;
-import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorganBlack.CaptainMorganBlackTourFragment;
-import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorganWhite.CaptainMorganWhiteMensajesFragment;
-import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorganWhite.CaptainMorganWhiteServirFragment;
-import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorganWhite.CaptainMorganWhiteTourFragment;
-import com.ioblok.aliadosdiageo.categorias.content_ron.ZacapaVeintitres.ZacapaVeintitresMensajesFragment;
-import com.ioblok.aliadosdiageo.categorias.content_ron.ZacapaVeintitres.ZacapaVeintitresServirFragment;
-import com.ioblok.aliadosdiageo.categorias.content_ron.ZacapaVeintitres.ZacapaVeintitresTourFragment;
-import com.ioblok.aliadosdiageo.categorias.content_ron.ZacapaXo.ZacapaMensajesFragment;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio1942.DonJulio1942MensajesFragment;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio1942.DonJulio1942ServirFragment;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio1942.DonJulio1942TourFragment;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio70.DonJulio70MensajesFragment;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio70.DonJulio70ServirFragment;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio70.DonJulio70TourFragment;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioAnejo.DonJulioAnejoMensajesFragment;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioAnejo.DonJulioAnejoServirFragment;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioAnejo.DonJulioAnejoTourFragment;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioBlanco.DonJulioBlancoMensajesFragment;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioBlanco.DonJulioBlancoServirFragment;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioBlanco.DonJulioBlancoTourFragment;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReal.DonJulioRealMensajesFragment;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReal.DonJulioRealServirFragment;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReal.DonJulioRealTourFragment;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReposado.DonJulioReposadoMensajesFragment;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReposado.DonJulioReposadoServirFragment;
-import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReposado.DonJulioReposadoTourFragment;
-import com.ioblok.aliadosdiageo.categorias.content_whisky.Buchanans18.BuchanansUnoOchoMensajesFragment;
-import com.ioblok.aliadosdiageo.categorias.content_whisky.Buchanans18.BuchanansUnoOchoServirFragment;
-import com.ioblok.aliadosdiageo.categorias.content_whisky.Buchanans18.BuchanansUnoOchoTourFragment;
-import com.ioblok.aliadosdiageo.categorias.content_whisky.BuchanansRedSeal.BuchanansRedSealMensajesFragment;
-import com.ioblok.aliadosdiageo.categorias.content_whisky.BuchanansRedSeal.BuchanansRedSealServirFragment;
-import com.ioblok.aliadosdiageo.categorias.content_whisky.BuchanansRedSeal.BuchanansRedSealTourFragment;
-import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlackLabel.JwBlackLabelMensajesFragment;
-import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlackLabel.JwBlackLabelServirFragment;
-import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlackLabel.JwBlackLabelTourFragment;
-import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelMensajesFragment;
-import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelServirFragment;
-import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelTourFragment;
-import com.ioblok.aliadosdiageo.categorias.content_whisky.JwDoubleBlackLabel.JwDoubleBlackLabelMensajesFragment;
-import com.ioblok.aliadosdiageo.categorias.content_whisky.JwDoubleBlackLabel.JwDoubleBlackLabelServirFragment;
-import com.ioblok.aliadosdiageo.categorias.content_whisky.JwDoubleBlackLabel.JwDoubleBlackLabelTourFragment;
-import com.ioblok.aliadosdiageo.categorias.content_whisky.JwGoldLabelReserve.JwGoldLabelMensajesFragment;
-import com.ioblok.aliadosdiageo.categorias.content_whisky.JwGoldLabelReserve.JwGoldLabelServirFragment;
-import com.ioblok.aliadosdiageo.categorias.content_whisky.JwGoldLabelReserve.JwGoldLabelTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayLondon.*;
+import com.ioblok.aliadosdiageo.categorias.content_gin.TanquerayTen.*;
+import com.ioblok.aliadosdiageo.categorias.content_licor.Baileys.*;
+import com.ioblok.aliadosdiageo.categorias.content_licor.BaileysDulceDeLeche.*;
+import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorgan.*;
+import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorganBlack.*;
+import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorganWhite.*;
+import com.ioblok.aliadosdiageo.categorias.content_ron.ZacapaVeintitres.*;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio1942.*;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio70.*;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioAnejo.*;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioBlanco.*;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReal.*;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReposado.*;
+import com.ioblok.aliadosdiageo.categorias.content_vodka.Ciroc.*;
+import com.ioblok.aliadosdiageo.categorias.content_vodka.KetelOne.*;
+import com.ioblok.aliadosdiageo.categorias.content_vodka.Smirnoff.*;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.Buchanans18.*;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.BuchanansDoce.*;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.BuchanansMaster.*;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.BuchanansRedSeal.*;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.Bullet.*;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JandB.*;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlackLabel.*;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.*;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwDoubleBlackLabel.*;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwGoldLabelReserve.*;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwKingGeorgeActivity.*;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwPlatinumLabel.*;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.OldPar.*;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.OldParSilver.*;
 import com.ioblok.aliadosdiageo.utilis.Constants;
 import com.ioblok.aliadosdiageo.utilis.URLVideosDataBase;
 import com.ioblok.aliadosdiageo.utilis.VideoPlayer;
@@ -241,15 +210,19 @@ public class DynamicDrinks extends AppCompatActivity {
 
         switch (positionExtras){
             case  0 :
+                howToPrepareFragment = new JwBlueLabelServirFragment();
                 break;
             case  1 :
+                howToPrepareFragment = new JwKingGeorgeServirFragment();
                 break;
             case  2 :
                 howToPrepareFragment = new JwDoubleBlackLabelServirFragment();
                 break;
             case  3 :
+                howToPrepareFragment = new JwBlackLabelServirFragment();
                 break;
             case  4 :
+                howToPrepareFragment = new JwPlatiniumServirFragment();
                 break;
             case  5 :
                 howToPrepareFragment = new JwGoldLabelServirFragment();
@@ -264,20 +237,26 @@ public class DynamicDrinks extends AppCompatActivity {
                 howToPrepareFragment = new BuchanansUnoOchoServirFragment();
                 break;
             case  9 :
+                howToPrepareFragment = new BuchanansMasterServirFragment();
                 break;
             case  10 :
                 break;
             case  11 :
+                howToPrepareFragment = new BuchanansDoceServirFragment();
                 break;
             case  12 :
                 break;
             case  13 :
+                howToPrepareFragment = new OldParServirFragment();
                 break;
             case  14 :
+                howToPrepareFragment = new OldParSilverServirFragment();
                 break;
             case  15 :
+                howToPrepareFragment = new JandBServirFragment();
                 break;
             case  16 :
+                howToPrepareFragment = new BulletServirFragment();
                 break;
             case  17 :
                 break;
@@ -316,10 +295,13 @@ public class DynamicDrinks extends AppCompatActivity {
                 howToPrepareFragment = new CaptainMorganWhiteServirFragment();
                 break;
             case  30 :
+                howToPrepareFragment = new CirocServirFragment();
                 break;
             case  31 :
+                howToPrepareFragment = new KetelOneServirFragment();
                 break;
             case  32 :
+                howToPrepareFragment = new SmirnoffServirFragment();
                 break;
             case  33 :
                 howToPrepareFragment = new TanquerayLondonServirFragment();
@@ -352,15 +334,19 @@ public class DynamicDrinks extends AppCompatActivity {
 
         switch (positionExtras){
             case  0 :
+                bottleFragment = new JwBlueLabelTourFragment();
                 break;
             case  1 :
+                bottleFragment = new JwKingGeorgeTourFragment();
                 break;
             case  2 :
                 bottleFragment = new JwDoubleBlackLabelTourFragment();
                 break;
             case  3 :
+                bottleFragment = new JwBlackLabelTourFragment();
                 break;
             case  4 :
+                bottleFragment = new JwPlatiniumTourFragment();
                 break;
             case  5 :
                 bottleFragment = new JwGoldLabelTourFragment();
@@ -375,20 +361,26 @@ public class DynamicDrinks extends AppCompatActivity {
                 bottleFragment = new BuchanansUnoOchoTourFragment();
                 break;
             case  9 :
+                bottleFragment = new BuchanansMasterTourFragment();
                 break;
             case  10 :
                 break;
             case  11 :
+                bottleFragment = new BuchanansDoceTourFragment();
                 break;
             case  12 :
                 break;
             case  13 :
+                bottleFragment = new OldParTourFragment();
                 break;
             case  14 :
+                bottleFragment = new OldParSilverTourFragment();
                 break;
             case  15 :
+                bottleFragment = new JandBTourFragment();
                 break;
             case  16 :
+                bottleFragment = new BulletTourFragment();
                 break;
             case  17 :
                 break;
@@ -427,10 +419,13 @@ public class DynamicDrinks extends AppCompatActivity {
                 bottleFragment = new CaptainMorganWhiteTourFragment();
                 break;
             case  30 :
+                bottleFragment = new CirocTourFragment();
                 break;
             case  31 :
+                bottleFragment = new KetelOneTourFragment();
                 break;
             case  32 :
+                bottleFragment = new SmirnoffTourFragment();
                 break;
             case  33 :
                 bottleFragment = new TanquerayLondonTourFragment();
@@ -464,15 +459,19 @@ public class DynamicDrinks extends AppCompatActivity {
 
         switch (positionExtras){
             case  0 :
+                keyMessageFragment = new JwBlueLabelMensajesFragment();
                 break;
             case  1 :
+                keyMessageFragment = new JwKingGeorgeMensajesFragment();
                 break;
             case  2 :
                 keyMessageFragment = new JwDoubleBlackLabelMensajesFragment();
                 break;
             case  3 :
+                keyMessageFragment = new JwBlackLabelMensajesFragment();
                 break;
             case  4 :
+                keyMessageFragment = new JwPlatiniumMensajesFragment();
                 break;
             case  5 :
                 keyMessageFragment = new JwGoldLabelMensajesFragment();
@@ -487,20 +486,26 @@ public class DynamicDrinks extends AppCompatActivity {
                 keyMessageFragment = new BuchanansUnoOchoMensajesFragment();
                 break;
             case  9 :
+                keyMessageFragment = new BuchanansMasterMensajesFragment();
                 break;
             case  10 :
                 break;
             case  11 :
+                keyMessageFragment = new BuchanansDoceMensajesFragment();
                 break;
             case  12 :
                 break;
             case  13 :
+                keyMessageFragment = new OldParMensajesFragment();
                 break;
             case  14 :
+                keyMessageFragment = new OldParSilverMensajesFragment();
                 break;
             case  15 :
+                keyMessageFragment = new JandBMensajesFragment();
                 break;
             case  16 :
+                keyMessageFragment = new BulletMensajesFragment();
                 break;
             case  17 :
                 break;
@@ -539,10 +544,13 @@ public class DynamicDrinks extends AppCompatActivity {
                 keyMessageFragment = new CaptainMorganWhiteMensajesFragment();
                 break;
             case  30 :
+                keyMessageFragment = new CirocMensajesFragment();
                 break;
             case  31 :
+                keyMessageFragment = new KetelOneMensajesFragment();
                 break;
             case  32 :
+                keyMessageFragment = new SmirnoffMensajesFragment();
                 break;
             case  33 :
                 keyMessageFragment = new TanquerayLondonMensajesFragment();
@@ -559,7 +567,7 @@ public class DynamicDrinks extends AppCompatActivity {
             default:
                 return;
         }
-
+        
         if(keyMessageFragment != null){
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
             transaction.replace(R.id.fragment_container, keyMessageFragment);
