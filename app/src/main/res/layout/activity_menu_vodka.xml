@@ -38,7 +38,7 @@
                     android:paddingRight="20sp"
                     android:background="@drawable/boton_ciroc"
                     android:padding="10sp"
-                    android:tag="NO VIDEO"/>
+                    android:tag="categorias_vodka_ciroc"/>
 
                 <Button
                     android:id="@+id/btn_vodka_ketel"
@@ -48,7 +48,7 @@
                     android:layout_marginTop="4sp"
                     android:background="@drawable/boton_ketelone"
                     android:padding="10sp"
-                    android:tag="NO VIDEO"/>
+                    android:tag="categorias_vodka_ketel"/>
 
                 <Button
                     android:id="@+id/btn_vodka_smirnoff"
@@ -58,7 +58,7 @@
                     android:layout_marginTop="4sp"
                     android:background="@drawable/botonsmirnoff"
                     android:padding="10sp"
-                    android:tag="NO VIDEO"/>
+                    android:tag="categorias_vodka_smirnoff"/>
 
             </LinearLayout>
 

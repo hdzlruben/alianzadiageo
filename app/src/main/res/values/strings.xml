@@ -328,4 +328,41 @@
     <string name="txt_como_tomar_bullet_content">Bulleit, hielos, refresco de toronja y una cuña de toronja rosa (adentro del vaso).</string>
 
 
+    <!-- Smirnoff -->
+
+    <string name="txt_title_Smirnoff_uno">Origen y Experiencia</string>
+    <string name="txt_title_Smirnoff_dos">Garantía de Calidad.</string>
+    <string name="txt_title_Smirnoff_tres">Producto de Clase Mundial</string>
+
+    <string name="txt_mensaje_Smirnoff_uno">Smirnoff es un de vodka de origen ruso con un legado de 150 años.</string>
+    <string name="txt_mensaje_Smirnoff_dos">Ingredientes cuidadosamente seleccionados pasan por triple destilación y filtrado en carbón.</string>
+    <string name="txt_mensaje_Smirnoff_tres">Vodka más vendido del mundo, ganador del 1er lugar en la cata a ciegas organizada por The New York Times.</string>
+
+
+    <string name="txt_title_servicio_smirnoff">Paloma Rusa</string>
+    <string name="txt_desc_servicio_smirnoff_uno">45 ml (1.5 onzas) Smirnoff, refresco de toronja y 2 gotas de salsa Tabasco, jugo de limón y pizca de sal al gusto.</string>
+
+    <!-- Ciroc -->
+    <string name="txt_title_mensaje_ciroc_uno">Arte Francés</string>
+    <string name="txt_mensaje_ciroc_uno">Inspirado siglos atrás por los artesanos de la vinicultura francesa.</string>
+    <string name="txt_title_mensaje_ciroc_dos">Cascada helada</string>
+    <string name="txt_mensaje_ciroc_dos">Las uvas se someten a una fría fermentación y maceración para mantener un mejor sabor antes de la destilación.</string>
+    <string name="txt_title_mensaje_ciroc_tres">Un vodka de lujo</string>
+    <string name="txt_mensaje_ciroc_tres">La mayor innovación de vodka en el mundo. \nEl arte de la celebración.</string>
+
+    <string name="txt_title_servicio_ciroc">Disfrute y sirva</string>
+    <string name="txt_desc_servicio_ciroc_uno">Los sabores cítricos lima-limón de Cîroc deben ser celebrados con un Martini de uva… </string>
+    <string name="txt_subtitle_servicio_ciroc">Receta </string>
+    <string name="txt_content_subtitle_servicio_ciroc">Martini de Uva \nMezcle 10 uvas verdes en el fondo de un vaso mezclador, después, agregue 50 ml de vodka Cîroc y hielo. Agite vigorosamente y sirva en una copa tipo flauta. Decore con una sola uva.</string>
+
+
+    <!-- KETEL ONE  -->
+
+    <string name="txt_title_mensaje_ketel_uno">FAMILIA</string>
+    <string name="txt_mensaje_ketel_uno">Inspirado durante 300 años en los procesos de destilación de la tradicional familia Nolet.</string>
+    <string name="txt_title_mensaje_ketel_dos">ARTESANAL</string>
+    <string name="txt_mensaje_ketel_dos">Elaborado a partir de alambiques de cobre, junto con las modernas técnicas de destilación.</string>
+    <string name="txt_title_mensaje_ketel_tres">GENUINO</string>
+    <string name="txt_mensaje_ketel_tres">Un miembro de la familia Nolet personalmente aprueba cada corrida de producción final.</string>
+
 </resources>

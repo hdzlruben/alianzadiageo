@@ -48,7 +48,7 @@
                     android:layout_marginTop="4sp"
                     android:background="@drawable/boton_zacapa23"
                     android:padding="10sp"
-                    android:tag="NO VIDEO"/>
+                    android:tag="categorias_ron_zacapa_23"/>
 
                 <Button
                     android:id="@+id/btn_captain_morgan"
@@ -58,7 +58,7 @@
                     android:layout_marginTop="4sp"
                     android:background="@drawable/boton_captainmorgan"
                     android:padding="10sp"
-                    android:tag="NO VIDEO"/>
+                    android:tag="categorias_ron_captain_morgan"/>
 
                 <Button
                     android:id="@+id/btn_captain_morgan_black"
@@ -68,7 +68,7 @@
                     android:layout_marginTop="4sp"
                     android:background="@drawable/boton_cptainmb"
                     android:padding="10sp"
-                    android:tag="NO VIDEO"/>
+                    android:tag="categorias_ron_captain_morgan_black"/>
 
                 <Button
                     android:id="@+id/btn_captain_morgan_white"
@@ -78,7 +78,7 @@
                     android:layout_marginTop="4sp"
                     android:background="@drawable/boton_captainmorganwhite"
                     android:padding="10sp"
-                    android:tag="NO VIDEO"/>
+                    android:tag="categorias_ron_captain_morgan_white"/>
 
             </LinearLayout>
 
