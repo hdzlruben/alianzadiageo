@@ -18,10 +18,14 @@ public class MenuTequilaActivity extends AppCompatActivity {
 
     Button backButton_categorias_int,btn_donjulio_anejado,btn_donjulio_blanco,btn_donjulio_reposado,btn_donjulio_70,btn_donjulio_1942,btn_donjulio_real;
 
+    Intent intent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_tequila);
+
+        intent = new Intent(MenuTequilaActivity.this, DynamicDrinks.class);
 
         backButton_categorias_int = (Button)this.findViewById(R.id.backButton_categorias_int);
         backButton_categorias_int.setOnClickListener(new View.OnClickListener() {
@@ -33,17 +37,10 @@ public class MenuTequilaActivity extends AppCompatActivity {
 
         initialize();
 
-        btn_donjulio_blanco.setOnClickListener(menu);
-        btn_donjulio_reposado.setOnClickListener(menu);
-        btn_donjulio_70.setOnClickListener(menu);
-        btn_donjulio_1942.setOnClickListener(menu);
-        btn_donjulio_real.setOnClickListener(menu);
-        btn_donjulio_anejado.setOnClickListener(menu);
-
-
     }
 
     public void initialize(){
+
         btn_donjulio_blanco = (Button) findViewById(R.id.btn_donjulio_blanco);
         btn_donjulio_anejado = (Button) findViewById(R.id.btn_donjulio_anejado);
         btn_donjulio_reposado = (Button) findViewById(R.id.btn_donjulio_reposado);
@@ -51,9 +48,97 @@ public class MenuTequilaActivity extends AppCompatActivity {
         btn_donjulio_1942 = (Button) findViewById(R.id.btn_donjulio_1942);
         btn_donjulio_real = (Button) findViewById(R.id.btn_donjulio_real);
 
+        btn_donjulio_blanco.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                final String idVideo = v.getTag().toString();
+                launchDynamicDrinks(v, idVideo);}});
+
+        btn_donjulio_anejado.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                final String idVideo = v.getTag().toString();
+                launchDynamicDrinks(v, idVideo);}});
+
+        btn_donjulio_reposado.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                final String idVideo = v.getTag().toString();
+                launchDynamicDrinks(v, idVideo);}});
+
+        btn_donjulio_70.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                final String idVideo = v.getTag().toString();
+                launchDynamicDrinks(v, idVideo);}});
+
+        btn_donjulio_1942.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                final String idVideo = v.getTag().toString();
+                launchDynamicDrinks(v, idVideo);}});
+
+        btn_donjulio_real.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                final String idVideo = v.getTag().toString();
+                launchDynamicDrinks(v, idVideo);}});
+
+
     }
 
-    View.OnClickListener menu = new View.OnClickListener() {
+    public void launchDynamicDrinks(View view, String idVideo){
+
+
+        switch (view.getId()){
+            case R.id.btn_donjulio_blanco:
+                intent.putExtra("idYT", 19);
+                intent.putExtra("isListEnable", true);
+                intent.putExtra("hasSpot", true);
+                intent.putExtra("idVideo", idVideo);
+                startActivity(intent);
+                break;
+            case R.id.btn_donjulio_anejado:
+                intent.putExtra("idYT", 20);
+                intent.putExtra("isListEnable", false);
+                intent.putExtra("hasSpot", false);
+                intent.putExtra("idVideo", idVideo);
+                startActivity(intent);
+                break;
+            case R.id.btn_donjulio_reposado:
+                intent.putExtra("idYT", 21);
+                intent.putExtra("isListEnable", true);
+                intent.putExtra("hasSpot", true);
+                intent.putExtra("idVideo", idVideo);
+                startActivity(intent);
+                break;
+            case R.id.btn_donjulio_70:
+                intent.putExtra("idYT", 22);
+                intent.putExtra("isListEnable", false);
+                intent.putExtra("hasSpot", false);
+                intent.putExtra("idVideo", idVideo);
+                startActivity(intent);
+                break;
+            case R.id.btn_donjulio_1942:
+                intent.putExtra("idYT", 23);
+                intent.putExtra("isListEnable", true);
+                intent.putExtra("hasSpot", true);
+                intent.putExtra("idVideo", idVideo);
+                startActivity(intent);
+                break;
+            case R.id.btn_donjulio_real:
+                intent.putExtra("idYT", 24);
+                intent.putExtra("isListEnable", true);
+                intent.putExtra("hasSpot", false);
+                intent.putExtra("idVideo", idVideo);
+                startActivity(intent);
+                break;
+            default:
+                intent.putExtra("idYT", 19);
+                intent.putExtra("isListEnable", false);
+                intent.putExtra("hasSpot", false);
+                intent.putExtra("idVideo", idVideo);
+                startActivity(intent);
+                break;
+
+        }
+    }
+
+    /*View.OnClickListener menu = new View.OnClickListener() {
         public void onClick(View v) {
             Intent intent = new Intent();
 
@@ -79,5 +164,5 @@ public class MenuTequilaActivity extends AppCompatActivity {
             }
             startActivity(intent);
         }
-    };
+    };*/
 }

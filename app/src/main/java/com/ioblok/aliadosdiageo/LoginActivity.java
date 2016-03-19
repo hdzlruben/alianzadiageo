@@ -56,7 +56,17 @@ public class LoginActivity extends AppCompatActivity {
     public String base_url = "http://ioblok.com.mx/Testing/video/";
     public String[] videos = {
                                 "categorias_whisky_bc_18",
+                                "categorias_whisky_bl",
+                                "categorias_whisky_db",
+                                "categorias_whisky_kg",
+                                "categorias_whisky_pl",
+                                "categorias_whisky_rl",
                                 "consumo_responsable",
+                                "categorias_bc_12",
+                                "categorias_bc_master",
+                                "categorias_bulleit",
+                                "categorias_jb",
+                                "categorias_old_par",
                                 "diajeo_aliados",
                                 "familia_bn",
                                 "familia_jw",
@@ -68,19 +78,13 @@ public class LoginActivity extends AppCompatActivity {
                                 "proceso_ron",
                                 "proceso_tequila",
                                 "proceso_vodka",
-                                "proceso_whisky"};
+                                "proceso_whisky",
+                                "diajeo_aliados_new",
+                                "plataforma"};
+
     public String[] videos2 =
 
-            {       "categorias_bc_12",
-                    "categorias_bc_master",
-                    "categorias_bulleit",
-                    "categorias_jb",
-                    "categorias_old_par",
-                    "categorias_whisky_bl",
-                    "categorias_whisky_db",
-                    "categorias_whisky_kg",
-                    "categorias_whisky_pl",
-                    "categorias_whisky_rl",
+            {
                     "diajeo_aliados_new",
                     "plataforma"};
 

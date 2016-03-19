@@ -79,6 +79,253 @@
     <string name="txt_mensaje_tanqueray_ten_tres">Creada con casi 200 años de conocimiento en destilación, manteniendo la búsqueda de la perfección del fundador Charles Tanqueray.</string>
     <string name="parrafo_uno_como_servir_tanqueray_ten">Gin &amp; Tonic en copa globo alta.</string>
 
+    <!--Zacapa XO-->
+    <string name="title_zacapa_xo_uno">SOFISTICADO Y COMPLEJO:</string>
+    <string name="title_zacapa_xo_content_uno">Ron Zacapa XO termina su añejamiento en finas barricas de roble francés las cuales acentúan las notas extraordinarias de especias y madera dando un perfil complejo y elegante</string>
+    <string name="title_zacapa_xo_dos">EL COGNAC DE LOS RONES:</string>
+    <string name="title_zacapa_xo_content_dos">La elegancia en el bouquet y sabor de Ron Zacapa XO, han hecho que la gente lo catalogue como el Cognac de los Rones, su perfil balanceado y especiado con rones de hasta 25 años de añejamiento hacen este Ron una pieza inigualable</string>
+    <string name="title_zacapa_xo_tres">SABOR EXCEPCIONAL:</string>
+    <string name="title_zacapa_xo_content_tres">Ron Zacapa XO se disfruta solo debido al gran balance y complejidad de la mezcla, la cual recuerda notas de especies como canela y frutos maduros como ciruelas pasas y cerezas negras. Riedel creo la copa Ron Zacapa para disfrutar este gran espirituoso de manera ideal.</string>
+
+
+    <!--Zacapa 23-->
+    <string name="title_zacapa_23_one">Miel pura de caña de azúcar </string>
+    <string name="title_zacapa_23_content_uno">Realizado artesanalmente de miel de caña de azúcar, sin melazas. Zacapa realiza completamente el proceso de llevar el ron de la caña a la botella.</string>
+    <string name="title_zacapa_23_dos">Añejado por encima de las nubes  </string>
+    <string name="title_zacapa_23_content_dos">Mezclado a la perfección en tres diferentes tipos de barricas de roble en un clima frío a gran altura sobre el nivel del mar. </string>
+    <string name="title_zacapa_23_tres">Para disfrutarse mejor solo o en las rocas</string>
+    <string name="title_zacapa_23_content_tres">Su gusto excepcional, lo ha llevado a ser el primer ron en todos los tiempos dentro del Salón Internacional de la Fama del Ron.</string>
+    <string name="como_tomar_zacapa_23">Tomar solo o en las rocas.</string>
+    
+    <!--Captain Morgan-->
+    
+    <string name="txt_captain_morgan_uno">Es una marca que inspira tiempos legendarios.</string>
+    <string name="txt_captain_morgan_dos">Ron especiado de sabor suave y toques sabor a vainilla, perfecto para mezclar con refresco de Cola.</string>
+    <string name="txt_captain_morgan_tres">Marca No 1 con mayor crecimiento dentro del portafolio de Diageo.</string>
+
+    <string name="text_subtitle_seccion_capitan_morgan">Captain &amp; Coke</string>
+    <string name="text_content_subtitle_capitan_morgan">Captain Morgan®</string>
+    <string name="text_subtitle_seccion_dos_capitan_morgan">Preparación:</string>
+    <string name="text_content_subtitle_dos_capitan_morgan">60 ml. Captain Morgan \n300 ml. Refresco de Cola \nAdornar con un slide de \nlimón</string>
+
+    <!--Captain Morgan black-->
+
+    <string name="txt_captain_morgan_black_uno">Es una marca que inspira tiempos legendarios.</string>
+    <string name="txt_captain_morgan_black_dos">Ron especiado de sabor suave y toques sabor a vainilla, perfecto para mezclar con refresco de Cola.</string>
+    <string name="txt_captain_morgan_black_tres">Marca No 1 con mayor crecimiento dentro del portafolio de Diageo.</string>
+
+    <string name="text_subtitle_seccion_capitan_morgan_black">En las rocas o con tu mezclador favorito (Cola/Ginger Ale).</string>
+
+
+    <!--Captain Morgan White-->
+
+    <string name="txt_captain_morgan_white_uno">Ron blanco (no especiado) de la familia Captain Morgan.</string>
+    <string name="txt_captain_morgan_white_dos">2 veces destilado  y 5 veces filtrado para entregar un sabor más suave y con un menor golpe alcohólico que el ron de siempre.</string>
+
+    <string name="text_subtitle_seccion_capitan_morgan_white">Captain &amp; Coke</string>
+    <string name="text_content_subtitle_capitan_morgan_white">Captain Morgan White®</string>
+    <string name="text_subtitle_seccion_dos_capitan_morgan_white">Preparación:</string>
+    <string name="text_content_subtitle_dos_capitan_morgan_white">60 ml. Captain Morgan White \n300 ml. Refresco de Cola \nAdornar con un slide de limón</string>
+
+
+    <!--DonJulio 70-->
+    <string name="title_don_julio_setenta_one">Experiencia e Innovación</string>
+    <string name="title_don_julio_setenta_content_uno">Combina la suavidad de un Blanco y la complejidad de un Añejo para brindar un sabor al tequila totalmente único</string>
+    <string name="title_don_julio_setenta_dos">Hablemos de Tequila</string>
+    <string name="title_don_julio_setenta_content_dos">Primer tequila añejo cristalino. Llega para redefinir la categoría de Tequila</string>
+    <string name="title_don_julio_setenta_tres">Añejo cristalino</string>
+    <string name="title_don_julio_setenta_content_tres">Añejado durante 18 meses y filtrado en  carbono para obtener su característico perfil cristalino</string>
+    <string name="title_don_julio_setenta_cuatro">70 Aniversario</string>
+    <string name="title_don_julio_setenta_content_cuatro">Nombrado así para celebrar 70 años de trayectoria de Don Julio</string>
+    <string name="como_tomar_don_julio_setenta">Don Julio 70 se recomienda tomarlo frío servido derecho en un caballito o en un vaso old fashion</string>
+
+
+    <!--DonJulio 70-->
+    <string name="title_don_julio_mil_one">Combinación de Talento</string>
+    <string name="title_don_julio_mil_content_uno">Es la única variante creada por Don Julio González y Enrique de Colsa en conjunto, fusión de experiencia y vanguardia.</string>
+    <string name="title_don_julio_mil_dos">Artesanía Excepcional</string>
+    <string name="title_don_julio_mil_content_dos">Diferente en todos los aspectos a cualquier otro tequila</string>
+    <string name="title_don_julio_mil_tres">Tributo de Celebración</string>
+    <string name="title_don_julio_mil_content_tres">Variante conmemorativa del 60 aniversario de la compañía, perfecto para celebraciones especiales</string>
+
+    <string name="como_tomar_don_julio_mil">Don Julio 1942 se aprecia en plenitud cuando se sirve derecho en una copa tequilera Riedel</string>
+
+    <!--DonJulio Añejo-->
+    <string name="title_don_julio_anejo_one">Testimonio de paciencia</string>
+    <string name="title_don_julio_anejo_content_uno">Añejado durante 18 meses, superior a los 12 meses requeridos por la norma</string>
+    <string name="title_don_julio_anejo_dos">Para conocedores</string>
+    <string name="title_don_julio_anejo_content_dos">Maravillosamente complejo pero balanceado</string>
+    <string name="title_don_julio_anejo_tres">Sabor distintivo</string>
+    <string name="title_don_julio_anejo_content_tres">Es la culminación de sabores ricos y distintivos de agave, equilibrados con influencias de maderas.</string>
+
+    <string name="como_tomar_don_julio_anejo">Don Julio Añejo se puede apreciar en su totalidad cuando se disfruta en las rocas en un vaso old fashion</string>
+
+
+    <!--DonJulio Blanco-->
+    <string name="title_don_julio_blanco_one">Expresión pura del Tequila</string>
+    <string name="title_don_julio_blanco_content_uno">Directo del alambique a la botella, sin añejar.</string>
+    <string name="title_don_julio_blanco_dos">Artesanía</string>
+    <string name="title_don_julio_blanco_content_dos">Producción artesanal que garantiza un líquido excepcional, base para las demás variantes de la familia</string>
+    <string name="title_don_julio_blanco_tres">Versatilidad</string>
+    <string name="title_don_julio_blanco_content_tres">Para tomarse mezclado, sólo o en las rocas</string>
+
+    <string name="como_tomar_don_julio_blanco">Don Julio Blanco es muy versátil, puede disfrutarse derecho, en las rocas o mezclado</string>
+
+    <!--DonJulio Real-->
+    <string name="title_don_julio_real_one">Extra Añejo</string>
+    <string name="title_don_julio_real_content_uno">Tequila pionero en ser añejado de 3 a 5 años, dando origen a la categoría Extra Añejo</string>
+    <string name="title_don_julio_real_dos">Para expertos</string>
+    <string name="title_don_julio_real_content_dos">La joya de Tequila Don Julio seguro te dejará una sensación refinada e inolvidable</string>
+    <string name="title_don_julio_real_tres">Celebra la vida</string>
+    <string name="title_don_julio_real_content_tres">Opción perfecta para celebrar los momentos más importantes de la vida</string>
+
+    <string name="como_tomar_don_julio_real">Don Julio Real para una máxima experiencia en tequila, bébalo derecho, en una copa tequilera Riedel</string>
+
+    <!--DonJulio Reposado-->
+    <string name="title_don_julio_reposado_one">Pionero experimentado</string>
+    <string name="title_don_julio_reposado_content_uno">Es el primer tequila Premium de Don Julio y de México</string>
+    <string name="title_don_julio_reposado_dos">Perfección del reposo</string>
+    <string name="title_don_julio_reposado_content_dos">Liquido, tiempo y barricas ideales para entregar un reposado perfecto</string>
+    <string name="title_don_julio_reposado_tres">Versatilidad</string>
+    <string name="title_don_julio_reposado_content_tres">Se puede disfrutar solo, acompañado de una Sangrita fresca o mezclado como en una Paloma</string>
+
+    <string name="como_tomar_don_julio_reposado">Don Julio Reposado se recomienda derecho en un vaso tequilero</string>
+
+
+    <!--Buchanans 18-->
+
+    <string name="title_buchanans_uno_ocho_one">Un homenaje a los hombres que comparten su vida</string>
+    <string name="title_buchanans_uno_ocho_content_uno">Botella inspirada en la cantimplora de los soldados del ejército británico quienes compartían su agua como símbolo de fraternidad</string>
+    <string name="title_buchanans_uno_ocho_dos">18 Años de añejamiento</string>
+    <string name="title_buchanans_uno_ocho_content_dos">Mezcla indulgente de Whiskies con un mínimo de 18 años de añejamiento en barricas de Jerez brindándole un cuerpo sedoso y gentil en paladar</string>
+    <string name="title_buchanans_uno_ocho_tres">Resultado de una gran tradición</string>
+    <string name="title_buchanans_uno_ocho_content_tres"> Nos tomó más de 100 años tener la experiencia suficiente para crear este tributo al legado de James Buchanans</string>
+
+    <string name="como_tomar_buchanans_uno_ocho">Servido en un vaso old fashion con 1 o 2 hielos grandes para evitar la dilución</string>
+
+
+    <!--Buchanans Red Seal-->
+
+    <string name="title_buchanans_red_seal_one">Un Gran Legado</string>
+    <string name="title_buchanans_red_seal_content_uno">Buchanan’s Red Seal es la interpretación de "The Royal Household", mezcla que se convirtió en la insignia de las celebraciones de la época Victoriana.</string>
+    <string name="title_buchanans_red_seal_dos">Hecho como hace 100 años</string>
+    <string name="title_buchanans_red_seal_content_dos">Maureen Robinson, Master Blender, recrea la receta que utiliza las técnicas de doble añejamiento y reposo de las maltas utilizadas hace 100 años.</string>
+    <string name="title_buchanans_red_seal_tres">Extraordinario Sabor</string>
+    <string name="title_buchanans_red_seal_content_tres">BRS es una fiel expresión del estilo de la Casa Buchanan’s que logra una mezcla redonda y balanceada con un final agradablemente ahumado.</string>
+
+    <string name="txt_como_tomar_buchanans_red_seal">Buchanan’s Red Seal es ideal para disfrutarse en un vaso Old Fashion con una roca de Hielo</string>
+
+
+    <!-- Jw BlackLabel-->
+
+    <string name="title_jw_black_label_one">Es el whisky deluxe que ha ganado más premios internacionales que cualquier otro.</string>
+    <string name="title_jw_black_label_dos">Mezcla de whiskies añejados al menos 12 años.</string>
+    <string name="title_jw_black_label_tres">Corona certificado de proveedor de la casa británica.</string>
+
+    <string name="txt_como_tomar_jw_black_label">En un vaso highball acompañado de agua natural o mineral helada.</string>
+
+    <!-- Jw Double BlackLabel-->
+
+    <string name="title_jw_double_black_label_one">Una expresión más intensa y obscura del whisky más vendido en el mundo,Johnnie Walker Etiqueta Negra </string>
+    <string name="title_jw_double_black_label_dos">Su sabor rico y ahumado único se obtiene a través de la combinación de whiskies añejados y naturalmente ahumados que han sido madurados en viejas barricas de roble quemadas.</string>
+    <string name="title_jw_double_black_label_tres">Uno de los productos más exitosos que han sido lanzados durante la historia de la industria de las bebidas, el cuál ha sido un ganador de múltiples premios, año tras año, desde su presentación en 2009.</string>
+
+    <string name="txt_como_tomar_jw_double_black_label">Johnnie Walker Double Black \nes ideal para disfrutarse solo en un vaso Old Fashion.</string>
+
+    <!-- Jw Gold Label-->
+
+    <string name="title_jw_gold_label_one">Johnnie Walker Gold Label Reserve contiene el prestigioso whisky escocés de malta Clynelish® Single Malt Scotch Whisky, donde tradicionalmente se encontraban depósitos de oro en el río que alimenta a la destilería.</string>
+    <string name="title_jw_gold_label_dos">El maestro mezclador selecciona las reservas de whisky para crear un sabor generoso e indulgente en Johnnie Walker Gold Label Reserve, el regalo perfecto para las celebraciones de oro.</string>
+    <string name="title_jw_gold_label_tres">Johnnie Walker Gold Label Reserve es una celebración de un arte de 190 años del maestro mezclador Johnnie Walker.</string>
+
+
+    <string name="txt_como_tomar_title_jw_gold_label">Johnnie Walker Gold Reserve®</string>
+    <string name="txt_como_tomar_subtitle_jw_gold_label">Preparacion</string>
+    <string name="txt_como_tomar_contenido_jw_gold_label">Copa flauta como representación del whisky para celebrar en todo momento.</string>
+    <string name="txt_como_tomar_contenido_dos_jw_gold_label">Servido helado para resaltar la cremosidad y densidad del Gold Label junto al chocolate amargo.</string>
+
+    <!-- Jw King George-->
+
+    <string name="title_jw_king_george_one">Celebra la concesión del Sello Real a John Walker &amp; Sons en 1934 de manos del Rey George V.</string>
+    <string name="title_jw_king_george_dos">Utilizando solo whiskies únicos de destilerías que existían durante el reinado del Rey George V (1910-1936)</string>
+    <string name="title_jw_king_george_tres">Una combinación exquisita de whiskies únicos al estilo del gusto de los años 30, los años dorados del whisky.</string>
+
+    <string name="txt_como_tomar_jw_king_george">Los exquisitos sabores de frutos secos tostados, intensas frutas y especias en John Walker &amp; Sons King George V™ se saborean mejor si se toma solo…</string>
+
+    <!-- Jw Platinium-->
+
+    <string name="title_jw_platinium_one">Inspirada por la tradición de crear “mezclas privadas” de la familia Walker, Johnnie Walker Platinum Label es un whisky escocés de mezcla moderno que se debe disfrutar en celebraciones exclusivas.</string>
+    <string name="title_jw_platinium_dos">Preciados, como el metal noble del platino, todos los whiskies utilizados en Johnnie Walker Platinum Label son cuidadosamente envejecidos durante un mínimo de 18 años.</string>
+    <string name="title_jw_platinium_tres">Johnnie Walker Platinum Label es la combinación más rica y perfecta de 18 años elaborada artesanalmente que John Walker &amp; Sons ha creado nunca.</string>
+
+    <string name="txt_como_tomar_jw_platinium">Johnnie Walker® Platinum Label™ tiene seguridad en nariz, en un primer trago, se disfruta mejor si se toma solo.</string>
+
+
+    <!-- Jw Red Label-->
+
+    <string name="title_jw_red_label_one">JOHNNIE WALKER RED LABEL nace en 1820 y desde entonces es la mezcla pionera de la familia Walker.</string>
+    <string name="title_jw_red_label_dos">Alexander Walker creó la mezcla de JWRL para disfrutarse sola o mezclada con distintos sabores alrededor del mundo.</string>
+    <string name="title_jw_red_label_tres">JOHNNIE WALKER RED LABEL es hoy el whisky escocés No. 1 del mundo.</string>
+
+    <string name="txt_como_tomar_jw_red_label">Johnnie Ginger</string>
+    <string name="txt_como_content_title_jw_red_label">Johnnie Walker Red Label®.</string>
+    <string name="txt_como_subtitle_jw_red_label">Preparación:</string>
+    <string name="txt_como_content_subtitle_jw_red_label">50 ml. de Johnnie Walker Red Label \n150 ml. De Ginger Ale\n1 Rodaja de limón. </string>
+
+
+
+    <!-- Buchanans Master-->
+
+    <string name="title_buchanans_master_one">Expresión moderna de casa Buchanans para el consumidor contemporáneo</string>
+    <string name="title_buchanans_master_dos">Una mezcla de maltas de las reservas exclusivas de casa Buchanans</string>
+    <string name="title_buchanans_master_tres">Creado por nuestro Master blender Keith Law quien mediante su selección personal de maltas obtuvo un whisky suave y lleno de sabores</string>
+
+    <string name="txt_como_tomar_buchanans_master">Se puede tomar en las rocas o con agua mineral, en ocasiones casuales con los amigos cercanos</string>
+
+
+    <!-- Buchanans Doce -->
+
+    <string name="title_buchanans_doce_one">El clásico Whisky 12 años más vendido en México.</string>
+    <string name="title_buchanans_doce_dos">Es el corazón del portafolio de la casa Buchanan´s.</string>
+    <string name="title_buchanans_doce_tres">Fue creado con un sabor suave y afrutado para ser compartido en todo tipo de ocasiones.</string>
+
+    <string name="txt_como_tomar_buchanan_doce">Vaso old fashion con hielo y agua mineral</string>
+
+
+    <!-- Old Par -->
+
+    <string name="title_old_par_one">La mezcla de Old Parr ha pasado de generación en generación y no ha cambiado desde hace más de 200 años.</string>
+    <string name="title_old_par_dos">Los creadores de la mezcla cambiaron la tradición de ponerle el nombre de un Inglés al Whisky Escocés.</string>
+    <string name="title_old_par_tres">El Líquido de Old Parr tiene un sabor neutro en donde puedes apreciar las notas de miel y vainilla.</string>
+
+    <string name="txt_como_tomar_old_par">En las Rocas.</string>
+
+    <!-- Old Par Silver -->
+
+    <string name="title_old_par_silver_one">Una nueva forma de hacer whisky:  filtrado en barricas a bajas temperaturas.</string>
+    <string name="title_old_par_silver_dos"> Nuevo Ritual: Servido sólo, frío sin hielos, utilizando un vaso corto. </string>
+    <string name="title_old_par_silver_tres">Sabor Suave y consistencia única, ligeramente ahumado y floral: Reluce la vainilla, los frutos secos y suaves toques de dulce y miel.</string>
+
+    <string name="txt_como_tomar_old_par_silver">Derecho y frio en un vaso corto.</string>
+
+
+    <!-- J and B -->
+
+    <string name="title_j_and_b_one">El whisky es para aquellos que cuentan una historia, J&amp;B es para aquellos que escriben su propia historia</string>
+    <string name="title_j_and_b_dos">El whisky es acerca de los años de añejamiento del líquido, J&amp;B es acerca de las 42 maltas en su mezcla</string>
+    <string name="title_j_and_b_tres">El whisky es respetado por los bartenders, J&amp;B es amado por los bartenders</string>
+
+    <string name="txt_como_tomar_j_and_b"> 1.Llenar un J&amp;B Grand Central Glass con hielo \n2.Servir 2oz de J&amp;B Rare \n3.Servir 4oz de agua mineral \n4.Agregar jugo de medio limón y una rebanada del mismo</string>
+
+
+    <!-- Bullet -->
+
+    <string name="title_bullet_one">Auténtico whiskey americano que se produce artesanalmente en pequeños lotes.</string>
+    <string name="title_bullet_dos">Conserva su líquido y botella originales desde 1860.</string>
+    <string name="title_bullet_tres">Gracias a su alto contenido de centeno tiene un sabor suave y seco.</string>
+
+    <string name="txt_como_tomar_bullet">BULLEIT TORONJA</string>
+    <string name="txt_como_tomar_bullet_content">Bulleit, hielos, refresco de toronja y una cuña de toronja rosa (adentro del vaso).</string>
 
 
 </resources>

@@ -29,20 +29,24 @@
                 android:orientation="vertical">
 
                 <Button
+                    android:id="@+id/btn_gin_tanqueray_l"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4sp"
                     android:layout_gravity="center"
                     android:paddingLeft="20sp"
                     android:paddingRight="20sp"
+                    android:tag="NO VIDEO"
                     android:background="@drawable/boton_tanqueray_london"
                     android:padding="10sp" />
 
                 <Button
+                    android:id="@+id/btn_gin_tanqueray_t"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="4sp"
+                    android:tag="NO VIDEO"
                     android:background="@drawable/boton_tanqueray_ten"
                     android:padding="10sp" />
 

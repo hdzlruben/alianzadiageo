@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +15,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.Switch;
 import android.widget.VideoView;
 
 import com.ioblok.aliadosdiageo.R;
@@ -29,9 +31,55 @@ import com.ioblok.aliadosdiageo.categorias.content_licor.Baileys.BaileysTourFrag
 import com.ioblok.aliadosdiageo.categorias.content_licor.BaileysDulceDeLeche.BaileysDulceMensajesFragment;
 import com.ioblok.aliadosdiageo.categorias.content_licor.BaileysDulceDeLeche.BaileysDulceServirFragment;
 import com.ioblok.aliadosdiageo.categorias.content_licor.BaileysDulceDeLeche.BaileysDulceTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorgan.CaptainMorganMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorgan.CaptainMorganServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorgan.CaptainMorganTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorganBlack.CaptainMorganBlackMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorganBlack.CaptainMorganBlackServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorganBlack.CaptainMorganBlackTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorganWhite.CaptainMorganWhiteMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorganWhite.CaptainMorganWhiteServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorganWhite.CaptainMorganWhiteTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.ZacapaVeintitres.ZacapaVeintitresMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.ZacapaVeintitres.ZacapaVeintitresServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.ZacapaVeintitres.ZacapaVeintitresTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_ron.ZacapaXo.ZacapaMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio1942.DonJulio1942MensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio1942.DonJulio1942ServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio1942.DonJulio1942TourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio70.DonJulio70MensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio70.DonJulio70ServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulio70.DonJulio70TourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioAnejo.DonJulioAnejoMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioAnejo.DonJulioAnejoServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioAnejo.DonJulioAnejoTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioBlanco.DonJulioBlancoMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioBlanco.DonJulioBlancoServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioBlanco.DonJulioBlancoTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReal.DonJulioRealMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReal.DonJulioRealServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReal.DonJulioRealTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReposado.DonJulioReposadoMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReposado.DonJulioReposadoServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_tequila.DonJulioReposado.DonJulioReposadoTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.Buchanans18.BuchanansUnoOchoMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.Buchanans18.BuchanansUnoOchoServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.Buchanans18.BuchanansUnoOchoTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.BuchanansRedSeal.BuchanansRedSealMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.BuchanansRedSeal.BuchanansRedSealServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.BuchanansRedSeal.BuchanansRedSealTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlackLabel.JwBlackLabelMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlackLabel.JwBlackLabelServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlackLabel.JwBlackLabelTourFragment;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelMensajesFragment;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelServirFragment;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.JwBlueLabelTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwDoubleBlackLabel.JwDoubleBlackLabelMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwDoubleBlackLabel.JwDoubleBlackLabelServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwDoubleBlackLabel.JwDoubleBlackLabelTourFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwGoldLabelReserve.JwGoldLabelMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwGoldLabelReserve.JwGoldLabelServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwGoldLabelReserve.JwGoldLabelTourFragment;
 import com.ioblok.aliadosdiageo.utilis.Constants;
 import com.ioblok.aliadosdiageo.utilis.URLVideosDataBase;
 import com.ioblok.aliadosdiageo.utilis.VideoPlayer;
@@ -189,30 +237,335 @@ public class DynamicDrinks extends AppCompatActivity {
 
     public void howToPrepare() {
 
-        TanquerayTenServirFragment newFragment = new TanquerayTenServirFragment();
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.fragment_container, newFragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
+        Fragment howToPrepareFragment = null;
+
+        switch (positionExtras){
+            case  0 :
+                break;
+            case  1 :
+                break;
+            case  2 :
+                howToPrepareFragment = new JwDoubleBlackLabelServirFragment();
+                break;
+            case  3 :
+                break;
+            case  4 :
+                break;
+            case  5 :
+                howToPrepareFragment = new JwGoldLabelServirFragment();
+                break;
+            case  6 :
+                howToPrepareFragment = new BuchanansRedSealServirFragment();
+                break;
+            case  7 :
+                howToPrepareFragment = new JwBlackLabelServirFragment();
+                break;
+            case  8 :
+                howToPrepareFragment = new BuchanansUnoOchoServirFragment();
+                break;
+            case  9 :
+                break;
+            case  10 :
+                break;
+            case  11 :
+                break;
+            case  12 :
+                break;
+            case  13 :
+                break;
+            case  14 :
+                break;
+            case  15 :
+                break;
+            case  16 :
+                break;
+            case  17 :
+                break;
+            case  18 :
+                break;
+            case  19 :
+                howToPrepareFragment = new DonJulioBlancoServirFragment();
+                break;
+            case  20 :
+                howToPrepareFragment = new DonJulioAnejoServirFragment();
+                break;
+            case  21 :
+                howToPrepareFragment = new DonJulioReposadoServirFragment();
+                break;
+            case  22 :
+                howToPrepareFragment = new DonJulio70ServirFragment();
+                break;
+            case  23 :
+                howToPrepareFragment = new DonJulio1942ServirFragment();
+                break;
+            case  24 :
+                howToPrepareFragment = new DonJulioRealServirFragment();
+                break;
+            case  25 :
+                break;
+            case  26 :
+                howToPrepareFragment = new ZacapaVeintitresServirFragment();
+                break;
+            case  27 :
+                howToPrepareFragment = new CaptainMorganServirFragment();
+                break;
+            case  28 :
+                howToPrepareFragment = new CaptainMorganBlackServirFragment();
+                break;
+            case  29 :
+                howToPrepareFragment = new CaptainMorganWhiteServirFragment();
+                break;
+            case  30 :
+                break;
+            case  31 :
+                break;
+            case  32 :
+                break;
+            case  33 :
+                howToPrepareFragment = new TanquerayLondonServirFragment();
+                break;
+            case  34 :
+                howToPrepareFragment = new TanquerayTenServirFragment();
+                break;
+            case  35 :
+                howToPrepareFragment = new BaileysServirFragment();
+                break;
+            case  36 :
+                howToPrepareFragment = new BaileysDulceServirFragment();
+                break;
+            default:
+                return;
+        }
+
+        if(howToPrepareFragment != null){
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.fragment_container, howToPrepareFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
+        }
 
     }
 
     public void bottleTour() {
 
-        TanquerayTenTourFragment newFragment = new TanquerayTenTourFragment();
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.fragment_container, newFragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
+        Fragment bottleFragment = null;
+
+        switch (positionExtras){
+            case  0 :
+                break;
+            case  1 :
+                break;
+            case  2 :
+                bottleFragment = new JwDoubleBlackLabelTourFragment();
+                break;
+            case  3 :
+                break;
+            case  4 :
+                break;
+            case  5 :
+                bottleFragment = new JwGoldLabelTourFragment();
+                break;
+            case  6 :
+                bottleFragment = new BuchanansRedSealTourFragment();
+                break;
+            case  7 :
+                bottleFragment = new JwBlackLabelTourFragment();
+                break;
+            case  8 :
+                bottleFragment = new BuchanansUnoOchoTourFragment();
+                break;
+            case  9 :
+                break;
+            case  10 :
+                break;
+            case  11 :
+                break;
+            case  12 :
+                break;
+            case  13 :
+                break;
+            case  14 :
+                break;
+            case  15 :
+                break;
+            case  16 :
+                break;
+            case  17 :
+                break;
+            case  18 :
+                break;
+            case  19 :
+                bottleFragment = new DonJulioBlancoTourFragment();
+                break;
+            case  20 :
+                bottleFragment = new DonJulioAnejoTourFragment();
+                break;
+            case  21 :
+                bottleFragment = new DonJulioReposadoTourFragment();
+                break;
+            case  22 :
+                bottleFragment = new DonJulio70TourFragment();
+                break;
+            case  23 :
+                bottleFragment = new DonJulio1942TourFragment();
+                break;
+            case  24 :
+                bottleFragment = new DonJulioRealTourFragment();
+                break;
+            case  25 :
+                break;
+            case  26 :
+                bottleFragment = new ZacapaVeintitresTourFragment();
+                break;
+            case  27 :
+                bottleFragment = new CaptainMorganTourFragment();
+                break;
+            case  28 :
+                bottleFragment = new CaptainMorganBlackTourFragment();
+                break;
+            case  29 :
+                bottleFragment = new CaptainMorganWhiteTourFragment();
+                break;
+            case  30 :
+                break;
+            case  31 :
+                break;
+            case  32 :
+                break;
+            case  33 :
+                bottleFragment = new TanquerayLondonTourFragment();
+                break;
+            case  34 :
+                bottleFragment = new TanquerayTenTourFragment();
+                break;
+            case  35 :
+                bottleFragment = new BaileysTourFragment();
+                break;
+            case  36 :
+                bottleFragment = new BaileysDulceTourFragment();
+                break;
+            default:
+                return;
+        }
+
+        if(bottleFragment != null){
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.fragment_container, bottleFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
+        }
+
 
     }
 
     public void keyMessage() {
-        TanquerayTenMensajesFragment newFragment = new TanquerayTenMensajesFragment();
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.fragment_container, newFragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
+
+        Fragment keyMessageFragment = null;
+
+        switch (positionExtras){
+            case  0 :
+                break;
+            case  1 :
+                break;
+            case  2 :
+                keyMessageFragment = new JwDoubleBlackLabelMensajesFragment();
+                break;
+            case  3 :
+                break;
+            case  4 :
+                break;
+            case  5 :
+                keyMessageFragment = new JwGoldLabelMensajesFragment();
+                break;
+            case  6 :
+                keyMessageFragment = new BuchanansRedSealMensajesFragment();
+                break;
+            case  7 :
+                keyMessageFragment = new JwBlackLabelMensajesFragment();
+                break;
+            case  8 :
+                keyMessageFragment = new BuchanansUnoOchoMensajesFragment();
+                break;
+            case  9 :
+                break;
+            case  10 :
+                break;
+            case  11 :
+                break;
+            case  12 :
+                break;
+            case  13 :
+                break;
+            case  14 :
+                break;
+            case  15 :
+                break;
+            case  16 :
+                break;
+            case  17 :
+                break;
+            case  18 :
+                break;
+            case  19 :
+                keyMessageFragment = new DonJulioBlancoMensajesFragment();
+                break;
+            case  20 :
+                keyMessageFragment = new DonJulioAnejoMensajesFragment();
+                break;
+            case  21 :
+                keyMessageFragment = new DonJulioReposadoMensajesFragment();
+                break;
+            case  22 :
+                keyMessageFragment = new DonJulio70MensajesFragment();
+                break;
+            case  23 :
+                keyMessageFragment = new DonJulio1942MensajesFragment();
+                break;
+            case  24 :
+                keyMessageFragment = new DonJulioRealMensajesFragment();
+                break;
+            case  25 :
+                break;
+            case  26 :
+                keyMessageFragment = new ZacapaVeintitresMensajesFragment();
+                break;
+            case  27 :
+                keyMessageFragment = new CaptainMorganMensajesFragment();
+                break;
+            case  28 :
+                keyMessageFragment = new CaptainMorganBlackMensajesFragment();
+                break;
+            case  29 :
+                keyMessageFragment = new CaptainMorganWhiteMensajesFragment();
+                break;
+            case  30 :
+                break;
+            case  31 :
+                break;
+            case  32 :
+                break;
+            case  33 :
+                keyMessageFragment = new TanquerayLondonMensajesFragment();
+                break;
+            case  34 :
+                keyMessageFragment = new TanquerayTenMensajesFragment();
+                break;
+            case  35 :
+                keyMessageFragment = new BaileysMensajesFragment();
+                break;
+            case  36 :
+                keyMessageFragment = new BaileysDulceMensajesFragment();
+                break;
+            default:
+                return;
+        }
+
+        if(keyMessageFragment != null){
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.fragment_container, keyMessageFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
+        }
     }
 
     public void openYoutube(String idVideo){
