@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="700sp"
+                android:background="@drawable/back_smirnoff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="180sp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/openpopup"
+                        android:layout_width="30sp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/tres" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/openpopupsss"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/lineaspopopos" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="120sp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/uno"
+                        android:layout_width="30sp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/dos" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/openpopupss"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/lineaspopopos" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20sp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/openpopupssss"
+                        android:layout_width="30sp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/uno" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/openpopupssss"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/lineaspopopos" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
