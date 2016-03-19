@@ -300,6 +300,32 @@
 
     <string name="txt_como_tomar_old_par">En las Rocas.</string>
 
+    <!-- Old Par Silver -->
+
+    <string name="title_old_par_silver_one">Una nueva forma de hacer whisky:  filtrado en barricas a bajas temperaturas.</string>
+    <string name="title_old_par_silver_dos"> Nuevo Ritual: Servido sólo, frío sin hielos, utilizando un vaso corto. </string>
+    <string name="title_old_par_silver_tres">Sabor Suave y consistencia única, ligeramente ahumado y floral: Reluce la vainilla, los frutos secos y suaves toques de dulce y miel.</string>
+
+    <string name="txt_como_tomar_old_par_silver">Derecho y frio en un vaso corto.</string>
+
+
+    <!-- J and B -->
+
+    <string name="title_j_and_b_one">El whisky es para aquellos que cuentan una historia, J&amp;B es para aquellos que escriben su propia historia</string>
+    <string name="title_j_and_b_dos">El whisky es acerca de los años de añejamiento del líquido, J&amp;B es acerca de las 42 maltas en su mezcla</string>
+    <string name="title_j_and_b_tres">El whisky es respetado por los bartenders, J&amp;B es amado por los bartenders</string>
+
+    <string name="txt_como_tomar_j_and_b"> 1.Llenar un J&amp;B Grand Central Glass con hielo \n2.Servir 2oz de J&amp;B Rare \n3.Servir 4oz de agua mineral \n4.Agregar jugo de medio limón y una rebanada del mismo</string>
+
+
+    <!-- Bullet -->
+
+    <string name="title_bullet_one">Auténtico whiskey americano que se produce artesanalmente en pequeños lotes.</string>
+    <string name="title_bullet_dos">Conserva su líquido y botella originales desde 1860.</string>
+    <string name="title_bullet_tres">Gracias a su alto contenido de centeno tiene un sabor suave y seco.</string>
+
+    <string name="txt_como_tomar_bullet">BULLEIT TORONJA</string>
+    <string name="txt_como_tomar_bullet_content">Bulleit, hielos, refresco de toronja y una cuña de toronja rosa (adentro del vaso).</string>
 
 
 </resources>
