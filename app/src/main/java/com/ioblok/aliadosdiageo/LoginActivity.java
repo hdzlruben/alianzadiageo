@@ -243,14 +243,14 @@ public class LoginActivity extends AppCompatActivity {
     public void initSesion(View v) {
 
 
-        downloadVideos();
+        //downloadVideos();
 
         //Intent btns_home = new Intent(LoginActivity.this, MenuActivity.class);
         //startActivity(btns_home);
 
         //startActivity(btns_home);
 
-       /*if (pass_user.getText().toString().equals("123Abc!")){
+       if (pass_user.getText().toString().equals("123Abc!")){
 
            downloadVideos();
 
@@ -261,7 +261,7 @@ public class LoginActivity extends AppCompatActivity {
                    .positiveText(R.string.txt_cerrar)
                    .theme(Theme.LIGHT)
                    .show();
-       }*/
+       }
     }
 
     public void downloadVideos() {

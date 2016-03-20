@@ -7,6 +7,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -61,6 +62,51 @@ public class HelpActivity extends AppCompatActivity {
         adapterActivity = new AdapterActivity(this,values);
         mDrawerOptions.setAdapter(adapterActivity);
         /* Menu list */
+
+        mDrawerOptions.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
+
+                if (position == 0)
+                {
+                    Intent intent = new Intent(HelpActivity.this, HelpActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+                else if (position == 1)
+                {
+                    Intent intent = new Intent(HelpActivity.this, MenuFamilyActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+                else if (position == 2)
+                {
+                    Intent intent = new Intent(HelpActivity.this, MenuCategoriasActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+                else if (position == 3)
+                {
+                    Intent intent = new Intent(HelpActivity.this, MenuProcesosActivity.class);
+                    startActivity(intent);
+                    finish();
+
+                }
+                else if (position == 4)
+                {
+                    Intent intent = new Intent(HelpActivity.this, MenuPlataformasActivity.class);
+                    startActivity(intent);
+                    finish();
+
+                }
+                else{
+                    Intent intent = new Intent(HelpActivity.this, MenuServicioActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+
+            }
+        });
 
         initialize();
 
