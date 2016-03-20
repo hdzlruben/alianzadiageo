@@ -30,7 +30,7 @@ import io.realm.RealmResults;
 
 public class MenuActivity extends AppCompatActivity {
 
-    Button btn_diageo,btn_family,btn_categorias,btn_proceso,btn_plataformas,btn_servicio;
+    Button btn_diageo,btn_family,btn_categorias,btn_proceso,btn_plataformas,btn_servicio,btn_help;
 
     Realm realm;
     Boolean enableDownload;
@@ -50,6 +50,7 @@ public class MenuActivity extends AppCompatActivity {
         btn_proceso.setOnClickListener(menu);
         btn_plataformas.setOnClickListener(menu);
         btn_servicio.setOnClickListener(menu);
+        btn_help.setOnClickListener(menu);
 
     }
 
@@ -82,6 +83,7 @@ public class MenuActivity extends AppCompatActivity {
         btn_proceso = (Button) findViewById(R.id.btn_proceso);
         btn_plataformas = (Button) findViewById(R.id.btn_plataformas);
         btn_servicio = (Button) findViewById(R.id.btn_servicio);
+        btn_help = (Button) findViewById(R.id.btn_help);
 
     }
 
@@ -112,6 +114,10 @@ public class MenuActivity extends AppCompatActivity {
 
                 case R.id.btn_servicio:
                     intent = new Intent(MenuActivity.this, MenuServicioActivity.class);
+                    break;
+
+                case R.id.btn_help:
+                    intent = new Intent(MenuActivity.this, HelpActivity.class);
                     break;
             }
 

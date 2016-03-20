@@ -364,5 +364,15 @@
     <string name="txt_mensaje_ketel_dos">Elaborado a partir de alambiques de cobre, junto con las modernas técnicas de destilación.</string>
     <string name="txt_title_mensaje_ketel_tres">GENUINO</string>
     <string name="txt_mensaje_ketel_tres">Un miembro de la familia Nolet personalmente aprueba cada corrida de producción final.</string>
+    
+    <!-- HELP MENU -->
+
+    <string name="txt_help_content_video">Modo Video:\nComienza por ver un video corto que le da vida a la marca.\nPuedes detener el video en cualquier momento presionando pausar y salir presionando cerrar.</string>
+    <string name="txt_help_content_mensajes">Mensajes Claves:\nSi no cuentas con tiempo, explora las razones para comprar la marca y comunicarlo a tus clientes.</string>
+    <string name="txt_help_content_tour">Tour De Botellas:\nCada botella cuenta su propia historia, explora los puntos clave del diseño de cada botella.</string>
+    <string name="txt_help_content_servir">Como Servir::\nFinalmente, descubre la variedad de combinaciones, sabores, copas y deliciosos modos de preparación.</string>
+    <string name="txt_help_content_regresar">Regresar:\nSelecciona este ícono para ir una pantalla atrás..</string>
+    <string name="txt_help_content_inicio">Inicio:\nSelecciona este ícono para ir a la pantalla de bienvenida.</string>
+    <string name="txt_help_content_navegador">Navegador:\nSelecciona este ícono para descubrir accesos rápidos a los contenidos de la  sección en la que te encuentres.</string>
 
 </resources>

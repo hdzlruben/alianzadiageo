@@ -1,6 +1,7 @@
 package com.ioblok.aliadosdiageo.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -8,9 +9,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.ioblok.aliadosdiageo.R;
 
@@ -50,17 +53,11 @@ public class AdapterActivity extends BaseAdapter {
 
         Typeface myFont = Typeface.createFromAsset(context.getAssets(), "CenturyGothic.ttf");
 
-        // Declare Variables
         TextView txtTitle;
-        ImageView imgImg;
 
-
-
-        //http://developer.android.com/intl/es/reference/android/view/LayoutInflater.html
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         View itemView = inflater.inflate(R.layout.activity_list_view_custom, parent, false);
-
 
         if(titulos[position] == "DIAGEO"){
             itemView.setBackgroundResource(R.color.menu_one_part);

@@ -4,39 +4,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="right">
-    <!-- The main content view -->
     <FrameLayout
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <LinearLayout
+            android:background="#fff"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical">
-
             <include layout="@layout/ui_plataformas" />
-
             <include layout="@layout/ui_back_plataformas" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
-
                 <ScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20sp"
                     android:scrollbars="none">
-
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:orientation="vertical">
-
                         <Button
                             android:id="@+id/btn_family_zacapa"
                             android:layout_width="wrap_content"
@@ -47,7 +40,6 @@
                             android:padding="10sp"
                             android:paddingLeft="20sp"
                             android:paddingRight="20sp" />
-
                         <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -55,7 +47,6 @@
                             android:layout_marginTop="4sp"
                             android:background="@drawable/btn2pltaforma"
                             android:padding="10sp" />
-
                         <Button
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -63,7 +54,6 @@
                             android:layout_marginTop="4sp"
                             android:background="@drawable/btn2pltaforma"
                             android:padding="10sp" />
-
                         <Button
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -71,7 +61,6 @@
                             android:layout_marginTop="4sp"
                             android:background="@drawable/btn2pltaforma"
                             android:padding="10sp" />
-
                         <Button
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -80,14 +69,10 @@
                             android:background="@drawable/btn2pltaforma"
                             android:padding="10sp" />
                     </LinearLayout>
-
                 </ScrollView>
             </LinearLayout>
-
         </LinearLayout>
-
     </FrameLayout>
-    <!-- The navigation drawer -->
     <ListView
         android:id="@+id/left_drawer"
         android:layout_width="240dp"

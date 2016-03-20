@@ -17,7 +17,7 @@
             android:layout_marginTop="30sp"
             android:tag="consumo_responsable"
             android:id="@+id/btn_video"
-            android:background="@drawable/servresp2" />
+            android:background="@drawable/serviciocalidad" />
 
     </RelativeLayout>
 

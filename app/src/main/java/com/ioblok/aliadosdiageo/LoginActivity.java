@@ -20,6 +20,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -28,6 +29,7 @@ import com.afollestad.materialdialogs.MaterialDialog;
 import com.afollestad.materialdialogs.Theme;
 import com.ioblok.aliadosdiageo.utilis.Constants;
 import com.ioblok.aliadosdiageo.utilis.URLVideosDataBase;
+import com.ioblok.aliadosdiageo.utilis.WebViewManager;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -39,7 +41,7 @@ import io.realm.RealmResults;
 public class LoginActivity extends AppCompatActivity {
 
     EditText pass_user;
-    Button btn_init_sesion, btn_register;
+    Button btn_init_sesion, btn_register, webView;
 
     Realm realm;
     Boolean showAlert = true;
@@ -113,6 +115,17 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        webView = (Button)this.findViewById(R.id.webView);
+        webView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("http://aliadosdiageotraining.interactivevalley.com");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
+
+
         mProgressDialog = new ProgressDialog(LoginActivity.this);
         mProgressDialog.setMessage(this.getString(R.string.txt_download_videos));
 
@@ -122,8 +135,8 @@ public class LoginActivity extends AppCompatActivity {
         realm = Realm.getInstance(getBaseContext());
         realm.beginTransaction();
 
-        //for (int i = 0; i < videos.length; i++) {
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < videos.length; i++) {
+        //for (int i = 0; i < 1; i++) {
 
             RealmResults<URLVideosDataBase> validate = realm.where(URLVideosDataBase.class)
                     .equalTo("urlVideo", base_url + videos[i]).findAll();
@@ -224,7 +237,6 @@ public class LoginActivity extends AppCompatActivity {
     public void initialize() {
         pass_user = (EditText) findViewById(R.id.pass_user);
         btn_init_sesion = (Button) findViewById(R.id.btn_init_sesion);
-        btn_register = (Button) findViewById(R.id.btn_register);
 
     }
 
@@ -286,5 +298,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onDestroy();
         realm.close();
     }
+
 
 }

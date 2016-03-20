@@ -13,6 +13,7 @@
         android:background="@drawable/head_sr"
         />
     <Button
+        android:onClick="openMenu"
         android:layout_width="0dp"
         android:layout_height="20sp"
         android:layout_weight="0.4"

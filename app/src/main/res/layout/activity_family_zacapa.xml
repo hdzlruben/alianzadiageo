@@ -1,50 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:layout_gravity="right">
 
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <ScrollView
-            android:layout_marginTop="80sp"
-            android:layout_below="@+id/head"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scrollbars="none">
+            android:gravity="center"
+            android:background="#fff"
+            android:orientation="vertical">
 
-            <LinearLayout
+
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="match_parent"
+                android:layout_below="@+id/head"
+                android:layout_marginTop="80sp"
+                android:scrollbars="none">
 
-                <com.bluejamesbond.text.DocumentView
-                    android:layout_below="@+id/head"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40sp"
-                    android:layout_marginRight="40sp"
-                    android:layout_marginBottom="20sp"
-                    android:id="@+id/txt_zacapa_text">
+                    android:orientation="vertical">
 
-                </com.bluejamesbond.text.DocumentView>
+                    <com.bluejamesbond.text.DocumentView
+                        android:id="@+id/txt_zacapa_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/head"
+                        android:layout_marginBottom="20sp"
+                        android:layout_marginLeft="40sp"
+                        android:layout_marginRight="40sp">
 
-                <ImageView
-                    android:layout_gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="20sp"
-                    android:background="@drawable/ron_imagen"/>
+                    </com.bluejamesbond.text.DocumentView>
 
-            </LinearLayout>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20sp"
+                        android:background="@drawable/ron_imagen" />
 
-        </ScrollView>
-    <include
-        android:id="@+id/head"
-        layout="@layout/ui_family_zacapa">
-    </include>
-    <include
-        layout="@layout/ui_back_family_desc">
-    </include>
+                </LinearLayout>
 
-</RelativeLayout>
+            </ScrollView>
+
+            <include
+                android:id="@+id/head"
+                layout="@layout/ui_family_zacapa"></include>
+
+            <include layout="@layout/ui_back_family_desc"></include>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="#E0EAF1"
+        android:choiceMode="singleChoice"
+        android:divider="#fff"
+        android:dividerHeight="0dp" />
+</android.support.v4.widget.DrawerLayout>

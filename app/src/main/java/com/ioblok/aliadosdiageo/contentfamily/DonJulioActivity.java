@@ -1,16 +1,28 @@
 package com.ioblok.aliadosdiageo.contentfamily;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.VideoView;
 
 import com.ioblok.aliadosdiageo.R;
+import com.ioblok.aliadosdiageo.adapter.AdapterActivity;
+import com.ioblok.aliadosdiageo.categorias.MenuCategoriasActivity;
+import com.ioblok.aliadosdiageo.family.MenuFamilyActivity;
+import com.ioblok.aliadosdiageo.plataformas.procesos.MenuPlataformasActivity;
+import com.ioblok.aliadosdiageo.procesos.MenuProcesosActivity;
+import com.ioblok.aliadosdiageo.servicio.MenuServicioActivity;
 import com.ioblok.aliadosdiageo.utilis.URLVideosDataBase;
 import com.ioblok.aliadosdiageo.utilis.VideoPlayer;
+
+import java.util.ArrayList;
 
 import io.realm.Realm;
 import io.realm.RealmResults;
@@ -20,11 +32,12 @@ public class DonJulioActivity extends AppCompatActivity {
 
     Button backButton_desc;
 
-    /**@JCElements
-     *
-     * These elements are used for Video
-     *
-     * **/
+    private DrawerLayout mDrawer;
+    private ListView mDrawerOptions;
+    private ArrayList navDrawerItems;
+    public String[] values = {"DIAGEO", "Familias", "Categorias" ,"Proceso de Elaboracion","Plataformas","Servicio Responsable"};
+    AdapterActivity adapterActivity;
+
 
     private VideoView myVideoView;
     private RelativeLayout rlVideoView;
@@ -38,6 +51,60 @@ public class DonJulioActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_family_don_julio);
+
+        /* Menu list */
+        mDrawerOptions = (ListView) findViewById(R.id.left_drawer);
+        mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        adapterActivity = new AdapterActivity(this,values);
+        mDrawerOptions.setAdapter(adapterActivity);
+        /* Menu list */
+
+        mDrawerOptions.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
+
+                if (position == 0)
+                {
+                    Intent intent = new Intent(DonJulioActivity.this, DonJulioActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+                else if (position == 1)
+                {
+                    Intent intent = new Intent(DonJulioActivity.this, MenuFamilyActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+                else if (position == 2)
+                {
+                    Intent intent = new Intent(DonJulioActivity.this, MenuCategoriasActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+                else if (position == 3)
+                {
+                    Intent intent = new Intent(DonJulioActivity.this, MenuProcesosActivity.class);
+                    startActivity(intent);
+                    finish();
+
+                }
+                else if (position == 4)
+                {
+                    Intent intent = new Intent(DonJulioActivity.this, MenuPlataformasActivity.class);
+                    startActivity(intent);
+                    finish();
+
+                }
+                else{
+                    Intent intent = new Intent(DonJulioActivity.this, MenuServicioActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+
+            }
+        });
+
+
 
         realm = Realm.getInstance(getBaseContext());
 
@@ -64,6 +131,10 @@ public class DonJulioActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void openMenu(View v) {
+        mDrawer.openDrawer(mDrawerOptions);
     }
 
     public void playVideo(View view){
