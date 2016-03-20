@@ -8,7 +8,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.OrientationEventListener;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -59,7 +61,7 @@ import io.realm.RealmResults;
 /**
  * Created by kreativeco on 12/03/16.
  */
-public class DynamicDrinks extends AppCompatActivity {
+public class DynamicDrinks extends AppCompatActivity{
 
     Button backButton_categorias_int, btnDots, btnHideList;
     ListView listView;
@@ -67,7 +69,7 @@ public class DynamicDrinks extends AppCompatActivity {
     Boolean isHideMyListView = true;
     View v;
     ViewPager viewPager;
-
+    OrientationEventListener orientationEventListener;
 
     CoordinatorLayout rootLayout;
     String[] valuesWith     = new String[]{"SPOT", "VIDEO", "MENSAJES\nClAVE", "TOUR DE\nBOTELLAS", "COMO\nSERVIR"};
@@ -120,7 +122,6 @@ public class DynamicDrinks extends AppCompatActivity {
             URLVideosDataBase u = results.get(i);
             if(u.getUrlFileStorage().contains(idVideo)){
                 urlVideo = u.getUrlFileStorage();
-                //return;
             }
 
         }
@@ -189,7 +190,6 @@ public class DynamicDrinks extends AppCompatActivity {
             }
 
         });
-
 
     }
 
@@ -567,7 +567,7 @@ public class DynamicDrinks extends AppCompatActivity {
             default:
                 return;
         }
-        
+
         if(keyMessageFragment != null){
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
             transaction.replace(R.id.fragment_container, keyMessageFragment);
@@ -615,7 +615,10 @@ public class DynamicDrinks extends AppCompatActivity {
         rlVideoView.setVisibility(View.VISIBLE);
         VideoPlayer.playVideo(myVideoView, rlVideoView, btnClose, urlVideo,  this);
 
-    }
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        myVideoView.setLayoutParams(params);
+        hideList();
 
+    }
 
 }

@@ -4,13 +4,17 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.MediaController;
 import android.widget.RelativeLayout;
 import android.widget.VideoView;
 
+import com.bluejamesbond.text.IDocumentLayout;
 import com.ioblok.aliadosdiageo.R;
 import com.ioblok.aliadosdiageo.diageo.DiageoActivity;
 
@@ -19,7 +23,7 @@ import io.realm.Realm;
 /**
  * Created by kreativeco on 12/03/16.
  */
-public class VideoPlayer {
+public class VideoPlayer{
 
     public static VideoView videoView;
     public static RelativeLayout rlVideoView;
@@ -34,8 +38,10 @@ public class VideoPlayer {
 
     public static void playVideo(VideoView vv, RelativeLayout rlVV, Button btnClose, String urlV, Activity activity){
         videoView = vv;
+
         rlVideoView = rlVV;
         btnCloseVideo = btnClose;
+
         btnClose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,16 +72,13 @@ public class VideoPlayer {
             videoView.setMediaController(mediaControls);
             videoView.setVideoPath(urlVideo);
             videoView.start();
-            //set the uri of the video to be played
-            Log.e("URL VIDEO", urlVideo);
-            //myVideoView.setVideoURI(Uri.parse(urlVideo));
 
         } catch (Exception e) {
             Log.e("Error", e.getMessage());
             e.printStackTrace();
         }
 
-        videoView.requestFocus();
+        //videoView.requestFocus();
         //we also set an setOnPreparedListener in order to know when the video file is ready for playback
         videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             public void onPrepared(MediaPlayer mediaPlayer) {
@@ -91,6 +94,7 @@ public class VideoPlayer {
                 }
             }
         });
+
 
     }
 
