@@ -123,8 +123,8 @@ public class LoginActivity extends AppCompatActivity {
         realm = Realm.getInstance(getBaseContext());
         realm.beginTransaction();
 
-        //for (int i = 0; i < videos.length; i++) {
-        for (int i = 0; i < 15; i++) {
+        for (int i = 0; i < videos.length; i++) {
+        //for (int i = 0; i < 15; i++) {
 
             RealmResults<URLVideosDataBase> validate = realm.where(URLVideosDataBase.class)
                     .equalTo("urlVideo", base_url + videos[i]).findAll();
