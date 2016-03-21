@@ -3,17 +3,15 @@ package com.ioblok.aliadosdiageo.categorias;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.view.OrientationEventListener;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
@@ -68,10 +66,7 @@ public class DynamicDrinks extends AppCompatActivity{
     LinearLayout llDots;
     Boolean isHideMyListView = true;
     View v;
-    ViewPager viewPager;
-    OrientationEventListener orientationEventListener;
-
-    CoordinatorLayout rootLayout;
+    ImageView ivHeader;
     String[] valuesWith     = new String[]{"SPOT", "VIDEO", "MENSAJES\nClAVE", "TOUR DE\nBOTELLAS", "COMO\nSERVIR"};
     String[] valuesWithout  = new String[]{"VIDEO", "MENSAJES\nClAVE", "TOUR DE\nBOTELLAS", "COMO\nSERVIR"};
 
@@ -112,6 +107,9 @@ public class DynamicDrinks extends AppCompatActivity{
         btnHideList                 = (Button) findViewById(R.id.btn_hide_list);
         llDots                      = (LinearLayout) findViewById(R.id.ll_dots);
         listView                    = (ListView) findViewById(R.id.list);
+        ivHeader                    = (ImageView) findViewById(R.id.iv_header);
+
+        ivHeader.setBackgroundResource(Constants.getHeaderDrawableImage(positionExtras));
 
         realm = Realm.getInstance(getBaseContext());
 

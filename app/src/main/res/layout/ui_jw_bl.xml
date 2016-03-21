@@ -11,6 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="50sp"
         android:layout_weight="5"
+        android:id="@+id/iv_header"
         android:background="@drawable/headjwblabel"/>
 
     <Button
