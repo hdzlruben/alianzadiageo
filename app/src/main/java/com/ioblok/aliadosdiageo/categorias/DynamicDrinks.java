@@ -7,7 +7,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -47,6 +46,9 @@ import com.ioblok.aliadosdiageo.categorias.content_whisky.JwDoubleBlackLabel.*;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.JwGoldLabelReserve.*;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.JwKingGeorgeActivity.*;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.JwPlatinumLabel.*;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwRedLabel.JwRedLabelMensajesFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwRedLabel.JwRedLabelServirFragment;
+import com.ioblok.aliadosdiageo.categorias.content_whisky.JwRedLabel.JwRedLabelTourFragment;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.OldPar.*;
 import com.ioblok.aliadosdiageo.categorias.content_whisky.OldParSilver.*;
 import com.ioblok.aliadosdiageo.utilis.Constants;
@@ -168,18 +170,22 @@ public class DynamicDrinks extends AppCompatActivity{
                 switch (itemPosition){
                     case 0:
                         openYoutube(youTubeUrlVideo);
+                        hideList();
                         break;
                     case 1:
                         playVideo();
                         break;
                     case 2:
                         keyMessage();
+                        hideList();
                         break;
                     case 3:
                         bottleTour();
+                        hideList();
                         break;
                     case 4:
                         howToPrepare();
+                        hideList();
                         break;
                     default:
                         changeFragment();
@@ -217,10 +223,10 @@ public class DynamicDrinks extends AppCompatActivity{
                 howToPrepareFragment = new JwDoubleBlackLabelServirFragment();
                 break;
             case  3 :
-                howToPrepareFragment = new JwBlackLabelServirFragment();
+                howToPrepareFragment = new JwPlatiniumServirFragment();
                 break;
             case  4 :
-                howToPrepareFragment = new JwPlatiniumServirFragment();
+                howToPrepareFragment = new JwRedLabelServirFragment();
                 break;
             case  5 :
                 howToPrepareFragment = new JwGoldLabelServirFragment();
@@ -341,10 +347,10 @@ public class DynamicDrinks extends AppCompatActivity{
                 bottleFragment = new JwDoubleBlackLabelTourFragment();
                 break;
             case  3 :
-                bottleFragment = new JwBlackLabelTourFragment();
+                bottleFragment = new JwPlatiniumTourFragment();
                 break;
             case  4 :
-                bottleFragment = new JwPlatiniumTourFragment();
+                bottleFragment = new JwRedLabelTourFragment();
                 break;
             case  5 :
                 bottleFragment = new JwGoldLabelTourFragment();
@@ -466,10 +472,10 @@ public class DynamicDrinks extends AppCompatActivity{
                 keyMessageFragment = new JwDoubleBlackLabelMensajesFragment();
                 break;
             case  3 :
-                keyMessageFragment = new JwBlackLabelMensajesFragment();
+                keyMessageFragment = new JwPlatiniumMensajesFragment();;
                 break;
             case  4 :
-                keyMessageFragment = new JwPlatiniumMensajesFragment();
+                keyMessageFragment = new JwRedLabelMensajesFragment();
                 break;
             case  5 :
                 keyMessageFragment = new JwGoldLabelMensajesFragment();
@@ -613,8 +619,6 @@ public class DynamicDrinks extends AppCompatActivity{
         rlVideoView.setVisibility(View.VISIBLE);
         VideoPlayer.playVideo(myVideoView, rlVideoView, btnClose, urlVideo,  this);
 
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-        myVideoView.setLayoutParams(params);
         hideList();
 
     }

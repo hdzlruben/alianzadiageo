@@ -4,38 +4,26 @@ import android.app.DownloadManager;
 import android.app.ProgressDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.afollestad.materialdialogs.Theme;
 import com.ioblok.aliadosdiageo.utilis.Constants;
 import com.ioblok.aliadosdiageo.utilis.URLVideosDataBase;
-import com.ioblok.aliadosdiageo.utilis.WebViewManager;
 
-import java.io.File;
 import java.util.ArrayList;
 
 import io.realm.Realm;
-import io.realm.RealmConfiguration;
 import io.realm.RealmResults;
 
 public class LoginActivity extends AppCompatActivity {
@@ -57,14 +45,29 @@ public class LoginActivity extends AppCompatActivity {
     public ArrayList<URLVideosDataBase> arrayVideos;
     public String base_url = "http://ioblok.com.mx/Testing/video/";
     public String[] videos = {
+            "consumo_responsable",
+            "diajeo_aliados",
+            "diajeo_aliados_new",
+            "familia_bn",
+            "familia_jw",
+            "familia_tr",
+            "familia_dj",
+            "plataforma",
+            "proceso_cognac",
+            "proceso_ginebra",
+            "proceso_introduccion",
+            "proceso_ron",
+            "proceso_tequila",
+            "proceso_vodka",
+            "proceso_whisky",
             "categorias_bc_12",
             "categorias_bc_master",
             "categorias_bulleit",
             "categorias_gin_tanqueray_london",
             "categorias_gin_tanqueray_ten",
             "categorias_jb",
-            "categorias_locor_baileys",
-            "categorias_locor_baileys_dulce",
+            "categorias_licor_baileys",
+            "categorias_licor_baileys_dulce",
             "categorias_old_par",
             "categorias_whisky_old_par_silver",
             "categorias_ron_captain_morgan",
@@ -85,22 +88,7 @@ public class LoginActivity extends AppCompatActivity {
             "categorias_whisky_db",
             "categorias_whisky_kg",
             "categorias_whisky_pl",
-            "categorias_whisky_rl",
-            "consumo_responsable",
-            "diajeo_aliados",
-            "diajeo_aliados_new",
-            "familia_bn",
-            "familia_jw",
-            "familia_tr",
-            "familia_dj",
-            "plataforma",
-            "proceso_cognac",
-            "proceso_ginebra",
-            "proceso_introduccion",
-            "proceso_ron",
-            "proceso_tequila",
-            "proceso_vodka",
-            "proceso_whisky"};
+            "categorias_whisky_rl"};
 
     public String[] videos2 =
 
@@ -135,8 +123,8 @@ public class LoginActivity extends AppCompatActivity {
         realm = Realm.getInstance(getBaseContext());
         realm.beginTransaction();
 
-        for (int i = 0; i < videos.length; i++) {
-        //for (int i = 0; i < 1; i++) {
+        //for (int i = 0; i < videos.length; i++) {
+        for (int i = 0; i < 15; i++) {
 
             RealmResults<URLVideosDataBase> validate = realm.where(URLVideosDataBase.class)
                     .equalTo("urlVideo", base_url + videos[i]).findAll();

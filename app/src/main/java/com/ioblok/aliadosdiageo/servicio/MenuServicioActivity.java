@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 
 import com.ioblok.aliadosdiageo.R;
 import com.ioblok.aliadosdiageo.adapter.AdapterActivity;
@@ -33,10 +34,12 @@ public class MenuServicioActivity extends AppCompatActivity {
     private ArrayList navDrawerItems;
     public String[] values = {"DIAGEO", "Familias", "Categorias" ,"Proceso de Elaboracion","Plataformas","Servicio Responsable"};
     AdapterActivity adapterActivity;
-
+    ViewPager viewPager;
     Button backButton;
     TabLayout tabLayout;
     Realm realm;
+    LinearLayout llHeader;
+    RelativeLayout rlHeaderBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +52,9 @@ public class MenuServicioActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        llHeader = (LinearLayout) findViewById(R.id.header);
+        rlHeaderBack = (RelativeLayout) findViewById(R.id.header_back);
 
         /*List video menu*/
 
@@ -108,14 +114,14 @@ public class MenuServicioActivity extends AppCompatActivity {
         });
 
 
-        final ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
+        viewPager = (ViewPager) findViewById(R.id.view_pager);
 
         int px = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 40, getResources().getDisplayMetrics());
 
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(px, px);
 
         realm = Realm.getInstance(getBaseContext());
-        realm.beginTransaction();
+        //realm.beginTransaction();
 
         ImageButton tabVideos    = (ImageButton) LayoutInflater.from(this).inflate(R.layout.tab_videos, null);
         ImageButton tabsr1       = (ImageButton) LayoutInflater.from(this).inflate(R.layout.tab_sr1, null);
@@ -208,6 +214,18 @@ public class MenuServicioActivity extends AppCompatActivity {
 
     public Realm getRealm(){
         return realm;
+    }
+
+    public TabLayout getTabLayout(){
+        return tabLayout;
+    }
+
+    public RelativeLayout getRlHeaderBack(){
+        return  rlHeaderBack;
+    }
+
+    public LinearLayout getLlHeader(){
+        return llHeader;
     }
 
     public void openMenu(View v) {

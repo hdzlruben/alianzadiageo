@@ -12,7 +12,7 @@
         android:gravity="center"
         android:background="@android:color/black">
 
-        <VideoView
+        <com.ioblok.aliadosdiageo.servicio.MyCustomVideo
             android:id="@+id/video_view"
             android:layout_width="300sp"
             android:layout_height="150sp"/>

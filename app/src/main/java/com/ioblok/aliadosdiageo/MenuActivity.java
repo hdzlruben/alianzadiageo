@@ -6,31 +6,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
-
-import com.afollestad.materialdialogs.MaterialDialog;
-import com.afollestad.materialdialogs.Theme;
 import com.ioblok.aliadosdiageo.categorias.MenuCategoriasActivity;
 import com.ioblok.aliadosdiageo.diageo.DiageoActivity;
 import com.ioblok.aliadosdiageo.family.MenuFamilyActivity;
 import com.ioblok.aliadosdiageo.plataformas.procesos.MenuPlataformasActivity;
 import com.ioblok.aliadosdiageo.procesos.MenuProcesosActivity;
 
-import com.ioblok.aliadosdiageo.R;
 import com.ioblok.aliadosdiageo.servicio.MenuServicioActivity;
 import com.ioblok.aliadosdiageo.utilis.Constants;
 import com.ioblok.aliadosdiageo.utilis.URLVideosDataBase;
 
-import java.net.URL;
-
 import io.realm.Realm;
-import io.realm.RealmConfiguration;
 import io.realm.RealmResults;
 
 public class MenuActivity extends AppCompatActivity {
 
-    Button btn_diageo,btn_family,btn_categorias,btn_proceso,btn_plataformas,btn_servicio,btn_help;
+    Button btn_diageo, btn_family, btn_categorias, btn_proceso, btn_plataformas, btn_servicio, btn_help;
 
     Realm realm;
     Boolean enableDownload;
@@ -55,9 +47,9 @@ public class MenuActivity extends AppCompatActivity {
     }
 
 
-    public void initialize(){
+    public void initialize() {
 
-        if(enableDownload){
+        if (enableDownload) {
             realm = Realm.getInstance(getBaseContext());
             realm.beginTransaction();
 
@@ -65,13 +57,15 @@ public class MenuActivity extends AppCompatActivity {
 
             for (int i = 0; i < results.size(); i++) {
 
+                Log.e("URL MAIN", Constants.getReplaceURLVideos().get(i));
+
                 URLVideosDataBase u = results.get(i);
                 u.setUrlFileStorage(Constants.getReplaceURLVideos().get(i));
                 u.setDownloaded(true);
                 Log.e("URL", u.getUrlVideo());
                 Log.e("boolena", u.isDownloaded() + "");
                 Log.e("STORAGE", u.getUrlFileStorage());
-                // ... do something with the object ...
+
             }
             realm.commitTransaction();
 

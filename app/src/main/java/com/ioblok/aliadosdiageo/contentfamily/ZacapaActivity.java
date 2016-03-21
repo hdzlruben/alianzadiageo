@@ -1,14 +1,12 @@
 package com.ioblok.aliadosdiageo.contentfamily;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListView;
 
 import com.bluejamesbond.text.DocumentView;
@@ -26,7 +24,6 @@ import java.util.ArrayList;
 public class ZacapaActivity extends AppCompatActivity {
 
     String text;
-    Button backButton_desc;
     private DrawerLayout mDrawer;
     private ListView mDrawerOptions;
     private ArrayList navDrawerItems;
@@ -93,15 +90,6 @@ public class ZacapaActivity extends AppCompatActivity {
             }
         });
 
-
-        backButton_desc = (Button)this.findViewById(R.id.btn_back_desc);
-        backButton_desc.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-
     }
     public void initialize(){
         Typeface myFont = Typeface.createFromAsset(getAssets(), "acaslonpro-regular-webfont.ttf");
@@ -119,4 +107,5 @@ public class ZacapaActivity extends AppCompatActivity {
         mDrawer.openDrawer(mDrawerOptions);
     }
 
+    public void finishActivity(View view){finish();}
 }

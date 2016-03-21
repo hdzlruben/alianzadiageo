@@ -30,7 +30,7 @@ public class VideoPlayer{
     public static Button btnCloseVideo;
 
     public static int position = 0;
-    public static ProgressDialog progressDialog;
+    //public static ProgressDialog progressDialog;
     public static MediaController mediaControls;
 
     public static String urlVideo = "";
@@ -57,15 +57,15 @@ public class VideoPlayer{
         //initialize the VideoView
         rlVideoView.setVisibility(View.VISIBLE);
         // create a progress bar while the video file is loading
-        progressDialog = new ProgressDialog(activity);
+        //progressDialog = new ProgressDialog(activity);
         // set a title for the progress bar
-        progressDialog.setTitle("Video");
+        //progressDialog.setTitle("Video");
         // set a message for the progress bar
-        progressDialog.setMessage("Loading...");
+        //progressDialog.setMessage("Loading...");
         //set the progress bar not cancelable on users' touch
-        progressDialog.setCancelable(false);
+        //progressDialog.setCancelable(false);
         // show the progress bar
-        progressDialog.show();
+        //progressDialog.show();
 
         try {
             //set the media controller in the VideoView
@@ -83,7 +83,7 @@ public class VideoPlayer{
         videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             public void onPrepared(MediaPlayer mediaPlayer) {
                 // close the progress bar and play the video
-                progressDialog.dismiss();
+                //progressDialog.dismiss();
                 //if we have a position on savedInstanceState, the video playback should start from here
                 videoView.seekTo(position);
                 if (position == 0) {
@@ -94,6 +94,9 @@ public class VideoPlayer{
                 }
             }
         });
+
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        videoView.setLayoutParams(params);
 
 
     }

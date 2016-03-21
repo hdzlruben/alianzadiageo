@@ -1,20 +1,21 @@
 package com.ioblok.aliadosdiageo.servicio;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.MediaController;
 import android.widget.RelativeLayout;
-import android.widget.VideoView;
 
 import com.ioblok.aliadosdiageo.R;
 import com.ioblok.aliadosdiageo.utilis.URLVideosDataBase;
-import com.ioblok.aliadosdiageo.utilis.VideoPlayer;
 
-import io.realm.Realm;
 import io.realm.RealmResults;
 
 /**
@@ -29,11 +30,12 @@ public class VideoFragment extends Fragment {
      * These elements are used for Video
      *
      * **/
-    private VideoView myVideoView;
+    private MyCustomVideo myVideoView;
     private RelativeLayout rlVideoView;
     private Button btnVideo;
     private Button btnClose;
     private int position = 0;
+    private MediaController mediaController;
     String urlVideo = "";
     View v;
 
@@ -70,12 +72,87 @@ public class VideoFragment extends Fragment {
 
     public void playVideo(){
 
-        myVideoView = (VideoView) v.findViewById(R.id.video_view);
+        final TabLayout tabLayout =  ((MenuServicioActivity)this.getActivity()).getTabLayout();
+        final RelativeLayout rlHeaderBack = ((MenuServicioActivity)this.getActivity()).getRlHeaderBack();
+        final LinearLayout llHeader = ((MenuServicioActivity)this.getActivity()).getLlHeader();
+
+        myVideoView = (MyCustomVideo) v.findViewById(R.id.video_view);
         rlVideoView = (RelativeLayout) v.findViewById(R.id.rl_video_view);
         btnClose    = (Button) v.findViewById(R.id.btn_close);
 
         rlVideoView.setVisibility(View.VISIBLE);
-        VideoPlayer.playVideo(myVideoView, rlVideoView, btnClose, urlVideo,  getActivity());
+
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myVideoView.pause();
+                rlVideoView.setVisibility(View.INVISIBLE);
+            }
+        });
+
+
+        if (mediaController == null) {
+            mediaController = new MediaController(getActivity());
+        }
+        rlVideoView.setVisibility(View.VISIBLE);
+
+        try {
+            //set the media controller in the VideoView
+            myVideoView.setMediaController(mediaController);
+            myVideoView.setVideoPath(urlVideo);
+            myVideoView.start();
+
+        } catch (Exception e) {
+            Log.e("Error", e.getMessage());
+            e.printStackTrace();
+        }
+
+        myVideoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            public void onPrepared(MediaPlayer mediaPlayer) {
+                myVideoView.seekTo(position);
+                if (position == 0) {
+                    myVideoView.start();
+                } else {
+                    myVideoView.pause();
+                }
+            }
+        });
+
+        myVideoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                tabLayout.setVisibility(View.VISIBLE);
+                rlVideoView.setVisibility(View.GONE);
+                rlHeaderBack.setVisibility(View.VISIBLE);
+                llHeader.setVisibility(View.VISIBLE);
+            }
+
+        });
+
+        myVideoView.setPlayPauseListener(new MyCustomVideo.PlayPauseListener() {
+            @Override
+            public void onPlay() {
+            }
+
+            @Override
+            public void onPause() {
+                tabLayout.setVisibility(View.VISIBLE);
+                rlVideoView.setVisibility(View.GONE);
+                rlHeaderBack.setVisibility(View.VISIBLE);
+                llHeader.setVisibility(View.VISIBLE);
+            }
+        });
+
+
+        //VideoPlayer.playVideo(myVideoView, rlVideoView, btnClose, urlVideo,  this);
+
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        myVideoView.setLayoutParams(params);
+
+        tabLayout.setVisibility(View.GONE);
+        llHeader.setVisibility(View.GONE);
+        rlHeaderBack.setVisibility(View.GONE);
+
 
     }
 }

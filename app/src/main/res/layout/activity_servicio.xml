@@ -18,9 +18,11 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <include layout="@layout/ui_servicio"></include>
+            <include layout="@layout/ui_servicio"
+                android:id="@+id/header"></include>
 
-            <include layout="@layout/ui_back_servicio"></include>
+            <include layout="@layout/ui_back_servicio"
+                android:id="@+id/header_back"></include>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -33,6 +35,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#FFFFFF"
+                    android:animateLayoutChanges="true"
                     app:elevation="0dp">
 
                     <android.support.design.widget.TabLayout
@@ -43,6 +46,7 @@
                         android:background="@android:color/transparent"
                         android:scrollbars="none"
                         app:paddingEnd="-1sp"
+                        android:animateLayoutChanges="true"
                         app:tabBackground="@android:color/transparent"
                         app:tabGravity="fill"
                         app:tabIndicatorColor="@android:color/transparent"

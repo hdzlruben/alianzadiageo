@@ -50,7 +50,7 @@
                             android:padding="10sp"
                             android:paddingLeft="20sp"
                             android:paddingRight="20sp"
-                            android:tag="NO VIDEO" />
+                            android:tag="categorias_gin_tanqueray_london" />
 
                         <Button
                             android:id="@+id/btn_gin_tanqueray_t"
@@ -60,7 +60,7 @@
                             android:layout_marginTop="4sp"
                             android:background="@drawable/boton_tanqueray_ten"
                             android:padding="10sp"
-                            android:tag="NO VIDEO" />
+                            android:tag="categorias_gin_tanqueray_ten" />
 
                     </LinearLayout>
 

@@ -1,20 +1,22 @@
 package com.ioblok.aliadosdiageo.contentfamily;
 
 import android.content.Intent;
-import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.MediaController;
 import android.widget.RelativeLayout;
 import android.widget.VideoView;
 
-import com.bluejamesbond.text.DocumentView;
-import com.bluejamesbond.text.style.TextAlignment;
 import com.ioblok.aliadosdiageo.R;
 import com.ioblok.aliadosdiageo.adapter.AdapterActivity;
 import com.ioblok.aliadosdiageo.categorias.MenuCategoriasActivity;
@@ -23,7 +25,6 @@ import com.ioblok.aliadosdiageo.plataformas.procesos.MenuPlataformasActivity;
 import com.ioblok.aliadosdiageo.procesos.MenuProcesosActivity;
 import com.ioblok.aliadosdiageo.servicio.MenuServicioActivity;
 import com.ioblok.aliadosdiageo.utilis.URLVideosDataBase;
-import com.ioblok.aliadosdiageo.utilis.VideoPlayer;
 
 import java.util.ArrayList;
 
@@ -32,13 +33,12 @@ import io.realm.RealmResults;
 
 public class BuchanansActivity extends AppCompatActivity {
 
-    Button backButton_desc;
-
     private DrawerLayout mDrawer;
     private ListView mDrawerOptions;
     private ArrayList navDrawerItems;
     public String[] values = {"DIAGEO", "Familias", "Categorias" ,"Proceso de Elaboracion","Plataformas","Servicio Responsable"};
     AdapterActivity adapterActivity;
+    private MediaController mediaController;
 
     private VideoView myVideoView;
     private RelativeLayout rlVideoView;
@@ -58,6 +58,7 @@ public class BuchanansActivity extends AppCompatActivity {
         mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         adapterActivity = new AdapterActivity(this,values);
         mDrawerOptions.setAdapter(adapterActivity);
+
         /* Menu list */
 
         mDrawerOptions.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -123,13 +124,8 @@ public class BuchanansActivity extends AppCompatActivity {
 
         }
 
-        backButton_desc = (Button)this.findViewById(R.id.btn_back_desc);
-        backButton_desc.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+
+
     }
 
     public void openMenu(View v) {
@@ -141,10 +137,50 @@ public class BuchanansActivity extends AppCompatActivity {
         myVideoView = (VideoView) findViewById(R.id.video_view);
         rlVideoView = (RelativeLayout) findViewById(R.id.rl_video_view);
         btnClose    = (Button) findViewById(R.id.btn_close);
-
         rlVideoView.setVisibility(View.VISIBLE);
-        VideoPlayer.playVideo(myVideoView, rlVideoView, btnClose, urlVideo,  this);
+
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myVideoView.pause();
+                rlVideoView.setVisibility(View.INVISIBLE);
+            }
+        });
+
+
+        if (mediaController == null) {
+            mediaController = new MediaController(this);
+        }
+        rlVideoView.setVisibility(View.VISIBLE);
+
+        try {
+            //set the media controller in the VideoView
+            myVideoView.setMediaController(mediaController);
+            myVideoView.setVideoPath(urlVideo);
+            myVideoView.start();
+
+        } catch (Exception e) {
+            Log.e("Error", e.getMessage());
+            e.printStackTrace();
+        }
+
+        myVideoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            public void onPrepared(MediaPlayer mediaPlayer) {
+                myVideoView.seekTo(position);
+                if (position == 0) {
+                    myVideoView.start();
+                } else {
+                    myVideoView.pause();
+                }
+            }
+        });
+
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        myVideoView.setLayoutParams(params);
+
 
     }
+
+    public void finishActivity(View view){finish();}
 
 }

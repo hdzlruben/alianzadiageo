@@ -50,7 +50,7 @@
                             android:padding="10sp"
                             android:paddingLeft="20sp"
                             android:paddingRight="20sp"
-                            android:tag="categorias_locor_baileys" />
+                            android:tag="categorias_licor_baileys" />
 
                         <Button
                             android:id="@+id/btn_baileys_d"
@@ -60,7 +60,7 @@
                             android:layout_marginTop="4sp"
                             android:background="@drawable/bayleysduceleche"
                             android:padding="10sp"
-                            android:tag="categorias_locor_baileys_dulce" />
+                            android:tag="categorias_licor_baileys_dulce" />
 
                     </LinearLayout>
 
