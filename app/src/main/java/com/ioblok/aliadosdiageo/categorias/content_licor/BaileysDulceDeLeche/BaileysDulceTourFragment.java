@@ -21,7 +21,10 @@ public class BaileysDulceTourFragment extends Fragment {
         super.onCreate(savedInstanceState);
         v = inflater.inflate(R.layout.fragment_baileys_dulce_tour, null);
 
-        final Button btnOpenPopup = (Button)v.findViewById(R.id.openpopup);
+        final Button btnOpenPopup = (Button)v.findViewById(R.id.uno);
+        final Button btnOpenPopupDos = (Button)v.findViewById(R.id.dos);
+        final Button btnOpenPopupTres = (Button)v.findViewById(R.id.tres);
+
         btnOpenPopup.setOnClickListener(new Button.OnClickListener(){
 
             @Override
@@ -29,13 +32,13 @@ public class BaileysDulceTourFragment extends Fragment {
                 LayoutInflater layoutInflater
                         = (LayoutInflater)getActivity().getBaseContext()
                         .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
-                View popupView = layoutInflater.inflate(R.layout.popup, null);
+                View popupView = layoutInflater.inflate(R.layout.popup_uno_blsl, null);
                 final PopupWindow popupWindow = new PopupWindow(
                         popupView,
                         LayoutParams.WRAP_CONTENT,
                         LayoutParams.WRAP_CONTENT);
 
-                Button btnDismiss = (Button)popupView.findViewById(R.id.dismiss);
+                Button btnDismiss = (Button)popupView.findViewById(R.id.dismiss_uno);
                 btnDismiss.setOnClickListener(new Button.OnClickListener(){
 
                     @Override
@@ -47,6 +50,59 @@ public class BaileysDulceTourFragment extends Fragment {
                 popupWindow.showAsDropDown(btnOpenPopup, 50, -30);
 
             }});
+
+        btnOpenPopupDos.setOnClickListener(new Button.OnClickListener(){
+
+            @Override
+            public void onClick(View arg0) {
+                LayoutInflater layoutInflater
+                        = (LayoutInflater)getActivity().getBaseContext()
+                        .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
+                View popupView = layoutInflater.inflate(R.layout.popup_dos_blsl, null);
+                final PopupWindow popupWindow = new PopupWindow(
+                        popupView,
+                        LayoutParams.WRAP_CONTENT,
+                        LayoutParams.WRAP_CONTENT);
+
+                Button btnDismissDos = (Button)popupView.findViewById(R.id.dismiss_dos);
+                btnDismissDos.setOnClickListener(new Button.OnClickListener(){
+
+                    @Override
+                    public void onClick(View v) {
+                        // TODO Auto-generated method stub
+                        popupWindow.dismiss();
+                    }});
+
+                popupWindow.showAsDropDown(btnOpenPopupDos, 10, -30);
+
+            }});
+
+        btnOpenPopupTres.setOnClickListener(new Button.OnClickListener(){
+
+            @Override
+            public void onClick(View arg0) {
+                LayoutInflater layoutInflater
+                        = (LayoutInflater)getActivity().getBaseContext()
+                        .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
+                View popupView = layoutInflater.inflate(R.layout.popup_tres_blsl, null);
+                final PopupWindow popupWindow = new PopupWindow(
+                        popupView,
+                        LayoutParams.WRAP_CONTENT,
+                        LayoutParams.WRAP_CONTENT);
+
+                Button btnDismisstres = (Button)popupView.findViewById(R.id.dismiss_tres);
+                btnDismisstres.setOnClickListener(new Button.OnClickListener(){
+
+                    @Override
+                    public void onClick(View v) {
+                        // TODO Auto-generated method stub
+                        popupWindow.dismiss();
+                    }});
+
+                popupWindow.showAsDropDown(btnOpenPopupTres, 50, -30);
+
+            }});
+
         return v;
     }
 }

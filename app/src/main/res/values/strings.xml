@@ -375,4 +375,272 @@
     <string name="txt_help_content_inicio">Inicio:\nSelecciona este ícono para ir a la pantalla de bienvenida.</string>
     <string name="txt_help_content_navegador">Navegador:\nSelecciona este ícono para descubrir accesos rápidos a los contenidos de la  sección en la que te encuentres.</string>
 
+
+    <!-- POPUP BLUE LABEL -->
+
+    <string name="txt_pop_up_ocho_bl">Slanje Va! : ¡Salud!</string>
+    <string name="txt_pop_up_siete_bl">Nuestra mezcla no puede ser confundida: Cada botella es excepcional, numerada individualmente y el líquido es reconocido por la Realeza.</string>
+    <string name="txt_pop_up_seis_bl">Sabor excepcional: Usando whiskys de destilerías que ya no están en existencia Johnnie Walker® Blue Label® es una explosión de sabor excepcional suave al gusto, respaldado por el sello Walker, fundado en las puertas de hierro de la compañía en Kilmarnock, Escocia.</string>
+    <string name="txt_pop_up_cinco_bl">Escocia: Preferimos decir que Johnnie Walker® Blue Label® es más que una época y lugar, es Escocia y sus mezclas de whisky juntas para obtener el sabor excepcional.</string>
+    <string name="txt_pop_up_cuatro_bl">Inició con el whisky de sabor excepcional, pero ¿sabías que él empezó como Maestro Mezclador de especias de lujo, tés y tabaco?</string>
+    <string name="txt_pop_up_tres_bl">Carácter excepcional: Johnnie Walker® Blue Label® usa los más exquisitos whiskies de las 4 regiones de Escocia para recrear este carácter.</string>
+    <string name="txt_pop_up_dos_bl">Artesanía excepcional: Johnnie Walker® Blue Label® proviene de un linaje ininterrumpido de 190 años de tradición mezcladora, que es hasta ahora el whisky escocés premium del mundo.</string>
+    <string name="txt_pop_up_uno_bl">Barricas excepcionales: Inspiradas en el sabor único del whisky del siglo XIX, para Johnnie Walker®, sólo 1 de cada 10.000 barricas son aptas para recetar este sabor único a través de "Una mezcla de whiskys realmente excepcionales".</string>
+
+
+    <!-- POPUP KING GEORGE -->
+
+    <string name="txt_pop_up_uno_kg">1: UNA CELEBRACIÓN \n \n John Walker &amp; Sons King George V es un whisky que celebra la concesión del Sello Real a John Walker &amp; Sons en 1934 de manos del Rey George V.</string>
+    <string name="txt_pop_up_dos_kg">2: EDAD DE ORO \n \n Una combinación exquisita al estilo del gusto de los años 30, los años dorados del whisky…</string>
+    <string name="txt_pop_up_cuatro_kg">4: SOFISTICACIÓN \n \n Utiliza algunos whiskies de destilerías que ya no existen entre las que se encuentra la célebre Port Ellen, John Walker &amp; Sons King George V es sofisticado y lleno de vitalidad.</string>
+    <string name="txt_pop_up_tres_kg">3: WHISKIES ÚNICOS \n \n …utilizando solo whiskies únicos de destilerías que existían durante el resinado de King George V (1910-1936).</string>
+    <string name="txt_pop_up_cinco_kg">5: ELEGANCIA Y PROFUNDIDAD \n \n John Walker &amp; Sons King George V se basa en un gran sabor, con un toque de elegancia y profundidad. Port Ellen añade su a característico humo.</string>
+
+
+    <!-- POPUP BLACK LABEL  -->
+
+    <string name="txt_pop_up_uno_dbl">Se amplifican las características únicas de ahumado de Johnnie Walker Etiqueta Negra – la bebida perfecta para aquéllos que buscan un sabor más intenso y sólido.</string>
+    <string name="txt_pop_up_dos_dbl">Sus incomparables sabores intensos, ricos y obscuros se obtienen a través de una mezcla experta de whiskies añejados y naturalmente ahumados que han sido madurados en barricas de roble quemadas.</string>
+    <string name="txt_pop_up_tres_dbl">Johnnie Walker Etiqueta Negra \n \n contribuyó a que John Walker &amp; Sons obtuviera la Garantía Real del Rey Jorge V en 1934, las cuál ha permanecido hasta nuestros días.\n \nJohnnie Walker Double Etiqueta Negra\n \n  continúa con la búsqueda incansable de la excelencia que ha hecho esto posible.  </string>
+    <string name="txt_pop_up_cuatro_dbl">Tal y como lo hace el hombre caminante sigue su camino,\n \nJohnnie Walker Etiqueta\n Negra\n\n ha establecido nuevos estándares dentro del mundo del whisky escocés; lo que ha hecho que esta bebida se haya hecho acreedora de grandes honores de los críticos y consumidores año tras año desde su lanzamiento. </string>
+
+
+
+    <!-- POPUP PLATINIUM LABEL -->
+
+    <string name="txt_pop_up_dos_pl">2. MEZCLA PRIVADA \n \n Johnnie Walker Platinum Label es un whisky escocés de mezcla moderno, diseñado para el consumidor contemporáneo, inspirado en la tradición de la familia Walker de emplear mezclas privadas, que se utiliza como un whisky de celebración para los directores de empresas.</string>
+    <string name="txt_pop_up_uno_pl">1. PERFECTAMENTE ELABORADO DE FORMA ARTESANAL \n \n Johnnie Walker Platinum Label es la combinación más rica y perfecta de 18 años elaborada artesanalmente que John Walker &amp; Sons ha creado nunca, llena de sofisticación.</string>
+    <string name="txt_pop_up_cuatro_pl">4. CUIDADOSAMENTE ENVEJECIDO \n \n Preciados, como el preciado metal noble del platino, todos los whiskies utilizados en Johnnie Walker Platinum Label se envejecen cuidadosamente durante un mínimo de 18 años.</string>
+    <string name="txt_pop_up_tres_pl">3. MEZCLA DE PRECISIÓN \n \n Actualmente, Johnnie Walker recrea esta rica sofisticación utilizando una inigualable precisión de mezcla para crear un whisky moderno y con estilo.</string>
+    <string name="txt_pop_up_cinco_pl">5. RICO SABOR \n \n  Contando asimismo con el Sello Real concedido a John Walker &amp; Sons, el envejecimiento proporciona a esta mezcla un sabor suave, lleno de sofisticación.</string>
+    <string name="txt_pop_up_seis_pl">6. EXCLUSIVO Y CON ESTILO \n \n Johnnie Walker Platinum Label 18 year old se utiliza en momentos de celebración exclusivos y con estilo, siendo fieles a la leyenda y a la herencia de Johnnie Walker.</string>
+    <string name="txt_pop_up_siete_pl">7. RITUAL DE TOMAR SOLO \n \n Sin necesidad de acompañamiento, Johnnie Walker Platinum Label tiene seguridad en nariz, en un primer trago, se disfruta mejor si se toma solo.</string>
+
+
+    <!-- POPUP JW RED LABEL -->
+
+    <string name="txt_pop_up_uno_redl">John Walker – El pionero auténtico \n \n Si observamos la banda en la botella, encontraremos la leyenda “Fundado en 1820”, la cual señala la fecha en la que John Walker a la edad de 15 años inauguró una tienda de abarrotes en Kilmarnock, siguiendo la tradición comerciante de su difunto padre.\n En su tienda, John aprendió rápidamente a mezclar tés y posteriormente adquirió experiencia en la mezcla de fantásticos whiskies, lo que marcó el comienzo de su gran viaje épico.</string>
+    <string name="txt_pop_up_dos_redl">El comienzo del viaje y la fuente del whisky \n \n El pueblo de Kilmarnock, también mencionado en la etiqueta de la botella, fue el centro de las grandes rutas comerciales a lo largo de Escocia; ubicación que proporcionó a John acceso inigualable al whisky de todo el país. Sus habilidades excepcionales para realizar mezclas resultaron en whiskies de gran y profundo sabor.</string>
+    <string name="txt_pop_up_tres_redl">Johnnie Walker – Precursor de la consolidación mundial de la marca \n \n Los hijos y nietos de John fueron mayormente pioneros. En los años del boom del Imperio Británico, comenzaron a traspasar las fronteras de Escocia y de manera inteligente, convencieron a los capitanes de los grandes barcos comerciales de convertirse en representantes de JOHNNIE WALKER.\n La evidencia de este gran éxito puede reconocerse en el empaque actual del producto. Alrededor del borde dorado de la etiqueta pueden observarse algunos de los premios a los que JOHNNIE WALKER se ha hecho acreedor.\nYa en 1879 la marca había llegado al otro lado del mundo, ganando reconocimientos en Sidney y durante los años de la década de1920 JOHNNIE WALKER se había abierto camino en más de 150 mercados internacionales.</string>
+    <string name="txt_pop_up_cuatro_redl">Un Whisky dinámico y vibrante\n\n El nieto de John Walker, Sir Alexander, creo una nueva mezcla: “Whisky Añejo Especial de las Tierras Altas” (“Special Old Highland Whisky”); el cual fue diseñado para ser perfecto y disfrutado ya sea solo o con mezclador. Esta mezcla mostraba diferentes sabores de todo el mundo. En 1909, el Whisky Especial Añejo de las Tierras Altas se convirtió de manera oficial en JOHNNIE WALKER ETIQUETA ROJA.\n Sir Alexander deseaba obtener un sabor profundo el cual fue orgullosamente proclamado como Whisky Escocés, incluso cuando éste fuera mezclado con hielo, agua o soda. Su éxito en conseguir lo anterior dio como resultado que hoy en día JOHNNIE WALKER ETIQUETA ROJA esté posicionado como el Whisky Escocés No. 1 del mundo.</string>
+    <string name="txt_pop_up_cinco_redl">Pensamiento Innovador \n \n Según la verdadera tradición escocesa, la manera de obtener ganancias ha sido clara y eficiente. La pragmática familia Walker logró embarcar más paquetes, en los que pocas veces se rompían botellas; envasando el whisky en botellas cuadradas en lugar de redondas, lo que dio origen a la forma icónica de la botella. También, se dieron cuenta de que si la etiqueta se colocaba en un ángulo de 24’, la etiqueta sería aún más visible colocada sobre cualquier barra, lo que haría el nombre de la marca más conocido. JOHNNIE WALKER siempre buscó ser el primero, parte fundamental de este gran pensamiento innovador. </string>
+    <string name="txt_pop_up_seis_redl">Un tributo al espíritu pionero de John Walker\n\nGracias a la combinación de este espíritu pionero, un whisky vibrante y un empaque que puede reconocerse de manera instantánea, la familia Walker logro tener en sus manos un ícono mundial. JOHNNIE WALKER ETIQUETA es un justo tributo a John Walker, a quien se le rinde homenaje través del Caminante, el cual decora cada botella y representa a quien tuvo esta ambición innovadora y visionaria que permitió crear la marca de whisky escocés líder en el mundo.</string>
+
+
+
+    <!-- POPUP JW GOLD LABEL RESERVE -->
+
+    <string name="txt_pop_up_uno_gl">1. CLYNELISH \n \n ¿Sabía que tradicionalmente se encontraban depósitos de oro en el río que alimenta al whisky escocés Clynelish® Single Malt Scotch Whisky, una apreciada malta de esta mezcla?</string>
+    <string name="txt_pop_up_dos_gl">2. RESERVAS SELECTAS \n \n Todos los whiskies utilizados en esta mezcla proceden de reservas de whiskies seleccionados por el maestro mezclador Johnnie Walker…</string>
+    <string name="txt_pop_up_tres_gl">3. EXPERIENCIA EN MEZCLAR \n \n Johnnie Walker cuenta con más de 190 años de experiencia mezcladora…</string>
+    <string name="txt_pop_up_cuatro_gl">4. MEZCLA DE LUJO \n \n Johnnie Walker Gold Label Reserve es una mezcla de lujo con un sentimiento especial de celebración “de oro”…</string>
+    <string name="txt_pop_up_cinco_gl">5. ARTE DEL MAESTRO MEZCLADOR \n \n …del talento del maestro mezclador Johnnie Walker, que quería crear un regalo personal elogiando el arte de mezclar…</string>
+    <string name="txt_pop_up_seis_gl">6. SELLO REAL \n \n Junto con el Sello Real de Su Majestad la Reina Isabel II, esto es otra prueba de nuestro compromiso para producir whisky de máxima calidad, perfecto para celebraciones “de oro”.</string>
+
+
+    <!-- POPUP JW BLACK LABEL -->
+
+    <string name="txt_pop_up_uno_brs">Historia \n \n Inspirado en la mezcla creada por James Buchanans hace mas de 100 años, simbolo de las grandes celebraciones de aquella epoca.</string>
+    <string name="txt_pop_up_dos_brs">Compromiso de calidad \n \nSimboliza un contrato de calidad entre James Buchanans y el Consumidor</string>
+    <string name="txt_pop_up_tres_brs">Un Gran Legado\n \nEl escudo de armas representa el sello personal de James Buchanans hacia cada obra filantropica que realizo </string>
+    <string name="txt_pop_up_cuatro_brs">Balance Perfecto \n \n Un Whisky sumamente elegante, ideal para disfrutar y compartir</string>
+    <string name="txt_pop_up_cinco_brs">Extraordinario Sabor \n \n Su doble añejamiento y reposo de las maltas derivan en una textura sedosa y realza los sabores citricos y dulces caracteristicos de Casa Buchanans</string>
+    <string name="txt_pop_up_seis_brs">Slanje Va! \n \n Salud</string>
+
+
+    <!-- POPUP JW BLACK LABEL -->
+
+    <string name="txt_pop_up_uno_jwbl">OLD HIGHLAND WHISKY EXTRA ESPECIAL = ETIQUETA NEGRA \n \n En 1906, Alexander Walker II tomó el Old Highland Whisky  Extra Especial y colocó el nombre de la marca sobre un fondo negro. Después de 3 años, el mundo entero ordenaba esta bebida como `Etiqueta Negra´. Lo anterior hizo que Alexander diera cabida a esta demanda popular y en 1909, modificó el nombre del producto en el empaque.</string>
+    <string name="txt_pop_up_dos_jwbl">LA GARANTÍA REAL \n \n JOHNNIE WALKER ha sido reconocido por los críticos de la actualidad, como por ejemplo: “es el David de Miguel Angel dentro del arte de la mezcla, es lo mejor de lo mejor dentro de la mezclas de su categoría”. En 1934, este whisky extra especial ayudó a que JOHNNIE WALKER asegurara la Garantía Real otorgada por el Rey Jorge V, título que ha sido otorgado a la marca por todos los monarcas desde entonces. </string>
+    <string name="txt_pop_up_tres_jwbl">UN EMPAQUE DISTINTIVO \n \n La etiqueta negra y la inclinación a lo largo de los bordes de la botella resultan en presencia e impacto en el consumidor que muy pocos pueden igualar.</string>
+    <string name="txt_pop_up_cuatro_jwbl">EL HOMBRE CAMINANTE \n \n La historia de JOHNNIE WALKER ETIQUETA NEGRA es muy similar a la del Hombre Caminante que se muestra al frente del empaque; quien siempre continúa hacia adelante pero nunca olvida de donde proviene. Siempre perdurará el whisky “Extra Especial” creado por Sir Alexander II, cuya alma es la creencia familiar de que este whisky debe capturar lo mejor que puede crear la industria del whisky escocés, un verdadero ícono. </string>
+    <string name="txt_pop_up_cinco_jwbl">LA DECLARACIÓN DE AÑEJAMIENTO EMBLEMÁTICA \n \n En 1906 decidieron agregar un nuevo elemento al empaque: la declaración de 12 años de añejamiento. Este importante compromiso garantizaba que cada botella reconocida como Johnnie Walker Etiqueta Negra debería contar con un añejamiento de al menos 12 años. </string>
+
+
+    <!-- POPUP BUCHANANS 18 -->
+
+    <string name="txt_pop_up_uno_bcd">Un homenaje a los hombres que comparten su vida \n \n Botella inspirada en la cantimplora de los soldados del ejército británico quienes compartían su agua como símbolo de fraternidad.</string>
+    <string name="txt_pop_up_dos_bcd">Máxima indulgencia \n \n Buchanan´s 18 cuenta con el más sedoso, delicado y confortable perfil de líquido dentro de los whiskies de lujo llevándolo más allá de ser un Scotch</string>
+    <string name="txt_pop_up_tres_bcd">Compromiso personal \n \n Cada etiqueta es un contrato personal con James Buchanan como compromiso de calidad y excelencia</string>
+
+
+    <!-- POPUP BUCHANANS MASTER -->
+
+    <string name="txt_pop_up_uno_bcmaster">Mezcla exclusiva de maltas. \n \n Buchanans Master es una mezcla de maltas exclusias eleccionadas a mano para lograr un sabor único y vibrante</string>
+    <string name="txt_pop_up_dos_bcmaster">Para paladares contemporáneos \n \n Creado especialmente para paladares de Whisky contemporáneos al contar con notas más intensas, ahumadas y herbales sin perder el perfil clásico de naranja y chocolate de Buchanan´s</string>
+    <string name="txt_pop_up_tres_bcmaster">Creado por Keith Law. \n \n Creado artesanalmente por uno de los nombres más destacados del mundo del Whisky, Keith Law, Maestro Mezclador de Casa Buchanan´s</string>
+
+
+    <!-- POPUP BUCHANANS 12 -->
+
+    <string name="txt_pop_up_uno_bcdoce">El original Buchanans finest liquor.\n \n Es la primera etiqueta a la que James Buchanan´s le dio su nombre y se ha mantenido vigente desde 1826.</string>
+    <string name="txt_pop_up_dos_bcdoce">12  años de añejamiento. \n \n Una mezcla de Whiskies de malta y grano  con un mínimo de 12 años de añejamiento en barricas de roble, proporcionándole un sabor elegante pero fresco y sofisticado</string>
+    <string name="txt_pop_up_tres_bcdoce">Compromiso personal. \n \n La etiqueta simboliza un contrato, representa el compromiso de James Buchanan con sus consumidores, una garantía de excepcional calidad</string>
+
+    <!-- POPUP OLD PAR -->
+
+    <string name="txt_pop_up_uno_op">Botella de taberna de 1600</string>
+    <string name="txt_pop_up_dos_op">Sello de la casa, frase Old Parr vivió durante 10 diferentes reinos en Inglaterra</string>
+    <string name="txt_pop_up_tres_op">Ícono de Tomas Parr con su edad de nacimiento y defunción</string>
+    <string name="txt_pop_up_cuatro_op">La botella se para en un ángulo</string>
+
+    <!-- POPUP OLD PAR SILVER -->
+
+    <string name="txt_pop_up_uno_ops">Botella de taberna de 1600</string>
+    <string name="txt_pop_up_dos_ops">El color plateado, reflejan las bajas temperaturas  de su proceso de filtración y refuerzan el concepto de ser un whisky más suave.</string>
+    <string name="txt_pop_up_tres_ops">Ícono de Tomas Parr con su edad de nacimiento y defunción</string>
+    <string name="txt_pop_up_cuatro_ops">La botella se para en un ángulo</string>
+
+
+    <!-- POPUP J AND B -->
+
+    <string name="txt_pop_up_uno_jandb">J&amp;B hace referencia a su creador Justerini y a su fundador Brooks.</string>
+    <string name="txt_pop_up_dos_jandb">La pronunciación es J= Yei &amp;=an B=Bi,</string>
+    <string name="txt_pop_up_tres_jandb">Su empaque, una botella verde con etiqueta roja y amarilla, la hace única dentro de la categoría de OLD SCOTCH WHISKIES, cuya imagen sobresale ante solemnes lacres, y colores sobrios.</string>
+    <string name="txt_pop_up_cuatro_jandb">´RARE´ – significa las 42 maltas en la mezcla del líquido.</string>
+    <string name="txt_pop_up_cinco_jandb">Su historia escrita por emprendedores audaces es tan atrevida, que no cupo en la etiqueta.</string>
+    <string name="txt_pop_up_seis_jandb">Sello de realeza inglesa y nombre de sus majestades desde S.IV hasta S. VIII. Le da credenciales de calidad.</string>
+    <string name="txt_pop_up_siete_jandb">El BLEND que le da el sabor no tan fuerte de un whisky convencional ya que es una de las características esenciales de J&amp;B, lo cual lo hace perfecto para mezclar.</string>
+
+
+
+    <!-- POPUP BULLEIT -->
+
+    <string name="txt_pop_up_uno_bulleit">Botella con corcho, historia del producto Contada y firmada por Tom Bulleit</string>
+    <string name="txt_pop_up_dos_bulleit">Botella estilo Botica Americana</string>
+    <string name="txt_pop_up_tres_bulleit">Hecho en Kentucky</string>
+    <string name="txt_pop_up_cuatro_bulleit">45 grados de alcohol.</string>
+
+
+
+    <!-- POPUP DON JULIO BLANCO -->
+
+    <string name="txt_pop_up_uno_dj_blanco">Botella cuadrada característica pensada así para poder compartir durante el almuerzo sin tener obstáculos sobre la mesa</string>
+    <string name="txt_pop_up_dos_dj_blanco">Un Tequila Reserva de Don Julio, 100% agave, Blanco</string>
+    <string name="txt_pop_up_tres_dj_blanco">750ml con 38° de la más pura expresión del Tequila</string>
+
+
+    <!-- POPUP DON JULIO AÑEJO REPOSADO -->
+
+    <string name="txt_pop_up_uno_dj_anejo">Botella cuadrada característica pensada así para poder compartir durante el almuerzo sin tener obstáculos sobre la mesa</string>
+    <string name="txt_pop_up_dos_dj_anejo">Un Tequila Reserva de Don Julio, 100% agave, Añejo</string>
+    <string name="txt_pop_up_tres_dj_anejo">750ml con 38° de espirituoso Añejo, maravillosamente complejo y balanceado</string>
+
+
+
+
+    <!-- POPUP DON JULIO REPOSADO -->
+
+    <string name="txt_pop_up_uno_dj_reposado">Botella cuadrada característica pensada así para poder compartir durante el almuerzo sin tener obstáculos sobre la mesa</string>
+    <string name="txt_pop_up_dos_dj_reposado">Un Tequila Reserva de Don Julio, 100% agave, Reposado</string>
+    <string name="txt_pop_up_tres_dj_reposado">750ml con 38° de esencia pura en perfección del tequila reposado</string>
+
+
+    <!-- POPUP DON JULIO 70 -->
+
+    <string name="txt_pop_up_uno_dj_setenta">Botella cuadrada característica pensada así para poder compartir durante el almuerzo sin tener obstáculos sobre la mesa</string>
+    <string name="txt_pop_up_dos_dj_setenta">Un Tequila Reserva de Don Julio Añejo Cristalino, 100% agave</string>
+    <string name="txt_pop_up_tres_dj_setenta">750ml con 35° de espirituoso Añejo, maravillosamente complejo y balanceado</string>
+
+
+    <!-- POPUP DON JULIO 1942 -->
+
+    <string name="txt_pop_up_uno_dj_diecinueve">Se presenta en una botella alargada con un diseño elaborado, inspirado en la hoja de agave</string>
+    <string name="txt_pop_up_dos_dj_diecinueve">Don Julio 1942 firmado por Julio González, nombrado así en honor a 60 años de historia Tequilera</string>
+    <string name="txt_pop_up_tres_dj_diecinueve">750ml con 38° de distinguido y refinado Tequila Añejado durante 30 meses</string>
+
+
+
+    <!-- POPUP DON JULIO REAL -->
+
+    <string name="txt_pop_up_uno_djr">Botella en forma de licorera, decorada con hojas de agave</string>
+    <string name="txt_pop_up_dos_djr">Don Julio Real, tequila Extra Añejo</string>
+    <string name="txt_pop_up_tres_djr">750ml con 38° de perfecta armonía y exaltación de las bondades del agave</string>
+
+
+
+    <!-- POPUP ZACAPA 23 -->
+
+    <string name="txt_pop_up_uno_zv">Celebración Centenaria \n El ron Zacapa fue nombrado en honor a esta ciudad de Guatemala en el año 1976, en conmemoración del centenario de la fundación de esta ciudad.</string>
+    <string name="txt_pop_up_dos_zv">Destilación en pequeños lotes \n El ron Zacapa esta hecho de miel pura de caña de azúcar y el concentrado de miel de caña de azúcar se destila en pequeños lotes</string>
+    <string name="txt_pop_up_tres_zv">Añejamiento Excepcional \n Añejamiento excepcional en tres diferentes tipos de barricas (whisky, vino y jerez) a través de un proceso de añejamiento único llamado “Sistema Solera”. Zacapa es una mezcla de rones que han pasado por entre 6 y 23 años de añejamiento.</string>
+    <string name="txt_pop_up_cuatro_zv">El Secreto \n Vamos a revelar el secreto de Zacapa. El lento proceso de añejamiento se lleva a cabo a gran altitud en un ambiente de viento frío de las Tierras Altas, el cual se conoce como añejamiento por encima de las nubes.</string>
+    <string name="txt_pop_up_cinco_zv">La Cultura Maya \n Cada botella cuenta con una banda de petate hecha a mano de manera artesanal, la cual refleja los 3000 años de tradición de la cultura maya y simboliza la unidad de todas las cosas.</string>
+    <string name="txt_pop_up_seis_zv">Reconocimientos \n Zacapa ha sido reconocido con el primer lugar en cinco ocasiones consecutivas dentro del Concurso Internacional del Ron. Sin duda, este es el único ron de lujo dentro del Salón Internacional del Ron… ¡Salud¡</string>
+
+
+    <!-- POPUP CAPTAIN MORGAN ORIGINAL -->
+
+    <string name="txt_pop_up_uno_cmc">El Capitán - Haciendo referencia a nuestro personaje real Sir. Henry Morgan, personaje en el cual está inspirada la marca.</string>
+    <string name="txt_pop_up_dos_cmc">Sello "Original Spiced Rum" - certificación de que el ron es elaborado con la receta original de Henry Morgan</string>
+    <string name="txt_pop_up_tres_cmc">Firma - firma de Henry Morgan</string>
+    <string name="txt_pop_up_cuatro_cmc">Moneda - representan el espíritu de Henry Morgan de fiesta, aventurero, líder carismático y la mezcla de rones especiados que forman la receta de CMOSR</string>
+
+    <!-- POPUP CAPTAIN MORGAN BLACK-->
+
+    <string name="txt_pop_up_uno_cmb">Una botella totalmente masculina con detalles Premium.</string>
+    <string name="txt_pop_up_dos_cmb">Es más corta y ancha, como las verdaderas botellas de ron de la época del Capitán.</string>
+    <string name="txt_pop_up_tres_cmb">Una etiqueta de pergamino con relieve táctil y un acabado cobrizo de primera calidad.</string>
+    <string name="txt_pop_up_cuatro_cmb">Una historia oculta en el interior de la etiqueta que se descubre conforme se vacía la botella.</string>
+
+
+    <!-- POPUP CAPTAIN MORGAN WHITE-->
+
+    <string name="txt_pop_up_uno_cm">Ron blanco con el respaldo de Captain Morgan Company.</string>
+    <string name="txt_pop_up_dos_cm">5 veces filtrado.</string>
+    <string name="txt_pop_up_tres_cm">750 ml de delicioso elixir con 35° de alcohol.</string>
+
+
+    <!-- POPUP Ciroc -->
+
+    <string name="txt_pop_up_tres_ci">Piedra Azul \n Su color proviene de la región Gallac, famosa por ser la fuente de este hermoso color, usado también en la pintura.</string>
+    <string name="txt_pop_up_dos_ci">Cascada helada \n Las uvas se someten a una fría fermentación y maceración para mantener un mejor sabor antes de la destilación.</string>
+    <string name="txt_pop_up_uno_ci">Firma de Cîroc \n El nombre "cîroc" es una mezcla de dos palabras francesas: "cîme" que significa cima o pico y "roche" que significa roca.</string>
+    <string name="txt_pop_up_cuatro_ci">Destilado 5 veces \n Cîroc se destila 5 veces.\n La quinta y última destilación se lleva a cabo en la hermana destilería de una familia en el campo de Cognac, Francia.</string>
+    <string name="txt_pop_up_cinco_ci">Ícono en relieve\n El gallo y las uvas en relieve simbolizan la herencia de la vieja región de vino francesa.</string>
+
+
+    <!-- POPUP KETEL ONE -->
+
+    <string name="txt_pop_up_uno_kt">El nombre Ketel One proviene de la palabra en holandés “Distilleerketel No.1” que significa “Alambique”</string>
+    <string name="txt_pop_up_dos_kt">En la etiqueta podemos encontrar una imagen del alambique de cobre original “Distilleerketel No.1” en el cual se inspiraron para nombrar a este vodka.</string>
+    <string name="txt_pop_up_tres_kt">Ketel One es producido en pequeños lotes dentro de la destilería de la Familia Nolet, resultando en un distintivo, fresco y sofisticado sabor.</string>
+    <string name="txt_pop_up_cuatro_kt">La destilería fue fundada hace más de 300 años en 1691. 5 Schiedam, Holanda Considerada por algunos como la capital de los destilados, el lugar donde aparentemente se inventaron el brandy y el “jenever” (Ginebra Holandesa)</string>
+    <string name="txt_pop_up_cinco_kt">En la etiqueta podemos ver el escudo de la Familia Nolet, y si damos vuelta a la botella encontramos los nombres de las 10 generaciones de la Familia.</string>
+    <string name="txt_pop_up_seis_kt">La botella fue diseñada basándose en el estilo de las botellas originales de espirituosos holandeses.</string>
+    <string name="txt_pop_up_siete_kt">El cuello de la botella fue aumentado en altura por requerimiento de los bar tenders ya que de esta manera podían sostenerlo mejor.</string>
+
+    <!-- POPUP SMIRNOFF -->
+
+    <string name="txt_pop_up_uno_sn">Smirnoff 21, llamado así por ser 3 veces destilado, 10 veces filtrado durante 8 horas en carbón (3+10+8 = 21).</string>
+    <string name="txt_pop_up_dos_sn">La Cresta Imperial Rusa representa 150 años de legado de este Vodka Ruso Clásico, emblema entregado de una forma contemporánea.</string>
+    <string name="txt_pop_up_tres_sn">La clásica botella en vidrio transparente transmite al consumidor pureza en la elaboración.</string>
+
+
+    <!-- POPUP TANQUERAY TEN -->
+
+    <string name="txt_pop_up_uno_tt">Compromiso de Calidad. \n Sello rojo que ha pasado de generación en generación como una marca de la herencia.</string>
+    <string name="txt_pop_up_dos_tt">Artesanal. \n Hecho artesanalmente en pequeños lotes, el corazón de Tanqueray Ten viene de un alambique de 500 litros conocido como "Tiny Ten"</string>
+    <string name="txt_pop_up_tres_tt">Frescura. \n Frutas frescas y flores de manzanilla son añadidas a la receta para darle un sabor cítrico fresco, entregando así uno de los destilados claros más sofisticados en el mundo.</string>
+
+    <!-- POPUP TANQUERAY LONDON -->
+
+    <string name="txt_pop_up_uno_tl">Afinidad a la coctelería. \n La característica botella verde está inspirada en la forma de un shaker de 3 piezas.</string>
+    <string name="txt_pop_up_dos_tl">Garantía Real. \n Avalado por la Corona Inglesa como producto digno de la Realeza.</string>
+    <string name="txt_pop_up_tres_tl">Compromiso de Calidad. \n Sello rojo que ha pasado de generación en generación como una marca de la herencia.</string>
+
+    <!-- POPUP BAILEYS -->
+
+    <string name="txt_pop_up_uno_bls">Elegante botella alta y femenina de vidrio oscuro que permite proteger la calidad del contenido, perfecta para cualquier refrigerador</string>
+    <string name="txt_pop_up_dos_bls">Ícono de Doble B, es un nudo celta infinito que alude a la calidad, artesanía y origen irlandés</string>
+    <string name="txt_pop_up_tres_bls">Paisaje que representa el patrimonio irlandés y origen de la marca, un país conocido por su tradición en la industria lechera y la destilación</string>
+    <string name="txt_pop_up_cuatro_bls">Refleja la autenticidad, marca que invento la categoría de licores de crema y hasta el momento sigue a la cabeza</string>
+
+
+    <!-- POPUP BAILEYS de LECHE -->
+
+    <string name="txt_pop_up_uno_blsl">Sofisticada botella femenina de vidrio oscuro que permite proteger la calidad del contenido, perfecta para cualquier refrigerador</string>
+    <string name="txt_pop_up_dos_blsl">Ícono de Doble B, es un nudo celta infinito que alude a la calidad, artesanía y origen irlandés</string>
+    <string name="txt_pop_up_tres_blsl">Curvas doradas que evocan el delicioso Dulce de Leche</string>
+
 </resources>

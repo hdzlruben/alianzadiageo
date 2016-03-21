@@ -27,7 +27,7 @@
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/openpopup"
+                        android:id="@+id/uno"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
@@ -35,7 +35,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/openpopupsss"
+                        android:layout_alignBottom="@+id/uno"
                         android:layout_alignParentRight="true"
                         android:background="@drawable/lineaspopopos" />
 
@@ -50,7 +50,7 @@
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/uno"
+                        android:id="@+id/dos"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
@@ -58,7 +58,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/openpopupss"
+                        android:layout_alignBottom="@+id/dos"
                         android:layout_alignParentLeft="true"
                         android:background="@drawable/lineaspopopos" />
 
@@ -72,7 +72,7 @@
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/openpopupssss"
+                        android:id="@+id/tres"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
@@ -80,7 +80,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/openpopupssss"
+                        android:layout_alignBottom="@+id/tres"
                         android:layout_alignParentRight="true"
                         android:background="@drawable/lineaspopopos" />
 

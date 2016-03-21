@@ -30,12 +30,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/openpopup"
+                        android:layout_alignBottom="@+id/cuatro"
                         android:layout_alignParentRight="true"
                         android:background="@drawable/lineaspopopos" />
 
                     <Button
-                        android:id="@+id/openpopup"
+                        android:id="@+id/cuatro"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
@@ -53,12 +53,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/openpopupsa"
+                        android:layout_alignBottom="@+id/seis"
                         android:layout_alignParentRight="true"
                         android:background="@drawable/lineaspopopos" />
 
                     <Button
-                        android:id="@+id/openpopupsa"
+                        android:id="@+id/seis"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
@@ -76,12 +76,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/openpopups"
+                        android:layout_alignBottom="@+id/uno"
                         android:layout_alignParentLeft="true"
                         android:background="@drawable/lineaspopopos" />
 
                     <Button
-                        android:id="@+id/openpopups"
+                        android:id="@+id/uno"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
@@ -102,12 +102,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/openpopupss"
+                        android:layout_alignBottom="@+id/dos"
                         android:layout_alignParentLeft="true"
                         android:background="@drawable/lineaspopopos" />
 
                     <Button
-                        android:id="@+id/openpopupss"
+                        android:id="@+id/dos"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
@@ -124,12 +124,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/o"
+                        android:layout_alignBottom="@+id/cinco"
                         android:layout_alignParentRight="true"
                         android:background="@drawable/lineaspopopos" />
 
                     <Button
-                        android:id="@+id/o"
+                        android:id="@+id/cinco"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
@@ -147,12 +147,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/openpopupsst"
+                        android:layout_alignBottom="@+id/tres"
                         android:layout_alignParentLeft="true"
                         android:background="@drawable/lineaspopopos" />
 
                     <Button
-                        android:id="@+id/openpopupsst"
+                        android:id="@+id/tres"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"

@@ -9,14 +9,7 @@
         android:layout_height="match_parent"
         android:background="#fff"
         android:orientation="vertical">
-        <!--<include
-            layout="@layout/ui_baileys" />
-        <include
-            android:id="@+id/tab_menu_diageo"
-            layout="@layout/ui_btn_dots" />
-        <include
-            android:id="@+id/tab_menu_diageo"
-            layout="@layout/ui_back_categorias_int" />-->
+
         <ScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
@@ -31,19 +24,63 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="120sp"
+                    android:layout_marginTop="70sp"
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/openpopupss"
+                        android:id="@+id/siete"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:background="@drawable/tres" />
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/siete" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/openpopupss"
+                        android:layout_alignBottom="@+id/siete"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/lineaspopopos" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/cinco"
+                        android:layout_width="30sp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/cinco" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/cinco"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/lineaspopopos" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-10sp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/dos"
+                        android:layout_width="30sp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/dos" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/dos"
                         android:layout_alignParentLeft="true"
                         android:background="@drawable/lineaspopopos" />
 
@@ -53,17 +90,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="20sp"
+                    android:layout_marginTop="0sp"
+                    android:layout_marginLeft="10sp"
                     android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/openpopup"
+                        android:layout_alignBottom="@+id/uno"
                         android:layout_alignParentLeft="true"
                         android:background="@drawable/lineaspopopos" />
                     <Button
-                        android:id="@+id/openpopup"
+                        android:id="@+id/uno"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
@@ -75,19 +113,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="20sp"
+                    android:layout_marginTop="5sp"
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/openpopups"
+                        android:id="@+id/tres"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:background="@drawable/dos" />
+                        android:background="@drawable/tres" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/openpopups"
+                        android:layout_alignBottom="@+id/tres"
                         android:layout_alignParentLeft="true"
                         android:background="@drawable/lineaspopopos" />
 
@@ -97,20 +135,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="20sp"
+                    android:layout_marginTop="5sp"
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/openpopupsss"
+                        android:id="@+id/cuatro"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
+                        android:layout_alignParentLeft="true"
                         android:background="@drawable/cuatro" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/openpopupsss"
-                        android:layout_alignParentRight="true"
+                        android:layout_alignBottom="@+id/cuatro"
+                        android:layout_alignParentLeft="true"
                         android:background="@drawable/lineaspopopos" />
 
                 </RelativeLayout>
@@ -123,15 +161,15 @@
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/openpopupssss"
+                        android:id="@+id/seis"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:background="@drawable/cinco" />
+                        android:background="@drawable/seis" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/openpopupssss"
+                        android:layout_alignBottom="@+id/seis"
                         android:layout_alignParentRight="true"
                         android:background="@drawable/lineaspopopos" />
 

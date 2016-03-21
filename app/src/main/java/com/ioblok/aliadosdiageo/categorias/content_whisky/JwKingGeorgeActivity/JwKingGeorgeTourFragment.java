@@ -21,21 +21,27 @@ public class JwKingGeorgeTourFragment extends Fragment {
         super.onCreate(savedInstanceState);
         v = inflater.inflate(R.layout.fragment_jw_king_george_tour, null);
 
-        final Button btnOpenPopup = (Button)v.findViewById(R.id.openpopup);
-        btnOpenPopup.setOnClickListener(new Button.OnClickListener(){
+
+        final Button btnOpenPopupUno = (Button)v.findViewById(R.id.uno);
+        final Button btnOpenPopupDos = (Button)v.findViewById(R.id.dos);
+        final Button btnOpenPopupTres = (Button)v.findViewById(R.id.tres);
+        final Button btnOpenPopupCuatro = (Button)v.findViewById(R.id.cuatro);
+        final Button btnOpenPopupCinco = (Button)v.findViewById(R.id.cinco);
+
+            btnOpenPopupUno.setOnClickListener(new Button.OnClickListener(){
 
             @Override
             public void onClick(View arg0) {
                 LayoutInflater layoutInflater
                         = (LayoutInflater)getActivity().getBaseContext()
                         .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
-                View popupView = layoutInflater.inflate(R.layout.popup, null);
+                View popupView = layoutInflater.inflate(R.layout.popup_uno_king, null);
                 final PopupWindow popupWindow = new PopupWindow(
                         popupView,
                         LayoutParams.WRAP_CONTENT,
                         LayoutParams.WRAP_CONTENT);
 
-                Button btnDismiss = (Button)popupView.findViewById(R.id.dismiss);
+                Button btnDismiss = (Button)popupView.findViewById(R.id.dismiss_uno);
                 btnDismiss.setOnClickListener(new Button.OnClickListener(){
 
                     @Override
@@ -44,9 +50,111 @@ public class JwKingGeorgeTourFragment extends Fragment {
                         popupWindow.dismiss();
                     }});
 
-                popupWindow.showAsDropDown(btnOpenPopup, 50, -30);
+                popupWindow.showAsDropDown(btnOpenPopupUno, 50, -30);
 
             }});
+
+            btnOpenPopupDos.setOnClickListener(new Button.OnClickListener(){
+
+            @Override
+            public void onClick(View arg0) {
+                LayoutInflater layoutInflater
+                        = (LayoutInflater)getActivity().getBaseContext()
+                        .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
+                View popupView = layoutInflater.inflate(R.layout.popup_dos_king, null);
+                final PopupWindow popupWindow = new PopupWindow(
+                        popupView,
+                        LayoutParams.WRAP_CONTENT,
+                        LayoutParams.WRAP_CONTENT);
+
+                Button btnDismissDos = (Button)popupView.findViewById(R.id.dismiss_dos);
+                btnDismissDos.setOnClickListener(new Button.OnClickListener(){
+
+                    @Override
+                    public void onClick(View v) {
+                        // TODO Auto-generated method stub
+                        popupWindow.dismiss();
+                    }});
+
+                popupWindow.showAsDropDown(btnOpenPopupDos, 50, -30);
+            }});
+
+        btnOpenPopupTres.setOnClickListener(new Button.OnClickListener(){
+
+            @Override
+            public void onClick(View arg0) {
+                LayoutInflater layoutInflater
+                        = (LayoutInflater)getActivity().getBaseContext()
+                        .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
+                View popupView = layoutInflater.inflate(R.layout.popup_tres_king, null);
+                final PopupWindow popupWindow = new PopupWindow(
+                        popupView,
+                        LayoutParams.WRAP_CONTENT,
+                        LayoutParams.WRAP_CONTENT);
+
+                Button btnDismissTres = (Button)popupView.findViewById(R.id.dismiss_tres);
+                btnDismissTres.setOnClickListener(new Button.OnClickListener(){
+
+                    @Override
+                    public void onClick(View v) {
+                        // TODO Auto-generated method stub
+                        popupWindow.dismiss();
+                    }});
+
+                popupWindow.showAsDropDown(btnOpenPopupTres, 50, -30);
+            }});
+
+        btnOpenPopupCuatro.setOnClickListener(new Button.OnClickListener(){
+
+            @Override
+            public void onClick(View arg0) {
+                LayoutInflater layoutInflater
+                        = (LayoutInflater)getActivity().getBaseContext()
+                        .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
+                View popupView = layoutInflater.inflate(R.layout.popup_cuatro_king, null);
+                final PopupWindow popupWindow = new PopupWindow(
+                        popupView,
+                        LayoutParams.WRAP_CONTENT,
+                        LayoutParams.WRAP_CONTENT);
+
+                Button btnDismissCuatro = (Button)popupView.findViewById(R.id.dismiss_cuatro);
+                btnDismissCuatro.setOnClickListener(new Button.OnClickListener(){
+
+                    @Override
+                    public void onClick(View v) {
+                        // TODO Auto-generated method stub
+                        popupWindow.dismiss();
+                    }});
+
+                popupWindow.showAsDropDown(btnOpenPopupCuatro, 50, -30);
+            }});
+
+        btnOpenPopupCinco.setOnClickListener(new Button.OnClickListener(){
+
+            @Override
+            public void onClick(View arg0) {
+                LayoutInflater layoutInflater
+                        = (LayoutInflater)getActivity().getBaseContext()
+                        .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
+                View popupView = layoutInflater.inflate(R.layout.popup_cinco_king, null);
+                final PopupWindow popupWindow = new PopupWindow(
+                        popupView,
+                        LayoutParams.WRAP_CONTENT,
+                        LayoutParams.WRAP_CONTENT);
+
+                Button btnDismissCinco = (Button)popupView.findViewById(R.id.dismiss_cinco);
+                btnDismissCinco.setOnClickListener(new Button.OnClickListener(){
+
+                    @Override
+                    public void onClick(View v) {
+                        // TODO Auto-generated method stub
+                        popupWindow.dismiss();
+                    }});
+
+                popupWindow.showAsDropDown(btnOpenPopupCinco, 50, -30);
+            }});
+
+
         return v;
     }
 }
