@@ -1,30 +1,112 @@
 package com.ioblok.aliadosdiageo.servicio;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 
 import com.ioblok.aliadosdiageo.R;
+import com.ioblok.aliadosdiageo.adapter.AdapterActivity;
+import com.ioblok.aliadosdiageo.categorias.MenuCategoriasActivity;
+import com.ioblok.aliadosdiageo.family.MenuFamilyActivity;
+import com.ioblok.aliadosdiageo.plataformas.procesos.MenuPlataformasActivity;
+import com.ioblok.aliadosdiageo.procesos.MenuProcesosActivity;
+
+import java.util.ArrayList;
 
 import io.realm.Realm;
 
 public class MenuServicioActivity extends AppCompatActivity {
+    private DrawerLayout mDrawer;
+    private ListView mDrawerOptions;
+    private ArrayList navDrawerItems;
+    public String[] values = {"DIAGEO", "Familias", "Categorias" ,"Proceso de Elaboracion","Plataformas","Servicio Responsable"};
+    AdapterActivity adapterActivity;
 
-    Button backButton_servicio;
+    Button backButton;
     TabLayout tabLayout;
     Realm realm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_servicio);
+
+        backButton = (Button)this.findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+        /*List video menu*/
+
+
+        mDrawerOptions = (ListView) findViewById(R.id.left_drawer);
+        mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
+        adapterActivity = new AdapterActivity(this,values);
+        mDrawerOptions.setAdapter(adapterActivity);
+
+        /*List video menu*/
+
+
+        mDrawerOptions.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
+
+                if (position == 0)
+                {
+                    Intent intent = new Intent(MenuServicioActivity.this, MenuServicioActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+                else if (position == 1)
+                {
+                    Intent intent = new Intent(MenuServicioActivity.this, MenuFamilyActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+                else if (position == 2)
+                {
+                    Intent intent = new Intent(MenuServicioActivity.this, MenuCategoriasActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+                else if (position == 3)
+                {
+                    Intent intent = new Intent(MenuServicioActivity.this, MenuProcesosActivity.class);
+                    startActivity(intent);
+                    finish();
+
+                }
+                else if (position == 4)
+                {
+                    Intent intent = new Intent(MenuServicioActivity.this, MenuPlataformasActivity.class);
+                    startActivity(intent);
+                    finish();
+
+                }
+                else{
+                    Intent intent = new Intent(MenuServicioActivity.this, MenuServicioActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+
+            }
+        });
+
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
 
@@ -80,7 +162,9 @@ public class MenuServicioActivity extends AppCompatActivity {
         tabLogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewPager.setCurrentItem(5);
+                Uri uri = Uri.parse("http://www.actuandomejor.com.mx/saberservir/app/index.php"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
             }
         });
 
@@ -120,19 +204,15 @@ public class MenuServicioActivity extends AppCompatActivity {
             }
         });
 
-
-        backButton_servicio = (Button)this.findViewById(R.id.backButton_servicio);
-
-        backButton_servicio.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
     }
 
     public Realm getRealm(){
         return realm;
     }
+
+    public void openMenu(View v) {
+        mDrawer.openDrawer(mDrawerOptions);
+    }
+
 
 }

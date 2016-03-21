@@ -2,21 +2,31 @@ package com.ioblok.aliadosdiageo.procesos;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.VideoView;
 
 import com.ioblok.aliadosdiageo.R;
+import com.ioblok.aliadosdiageo.adapter.AdapterActivity;
+import com.ioblok.aliadosdiageo.categorias.MenuCategoriasActivity;
 import com.ioblok.aliadosdiageo.contentfamily.BuchanansActivity;
 import com.ioblok.aliadosdiageo.contentfamily.DonJulioActivity;
 import com.ioblok.aliadosdiageo.contentfamily.TanquerayActivity;
 import com.ioblok.aliadosdiageo.contentfamily.WalkerActivity;
 import com.ioblok.aliadosdiageo.contentfamily.ZacapaActivity;
+import com.ioblok.aliadosdiageo.family.MenuFamilyActivity;
+import com.ioblok.aliadosdiageo.plataformas.procesos.MenuPlataformasActivity;
+import com.ioblok.aliadosdiageo.servicio.MenuServicioActivity;
 import com.ioblok.aliadosdiageo.utilis.URLVideosDataBase;
 import com.ioblok.aliadosdiageo.utilis.VideoPlayer;
+
+import java.util.ArrayList;
 
 import io.realm.Realm;
 import io.realm.RealmResults;
@@ -25,11 +35,12 @@ public class MenuProcesosActivity extends AppCompatActivity {
 
     Button btns_back_home,btn_family_zacapa,btn_family_walker,btn_family_buchanans,btn_family_tanqueray,btn_family_don_julio;
 
-    /**@JCElements
-     *
-     * These elements are used for Video
-     *
-     * **/
+    private DrawerLayout mDrawer;
+    private ListView mDrawerOptions;
+    private ArrayList navDrawerItems;
+    public String[] values = {"DIAGEO", "Familias", "Categorias" ,"Proceso de Elaboracion","Plataformas","Servicio Responsable"};
+    AdapterActivity adapterActivity;
+
     private VideoView myVideoView;
     private RelativeLayout rlVideoView;
     private Button btnClose;
@@ -46,13 +57,59 @@ public class MenuProcesosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_procesos);
-/*        initialize();
 
-        btn_family_zacapa.setOnClickListener(menu);
-        btn_family_walker.setOnClickListener(menu);
-        btn_family_buchanans.setOnClickListener(menu);
-        btn_family_tanqueray.setOnClickListener(menu);
-        btn_family_don_julio.setOnClickListener(menu);*/
+        /* Menu list */
+        mDrawerOptions = (ListView) findViewById(R.id.left_drawer);
+        mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        adapterActivity = new AdapterActivity(this,values);
+        mDrawerOptions.setAdapter(adapterActivity);
+        /* Menu list */
+
+        mDrawerOptions.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
+
+                if (position == 0)
+                {
+                    Intent intent = new Intent(MenuProcesosActivity.this, MenuProcesosActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+                else if (position == 1)
+                {
+                    Intent intent = new Intent(MenuProcesosActivity.this, MenuFamilyActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+                else if (position == 2)
+                {
+                    Intent intent = new Intent(MenuProcesosActivity.this, MenuCategoriasActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+                else if (position == 3)
+                {
+                    Intent intent = new Intent(MenuProcesosActivity.this, MenuProcesosActivity.class);
+                    startActivity(intent);
+                    finish();
+
+                }
+                else if (position == 4)
+                {
+                    Intent intent = new Intent(MenuProcesosActivity.this, MenuPlataformasActivity.class);
+                    startActivity(intent);
+                    finish();
+
+                }
+                else{
+                    Intent intent = new Intent(MenuProcesosActivity.this, MenuServicioActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+
+            }
+        });
+
         realm = Realm.getInstance(getBaseContext());
 
         btnProcessIntro     = (Button) findViewById(R.id.btn_process_intro);
@@ -111,7 +168,7 @@ public class MenuProcesosActivity extends AppCompatActivity {
         btnClose    = (Button) findViewById(R.id.btn_close);
 
         rlVideoView.setVisibility(View.VISIBLE);
-        VideoPlayer.playVideo(myVideoView, rlVideoView, btnClose, urlVideo,  this);
+        VideoPlayer.playVideo(myVideoView, rlVideoView, btnClose, urlVideo, this);
 
     }
 
@@ -131,40 +188,8 @@ public class MenuProcesosActivity extends AppCompatActivity {
         return "NOVIDEO";
     }
 
-/*
-    public void initialize(){
-        btn_family_zacapa = (Button) findViewById(R.id.btn_family_zacapa);
-        btn_family_walker = (Button) findViewById(R.id.btn_family_walker);
-        btn_family_buchanans = (Button) findViewById(R.id.btn_family_buchanans);
-        btn_family_tanqueray = (Button) findViewById(R.id.btn_family_tanqueray);
-        btn_family_don_julio = (Button) findViewById(R.id.btn_family_don_julio);
-
+    public void openMenu(View v) {
+        mDrawer.openDrawer(mDrawerOptions);
     }
-
-    View.OnClickListener menu = new View.OnClickListener() {
-        public void onClick(View v) {
-            Intent intent = new Intent();
-
-            switch (v.getId()) {
-
-                case R.id.btn_family_zacapa:
-                    intent = new Intent(MenuProcesosActivity.this, ZacapaActivity.class);
-                    break;
-                case R.id.btn_family_walker:
-                    intent = new Intent(MenuProcesosActivity.this, WalkerActivity.class);
-                    break;
-                case R.id.btn_family_buchanans:
-                    intent = new Intent(MenuProcesosActivity.this, BuchanansActivity.class);
-                    break;
-                case R.id.btn_family_tanqueray:
-                    intent = new Intent(MenuProcesosActivity.this, TanquerayActivity.class);
-                    break;
-                case R.id.btn_family_don_julio:
-                    intent = new Intent(MenuProcesosActivity.this, DonJulioActivity.class);
-                    break;
-            }
-            startActivity(intent);
-        }
-    };*/
 
 }

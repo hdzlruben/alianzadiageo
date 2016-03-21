@@ -1,93 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
-
-    <include
-        android:id="@+id/tab_menu_diageo"
-        layout="@layout/ui_family" />
-    <include
-    android:id="@+id/tab_menu_diageo"
-    layout="@layout/ui_back_family_menu" />
-
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:paddingTop="20sp"
-        android:orientation="vertical">
-
-        <ScrollView
+    android:layout_gravity="right">
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="#fff"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scrollbars="none">
-
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <include
+                android:id="@+id/tab_menu_diageo"
+                layout="@layout/ui_family" />
+            <include
+                android:id="@+id/tab_menu_diageo"
+                layout="@layout/ui_back_family_menu" />
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:orientation="vertical">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="20sp">
 
-                <Button
-                    android:id="@+id/btn_family_zacapa"
-                    android:layout_width="wrap_content"
+                <ScrollView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4sp"
-                    android:layout_gravity="center"
-                    android:paddingLeft="20sp"
-                    android:paddingRight="20sp"
-                    android:background="@drawable/boton_zacapa"
-                    android:padding="10sp" />
+                    android:scrollbars="none">
 
-                <Button
-                    android:id="@+id/btn_family_walker"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4sp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/boton_walker"
-                    android:padding="10sp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/btn_family_buchanans"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="4sp"
-                    android:background="@drawable/boton_buchanans"
-                    android:padding="10sp" />
+                        <Button
+                            android:id="@+id/btn_family_zacapa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4sp"
+                            android:background="@drawable/boton_zacapa"
+                            android:padding="10sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="20sp" />
 
-                <Button
-                    android:id="@+id/btn_family_tanqueray"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="4sp"
-                    android:background="@drawable/boton_tanqueray"
-                    android:padding="10sp" />
+                        <Button
+                            android:id="@+id/btn_family_walker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4sp"
+                            android:background="@drawable/boton_walker"
+                            android:padding="10sp" />
 
-                <Button
-                    android:id="@+id/btn_family_don_julio"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="4sp"
-                    android:background="@drawable/boton_donjulio"
-                    android:padding="10sp" />
+                        <Button
+                            android:id="@+id/btn_family_buchanans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4sp"
+                            android:background="@drawable/boton_buchanans"
+                            android:padding="10sp" />
 
-<!--                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="4sp"
-                    android:background="@drawable/btn_3"
-                    android:padding="10sp" />-->
+                        <Button
+                            android:id="@+id/btn_family_tanqueray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4sp"
+                            android:background="@drawable/boton_tanqueray"
+                            android:padding="10sp" />
 
+                        <Button
+                            android:id="@+id/btn_family_don_julio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4sp"
+                            android:background="@drawable/boton_donjulio"
+                            android:padding="10sp" />
+
+                    </LinearLayout>
+                </ScrollView>
             </LinearLayout>
-
-        </ScrollView>
-    </LinearLayout>
-
-</LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="#E0EAF1"
+        android:choiceMode="singleChoice"
+        android:divider="#fff"
+        android:dividerHeight="0dp" />
+</android.support.v4.widget.DrawerLayout>

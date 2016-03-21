@@ -18,5 +18,6 @@
         android:layout_width="0dp"
         android:layout_height="20sp"
         android:layout_weight="0.4"
+        android:onClick="openMenu"
         android:background="@drawable/menu_hamburguesa"/>
 </LinearLayout>

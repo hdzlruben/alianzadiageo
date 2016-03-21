@@ -1,98 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:layout_gravity="right"
+    android:background="#fff">
 
-    <include
-        layout="@layout/ui_tequila" />
-    <include
-        android:id="@+id/tab_menu_diageo"
-        layout="@layout/ui_back_categorias_int" />
-
-    <LinearLayout
+    <FrameLayout
+        android:id="@+id/content_frame"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <ScrollView
-            android:layout_marginTop="20sp"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scrollbars="none">
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <include layout="@layout/ui_tequila" />
+
+            <include
+                android:id="@+id/tab_menu_diageo"
+                layout="@layout/ui_back_categorias_int" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/btn_donjulio_blanco"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4sp"
-                    android:layout_gravity="center"
-                    android:paddingLeft="20sp"
-                    android:paddingRight="20sp"
-                    android:tag="categorias_tequila_don_julio_blanco"
-                    android:background="@drawable/botondjblanco"
-                    android:padding="10sp" />
-
-                <Button
-                    android:id="@+id/btn_donjulio_anejado"
+                <ScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="4sp"
-                    android:tag="categorias_tequila_don_julio_anejo"
-                    android:background="@drawable/botondjanejado"
-                    android:padding="10sp" />
+                    android:layout_marginTop="20sp"
+                    android:scrollbars="none">
 
-                <Button
-                    android:id="@+id/btn_donjulio_reposado"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="4sp"
-                    android:tag="categorias_tequila_don_julio_reposado"
-                    android:background="@drawable/djreposado"
-                    android:padding="10sp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/btn_donjulio_70"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="4sp"
-                    android:tag="categorias_tequila_don_julio_70"
-                    android:background="@drawable/botondj70"
-                    android:padding="10sp" />
+                        <Button
+                            android:id="@+id/btn_donjulio_blanco"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4sp"
+                            android:background="@drawable/botondjblanco"
+                            android:padding="10sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="20sp"
+                            android:tag="categorias_tequila_don_julio_blanco" />
 
-                <Button
-                    android:id="@+id/btn_donjulio_1942"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="4sp"
-                    android:tag="categorias_tequila_don_julio_1942"
-                    android:background="@drawable/botondj1942"
-                    android:padding="10sp" />
+                        <Button
+                            android:id="@+id/btn_donjulio_anejado"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4sp"
+                            android:background="@drawable/botondjanejado"
+                            android:padding="10sp"
+                            android:tag="categorias_tequila_don_julio_anejo" />
 
-                <Button
-                    android:id="@+id/btn_donjulio_real"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="4sp"
-                    android:tag="categorias_tequila_don_julio_real"
-                    android:background="@drawable/botondjreal"
-                    android:padding="10sp" />
+                        <Button
+                            android:id="@+id/btn_donjulio_reposado"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4sp"
+                            android:background="@drawable/djreposado"
+                            android:padding="10sp"
+                            android:tag="categorias_tequila_don_julio_reposado" />
 
+                        <Button
+                            android:id="@+id/btn_donjulio_70"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4sp"
+                            android:background="@drawable/botondj70"
+                            android:padding="10sp"
+                            android:tag="categorias_tequila_don_julio_70" />
+
+                        <Button
+                            android:id="@+id/btn_donjulio_1942"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4sp"
+                            android:background="@drawable/botondj1942"
+                            android:padding="10sp"
+                            android:tag="categorias_tequila_don_julio_1942" />
+
+                        <Button
+                            android:id="@+id/btn_donjulio_real"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4sp"
+                            android:background="@drawable/botondjreal"
+                            android:padding="10sp"
+                            android:tag="categorias_tequila_don_julio_real" />
+
+                    </LinearLayout>
+
+                </ScrollView>
             </LinearLayout>
 
-        </ScrollView>
-    </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
 
-</LinearLayout>
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="#E0EAF1"
+        android:choiceMode="singleChoice"
+        android:divider="#fff"
+        android:dividerHeight="0dp" />
+</android.support.v4.widget.DrawerLayout>

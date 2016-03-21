@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="110sp"
+        android:layout_marginTop="70sp"
         android:layout_gravity="center">
 
         <ImageView
@@ -74,12 +74,24 @@
             android:background="@drawable/boton_servicio"
             android:padding="10sp" />
 
-        <ImageView
-
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="20sp"
+            android:background="@drawable/back_agua">
+            <Button
+                android:id="@+id/btn_help"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="20sp"
+                android:layout_gravity="left"
+                android:background="@drawable/help" />
+        </LinearLayout>
+        <!--<ImageView
             android:layout_width="wrap_content"
             android:layout_height="130sp"
             android:background="@drawable/back_agua"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"/>-->
 
     </LinearLayout>
 

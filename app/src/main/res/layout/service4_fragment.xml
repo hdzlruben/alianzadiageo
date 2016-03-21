@@ -10,12 +10,14 @@
         android:scrollbars="none"
         android:background="@android:color/transparent">
 
-        <TextView
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Service 4"
-            android:textSize="40sp"
-            android:layout_gravity="center"/>
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30sp"
+            android:tag="consumo_responsable"
+            android:id="@+id/btn_video"
+            android:background="@drawable/trasladoresponsable" />
     </ScrollView>
 
 </RelativeLayout>

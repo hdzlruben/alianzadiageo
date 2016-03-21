@@ -1,118 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:gravity="center"
-    android:orientation="vertical">
-
-    <include layout="@layout/ui_servicio"></include>
-    <include layout="@layout/ui_back_servicio"></include>
-
-    <RelativeLayout
+    android:layout_gravity="right">
+    <!-- The main content view -->
+    <FrameLayout
+        android:id="@+id/content_frame"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
 
-
-        <android.support.design.widget.AppBarLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/app_bar"
-            app:elevation="0dp"
-            android:background="#FFFFFF">
-
-            <android.support.design.widget.TabLayout
-                android:id="@+id/tab_layout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
-                app:tabBackground="@android:color/transparent"
-                app:tabIndicatorColor="@android:color/transparent"
-                app:tabMode="fixed"
-                android:scrollbars="none"
-                android:layout_gravity="center"
-                app:tabGravity="fill"
-                app:tabPaddingStart="-1sp"
-                app:paddingEnd="-1sp"/>
-
-        </android.support.design.widget.AppBarLayout>
-
-
-        <android.support.v4.view.ViewPager
-            android:id="@+id/view_pager"
-            android:layout_below="@id/app_bar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            android:background="@android:color/transparent"/>
-        <!--LinearLayout
-            android:id="@+id/btn_menu"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:paddingRight="20sp"
-            android:paddingLeft="20sp"
-            android:layout_marginTop="20sp"
-            >
-            <Button
-                android:layout_height="60sp"
-                android:layout_weight="0.5"
-                android:background="@drawable/botonvideosr"
-                android:layout_width="0dp"/>
-            <Button
-                android:layout_height="60sp"
-                android:layout_weight="0.5"
-                android:background="@drawable/sr1"
-                android:layout_width="0dp"/>
-            <Button
-                android:layout_height="60sp"
-                android:layout_weight="0.5"
-                android:background="@drawable/sr2"
-                android:layout_width="0dp"/>
-            <Button
-                android:layout_height="60sp"
-                android:layout_weight="0.5"
-                android:background="@drawable/sr3"
-                android:layout_width="0dp"/>
-            <Button
-                android:layout_height="60sp"
-                android:layout_weight="0.5"
-                android:background="@drawable/sr4"
-                android:layout_width="0dp"/>
-            <Button
-                android:layout_height="60sp"
-                android:layout_weight="0.5"
-                android:background="@drawable/logo_sservir"
-                android:layout_width="0dp"/>
-        </LinearLayout>
         <LinearLayout
-            android:id="@+id/title"
-            android:layout_below="@+id/btn_menu"
+            android:background="#fff"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20sp">
-            <TextView
-                android:gravity="center"
-                android:textSize="30sp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <include layout="@layout/ui_servicio"></include>
+
+            <include layout="@layout/ui_back_servicio"></include>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/txt_rep_video"/>
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <android.support.design.widget.AppBarLayout
+                    android:id="@+id/app_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    app:elevation="0dp">
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tab_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:scrollbars="none"
+                        app:paddingEnd="-1sp"
+                        app:tabBackground="@android:color/transparent"
+                        app:tabGravity="fill"
+                        app:tabIndicatorColor="@android:color/transparent"
+                        app:tabMode="fixed"
+                        app:tabPaddingStart="-1sp" />
+
+                </android.support.design.widget.AppBarLayout>
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/app_bar"
+                    android:background="@android:color/transparent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </RelativeLayout>
+
+
         </LinearLayout>
-        <LinearLayout
-            android:layout_below="@+id/title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20sp"
-            android:gravity="center">
-            <Button
-                android:layout_gravity="center"
-                android:layout_width="80sp"
-                android:layout_height="80sp"
-                android:background="@drawable/boton_video"/>
-        </LinearLayout-->
-
-    </RelativeLayout>
 
 
-
-</LinearLayout>
+    </FrameLayout>
+    <!-- The navigation drawer -->
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="#E0EAF1"
+        android:choiceMode="singleChoice"
+        android:divider="#fff"
+        android:dividerHeight="0dp" />
+</android.support.v4.widget.DrawerLayout>
