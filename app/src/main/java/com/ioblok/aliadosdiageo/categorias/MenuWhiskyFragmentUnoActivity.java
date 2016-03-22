@@ -115,6 +115,7 @@ public class MenuWhiskyFragmentUnoActivity extends Fragment {
 
         switch (view.getId()){
             case R.id.btn_jw_bl:
+                Log.e("Video antes extra", idVideo);
                 intent.putExtra("idYT", 0);
                 intent.putExtra("isListEnable", true);
                 intent.putExtra("hasSpot", true);

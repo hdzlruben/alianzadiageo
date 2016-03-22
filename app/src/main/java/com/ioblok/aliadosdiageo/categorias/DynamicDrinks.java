@@ -1,18 +1,22 @@
 package com.ioblok.aliadosdiageo.categorias;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.MediaController;
 import android.widget.RelativeLayout;
 import android.widget.VideoView;
 
@@ -67,6 +71,8 @@ public class DynamicDrinks extends AppCompatActivity{
     ListView listView;
     LinearLayout llDots;
     Boolean isHideMyListView = true;
+    MediaController mediaController;
+    private int position = 0;
     View v;
     ImageView ivHeader;
     String[] valuesWith     = new String[]{"SPOT", "VIDEO", "MENSAJES\nClAVE", "TOUR DE\nBOTELLAS", "COMO\nSERVIR"};
@@ -103,6 +109,7 @@ public class DynamicDrinks extends AppCompatActivity{
         hasSpot         = intent.getBooleanExtra("hasSpot", false);
         idVideo         = intent.getStringExtra("idVideo");
         youTubeUrlVideo = Constants.getUrlVideosYouTube(positionExtras);
+        Log.e("FUCK VIdeO", idVideo);
 
         backButton_categorias_int   = (Button) this.findViewById(R.id.backButton_categorias_int);
         btnDots                     = (Button) findViewById(R.id.btn_dots);
@@ -120,9 +127,19 @@ public class DynamicDrinks extends AppCompatActivity{
         for (int i = 0; i < results.size(); i++) {
 
             URLVideosDataBase u = results.get(i);
-            if(u.getUrlFileStorage().contains(idVideo)){
-                urlVideo = u.getUrlFileStorage();
+            String splitURL = u.getUrlFileStorage();
+            String[] partOfURL = splitURL.split("/");
+            String lastElementOfURL = partOfURL[partOfURL.length -1];
+            lastElementOfURL.replace(".mp4", "");
+            Log.e("LAST ELEMENT", lastElementOfURL);
+
+            if(lastElementOfURL.equals((idVideo + ".mp4"))){
+                urlVideo = splitURL;
             }
+
+            /* if(u.getUrlFileStorage().contains(idVideo)){
+                 urlVideo = u.getUrlFileStorage();
+             } */
 
         }
 
@@ -610,6 +627,7 @@ public class DynamicDrinks extends AppCompatActivity{
 
     public void playVideo(){
 
+        Log.e("VIDOE", urlVideo);
         if(urlVideo.equals("NO VIDEO")) return;
 
         myVideoView = (VideoView) findViewById(R.id.video_view);
@@ -617,8 +635,45 @@ public class DynamicDrinks extends AppCompatActivity{
         btnClose    = (Button) findViewById(R.id.btn_close);
 
         rlVideoView.setVisibility(View.VISIBLE);
-        VideoPlayer.playVideo(myVideoView, rlVideoView, btnClose, urlVideo,  this);
 
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myVideoView.pause();
+                rlVideoView.setVisibility(View.INVISIBLE);
+            }
+        });
+
+
+        if (mediaController == null) {
+            mediaController = new MediaController(this);
+        }
+        rlVideoView.setVisibility(View.VISIBLE);
+
+        try {
+            //set the media controller in the VideoView
+            myVideoView.setMediaController(mediaController);
+            myVideoView.setVideoPath(urlVideo);
+            myVideoView.start();
+
+        } catch (Exception e) {
+            Log.e("Error", e.getMessage());
+            e.printStackTrace();
+        }
+
+        myVideoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            public void onPrepared(MediaPlayer mediaPlayer) {
+                myVideoView.seekTo(position);
+                if (position == 0) {
+                    myVideoView.start();
+                } else {
+                    myVideoView.pause();
+                }
+            }
+        });
+
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        myVideoView.setLayoutParams(params);
         hideList();
 
     }
