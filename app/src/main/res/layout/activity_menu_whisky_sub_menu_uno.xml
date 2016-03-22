@@ -98,7 +98,7 @@
                         android:id="@+id/btn_jw_gold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:tag="NO VIDEO"
+                        android:tag="categorias_whisky_gl"
                         android:layout_gravity="center"
                         android:layout_marginTop="4sp"
                         android:background="@drawable/botonjwglr"
@@ -110,7 +110,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:tag="NO VIDEO"
+                        android:tag="categorias_bc_red_seal"
                         android:layout_marginTop="4sp"
                         android:background="@drawable/botonbrs"
                         android:padding="10sp" />

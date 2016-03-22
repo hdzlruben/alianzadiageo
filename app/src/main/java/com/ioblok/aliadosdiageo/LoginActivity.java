@@ -86,9 +86,11 @@ public class LoginActivity extends AppCompatActivity {
             "categorias_whisky_bc_18",
             "categorias_whisky_bl",
             "categorias_whisky_db",
+            "categorias_whisky_gl",
             "categorias_whisky_kg",
             "categorias_whisky_pl",
-            "categorias_whisky_rl"};
+            "categorias_whisky_rl",
+            "categorias_bc_red_seal"};
 
     public String[] videos2 =
 
