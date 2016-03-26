@@ -1,5 +1,6 @@
 package com.ioblok.aliadosdiageo.categorias.content_whisky.JwDoubleBlackLabel;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -9,11 +10,15 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.PopupWindow;
 
+import com.bluejamesbond.text.DocumentView;
+import com.bluejamesbond.text.style.TextAlignment;
 import com.ioblok.aliadosdiageo.R;
 
 public class JwDoubleBlackLabelTourFragment extends Fragment {
 
     View v;
+    String text_pop_uno,text_pop_dos,text_pop_tres,text_pop_cuatro,text_pop_cinco,text_pop_seis,text_pop_siete,text_pop_ocho;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -26,6 +31,8 @@ public class JwDoubleBlackLabelTourFragment extends Fragment {
         final Button btnOpenPopupTres = (Button)v.findViewById(R.id.tres);
         final Button btnOpenPopupCuatro = (Button)v.findViewById(R.id.cuatro);
 
+        final Typeface myFont = Typeface.createFromAsset(getActivity().getAssets(), "acaslonpro-regular-webfont.ttf");
+
         btnOpenPopupUno.setOnClickListener(new Button.OnClickListener(){
 
             @Override
@@ -34,6 +41,14 @@ public class JwDoubleBlackLabelTourFragment extends Fragment {
                         = (LayoutInflater)getActivity().getBaseContext()
                         .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
                 View popupView = layoutInflater.inflate(R.layout.popup_uno_dbl, null);
+
+                text_pop_uno = getString(R.string.txt_pop_up_uno_dbl);
+                DocumentView text_uno = (DocumentView)popupView.findViewById(R.id.uno);
+                text_uno.setText(text_pop_uno);
+                text_uno.getDocumentLayoutParams().setTextAlignment(TextAlignment.JUSTIFIED);
+                text_uno.getDocumentLayoutParams().setTextColor(0xFF333333);
+                text_uno.getDocumentLayoutParams().setTextTypeface(myFont);
+
                 final PopupWindow popupWindow = new PopupWindow(
                         popupView,
                         LayoutParams.WRAP_CONTENT,
@@ -48,7 +63,7 @@ public class JwDoubleBlackLabelTourFragment extends Fragment {
                         popupWindow.dismiss();
                     }});
 
-                popupWindow.showAsDropDown(btnOpenPopupUno, 50, -30);
+                popupWindow.showAsDropDown(btnOpenPopupUno, 10, -30);
 
             }});
 
@@ -60,6 +75,14 @@ public class JwDoubleBlackLabelTourFragment extends Fragment {
                         = (LayoutInflater)getActivity().getBaseContext()
                         .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
                 View popupView = layoutInflater.inflate(R.layout.popup_dos_dbl, null);
+
+                text_pop_dos = getString(R.string.txt_pop_up_dos_dbl);
+                DocumentView text_uno = (DocumentView)popupView.findViewById(R.id.dos);
+                text_uno.setText(text_pop_dos);
+                text_uno.getDocumentLayoutParams().setTextAlignment(TextAlignment.JUSTIFIED);
+                text_uno.getDocumentLayoutParams().setTextColor(0xFF333333);
+                text_uno.getDocumentLayoutParams().setTextTypeface(myFont);
+
                 final PopupWindow popupWindow = new PopupWindow(
                         popupView,
                         LayoutParams.WRAP_CONTENT,
@@ -74,7 +97,7 @@ public class JwDoubleBlackLabelTourFragment extends Fragment {
                         popupWindow.dismiss();
                     }});
 
-                popupWindow.showAsDropDown(btnOpenPopupDos, 50, -30);
+                popupWindow.showAsDropDown(btnOpenPopupDos, 10, -30);
 
             }});
 
@@ -86,6 +109,14 @@ public class JwDoubleBlackLabelTourFragment extends Fragment {
                         = (LayoutInflater)getActivity().getBaseContext()
                         .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
                 View popupView = layoutInflater.inflate(R.layout.popup_tres_dbl, null);
+
+                text_pop_tres = getString(R.string.txt_pop_up_tres_dbl);
+                DocumentView text_uno = (DocumentView)popupView.findViewById(R.id.tres);
+                text_uno.setText(text_pop_tres);
+                text_uno.getDocumentLayoutParams().setTextAlignment(TextAlignment.JUSTIFIED);
+                text_uno.getDocumentLayoutParams().setTextColor(0xFF333333);
+                text_uno.getDocumentLayoutParams().setTextTypeface(myFont);
+
                 final PopupWindow popupWindow = new PopupWindow(
                         popupView,
                         LayoutParams.WRAP_CONTENT,
@@ -112,6 +143,14 @@ public class JwDoubleBlackLabelTourFragment extends Fragment {
                         = (LayoutInflater)getActivity().getBaseContext()
                         .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
                 View popupView = layoutInflater.inflate(R.layout.popup_cuatro_dbl, null);
+
+                text_pop_cuatro = getString(R.string.txt_pop_up_cuatro_dbl);
+                DocumentView text_uno = (DocumentView)popupView.findViewById(R.id.cuatro);
+                text_uno.setText(text_pop_cuatro);
+                text_uno.getDocumentLayoutParams().setTextAlignment(TextAlignment.JUSTIFIED);
+                text_uno.getDocumentLayoutParams().setTextColor(0xFF333333);
+                text_uno.getDocumentLayoutParams().setTextTypeface(myFont);
+
                 final PopupWindow popupWindow = new PopupWindow(
                         popupView,
                         LayoutParams.WRAP_CONTENT,

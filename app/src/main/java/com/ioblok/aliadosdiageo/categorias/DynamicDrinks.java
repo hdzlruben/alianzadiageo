@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Layout;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -76,8 +75,8 @@ public class DynamicDrinks extends AppCompatActivity{
     private int position = 0;
     View v;
     ImageView ivHeader;
-    String[] valuesWith     = new String[]{"SPOT", "VIDEO", "MENSAJES\nCLAVE", "TOUR DE\nBOTELLAS", "COMO\nSERVIR"};
-    String[] valuesWithout  = new String[]{"VIDEO", "MENSAJES\nCLAVE", "TOUR DE\nBOTELLAS", "COMO\nSERVIR"};
+    String[] valuesWith     = new String[]{"SPOT", "VIDEO", "MENSAJES\nClAVE", "TOUR DE\nBOTELLAS", "COMO\nSERVIR"};
+    String[] valuesWithout  = new String[]{"VIDEO", "MENSAJES\nCLAVES", "TOUR DE\nBOTELLAS", "COMO\nSERVIR"};
 
 
     int positionExtras;

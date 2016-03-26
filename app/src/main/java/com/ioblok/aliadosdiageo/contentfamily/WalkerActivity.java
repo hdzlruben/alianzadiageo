@@ -3,10 +3,12 @@ package com.ioblok.aliadosdiageo.contentfamily;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -54,6 +56,7 @@ public class WalkerActivity extends AppCompatActivity {
     private VideoView myVideoView;
     private RelativeLayout rlVideoView;
     private ImageButton btnVideo;
+    ImageButton btn_img_spot;
     private Button btnClose;
     private int position = 0;
     Realm realm;
@@ -137,6 +140,8 @@ public class WalkerActivity extends AppCompatActivity {
 
         }
 
+        btn_img_spot = (ImageButton) findViewById(R.id.img_btn_spot);
+
     }
 
 
@@ -154,6 +159,14 @@ public class WalkerActivity extends AppCompatActivity {
 
     public void openMenu(View v) {
         mDrawer.openDrawer(mDrawerOptions);
+    }
+
+    public void playSpot(View view){
+        Log.e("Presionado btn spot","");
+        Uri uri = Uri.parse("https://www.youtube.com/watch?v=wq3EWEETd1k"); // missing 'http://' will cause crashed
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+
     }
 
     public void playVideo(View view){

@@ -60,9 +60,9 @@
 
     <!-- Baileys Dulce-->
 
-    <string name="txt_mensaje_baileys_dulce_uno">Mezcla para consentir .-  Deliciosa combinación del Bailey´s de siempre con el rico sabor de Dulce de Leche</string>
+    <string name="txt_mensaje_baileys_dulce_uno">Mezcla para consentir .-  Deliciosa \ncombinación del Bailey´s de siempre con el rico sabor de Dulce de Leche</string>
     <string name="txt_mensaje_baileys_dulce_dos">Garantía de Calidad.- Mantiene los más altos estándares de calidad y la perfección de la mezcla de Baileys Original</string>
-    <string name="txt_mensaje_baileys_dulce_tres">Paladar Latino.- Desarrollado exclusivamente para Latinoamérica, una variante más Premium creada para consentir a la mujer latina</string>
+    <string name="txt_mensaje_baileys_dulce_tres">Paladar Latino.- Desarrollado\n exclusivamente para Latinoamérica, una variante más Premium creada para consentir a la mujer latina</string>
     <string name="parrafo_uno_como_servir_baileys_dulce">Baileys Dulce de Leche, Servido con hielo, hielo frappé o simplemente frío</string>
 
     <!-- Tanqueray London -->
@@ -110,9 +110,9 @@
 
     <!--Captain Morgan black-->
 
-    <string name="txt_captain_morgan_black_uno">Es una marca que inspira tiempos legendarios.</string>
-    <string name="txt_captain_morgan_black_dos">Ron especiado de sabor suave y toques sabor a vainilla, perfecto para mezclar con refresco de Cola.</string>
-    <string name="txt_captain_morgan_black_tres">Marca No 1 con mayor crecimiento dentro del portafolio de Diageo.</string>
+    <string name="txt_captain_morgan_black_uno">Captain Morgan Black es el lado más oscuro de Captain Morgan.</string>
+    <string name="txt_captain_morgan_black_dos">Un ron más audaz que tiene la masculinidad del whisky y la facilidad de tomar de Captain.</string>
+    <string name="txt_captain_morgan_black_tres">Elaborado con ron del Caribe y especias selectas y madurado en barricas  de roble extra ahumadas.</string>
 
     <string name="text_subtitle_seccion_capitan_morgan_black">En las rocas o con tu mezclador favorito (Cola/Ginger Ale).</string>
 
@@ -226,7 +226,8 @@
 
     <!-- Jw Double BlackLabel-->
 
-    <string name="title_jw_double_black_label_one">Una expresión más intensa y obscura del whisky más vendido en el mundo,Johnnie Walker Etiqueta Negra </string>
+    <string name="title_jw_double_black_label_one">Una expresión más intensa y obscura del whisky más vendido en el mundo,</string>
+    <string name="title_jw_double_black_label_one_complement">Johnnie Walker Etiqueta Negra </string>
     <string name="title_jw_double_black_label_dos">Su sabor rico y ahumado único se obtiene a través de la combinación de whiskies añejados y naturalmente ahumados que han sido madurados en viejas barricas de roble quemadas.</string>
     <string name="title_jw_double_black_label_tres">Uno de los productos más exitosos que han sido lanzados durante la historia de la industria de las bebidas, el cuál ha sido un ganador de múltiples premios, año tras año, desde su presentación en 2009.</string>
 
@@ -364,7 +365,10 @@
     <string name="txt_mensaje_ketel_dos">Elaborado a partir de alambiques de cobre, junto con las modernas técnicas de destilación.</string>
     <string name="txt_title_mensaje_ketel_tres">GENUINO</string>
     <string name="txt_mensaje_ketel_tres">Un miembro de la familia Nolet personalmente aprueba cada corrida de producción final.</string>
-    
+
+    <string name="txt_subtitle_servir_ko">Ketel One Rickey</string>
+    <string name="txt_content_servir_ko">Agita 50ml. De Ketel One Vodka, 20ml. De jugo de limón fresco y 10ml de jarabe natural en un shaker lleno de hielo y cuele en un vaso tipo Collins con hielo.Rellena con soda y adorna con un gajo de limón.</string>
+
     <!-- HELP MENU -->
 
     <string name="txt_help_content_video">Modo Video:\nComienza por ver un video corto que le da vida a la marca.\nPuedes detener el video en cualquier momento presionando pausar y salir presionando cerrar.</string>
@@ -408,23 +412,23 @@
 
     <!-- POPUP PLATINIUM LABEL -->
 
-    <string name="txt_pop_up_dos_pl">2. MEZCLA PRIVADA \n \n Johnnie Walker Platinum Label es un whisky escocés de mezcla moderno, diseñado para el consumidor contemporáneo, inspirado en la tradición de la familia Walker de emplear mezclas privadas, que se utiliza como un whisky de celebración para los directores de empresas.</string>
-    <string name="txt_pop_up_uno_pl">1. PERFECTAMENTE ELABORADO DE FORMA ARTESANAL \n \n Johnnie Walker Platinum Label es la combinación más rica y perfecta de 18 años elaborada artesanalmente que John Walker &amp; Sons ha creado nunca, llena de sofisticación.</string>
-    <string name="txt_pop_up_cuatro_pl">4. CUIDADOSAMENTE ENVEJECIDO \n \n Preciados, como el preciado metal noble del platino, todos los whiskies utilizados en Johnnie Walker Platinum Label se envejecen cuidadosamente durante un mínimo de 18 años.</string>
-    <string name="txt_pop_up_tres_pl">3. MEZCLA DE PRECISIÓN \n \n Actualmente, Johnnie Walker recrea esta rica sofisticación utilizando una inigualable precisión de mezcla para crear un whisky moderno y con estilo.</string>
-    <string name="txt_pop_up_cinco_pl">5. RICO SABOR \n \n  Contando asimismo con el Sello Real concedido a John Walker &amp; Sons, el envejecimiento proporciona a esta mezcla un sabor suave, lleno de sofisticación.</string>
-    <string name="txt_pop_up_seis_pl">6. EXCLUSIVO Y CON ESTILO \n \n Johnnie Walker Platinum Label 18 year old se utiliza en momentos de celebración exclusivos y con estilo, siendo fieles a la leyenda y a la herencia de Johnnie Walker.</string>
-    <string name="txt_pop_up_siete_pl">7. RITUAL DE TOMAR SOLO \n \n Sin necesidad de acompañamiento, Johnnie Walker Platinum Label tiene seguridad en nariz, en un primer trago, se disfruta mejor si se toma solo.</string>
+    <string name="txt_pop_up_dos_pl">2. MEZCLA PRIVADA \n \nJohnnie Walker Platinum Label es un whisky escocés de mezcla moderno, diseñado para el consumidor contemporáneo, inspirado en la tradición de la familia Walker de emplear mezclas privadas, que se utiliza como un whisky de celebración para los directores de empresas.</string>
+    <string name="txt_pop_up_uno_pl">1. PERFECTAMENTE ELABORADO DE FORMA ARTESANAL \n \nJohnnie Walker Platinum Label es la combinación más rica y perfecta de 18 años elaborada artesanalmente que John Walker &amp; Sons ha creado nunca, llena de sofisticación.</string>
+    <string name="txt_pop_up_cuatro_pl">4. CUIDADOSAMENTE ENVEJECIDO \n \nPreciados, como el preciado metal noble del platino, todos los whiskies utilizados en Johnnie Walker Platinum Label se envejecen cuidadosamente durante un mínimo de 18 años.</string>
+    <string name="txt_pop_up_tres_pl">3. MEZCLA DE PRECISIÓN \n \nActualmente, Johnnie Walker recrea esta rica sofisticación utilizando una inigualable precisión de mezcla para crear un whisky moderno y con estilo.</string>
+    <string name="txt_pop_up_cinco_pl">5. RICO SABOR \n \nContando asimismo con el Sello Real concedido a John Walker &amp; Sons, el envejecimiento proporciona a esta mezcla un sabor suave, lleno de sofisticación.</string>
+    <string name="txt_pop_up_seis_pl">6. EXCLUSIVO Y CON ESTILO \n \nJohnnie Walker Platinum Label 18 year old se utiliza en momentos de celebración exclusivos y con estilo, siendo fieles a la leyenda y a la herencia de Johnnie Walker.</string>
+    <string name="txt_pop_up_siete_pl">7. RITUAL DE TOMAR SOLO \n \nSin necesidad de acompañamiento, Johnnie Walker Platinum Label tiene seguridad en nariz, en un primer trago, se disfruta mejor si se toma solo.</string>
 
 
     <!-- POPUP JW RED LABEL -->
 
-    <string name="txt_pop_up_uno_redl">John Walker – El pionero auténtico \n \n Si observamos la banda en la botella, encontraremos la leyenda “Fundado en 1820”, la cual señala la fecha en la que John Walker a la edad de 15 años inauguró una tienda de abarrotes en Kilmarnock, siguiendo la tradición comerciante de su difunto padre.\n En su tienda, John aprendió rápidamente a mezclar tés y posteriormente adquirió experiencia en la mezcla de fantásticos whiskies, lo que marcó el comienzo de su gran viaje épico.</string>
-    <string name="txt_pop_up_dos_redl">El comienzo del viaje y la fuente del whisky \n \n El pueblo de Kilmarnock, también mencionado en la etiqueta de la botella, fue el centro de las grandes rutas comerciales a lo largo de Escocia; ubicación que proporcionó a John acceso inigualable al whisky de todo el país. Sus habilidades excepcionales para realizar mezclas resultaron en whiskies de gran y profundo sabor.</string>
-    <string name="txt_pop_up_tres_redl">Johnnie Walker – Precursor de la consolidación mundial de la marca \n \n Los hijos y nietos de John fueron mayormente pioneros. En los años del boom del Imperio Británico, comenzaron a traspasar las fronteras de Escocia y de manera inteligente, convencieron a los capitanes de los grandes barcos comerciales de convertirse en representantes de JOHNNIE WALKER.\n La evidencia de este gran éxito puede reconocerse en el empaque actual del producto. Alrededor del borde dorado de la etiqueta pueden observarse algunos de los premios a los que JOHNNIE WALKER se ha hecho acreedor.\nYa en 1879 la marca había llegado al otro lado del mundo, ganando reconocimientos en Sidney y durante los años de la década de1920 JOHNNIE WALKER se había abierto camino en más de 150 mercados internacionales.</string>
-    <string name="txt_pop_up_cuatro_redl">Un Whisky dinámico y vibrante\n\n El nieto de John Walker, Sir Alexander, creo una nueva mezcla: “Whisky Añejo Especial de las Tierras Altas” (“Special Old Highland Whisky”); el cual fue diseñado para ser perfecto y disfrutado ya sea solo o con mezclador. Esta mezcla mostraba diferentes sabores de todo el mundo. En 1909, el Whisky Especial Añejo de las Tierras Altas se convirtió de manera oficial en JOHNNIE WALKER ETIQUETA ROJA.\n Sir Alexander deseaba obtener un sabor profundo el cual fue orgullosamente proclamado como Whisky Escocés, incluso cuando éste fuera mezclado con hielo, agua o soda. Su éxito en conseguir lo anterior dio como resultado que hoy en día JOHNNIE WALKER ETIQUETA ROJA esté posicionado como el Whisky Escocés No. 1 del mundo.</string>
-    <string name="txt_pop_up_cinco_redl">Pensamiento Innovador \n \n Según la verdadera tradición escocesa, la manera de obtener ganancias ha sido clara y eficiente. La pragmática familia Walker logró embarcar más paquetes, en los que pocas veces se rompían botellas; envasando el whisky en botellas cuadradas en lugar de redondas, lo que dio origen a la forma icónica de la botella. También, se dieron cuenta de que si la etiqueta se colocaba en un ángulo de 24’, la etiqueta sería aún más visible colocada sobre cualquier barra, lo que haría el nombre de la marca más conocido. JOHNNIE WALKER siempre buscó ser el primero, parte fundamental de este gran pensamiento innovador. </string>
-    <string name="txt_pop_up_seis_redl">Un tributo al espíritu pionero de John Walker\n\nGracias a la combinación de este espíritu pionero, un whisky vibrante y un empaque que puede reconocerse de manera instantánea, la familia Walker logro tener en sus manos un ícono mundial. JOHNNIE WALKER ETIQUETA es un justo tributo a John Walker, a quien se le rinde homenaje través del Caminante, el cual decora cada botella y representa a quien tuvo esta ambición innovadora y visionaria que permitió crear la marca de whisky escocés líder en el mundo.</string>
+    <string name="txt_pop_up_uno_redl">John Walker – El pionero auténtico \n \nSi observamos la banda en la botella, encontraremos la leyenda “Fundado en 1820”, la cual señala la fecha en la que John Walker a la edad de 15 años inauguró una tienda de abarrotes en Kilmarnock, siguiendo la tradición comerciante de su difunto padre.\n En su tienda, John aprendió rápidamente a mezclar tés y posteriormente adquirió experiencia en la mezcla de fantásticos whiskies, lo que marcó el comienzo de su gran viaje épico.</string>
+    <string name="txt_pop_up_dos_redl">El comienzo del viaje y la fuente del whisky \n \nEl pueblo de Kilmarnock, también mencionado en la etiqueta de la botella, fue el centro de las grandes rutas comerciales a lo largo de Escocia; ubicación que proporcionó a John acceso inigualable al whisky de todo el país. Sus habilidades excepcionales para realizar mezclas resultaron en whiskies de gran y profundo sabor.</string>
+    <string name="txt_pop_up_tres_redl">Johnnie Walker – Precursor de la consolidación mundial de la marca \n \nLos hijos y nietos de John fueron mayormente pioneros. En los años del boom del Imperio Británico, comenzaron a traspasar las fronteras de Escocia y de manera inteligente, convencieron a los capitanes de los grandes barcos comerciales de convertirse en representantes de JOHNNIE WALKER.\n La evidencia de este gran éxito puede reconocerse en el empaque actual del producto. Alrededor del borde dorado de la etiqueta pueden observarse algunos de los premios a los que JOHNNIE WALKER se ha hecho acreedor.\nYa en 1879 la marca había llegado al otro lado del mundo, ganando reconocimientos en Sidney y durante los años de la década de1920 JOHNNIE WALKER se había abierto camino en más de 150 mercados internacionales.</string>
+    <string name="txt_pop_up_cuatro_redl">Un Whisky dinámico y vibrante\n\nEl nieto de John Walker, Sir Alexander, creo una nueva mezcla: “Whisky Añejo Especial de las Tierras Altas” (“Special Old Highland Whisky”); el cual fue diseñado para ser perfecto y disfrutado ya sea solo o con mezclador. Esta mezcla mostraba diferentes sabores de todo el mundo. En 1909, el Whisky Especial Añejo de las Tierras Altas se convirtió de manera oficial en JOHNNIE WALKER ETIQUETA ROJA.\n Sir Alexander deseaba obtener un sabor profundo el cual fue orgullosamente proclamado como Whisky Escocés, incluso cuando éste fuera mezclado con hielo, agua o soda. Su éxito en conseguir lo anterior dio como resultado que hoy en día JOHNNIE WALKER ETIQUETA ROJA esté posicionado como el Whisky Escocés No. 1 del mundo.</string>
+    <string name="txt_pop_up_cinco_redl">Pensamiento Innovador \n \nSegún la verdadera tradición escocesa, la manera de obtener ganancias ha sido clara y eficiente. La pragmática familia Walker logró embarcar más paquetes, en los que pocas veces se rompían botellas; envasando el whisky en botellas cuadradas en lugar de redondas, lo que dio origen a la forma icónica de la botella. También, se dieron cuenta de que si la etiqueta se colocaba en un ángulo de 24’, la etiqueta sería aún más visible colocada sobre cualquier barra, lo que haría el nombre de la marca más conocido. JOHNNIE WALKER siempre buscó ser el primero, parte fundamental de este gran pensamiento innovador. </string>
+    <string name="txt_pop_up_seis_redl">Un tributo al espíritu pionero de John Walker \n\nGracias a la combinación de este espíritu pionero, un whisky vibrante y un empaque que puede reconocerse de manera instantánea, la familia Walker logro tener en sus manos un ícono mundial. JOHNNIE WALKER ETIQUETA es un justo tributo a John Walker, a quien se le rinde homenaje través del Caminante, el cual decora cada botella y representa a quien tuvo esta ambición innovadora y visionaria que permitió crear la marca de whisky escocés líder en el mundo.</string>
 
 
 
@@ -440,12 +444,12 @@
 
     <!-- POPUP JW BLACK LABEL -->
 
-    <string name="txt_pop_up_uno_brs">Historia \n \n Inspirado en la mezcla creada por James Buchanans hace mas de 100 años, simbolo de las grandes celebraciones de aquella epoca.</string>
+    <string name="txt_pop_up_uno_brs">Historia \n \nInspirado en la mezcla creada por James Buchanans hace mas de 100 años, simbolo de las grandes celebraciones de aquella epoca.</string>
     <string name="txt_pop_up_dos_brs">Compromiso de calidad \n \nSimboliza un contrato de calidad entre James Buchanans y el Consumidor</string>
     <string name="txt_pop_up_tres_brs">Un Gran Legado\n \nEl escudo de armas representa el sello personal de James Buchanans hacia cada obra filantropica que realizo </string>
-    <string name="txt_pop_up_cuatro_brs">Balance Perfecto \n \n Un Whisky sumamente elegante, ideal para disfrutar y compartir</string>
-    <string name="txt_pop_up_cinco_brs">Extraordinario Sabor \n \n Su doble añejamiento y reposo de las maltas derivan en una textura sedosa y realza los sabores citricos y dulces caracteristicos de Casa Buchanans</string>
-    <string name="txt_pop_up_seis_brs">Slanje Va! \n \n Salud</string>
+    <string name="txt_pop_up_cuatro_brs">Balance Perfecto \n \nUn Whisky sumamente elegante, ideal para disfrutar y compartir</string>
+    <string name="txt_pop_up_cinco_brs">Extraordinario Sabor \n \nSu doble añejamiento y reposo de las maltas derivan en una textura sedosa y realza los sabores citricos y dulces caracteristicos de Casa Buchanans</string>
+    <string name="txt_pop_up_seis_brs">Slanje Va! \n \nSalud</string>
 
 
     <!-- POPUP JW BLACK LABEL -->
@@ -459,23 +463,23 @@
 
     <!-- POPUP BUCHANANS 18 -->
 
-    <string name="txt_pop_up_uno_bcd">Un homenaje a los hombres que comparten su vida \n \n Botella inspirada en la cantimplora de los soldados del ejército británico quienes compartían su agua como símbolo de fraternidad.</string>
-    <string name="txt_pop_up_dos_bcd">Máxima indulgencia \n \n Buchanan´s 18 cuenta con el más sedoso, delicado y confortable perfil de líquido dentro de los whiskies de lujo llevándolo más allá de ser un Scotch</string>
-    <string name="txt_pop_up_tres_bcd">Compromiso personal \n \n Cada etiqueta es un contrato personal con James Buchanan como compromiso de calidad y excelencia</string>
+    <string name="txt_pop_up_uno_bcd">Un homenaje a los hombres que comparten su vida \n \nBotella inspirada en la cantimplora de los soldados del ejército británico quienes compartían su agua como símbolo de fraternidad.</string>
+    <string name="txt_pop_up_dos_bcd">Máxima indulgencia \n \nBuchanan´s 18 cuenta con el más sedoso, delicado y confortable perfil de líquido dentro de los whiskies de lujo llevándolo más allá de ser un Scotch</string>
+    <string name="txt_pop_up_tres_bcd">Compromiso personal \n \nCada etiqueta es un contrato personal con James Buchanan como compromiso de calidad y excelencia</string>
 
 
     <!-- POPUP BUCHANANS MASTER -->
 
-    <string name="txt_pop_up_uno_bcmaster">Mezcla exclusiva de maltas. \n \n Buchanans Master es una mezcla de maltas exclusias eleccionadas a mano para lograr un sabor único y vibrante</string>
-    <string name="txt_pop_up_dos_bcmaster">Para paladares contemporáneos \n \n Creado especialmente para paladares de Whisky contemporáneos al contar con notas más intensas, ahumadas y herbales sin perder el perfil clásico de naranja y chocolate de Buchanan´s</string>
-    <string name="txt_pop_up_tres_bcmaster">Creado por Keith Law. \n \n Creado artesanalmente por uno de los nombres más destacados del mundo del Whisky, Keith Law, Maestro Mezclador de Casa Buchanan´s</string>
+    <string name="txt_pop_up_uno_bcmaster">Mezcla exclusiva de maltas. \n \nBuchanans Master es una mezcla de maltas exclusias eleccionadas a mano para lograr un sabor único y vibrante</string>
+    <string name="txt_pop_up_dos_bcmaster">Para paladares contemporáneos \n \nCreado especialmente para paladares de Whisky contemporáneos al contar con notas más intensas, ahumadas y herbales sin perder el perfil clásico de naranja y chocolate de Buchanan´s</string>
+    <string name="txt_pop_up_tres_bcmaster">Creado por Keith Law. \n \nCreado artesanalmente por uno de los nombres más destacados del mundo del Whisky, Keith Law, Maestro Mezclador de Casa Buchanan´s</string>
 
 
     <!-- POPUP BUCHANANS 12 -->
 
-    <string name="txt_pop_up_uno_bcdoce">El original Buchanans finest liquor.\n \n Es la primera etiqueta a la que James Buchanan´s le dio su nombre y se ha mantenido vigente desde 1826.</string>
-    <string name="txt_pop_up_dos_bcdoce">12  años de añejamiento. \n \n Una mezcla de Whiskies de malta y grano  con un mínimo de 12 años de añejamiento en barricas de roble, proporcionándole un sabor elegante pero fresco y sofisticado</string>
-    <string name="txt_pop_up_tres_bcdoce">Compromiso personal. \n \n La etiqueta simboliza un contrato, representa el compromiso de James Buchanan con sus consumidores, una garantía de excepcional calidad</string>
+    <string name="txt_pop_up_uno_bcdoce">El original Buchanans finest liquor.\n \nEs la primera etiqueta a la que James Buchanan´s le dio su nombre y se ha mantenido vigente desde 1826.</string>
+    <string name="txt_pop_up_dos_bcdoce">12  años de añejamiento. \n \nUna mezcla de Whiskies de malta y grano  con un mínimo de 12 años de añejamiento en barricas de roble, proporcionándole un sabor elegante pero fresco y sofisticado</string>
+    <string name="txt_pop_up_tres_bcdoce">Compromiso personal. \n \nLa etiqueta simboliza un contrato, representa el compromiso de James Buchanan con sus consumidores, una garantía de excepcional calidad</string>
 
     <!-- POPUP OLD PAR -->
 
@@ -593,11 +597,11 @@
 
     <!-- POPUP Ciroc -->
 
-    <string name="txt_pop_up_tres_ci">Piedra Azul \n Su color proviene de la región Gallac, famosa por ser la fuente de este hermoso color, usado también en la pintura.</string>
-    <string name="txt_pop_up_dos_ci">Cascada helada \n Las uvas se someten a una fría fermentación y maceración para mantener un mejor sabor antes de la destilación.</string>
-    <string name="txt_pop_up_uno_ci">Firma de Cîroc \n El nombre "cîroc" es una mezcla de dos palabras francesas: "cîme" que significa cima o pico y "roche" que significa roca.</string>
-    <string name="txt_pop_up_cuatro_ci">Destilado 5 veces \n Cîroc se destila 5 veces.\n La quinta y última destilación se lleva a cabo en la hermana destilería de una familia en el campo de Cognac, Francia.</string>
-    <string name="txt_pop_up_cinco_ci">Ícono en relieve\n El gallo y las uvas en relieve simbolizan la herencia de la vieja región de vino francesa.</string>
+    <string name="txt_pop_up_tres_ci">Piedra Azul \nSu color proviene de la región Gallac, famosa por ser la fuente de este hermoso color, usado también en la pintura.</string>
+    <string name="txt_pop_up_dos_ci">Cascada helada \nLas uvas se someten a una fría fermentación y maceración para mantener un mejor sabor antes de la destilación.</string>
+    <string name="txt_pop_up_uno_ci">Firma de Cîroc \nEl nombre "cîroc" es una mezcla de dos palabras francesas: "cîme" que significa cima o pico y "roche" que significa roca.</string>
+    <string name="txt_pop_up_cuatro_ci">Destilado 5 veces \nCîroc se destila 5 veces.\n La quinta y última destilación se lleva a cabo en la hermana destilería de una familia en el campo de Cognac, Francia.</string>
+    <string name="txt_pop_up_cinco_ci">Ícono en relieve \nEl gallo y las uvas en relieve simbolizan la herencia de la vieja región de vino francesa.</string>
 
 
     <!-- POPUP KETEL ONE -->
@@ -612,22 +616,22 @@
 
     <!-- POPUP SMIRNOFF -->
 
-    <string name="txt_pop_up_uno_sn">Smirnoff 21, llamado así por ser 3 veces destilado, 10 veces filtrado durante 8 horas en carbón (3+10+8 = 21).</string>
+    <string name="txt_pop_up_tres_sn">Smirnoff 21, llamado así por ser 3 veces destilado, 10 veces filtrado durante 8 horas en carbón (3+10+8 = 21).</string>
     <string name="txt_pop_up_dos_sn">La Cresta Imperial Rusa representa 150 años de legado de este Vodka Ruso Clásico, emblema entregado de una forma contemporánea.</string>
-    <string name="txt_pop_up_tres_sn">La clásica botella en vidrio transparente transmite al consumidor pureza en la elaboración.</string>
+    <string name="txt_pop_up_uno_sn">La clásica botella en vidrio transparente transmite al consumidor pureza en la elaboración.</string>
 
 
     <!-- POPUP TANQUERAY TEN -->
 
-    <string name="txt_pop_up_uno_tt">Compromiso de Calidad. \n Sello rojo que ha pasado de generación en generación como una marca de la herencia.</string>
-    <string name="txt_pop_up_dos_tt">Artesanal. \n Hecho artesanalmente en pequeños lotes, el corazón de Tanqueray Ten viene de un alambique de 500 litros conocido como "Tiny Ten"</string>
-    <string name="txt_pop_up_tres_tt">Frescura. \n Frutas frescas y flores de manzanilla son añadidas a la receta para darle un sabor cítrico fresco, entregando así uno de los destilados claros más sofisticados en el mundo.</string>
+    <string name="txt_pop_up_uno_tt">Compromiso de Calidad. \nSello rojo que ha pasado de generación en generación como una marca de la herencia.</string>
+    <string name="txt_pop_up_dos_tt">Artesanal. \nHecho artesanalmente en pequeños lotes, el corazón de Tanqueray Ten viene de un alambique de 500 litros conocido como "Tiny Ten"</string>
+    <string name="txt_pop_up_tres_tt">Frescura. \nFrutas frescas y flores de manzanilla son añadidas a la receta para darle un sabor cítrico fresco, entregando así uno de los destilados claros más sofisticados en el mundo.</string>
 
     <!-- POPUP TANQUERAY LONDON -->
 
-    <string name="txt_pop_up_uno_tl">Afinidad a la coctelería. \n La característica botella verde está inspirada en la forma de un shaker de 3 piezas.</string>
-    <string name="txt_pop_up_dos_tl">Garantía Real. \n Avalado por la Corona Inglesa como producto digno de la Realeza.</string>
-    <string name="txt_pop_up_tres_tl">Compromiso de Calidad. \n Sello rojo que ha pasado de generación en generación como una marca de la herencia.</string>
+    <string name="txt_pop_up_uno_tl">Afinidad a la coctelería. \nLa característica botella verde está inspirada en la forma de un shaker de 3 piezas.</string>
+    <string name="txt_pop_up_dos_tl">Garantía Real. \nAvalado por la Corona Inglesa como producto digno de la Realeza.</string>
+    <string name="txt_pop_up_tres_tl">Compromiso de Calidad. \nSello rojo que ha pasado de generación en generación como una marca de la herencia.</string>
 
     <!-- POPUP BAILEYS -->
 

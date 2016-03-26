@@ -6,16 +6,16 @@
     android:background="@android:color/transparent">
     <LinearLayout
         android:layout_width="280sp"
-        android:layout_height="310sp"
+        android:layout_height="230sp"
         android:orientation="vertical"
-        android:background="@drawable/popupcuatro"
+        android:background="@drawable/popuptres"
         android:layout_margin="1dp">
         >
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingTop="60sp"
+            android:paddingTop="45sp"
             android:paddingLeft="10sp"
             android:paddingRight="10sp">
             <Button
@@ -25,10 +25,14 @@
                 android:layout_height="25sp"
                 android:background="@drawable/close_pop"
                 />
-            <TextView
+
+            <com.bluejamesbond.text.DocumentView
+                android:id="@+id/cinco"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/txt_pop_up_cinco_jandb"/>
+                android:text="@string/txt_pop_up_cinco_jandb">
+            </com.bluejamesbond.text.DocumentView>
+
             <ImageView
                 android:layout_width="140sp"
                 android:layout_height="120sp"

@@ -46,7 +46,7 @@
                     android:layout_gravity="center"
                     android:layout_marginBottom="20sp"
                     android:layout_marginTop="20sp"
-                    android:background="@drawable/icono1bayleyis" />
+                    android:background="@drawable/icono_1_bd" />
 
                 <com.bluejamesbond.text.DocumentView
                     android:id="@+id/txt_bl_two"
@@ -64,7 +64,7 @@
                     android:layout_gravity="center"
                     android:layout_marginBottom="20sp"
                     android:layout_marginTop="20sp"
-                    android:background="@drawable/icono2bayleis" />
+                    android:background="@drawable/icono_2_bd" />
 
                 <com.bluejamesbond.text.DocumentView
                     android:id="@+id/txt_bl_three"

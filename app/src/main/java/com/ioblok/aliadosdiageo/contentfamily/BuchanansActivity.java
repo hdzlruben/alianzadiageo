@@ -2,6 +2,7 @@ package com.ioblok.aliadosdiageo.contentfamily;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -42,7 +43,7 @@ public class BuchanansActivity extends AppCompatActivity {
 
     private VideoView myVideoView;
     private RelativeLayout rlVideoView;
-    private ImageButton btnVideo;
+    private ImageButton btnVideo, btn_img_spot;
     private Button btnClose;
     private int position = 0;
     Realm realm;
@@ -58,8 +59,10 @@ public class BuchanansActivity extends AppCompatActivity {
         mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         adapterActivity = new AdapterActivity(this,values);
         mDrawerOptions.setAdapter(adapterActivity);
-
         /* Menu list */
+
+        btn_img_spot = (ImageButton) findViewById(R.id.img_btn_spot);
+
 
         mDrawerOptions.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -123,8 +126,13 @@ public class BuchanansActivity extends AppCompatActivity {
             }
 
         }
+    }
 
-
+    public void playSpot(View view){
+        Log.e("Presionado btn spot", "");
+        Uri uri = Uri.parse("https://www.youtube.com/watch?v=3wvgrtSxRpI"); // missing 'http://' will cause crashed
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
 
     }
 

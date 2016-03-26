@@ -17,7 +17,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="700sp"
-                android:background="@drawable/back_ketelone"
+                android:background="@drawable/botella_botonesketelone"
                 android:orientation="vertical">
 
                 <RelativeLayout
@@ -157,7 +157,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="20sp"
+                    android:layout_marginTop="-20sp"
                     android:orientation="horizontal">
 
                     <Button

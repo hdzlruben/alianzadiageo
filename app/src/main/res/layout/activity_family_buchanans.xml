@@ -41,6 +41,8 @@
                         android:tag="familia_bn" />
 
                     <ImageButton
+                        android:id="@+id/img_btn_spot"
+                        android:onClick="playSpot"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"

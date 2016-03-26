@@ -6,13 +6,14 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.bluejamesbond.text.DocumentView;
 import com.bluejamesbond.text.style.TextAlignment;
 import com.ioblok.aliadosdiageo.R;
 
 public class JwDoubleBlackLabelMensajesFragment extends Fragment {
-    String text,textdos,texttres;
+    String text,text_complenet,textdos,texttres;
 
     View v;
 
@@ -27,8 +28,15 @@ public class JwDoubleBlackLabelMensajesFragment extends Fragment {
     public void initialize(){
         Typeface myFont = Typeface.createFromAsset(getActivity().getAssets(), "acaslonpro-regular-webfont.ttf");
         text = getString(R.string.title_jw_double_black_label_one);
+        text_complenet = getString(R.string.title_jw_double_black_label_one_complement);
         textdos = getString(R.string.title_jw_double_black_label_dos);
         texttres = getString(R.string.title_jw_double_black_label_tres);
+
+        TextView complement = (TextView)v.findViewById(R.id.complement);
+        complement.setText(text_complenet);
+        complement.setTextColor(0xFF212121);
+        complement.setTypeface(myFont);
+
 
         DocumentView documentView = (DocumentView)v.findViewById(R.id.txt_bl_one);
         DocumentView documentViewtwo = (DocumentView)v.findViewById(R.id.txt_bl_two);

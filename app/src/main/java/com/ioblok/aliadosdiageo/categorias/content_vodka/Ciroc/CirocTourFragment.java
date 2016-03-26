@@ -1,5 +1,6 @@
 package com.ioblok.aliadosdiageo.categorias.content_vodka.Ciroc;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -9,11 +10,14 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.PopupWindow;
 
+import com.bluejamesbond.text.DocumentView;
+import com.bluejamesbond.text.style.TextAlignment;
 import com.ioblok.aliadosdiageo.R;
 
 public class CirocTourFragment extends Fragment {
 
     View v;
+    String text_pop_uno,text_pop_dos,text_pop_tres,text_pop_cuatro,text_pop_cinco,text_pop_seis,text_pop_siete,text_pop_ocho;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -27,6 +31,8 @@ public class CirocTourFragment extends Fragment {
         final Button btnOpenPopupCuatro = (Button)v.findViewById(R.id.cuatro);
         final Button btnOpenPopupCinco = (Button)v.findViewById(R.id.cinco);
 
+        final Typeface myFont = Typeface.createFromAsset(getActivity().getAssets(), "acaslonpro-regular-webfont.ttf");
+
 
         btnOpenPopup.setOnClickListener(new Button.OnClickListener(){
 
@@ -36,6 +42,14 @@ public class CirocTourFragment extends Fragment {
                         = (LayoutInflater)getActivity().getBaseContext()
                         .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
                 View popupView = layoutInflater.inflate(R.layout.popup_uno_ci, null);
+
+                text_pop_uno = getString(R.string.txt_pop_up_uno_ci);
+                DocumentView text_uno = (DocumentView)popupView.findViewById(R.id.uno);
+                text_uno.setText(text_pop_uno);
+                text_uno.getDocumentLayoutParams().setTextAlignment(TextAlignment.JUSTIFIED);
+                text_uno.getDocumentLayoutParams().setTextColor(0xFF333333);
+                text_uno.getDocumentLayoutParams().setTextTypeface(myFont);
+
                 final PopupWindow popupWindow = new PopupWindow(
                         popupView,
                         LayoutParams.WRAP_CONTENT,
@@ -50,7 +64,7 @@ public class CirocTourFragment extends Fragment {
                         popupWindow.dismiss();
                     }});
 
-                popupWindow.showAsDropDown(btnOpenPopup, 50, -30);
+                popupWindow.showAsDropDown(btnOpenPopup, 10, -30);
 
             }});
 
@@ -62,6 +76,14 @@ public class CirocTourFragment extends Fragment {
                         = (LayoutInflater)getActivity().getBaseContext()
                         .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
                 View popupView = layoutInflater.inflate(R.layout.popup_dos_ci, null);
+
+                text_pop_dos = getString(R.string.txt_pop_up_dos_ci);
+                DocumentView text_uno = (DocumentView)popupView.findViewById(R.id.dos);
+                text_uno.setText(text_pop_dos);
+                text_uno.getDocumentLayoutParams().setTextAlignment(TextAlignment.JUSTIFIED);
+                text_uno.getDocumentLayoutParams().setTextColor(0xFF333333);
+                text_uno.getDocumentLayoutParams().setTextTypeface(myFont);
+
                 final PopupWindow popupWindow = new PopupWindow(
                         popupView,
                         LayoutParams.WRAP_CONTENT,
@@ -76,7 +98,7 @@ public class CirocTourFragment extends Fragment {
                         popupWindow.dismiss();
                     }});
 
-                popupWindow.showAsDropDown(btnOpenPopupDos, 50, -30);
+                popupWindow.showAsDropDown(btnOpenPopupDos, 10, -30);
 
             }});
 
@@ -88,6 +110,14 @@ public class CirocTourFragment extends Fragment {
                         = (LayoutInflater)getActivity().getBaseContext()
                         .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
                 View popupView = layoutInflater.inflate(R.layout.popup_tres_ci, null);
+
+                text_pop_tres = getString(R.string.txt_pop_up_tres_ci);
+                DocumentView text_uno = (DocumentView)popupView.findViewById(R.id.tres);
+                text_uno.setText(text_pop_tres);
+                text_uno.getDocumentLayoutParams().setTextAlignment(TextAlignment.JUSTIFIED);
+                text_uno.getDocumentLayoutParams().setTextColor(0xFF333333);
+                text_uno.getDocumentLayoutParams().setTextTypeface(myFont);
+
                 final PopupWindow popupWindow = new PopupWindow(
                         popupView,
                         LayoutParams.WRAP_CONTENT,
@@ -102,7 +132,7 @@ public class CirocTourFragment extends Fragment {
                         popupWindow.dismiss();
                     }});
 
-                popupWindow.showAsDropDown(btnOpenPopupTres, 50, -30);
+                popupWindow.showAsDropDown(btnOpenPopupTres, 10, -30);
 
             }});
 
@@ -114,6 +144,14 @@ public class CirocTourFragment extends Fragment {
                         = (LayoutInflater)getActivity().getBaseContext()
                         .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
                 View popupView = layoutInflater.inflate(R.layout.popup_cuatro_ci, null);
+
+                text_pop_cuatro = getString(R.string.txt_pop_up_cuatro_ci);
+                DocumentView text_uno = (DocumentView)popupView.findViewById(R.id.cuatro);
+                text_uno.setText(text_pop_cuatro);
+                text_uno.getDocumentLayoutParams().setTextAlignment(TextAlignment.JUSTIFIED);
+                text_uno.getDocumentLayoutParams().setTextColor(0xFF333333);
+                text_uno.getDocumentLayoutParams().setTextTypeface(myFont);
+
                 final PopupWindow popupWindow = new PopupWindow(
                         popupView,
                         LayoutParams.WRAP_CONTENT,
@@ -140,6 +178,14 @@ public class CirocTourFragment extends Fragment {
                         = (LayoutInflater)getActivity().getBaseContext()
                         .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
                 View popupView = layoutInflater.inflate(R.layout.popup_cinco_ci, null);
+
+                text_pop_cinco = getString(R.string.txt_pop_up_cinco_ci);
+                DocumentView text_uno = (DocumentView)popupView.findViewById(R.id.cinco);
+                text_uno.setText(text_pop_cinco);
+                text_uno.getDocumentLayoutParams().setTextAlignment(TextAlignment.JUSTIFIED);
+                text_uno.getDocumentLayoutParams().setTextColor(0xFF333333);
+                text_uno.getDocumentLayoutParams().setTextTypeface(myFont);
+
                 final PopupWindow popupWindow = new PopupWindow(
                         popupView,
                         LayoutParams.WRAP_CONTENT,

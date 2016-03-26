@@ -16,14 +16,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="700sp"
-                android:background="@drawable/botella_captainmorganblack"
+                android:background="@drawable/botella_botonescapitanmorgan_black"
                 android:orientation="vertical">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="200sp"
+                    android:layout_marginTop="190sp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -91,7 +91,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="20sp"
+                    android:layout_marginTop="-20sp"
                     android:orientation="horizontal">
 
                     <TextView

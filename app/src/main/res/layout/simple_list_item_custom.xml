@@ -5,6 +5,8 @@
     android:textColor="@android:color/white"
     android:textSize="14sp"
     android:layout_margin="12sp"
+    android:paddingTop="8sp"
+    android:paddingBottom="8sp"
     android:gravity="center"
     android:layout_height="wrap_content">
 </com.ioblok.aliadosdiageo.utilis.CustomTextView>

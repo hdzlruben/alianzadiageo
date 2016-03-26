@@ -41,10 +41,12 @@
                         android:tag="familia_jw" />
 
                     <ImageButton
+                        android:id="@+id/img_btn_spot"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="20sp"
+                        android:onClick="playSpot"
                         android:background="@drawable/icono_camara" />
 
                     <com.bluejamesbond.text.DocumentView

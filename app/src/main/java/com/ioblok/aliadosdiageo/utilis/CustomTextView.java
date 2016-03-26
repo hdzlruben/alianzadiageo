@@ -30,7 +30,9 @@ public class CustomTextView extends TextView{
     }
 
     public void init() {
-        Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "fonts/acaslonpro-regular-webfont.ttf");
-        setTypeface(tf ,1);
+        Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "acaslonpro-regular-webfont.ttf");
+        setTypeface(tf, 1);
+        setTextSize(10);
     }
+
 }
