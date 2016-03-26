@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.ioblok.aliadosdiageo.utilis.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:background="@android:color/transparent"
     android:textColor="@android:color/white"
@@ -7,4 +7,4 @@
     android:layout_margin="12sp"
     android:gravity="center"
     android:layout_height="wrap_content">
-</TextView>
+</com.ioblok.aliadosdiageo.utilis.CustomTextView>
