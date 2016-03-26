@@ -76,7 +76,7 @@ public class DynamicDrinks extends AppCompatActivity{
     View v;
     ImageView ivHeader;
     String[] valuesWith     = new String[]{"SPOT", "VIDEO", "MENSAJES\nClAVE", "TOUR DE\nBOTELLAS", "COMO\nSERVIR"};
-    String[] valuesWithout  = new String[]{"VIDEO", "MENSAJES\nClAVE", "TOUR DE\nBOTELLAS", "COMO\nSERVIR"};
+    String[] valuesWithout  = new String[]{"VIDEO", "MENSAJES\nCLAVES", "TOUR DE\nBOTELLAS", "COMO\nSERVIR"};
 
 
     int positionExtras;

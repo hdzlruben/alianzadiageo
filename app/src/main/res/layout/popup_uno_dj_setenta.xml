@@ -25,10 +25,14 @@
                 android:layout_height="25sp"
                 android:background="@drawable/close_pop"
                 />
-            <TextView
+
+            <com.bluejamesbond.text.DocumentView
+                android:id="@+id/uno"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/txt_pop_up_uno_dj_setenta"/>
+                android:text="@string/txt_pop_up_uno_dj_setenta">
+            </com.bluejamesbond.text.DocumentView>
+
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

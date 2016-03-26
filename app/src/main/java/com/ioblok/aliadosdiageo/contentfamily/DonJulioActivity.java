@@ -2,6 +2,7 @@ package com.ioblok.aliadosdiageo.contentfamily;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -42,7 +43,7 @@ public class DonJulioActivity extends AppCompatActivity {
 
     private VideoView myVideoView;
     private RelativeLayout rlVideoView;
-    private ImageButton btnVideo;
+    private ImageButton btnVideo , btn_img_spot;
     private Button btnClose;
     private int position = 0;
     private MediaController mediaController;
@@ -61,6 +62,7 @@ public class DonJulioActivity extends AppCompatActivity {
         mDrawerOptions.setAdapter(adapterActivity);
         /* Menu list */
 
+        btn_img_spot = (ImageButton) findViewById(R.id.img_btn_spot);
         mDrawerOptions.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
@@ -129,6 +131,14 @@ public class DonJulioActivity extends AppCompatActivity {
 
     public void openMenu(View v) {
         mDrawer.openDrawer(mDrawerOptions);
+    }
+
+    public void playSpot(View view){
+        Log.e("Presionado btn spot","");
+        Uri uri = Uri.parse("https://www.youtube.com/watch?v=fMt_YLCfLC0"); // missing 'http://' will cause crashed
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+
     }
 
     public void playVideo(View view){

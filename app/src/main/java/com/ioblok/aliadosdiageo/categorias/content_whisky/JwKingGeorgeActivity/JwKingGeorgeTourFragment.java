@@ -1,5 +1,6 @@
 package com.ioblok.aliadosdiageo.categorias.content_whisky.JwKingGeorgeActivity;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -9,11 +10,15 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.PopupWindow;
 
+import com.bluejamesbond.text.DocumentView;
+import com.bluejamesbond.text.style.TextAlignment;
 import com.ioblok.aliadosdiageo.R;
 
 public class JwKingGeorgeTourFragment extends Fragment {
 
     View v;
+    String text_pop_uno,text_pop_dos,text_pop_tres,text_pop_cuatro,text_pop_cinco,text_pop_seis,text_pop_siete,text_pop_ocho;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -28,7 +33,10 @@ public class JwKingGeorgeTourFragment extends Fragment {
         final Button btnOpenPopupCuatro = (Button)v.findViewById(R.id.cuatro);
         final Button btnOpenPopupCinco = (Button)v.findViewById(R.id.cinco);
 
-            btnOpenPopupUno.setOnClickListener(new Button.OnClickListener(){
+        final Typeface myFont = Typeface.createFromAsset(getActivity().getAssets(), "acaslonpro-regular-webfont.ttf");
+
+
+        btnOpenPopupUno.setOnClickListener(new Button.OnClickListener(){
 
             @Override
             public void onClick(View arg0) {
@@ -36,6 +44,14 @@ public class JwKingGeorgeTourFragment extends Fragment {
                         = (LayoutInflater)getActivity().getBaseContext()
                         .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
                 View popupView = layoutInflater.inflate(R.layout.popup_uno_king, null);
+
+                text_pop_uno = getString(R.string.txt_pop_up_uno_kg);
+                DocumentView text_uno = (DocumentView)popupView.findViewById(R.id.uno);
+                text_uno.setText(text_pop_uno);
+                text_uno.getDocumentLayoutParams().setTextAlignment(TextAlignment.JUSTIFIED);
+                text_uno.getDocumentLayoutParams().setTextColor(0xFF333333);
+                text_uno.getDocumentLayoutParams().setTextTypeface(myFont);
+
                 final PopupWindow popupWindow = new PopupWindow(
                         popupView,
                         LayoutParams.WRAP_CONTENT,
@@ -50,7 +66,7 @@ public class JwKingGeorgeTourFragment extends Fragment {
                         popupWindow.dismiss();
                     }});
 
-                popupWindow.showAsDropDown(btnOpenPopupUno, 50, -30);
+                popupWindow.showAsDropDown(btnOpenPopupUno, 10, -30);
 
             }});
 
@@ -62,6 +78,14 @@ public class JwKingGeorgeTourFragment extends Fragment {
                         = (LayoutInflater)getActivity().getBaseContext()
                         .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
                 View popupView = layoutInflater.inflate(R.layout.popup_dos_king, null);
+
+                text_pop_dos = getString(R.string.txt_pop_up_dos_kg);
+                DocumentView text_uno = (DocumentView)popupView.findViewById(R.id.dos);
+                text_uno.setText(text_pop_dos);
+                text_uno.getDocumentLayoutParams().setTextAlignment(TextAlignment.JUSTIFIED);
+                text_uno.getDocumentLayoutParams().setTextColor(0xFF333333);
+                text_uno.getDocumentLayoutParams().setTextTypeface(myFont);
+
                 final PopupWindow popupWindow = new PopupWindow(
                         popupView,
                         LayoutParams.WRAP_CONTENT,
@@ -76,7 +100,7 @@ public class JwKingGeorgeTourFragment extends Fragment {
                         popupWindow.dismiss();
                     }});
 
-                popupWindow.showAsDropDown(btnOpenPopupDos, 50, -30);
+                popupWindow.showAsDropDown(btnOpenPopupDos, 10, -30);
             }});
 
         btnOpenPopupTres.setOnClickListener(new Button.OnClickListener(){
@@ -87,6 +111,14 @@ public class JwKingGeorgeTourFragment extends Fragment {
                         = (LayoutInflater)getActivity().getBaseContext()
                         .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
                 View popupView = layoutInflater.inflate(R.layout.popup_tres_king, null);
+
+                text_pop_tres = getString(R.string.txt_pop_up_tres_kg);
+                DocumentView text_uno = (DocumentView)popupView.findViewById(R.id.tres);
+                text_uno.setText(text_pop_tres);
+                text_uno.getDocumentLayoutParams().setTextAlignment(TextAlignment.JUSTIFIED);
+                text_uno.getDocumentLayoutParams().setTextColor(0xFF333333);
+                text_uno.getDocumentLayoutParams().setTextTypeface(myFont);
+
                 final PopupWindow popupWindow = new PopupWindow(
                         popupView,
                         LayoutParams.WRAP_CONTENT,
@@ -101,7 +133,7 @@ public class JwKingGeorgeTourFragment extends Fragment {
                         popupWindow.dismiss();
                     }});
 
-                popupWindow.showAsDropDown(btnOpenPopupTres, 50, -30);
+                popupWindow.showAsDropDown(btnOpenPopupTres, 10, -30);
             }});
 
         btnOpenPopupCuatro.setOnClickListener(new Button.OnClickListener(){
@@ -112,6 +144,14 @@ public class JwKingGeorgeTourFragment extends Fragment {
                         = (LayoutInflater)getActivity().getBaseContext()
                         .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
                 View popupView = layoutInflater.inflate(R.layout.popup_cuatro_king, null);
+
+                text_pop_cuatro = getString(R.string.txt_pop_up_cuatro_kg);
+                DocumentView text_uno = (DocumentView)popupView.findViewById(R.id.cuatro);
+                text_uno.setText(text_pop_cuatro);
+                text_uno.getDocumentLayoutParams().setTextAlignment(TextAlignment.JUSTIFIED);
+                text_uno.getDocumentLayoutParams().setTextColor(0xFF333333);
+                text_uno.getDocumentLayoutParams().setTextTypeface(myFont);
+
                 final PopupWindow popupWindow = new PopupWindow(
                         popupView,
                         LayoutParams.WRAP_CONTENT,
@@ -137,6 +177,14 @@ public class JwKingGeorgeTourFragment extends Fragment {
                         = (LayoutInflater)getActivity().getBaseContext()
                         .getSystemService(getActivity().LAYOUT_INFLATER_SERVICE);
                 View popupView = layoutInflater.inflate(R.layout.popup_cinco_king, null);
+
+                text_pop_cinco = getString(R.string.txt_pop_up_cinco_kg);
+                DocumentView text_uno = (DocumentView)popupView.findViewById(R.id.cinco);
+                text_uno.setText(text_pop_cinco);
+                text_uno.getDocumentLayoutParams().setTextAlignment(TextAlignment.JUSTIFIED);
+                text_uno.getDocumentLayoutParams().setTextColor(0xFF333333);
+                text_uno.getDocumentLayoutParams().setTextTypeface(myFont);
+
                 final PopupWindow popupWindow = new PopupWindow(
                         popupView,
                         LayoutParams.WRAP_CONTENT,

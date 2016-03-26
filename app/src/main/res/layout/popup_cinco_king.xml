@@ -25,13 +25,16 @@
                 android:layout_height="25sp"
                 android:background="@drawable/close_pop"
                 />
-            <TextView
+            <com.bluejamesbond.text.DocumentView
+                android:id="@+id/cinco"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/txt_pop_up_cinco_kg"/>
+                android:text="@string/txt_pop_up_cinco_kg">
+            </com.bluejamesbond.text.DocumentView>
+
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="170sp"
+                android:layout_height="190sp"
                 android:layout_gravity="center"
                 android:background="@drawable/pop_up_kg_cinco"/>
         </LinearLayout>

@@ -8,7 +8,7 @@
         android:layout_width="280sp"
         android:layout_height="140sp"
         android:orientation="vertical"
-        android:background="@drawable/popuptres"
+        android:background="@drawable/popupcuatro"
         android:layout_margin="1dp">
         >
         <LinearLayout
@@ -25,10 +25,14 @@
                 android:layout_height="25sp"
                 android:background="@drawable/close_pop"
                 />
-            <TextView
+
+            <com.bluejamesbond.text.DocumentView
+                android:id="@+id/uno"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/txt_pop_up_uno_dj_diecinueve"/>
+                android:text="@string/txt_pop_up_uno_dj_diecinueve">
+            </com.bluejamesbond.text.DocumentView>
+
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

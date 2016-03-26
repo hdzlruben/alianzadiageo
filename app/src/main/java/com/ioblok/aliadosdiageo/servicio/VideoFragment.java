@@ -1,5 +1,6 @@
 package com.ioblok.aliadosdiageo.servicio;
 
+import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -12,6 +13,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.MediaController;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.ioblok.aliadosdiageo.R;
 import com.ioblok.aliadosdiageo.utilis.URLVideosDataBase;
@@ -38,11 +40,19 @@ public class VideoFragment extends Fragment {
     private MediaController mediaController;
     String urlVideo = "";
     View v;
-
+    String txt_play_video ="";
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         v = inflater.inflate(R.layout.video_fragment, null);
+
+        final Typeface myFont = Typeface.createFromAsset(getActivity().getAssets(), "acaslonpro-bold-webfont.ttf");
+
+        txt_play_video = getString(R.string.txt_rep_video);
+        TextView txt_title_play_video = (TextView)v.findViewById(R.id.txt_play_video);
+        txt_title_play_video.setTextColor(0xFF333333);
+        txt_title_play_video.setTypeface(myFont);
+
 
         btnVideo    = (Button) v.findViewById(R.id.btn_video);
         btnVideo.setOnClickListener(new View.OnClickListener() {

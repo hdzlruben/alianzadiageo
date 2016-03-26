@@ -60,7 +60,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="20sp"
+                    android:layout_marginTop="50sp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -73,8 +73,10 @@
                     <Button
                         android:id="@+id/tres"
                         android:layout_width="30sp"
+                        android:gravity="center"
+
+                        android:layout_marginLeft="200sp"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
                         android:background="@drawable/tres"/>
 
                 </RelativeLayout>

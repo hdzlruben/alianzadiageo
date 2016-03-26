@@ -45,7 +45,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/servicio_rseal" />
+                    android:background="@drawable/servicio_b18" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

@@ -45,6 +45,7 @@ public class AdapterMenuIntActivity extends BaseAdapter {
 
     public View getView(int position, View convertView, ViewGroup parent) {
 
+        Typeface myFont = Typeface.createFromAsset(context.getAssets(), "acaslonpro-regular-webfont.ttf");
         // Declare Variables
         TextView txtTitle;
         ImageView imgImg;
@@ -58,6 +59,7 @@ public class AdapterMenuIntActivity extends BaseAdapter {
 
         // Capture position and set to the TextViews
         txtTitle.setText(menuPrincipalint[position]);
+        txtTitle.setTypeface(myFont);
         return itemView;
     }
 
