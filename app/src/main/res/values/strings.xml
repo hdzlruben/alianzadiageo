@@ -241,7 +241,7 @@
 
 
     <string name="txt_como_tomar_title_jw_gold_label">Johnnie Walker Gold Reserve®</string>
-    <string name="txt_como_tomar_subtitle_jw_gold_label">Preparacion</string>
+    <string name="txt_como_tomar_subtitle_jw_gold_label">Preparación:</string>
     <string name="txt_como_tomar_contenido_jw_gold_label">Copa flauta como representación del whisky para celebrar en todo momento.</string>
     <string name="txt_como_tomar_contenido_dos_jw_gold_label">Servido helado para resaltar la cremosidad y densidad del Gold Label junto al chocolate amargo.</string>
 
@@ -565,12 +565,12 @@
 
     <!-- POPUP ZACAPA 23 -->
 
-    <string name="txt_pop_up_uno_zv">Celebración Centenaria \n El ron Zacapa fue nombrado en honor a esta ciudad de Guatemala en el año 1976, en conmemoración del centenario de la fundación de esta ciudad.</string>
-    <string name="txt_pop_up_dos_zv">Destilación en pequeños lotes \n El ron Zacapa esta hecho de miel pura de caña de azúcar y el concentrado de miel de caña de azúcar se destila en pequeños lotes</string>
-    <string name="txt_pop_up_tres_zv">Añejamiento Excepcional \n Añejamiento excepcional en tres diferentes tipos de barricas (whisky, vino y jerez) a través de un proceso de añejamiento único llamado “Sistema Solera”. Zacapa es una mezcla de rones que han pasado por entre 6 y 23 años de añejamiento.</string>
-    <string name="txt_pop_up_cuatro_zv">El Secreto \n Vamos a revelar el secreto de Zacapa. El lento proceso de añejamiento se lleva a cabo a gran altitud en un ambiente de viento frío de las Tierras Altas, el cual se conoce como añejamiento por encima de las nubes.</string>
-    <string name="txt_pop_up_cinco_zv">La Cultura Maya \n Cada botella cuenta con una banda de petate hecha a mano de manera artesanal, la cual refleja los 3000 años de tradición de la cultura maya y simboliza la unidad de todas las cosas.</string>
-    <string name="txt_pop_up_seis_zv">Reconocimientos \n Zacapa ha sido reconocido con el primer lugar en cinco ocasiones consecutivas dentro del Concurso Internacional del Ron. Sin duda, este es el único ron de lujo dentro del Salón Internacional del Ron… ¡Salud¡</string>
+    <string name="txt_pop_up_uno_zv">Celebración Centenaria \n \nEl ron Zacapa fue nombrado en honor a esta ciudad de Guatemala en el año 1976, en conmemoración del centenario de la fundación de esta ciudad.</string>
+    <string name="txt_pop_up_dos_zv">Destilación en pequeños lotes \n\nEl ron Zacapa esta hecho de miel pura de caña de azúcar y el concentrado de miel de caña de azúcar se destila en pequeños lotes</string>
+    <string name="txt_pop_up_tres_zv">Añejamiento Excepcional \n\nAñejamiento excepcional en tres diferentes tipos de barricas (whisky, vino y jerez) a través de un proceso de añejamiento único llamado “Sistema Solera”. Zacapa es una mezcla de rones que han pasado por entre 6 y 23 años de añejamiento.</string>
+    <string name="txt_pop_up_cuatro_zv">El Secreto \n \nVamos a revelar el secreto de Zacapa. El lento proceso de añejamiento se lleva a cabo a gran altitud en un ambiente de viento frío de las Tierras Altas, el cual se conoce como añejamiento por encima de las nubes.</string>
+    <string name="txt_pop_up_cinco_zv">La Cultura Maya \n \nCada botella cuenta con una banda de petate hecha a mano de manera artesanal, la cual refleja los 3000 años de tradición de la cultura maya y simboliza la unidad de todas las cosas.</string>
+    <string name="txt_pop_up_seis_zv">Reconocimientos \n \nZacapa ha sido reconocido con el primer lugar en cinco ocasiones consecutivas dentro del Concurso Internacional del Ron. Sin duda, este es el único ron de lujo dentro del Salón Internacional del Ron… ¡Salud¡</string>
 
 
     <!-- POPUP CAPTAIN MORGAN ORIGINAL -->
@@ -600,7 +600,7 @@
     <string name="txt_pop_up_tres_ci">Piedra Azul \nSu color proviene de la región Gallac, famosa por ser la fuente de este hermoso color, usado también en la pintura.</string>
     <string name="txt_pop_up_dos_ci">Cascada helada \nLas uvas se someten a una fría fermentación y maceración para mantener un mejor sabor antes de la destilación.</string>
     <string name="txt_pop_up_uno_ci">Firma de Cîroc \nEl nombre "cîroc" es una mezcla de dos palabras francesas: "cîme" que significa cima o pico y "roche" que significa roca.</string>
-    <string name="txt_pop_up_cuatro_ci">Destilado 5 veces \nCîroc se destila 5 veces.\n La quinta y última destilación se lleva a cabo en la hermana destilería de una familia en el campo de Cognac, Francia.</string>
+    <string name="txt_pop_up_cuatro_ci">Destilado 5 veces \nCîroc se destila 5 veces.\nLa quinta y última destilación se lleva a cabo en la hermana destilería de una familia en el campo de Cognac, Francia.</string>
     <string name="txt_pop_up_cinco_ci">Ícono en relieve \nEl gallo y las uvas en relieve simbolizan la herencia de la vieja región de vino francesa.</string>
 
 
@@ -623,15 +623,15 @@
 
     <!-- POPUP TANQUERAY TEN -->
 
-    <string name="txt_pop_up_uno_tt">Compromiso de Calidad. \nSello rojo que ha pasado de generación en generación como una marca de la herencia.</string>
-    <string name="txt_pop_up_dos_tt">Artesanal. \nHecho artesanalmente en pequeños lotes, el corazón de Tanqueray Ten viene de un alambique de 500 litros conocido como "Tiny Ten"</string>
-    <string name="txt_pop_up_tres_tt">Frescura. \nFrutas frescas y flores de manzanilla son añadidas a la receta para darle un sabor cítrico fresco, entregando así uno de los destilados claros más sofisticados en el mundo.</string>
+    <string name="txt_pop_up_uno_tt">Compromiso de Calidad. \n\nSello rojo que ha pasado de generación en generación como una marca de la herencia.</string>
+    <string name="txt_pop_up_dos_tt">Artesanal. \n\nHecho artesanalmente en pequeños lotes, el corazón de Tanqueray Ten viene de un alambique de 500 litros conocido como "Tiny Ten"</string>
+    <string name="txt_pop_up_tres_tt">Frescura. \n\nFrutas frescas y flores de manzanilla son añadidas a la receta para darle un sabor cítrico fresco, entregando así uno de los destilados claros más sofisticados en el mundo.</string>
 
     <!-- POPUP TANQUERAY LONDON -->
 
-    <string name="txt_pop_up_uno_tl">Afinidad a la coctelería. \nLa característica botella verde está inspirada en la forma de un shaker de 3 piezas.</string>
-    <string name="txt_pop_up_dos_tl">Garantía Real. \nAvalado por la Corona Inglesa como producto digno de la Realeza.</string>
-    <string name="txt_pop_up_tres_tl">Compromiso de Calidad. \nSello rojo que ha pasado de generación en generación como una marca de la herencia.</string>
+    <string name="txt_pop_up_uno_tl">Afinidad a la coctelería. \n\nLa característica botella verde está inspirada en la forma de un shaker de 3 piezas.</string>
+    <string name="txt_pop_up_dos_tl">Garantía Real. \n\nAvalado por la Corona Inglesa como producto digno de la Realeza.</string>
+    <string name="txt_pop_up_tres_tl">Compromiso de Calidad. \n\nSello rojo que ha pasado de generación en generación como una marca de la herencia.</string>
 
     <!-- POPUP BAILEYS -->
 

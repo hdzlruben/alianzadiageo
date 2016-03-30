@@ -38,6 +38,7 @@
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
+                        android:tag="false"
                         android:background="@drawable/uno" />
 
                     <TextView
@@ -52,6 +53,7 @@
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
+                        android:tag="false"
                         android:background="@drawable/dos" />
 
                 </RelativeLayout>
@@ -74,7 +76,7 @@
                         android:id="@+id/tres"
                         android:layout_width="30sp"
                         android:gravity="center"
-
+                        android:tag="false"
                         android:layout_marginLeft="200sp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/tres"/>

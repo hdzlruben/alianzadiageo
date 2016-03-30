@@ -37,6 +37,7 @@
                         android:id="@+id/uno"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
+                        android:tag="false"
                         android:layout_alignParentLeft="true"
                         android:background="@drawable/uno" />
 
@@ -61,6 +62,7 @@
                         android:id="@+id/dos"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
+                        android:tag="false"
                         android:layout_alignParentRight="true"
                         android:background="@drawable/dos" />
 
@@ -84,6 +86,7 @@
                         android:id="@+id/tres"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
+                        android:tag="false"
                         android:layout_alignParentRight="true"
                         android:background="@drawable/tres" />
 

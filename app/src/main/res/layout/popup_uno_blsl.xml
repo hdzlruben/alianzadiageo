@@ -6,7 +6,7 @@
     android:background="@android:color/transparent">
     <LinearLayout
         android:layout_width="280sp"
-        android:layout_height="180sp"
+        android:layout_height="80sp"
         android:orientation="vertical"
         android:background="@drawable/popupcuatro"
         android:layout_margin="1dp">
@@ -15,28 +15,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingTop="50sp"
+            android:paddingTop="20sp"
             android:paddingLeft="10sp"
             android:paddingRight="10sp">
-            <Button
-                android:layout_marginBottom="10sp"
-                android:id="@+id/dismiss_uno"
-                android:layout_width="25sp"
-                android:layout_height="25sp"
-                android:background="@drawable/close_pop"
-                />
             <com.bluejamesbond.text.DocumentView
-                android:id="@+id/text_uno_tl"
+                android:id="@+id/uno"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/txt_pop_up_uno_blsl">
             </com.bluejamesbond.text.DocumentView>
-
-
-            <!--<TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txt_pop_up_uno_blsl"/>-->
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

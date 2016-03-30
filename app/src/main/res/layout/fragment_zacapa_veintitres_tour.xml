@@ -38,6 +38,7 @@
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
+                        android:tag="false"
                         android:background="@drawable/uno" />
 
                     <TextView
@@ -52,6 +53,7 @@
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
+                        android:tag="false"
                         android:background="@drawable/cuatro" />
 
                 </RelativeLayout>
@@ -74,6 +76,7 @@
                         android:id="@+id/cinco"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
+                        android:tag="false"
                         android:layout_alignParentRight="true"
                         android:background="@drawable/cinco" />
 
@@ -97,6 +100,7 @@
                         android:id="@+id/dos"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
+                        android:tag="false"
                         android:layout_alignParentLeft="true"
                         android:background="@drawable/dos" />
 
@@ -119,6 +123,7 @@
                         android:id="@+id/tres"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
+                        android:tag="false"
                         android:layout_alignParentLeft="true"
                         android:background="@drawable/tres" />
 
@@ -143,6 +148,7 @@
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
+                        android:tag="false"
                         android:background="@drawable/seis" />
 
                 </RelativeLayout>

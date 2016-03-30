@@ -29,29 +29,6 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/uno"
-                        android:layout_alignParentRight="true"
-                        android:background="@drawable/lineaspopopos" />
-
-                    <Button
-                        android:id="@+id/uno"
-                        android:layout_width="30sp"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:background="@drawable/uno" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="20sp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:layout_alignBottom="@+id/dos"
                         android:layout_alignParentLeft="true"
                         android:background="@drawable/lineaspopopos" />
@@ -60,6 +37,7 @@
                         android:id="@+id/dos"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
+                        android:tag="false"
                         android:layout_alignParentLeft="true"
                         android:background="@drawable/dos" />
 
@@ -69,7 +47,30 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="20sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/uno"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/lineaspopopos" />
+
+                    <Button
+                        android:id="@+id/uno"
+                        android:layout_width="30sp"
+                        android:layout_height="wrap_content"
+                        android:tag="false"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/uno" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30sp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -83,6 +84,7 @@
                         android:id="@+id/tres"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
+                        android:tag="false"
                         android:layout_alignParentLeft="true"
                         android:background="@drawable/tres" />
 

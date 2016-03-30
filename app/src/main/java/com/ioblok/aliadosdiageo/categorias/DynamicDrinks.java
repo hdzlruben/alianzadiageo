@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.MediaController;
+import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.VideoView;
 
@@ -78,7 +79,7 @@ public class DynamicDrinks extends AppCompatActivity{
     String[] valuesWith     = new String[]{"SPOT", "VIDEO", "MENSAJES\nClAVE", "TOUR DE\nBOTELLAS", "COMO\nSERVIR"};
     String[] valuesWithout  = new String[]{"VIDEO", "MENSAJES\nCLAVES", "TOUR DE\nBOTELLAS", "COMO\nSERVIR"};
 
-
+    PopupWindow popupWindow;
     int positionExtras;
     boolean isListEnable = true;
     boolean hasSpot = false;
@@ -188,6 +189,7 @@ public class DynamicDrinks extends AppCompatActivity{
                     case 0:
                         openYoutube(youTubeUrlVideo);
                         hideList();
+                        //Si popup != null, es decir, ya se presionó por lo menos una vez, entonces se oculta el último popup
                         break;
                     case 1:
                         playVideo();
@@ -627,7 +629,7 @@ public class DynamicDrinks extends AppCompatActivity{
 
     public void playVideo(){
 
-        Log.e("VIDOE", urlVideo);
+        Log.e("VIDEO", urlVideo);
         if(urlVideo.equals("NO VIDEO")) return;
 
         myVideoView = (VideoView) findViewById(R.id.video_view);

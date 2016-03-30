@@ -6,7 +6,7 @@
     android:background="@android:color/transparent">
     <LinearLayout
         android:layout_width="280sp"
-        android:layout_height="300sp"
+        android:layout_height="240sp"
         android:orientation="vertical"
         android:background="@drawable/popuptres"
         android:layout_margin="1dp">
@@ -15,17 +15,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingTop="60sp"
+            android:paddingTop="40sp"
             android:paddingLeft="10sp"
             android:paddingRight="10sp">
-            <Button
-                android:layout_marginBottom="10sp"
-                android:id="@+id/dismiss_cuatro"
-                android:layout_width="25sp"
-                android:layout_height="25sp"
-                android:background="@drawable/close_pop"
-                />
-
             <com.bluejamesbond.text.DocumentView
                 android:id="@+id/cuatro"
                 android:layout_width="wrap_content"
