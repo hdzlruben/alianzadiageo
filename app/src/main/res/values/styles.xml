@@ -36,6 +36,7 @@
         <item name="android:layout_marginRight">10sp</item>
         <item name="android:layout_marginBottom">2sp</item>
         <item name="android:textColor">@color/menu_text_white</item>
+        <item name="android:onClick">actionsFromSubMenuItems</item>
     </style>
 
 </resources>

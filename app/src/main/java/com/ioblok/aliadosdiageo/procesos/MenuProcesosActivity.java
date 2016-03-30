@@ -1,5 +1,6 @@
 package com.ioblok.aliadosdiageo.procesos;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -31,12 +32,12 @@ import io.realm.RealmResults;
 
 public class MenuProcesosActivity extends AppCompatActivity {
 
-    Button btns_back_home,btn_family_zacapa,btn_family_walker,btn_family_buchanans,btn_family_tanqueray,btn_family_don_julio;
+    Button btns_back_home, btn_family_zacapa, btn_family_walker, btn_family_buchanans, btn_family_tanqueray, btn_family_don_julio;
 
     private DrawerLayout mDrawer;
     private ListView mDrawerOptions;
     private ArrayList navDrawerItems;
-    public String[] values = {"DIAGEO", "Familias", "Categorias" ,"Proceso de Elaboracion","Plataformas","Servicio Responsable"};
+    public String[] values = {"DIAGEO", "Familias", "Categorias", "Proceso de Elaboracion", "Plataformas", "Servicio Responsable"};
     AdapterActivity adapterActivity;
 
     private VideoView myVideoView;
@@ -60,7 +61,7 @@ public class MenuProcesosActivity extends AppCompatActivity {
         /* Menu list */
         mDrawerOptions = (ListView) findViewById(R.id.left_drawer);
         mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        adapterActivity = new AdapterActivity(this,values);
+        adapterActivity = new AdapterActivity(this, values);
         mDrawerOptions.setAdapter(adapterActivity);
         /* Menu list */
 
@@ -68,39 +69,29 @@ public class MenuProcesosActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
 
-                if (position == 0)
-                {
+                if (position == 0) {
                     Intent intent = new Intent(MenuProcesosActivity.this, MenuProcesosActivity.class);
                     startActivity(intent);
                     finish();
-                }
-                else if (position == 1)
-                {
+                } else if (position == 1) {
                     Intent intent = new Intent(MenuProcesosActivity.this, MenuFamilyActivity.class);
                     startActivity(intent);
                     finish();
-                }
-                else if (position == 2)
-                {
+                } else if (position == 2) {
                     Intent intent = new Intent(MenuProcesosActivity.this, MenuCategoriasActivity.class);
                     startActivity(intent);
                     finish();
-                }
-                else if (position == 3)
-                {
+                } else if (position == 3) {
                     Intent intent = new Intent(MenuProcesosActivity.this, MenuProcesosActivity.class);
                     startActivity(intent);
                     finish();
 
-                }
-                else if (position == 4)
-                {
+                } else if (position == 4) {
                     Intent intent = new Intent(MenuProcesosActivity.this, MenuPlataformasActivity.class);
                     startActivity(intent);
                     finish();
 
-                }
-                else{
+                } else {
                     Intent intent = new Intent(MenuProcesosActivity.this, MenuServicioActivity.class);
                     startActivity(intent);
                     finish();
@@ -111,15 +102,15 @@ public class MenuProcesosActivity extends AppCompatActivity {
 
         realm = Realm.getInstance(getBaseContext());
 
-        btnProcessIntro     = (Button) findViewById(R.id.btn_process_intro);
-        btnProcessCognac    = (Button) findViewById(R.id.btn_process_cognac);
-        btnProcessGinebra   = (Button) findViewById(R.id.btn_process_ginebra);
-        btnProcessRon       = (Button) findViewById(R.id.btn_process_ron);
-        btnProcessVodka     = (Button) findViewById(R.id.btn_process_vodka);
-        btnProcessWhisky    = (Button) findViewById(R.id.btn_process_whisky);
-        btnProcessTequila   = (Button) findViewById(R.id.btn_process_tequila);
+        btnProcessIntro = (Button) findViewById(R.id.btn_process_intro);
+        btnProcessCognac = (Button) findViewById(R.id.btn_process_cognac);
+        btnProcessGinebra = (Button) findViewById(R.id.btn_process_ginebra);
+        btnProcessRon = (Button) findViewById(R.id.btn_process_ron);
+        btnProcessVodka = (Button) findViewById(R.id.btn_process_vodka);
+        btnProcessWhisky = (Button) findViewById(R.id.btn_process_whisky);
+        btnProcessTequila = (Button) findViewById(R.id.btn_process_tequila);
 
-        btn_back_home       = (Button)this.findViewById(R.id.btn_back_proceso);
+        btn_back_home = (Button) this.findViewById(R.id.btn_back_proceso);
 
         btn_back_home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -128,14 +119,22 @@ public class MenuProcesosActivity extends AppCompatActivity {
             }
         });
 
+        Bundle bundle = getIntent().getExtras();
+
+        if (bundle != null) {
+            String videoID = bundle.getString("videoID");
+            Log.e("videoID", videoID);
+            playVideo(videoID);
+        }
+
     }
 
-    public void playVideo(View view){
+    public void playVideo(View view) {
 
         String btnTagVideo = view.getTag().toString();
 
-        switch (view.getId()){
-            case  R.id.btn_process_intro:
+        switch (view.getId()) {
+            case R.id.btn_process_intro:
                 urlVideo = getTagFromDB(btnTagVideo);
                 break;
             case R.id.btn_process_cognac:
@@ -164,7 +163,7 @@ public class MenuProcesosActivity extends AppCompatActivity {
 
         myVideoView = (VideoView) findViewById(R.id.video_view);
         rlVideoView = (RelativeLayout) findViewById(R.id.rl_video_view);
-        btnClose    = (Button) findViewById(R.id.btn_close);
+        btnClose = (Button) findViewById(R.id.btn_close);
         rlVideoView.setVisibility(View.VISIBLE);
 
         btnClose.setOnClickListener(new View.OnClickListener() {
@@ -212,13 +211,63 @@ public class MenuProcesosActivity extends AppCompatActivity {
 
     }
 
-    public String getTagFromDB(String tag){
+    public void playVideo(String videoID) {
+
+        urlVideo = getTagFromDB(videoID);
+
+        myVideoView = (VideoView) findViewById(R.id.video_view);
+        rlVideoView = (RelativeLayout) findViewById(R.id.rl_video_view);
+        btnClose = (Button) findViewById(R.id.btn_close);
+        rlVideoView.setVisibility(View.VISIBLE);
+
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myVideoView.pause();
+                rlVideoView.setVisibility(View.INVISIBLE);
+            }
+        });
+
+
+        if (mediaController == null) {
+            mediaController = new MediaController(this);
+        }
+        rlVideoView.setVisibility(View.VISIBLE);
+
+        try {
+            //set the media controller in the VideoView
+            myVideoView.setMediaController(mediaController);
+            myVideoView.setVideoPath(urlVideo);
+            myVideoView.start();
+
+        } catch (Exception e) {
+            Log.e("Error", e.getMessage());
+            e.printStackTrace();
+        }
+
+        myVideoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            public void onPrepared(MediaPlayer mediaPlayer) {
+                myVideoView.seekTo(position);
+                if (position == 0) {
+                    myVideoView.start();
+                } else {
+                    myVideoView.pause();
+                }
+            }
+        });
+
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        myVideoView.setLayoutParams(params);
+
+    }
+
+    public String getTagFromDB(String tag) {
         RealmResults<URLVideosDataBase> results = realm.where(URLVideosDataBase.class).findAll();
 
         for (int i = 0; i < results.size(); i++) {
 
             URLVideosDataBase u = results.get(i);
-            if(u.getUrlFileStorage().contains(tag)){
+            if (u.getUrlFileStorage().contains(tag)) {
                 tag = u.getUrlFileStorage();
                 return tag;
             }

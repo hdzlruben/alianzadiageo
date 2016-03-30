@@ -19,22 +19,27 @@
 
         <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
             android:text="@string/menu_z"
+            android:id="@+id/menu_item_zacapa"
             style="@style/sub_menu_text_view_style"/>
 
         <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
             android:text="@string/menu_jw"
+            android:id="@+id/menu_item_jw"
             style="@style/sub_menu_text_view_style"/>
 
         <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
             android:text="@string/menu_b"
+            android:id="@+id/menu_item_b"
             style="@style/sub_menu_text_view_style"/>
 
         <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
             android:text="@string/menu_t"
+            android:id="@+id/menu_item_t"
             style="@style/sub_menu_text_view_style"/>
 
         <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
             android:text="@string/menu_dj"
+            android:id="@+id/menu_item_dj"
             style="@style/sub_menu_text_view_style"/>
     </LinearLayout>
 
@@ -49,26 +54,32 @@
 
         <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
             android:text="@string/menu_whisky"
+            android:id="@+id/menu_item_whisky"
             style="@style/sub_menu_text_view_style"/>
 
         <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
             android:text="@string/menu_tequila"
+            android:id="@+id/menu_item_tequila"
             style="@style/sub_menu_text_view_style"/>
 
         <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
             android:text="@string/menu_ron"
+            android:id="@+id/menu_item_ron"
             style="@style/sub_menu_text_view_style"/>
         
         <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
             android:text="@string/menu_vodka"
+            android:id="@+id/menu_item_vodka"
             style="@style/sub_menu_text_view_style"/>
 
         <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
             android:text="@string/menu_gin"
+            android:id="@+id/menu_item_gin"
             style="@style/sub_menu_text_view_style"/>
 
         <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
             android:text="@string/menu_licor"
+            android:id="@+id/menu_item_licor"
             style="@style/sub_menu_text_view_style"/>
 
     </LinearLayout>
@@ -84,30 +95,37 @@
 
         <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
             android:text="@string/menu_intro"
+            android:id="@+id/menu_item_intro"
             style="@style/sub_menu_text_view_style"/>
 
         <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
             android:text="@string/menu_process_cognac"
+            android:id="@+id/menu_item_process_cognac"
             style="@style/sub_menu_text_view_style"/>
 
         <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
             android:text="@string/menu_process_ginebra"
+            android:id="@+id/menu_item_process_ginebra"
             style="@style/sub_menu_text_view_style"/>
 
         <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
             android:text="@string/menu_process_ron"
+            android:id="@+id/menu_item_process_ron"
             style="@style/sub_menu_text_view_style"/>
 
         <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
             android:text="@string/menu_process_vodka"
+            android:id="@+id/menu_item_process_vodka"
             style="@style/sub_menu_text_view_style"/>
 
         <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
             android:text="@string/menu_process_whisky"
+            android:id="@+id/menu_item_process_whisky"
             style="@style/sub_menu_text_view_style"/>
 
         <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
             android:text="@string/menu_process_tequila"
+            android:id="@+id/menu_item_process_tequila"
             style="@style/sub_menu_text_view_style"/>
     </LinearLayout>
 

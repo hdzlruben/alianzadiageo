@@ -53,9 +53,9 @@ public class LoginActivity extends AppCompatActivity {
             "familia_tr",
             "familia_dj",
             "plataforma",
+            "proceso_introduccion",
             "proceso_cognac",
             "proceso_ginebra",
-            "proceso_introduccion",
             "proceso_ron",
             "proceso_tequila",
             "proceso_vodka",
@@ -126,7 +126,7 @@ public class LoginActivity extends AppCompatActivity {
         realm.beginTransaction();
 
         for (int i = 0; i < videos.length; i++) {
-        //for (int i = 0; i < 15; i++) {
+        //for (int i = 0; i < 2; i++) {
 
             RealmResults<URLVideosDataBase> validate = realm.where(URLVideosDataBase.class)
                     .equalTo("urlVideo", base_url + videos[i]).findAll();
@@ -232,15 +232,11 @@ public class LoginActivity extends AppCompatActivity {
 
     public void initSesion(View v) {
 
-
-        downloadVideos();
-
-        Intent btns_home = new Intent(LoginActivity.this, MenuActivity.class);
-        startActivity(btns_home);
+        //downloadVideos();
 
         //startActivity(btns_home);
 
-       /*if (pass_user.getText().toString().equals("123Abc!")){
+       if (pass_user.getText().toString().equals("123Abc!")){
 
            downloadVideos();
 
@@ -251,7 +247,7 @@ public class LoginActivity extends AppCompatActivity {
                    .positiveText(R.string.txt_cerrar)
                    .theme(Theme.LIGHT)
                    .show();
-       }*/
+       }
     }
 
     public void downloadVideos() {
