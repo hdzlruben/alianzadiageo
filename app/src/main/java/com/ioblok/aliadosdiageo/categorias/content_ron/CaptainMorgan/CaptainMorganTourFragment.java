@@ -3,6 +3,7 @@ package com.ioblok.aliadosdiageo.categorias.content_ron.CaptainMorgan;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +17,7 @@ import com.ioblok.aliadosdiageo.R;
 
 public class CaptainMorganTourFragment extends Fragment {
 
-    View v;
+    View v, lastPopup;
     String text_popup = "";
     Typeface myFont;
     PopupWindow popupWindow;
@@ -142,8 +143,24 @@ public class CaptainMorganTourFragment extends Fragment {
         popupWindow.showAsDropDown(view, 10, -30);
 
         //Aquí indica que ya se está mostrando un popup
+        lastPopup = view;
         view.setTag("true");
 
+    }
+    //Fragment lifeCycle
+
+    @Override
+    public void onPause(){
+        super.onPause();
+        Log.e("onPause", "onPause");
+        if (popupWindow != null) {
+            popupWindow.dismiss();
+            //Si el botón que se presionó ya se está mostrando un popup entonces pone el tag a false y sale del método
+            if (lastPopup.getTag().equals("true")) {
+                lastPopup.setTag("false");
+                return;
+            }
+        }
     }
 
 }/*

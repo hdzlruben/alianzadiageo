@@ -75,9 +75,8 @@
                     <Button
                         android:id="@+id/tres"
                         android:layout_width="30sp"
-                        android:gravity="center"
                         android:tag="false"
-                        android:layout_marginLeft="200sp"
+                        android:layout_alignParentRight="true"
                         android:layout_height="wrap_content"
                         android:background="@drawable/tres"/>
 

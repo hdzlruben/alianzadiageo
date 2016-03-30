@@ -4,6 +4,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +21,7 @@ public class BaileysTourFragment  extends Fragment {
     //View v;
     //String text_pop_uno,text_pop_dos,text_pop_tres,text_pop_cuatro,text_pop_cinco,text_pop_seis,text_pop_siete,text_pop_ocho;
 
-    View v;
+    View v, lastPopup;
     String text_popup = "";
     Typeface myFont;
     PopupWindow popupWindow;
@@ -145,8 +146,24 @@ public class BaileysTourFragment  extends Fragment {
         popupWindow.showAsDropDown(view, 10, -30);
 
         //Aquí indica que ya se está mostrando un popup
+        lastPopup = view;
         view.setTag("true");
 
+    }
+    //Fragment lifeCycle
+
+    @Override
+    public void onPause(){
+        super.onPause();
+        Log.e("onPause", "onPause");
+        if (popupWindow != null) {
+            popupWindow.dismiss();
+            //Si el botón que se presionó ya se está mostrando un popup entonces pone el tag a false y sale del método
+            if (lastPopup.getTag().equals("true")) {
+                lastPopup.setTag("false");
+                return;
+            }
+        }
     }
 
 }
