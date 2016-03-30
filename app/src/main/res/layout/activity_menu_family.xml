@@ -92,9 +92,8 @@
     <ListView
         android:id="@+id/left_drawer"
         android:layout_width="240dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_gravity="right"
-        android:background="#E0EAF1"
         android:choiceMode="singleChoice"
         android:divider="#fff"
         android:dividerHeight="0dp" />
