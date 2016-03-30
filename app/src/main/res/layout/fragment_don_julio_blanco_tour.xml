@@ -36,6 +36,7 @@
                     <Button
                         android:id="@+id/uno"
                         android:layout_width="30sp"
+                        android:tag="false"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
                         android:background="@drawable/uno" />
@@ -60,6 +61,7 @@
                     <Button
                         android:id="@+id/dos"
                         android:layout_width="30sp"
+                        android:tag="false"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:background="@drawable/dos" />
@@ -83,6 +85,7 @@
                     <Button
                         android:id="@+id/tres"
                         android:layout_width="30sp"
+                        android:tag="false"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:background="@drawable/tres" />

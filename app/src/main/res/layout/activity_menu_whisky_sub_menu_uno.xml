@@ -47,7 +47,7 @@
                         android:layout_gravity="center"
                         android:background="@drawable/boton_jwbl"
                         android:padding="10sp"
-                        android:tag="NO VIDEO"
+                        android:tag="categorias_whisky_bluel"
                         android:paddingLeft="20sp"
                         android:paddingRight="20sp" />
 
@@ -122,7 +122,7 @@
                         android:layout_gravity="center"
                         android:tag="categorias_whisky_bl"
                         android:layout_marginTop="4sp"
-                        android:background="@drawable/botonjwblb"
+                        android:background="@drawable/botonjwbl"
                         android:padding="10sp" />
 
                     <Button

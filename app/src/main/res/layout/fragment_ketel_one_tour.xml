@@ -32,6 +32,7 @@
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
+                        android:tag="false"
                         android:background="@drawable/siete" />
                     <TextView
                         android:layout_width="wrap_content"
@@ -53,6 +54,7 @@
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
+                        android:tag="false"
                         android:background="@drawable/cinco" />
                     <TextView
                         android:layout_width="wrap_content"
@@ -76,6 +78,7 @@
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
+                        android:tag="false"
                         android:background="@drawable/dos" />
                     <TextView
                         android:layout_width="wrap_content"
@@ -104,6 +107,7 @@
                         android:id="@+id/uno"
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
+                        android:tag="false"
                         android:layout_alignParentLeft="true"
                         android:background="@drawable/uno" />
 
@@ -121,6 +125,7 @@
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
+                        android:tag="false"
                         android:background="@drawable/tres" />
                     <TextView
                         android:layout_width="wrap_content"
@@ -143,6 +148,7 @@
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
+                        android:tag="false"
                         android:background="@drawable/cuatro" />
                     <TextView
                         android:layout_width="wrap_content"
@@ -165,6 +171,7 @@
                         android:layout_width="30sp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
+                        android:tag="false"
                         android:background="@drawable/seis" />
                     <TextView
                         android:layout_width="wrap_content"
