@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
+        android:id="@+id/tv_name_menu"
+        style="@style/menu_text_view_style"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll_families"
+        android:tag="false"
+        android:layout_marginBottom="10sp">
+
+        <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
+            android:text="@string/menu_z"
+            style="@style/sub_menu_text_view_style"/>
+
+        <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
+            android:text="@string/menu_jw"
+            style="@style/sub_menu_text_view_style"/>
+
+        <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
+            android:text="@string/menu_b"
+            style="@style/sub_menu_text_view_style"/>
+
+        <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
+            android:text="@string/menu_t"
+            style="@style/sub_menu_text_view_style"/>
+
+        <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
+            android:text="@string/menu_dj"
+            style="@style/sub_menu_text_view_style"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll_categories"
+        android:tag="false"
+        android:layout_marginBottom="10sp">
+
+        <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
+            android:text="@string/menu_whisky"
+            style="@style/sub_menu_text_view_style"/>
+
+        <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
+            android:text="@string/menu_tequila"
+            style="@style/sub_menu_text_view_style"/>
+
+        <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
+            android:text="@string/menu_ron"
+            style="@style/sub_menu_text_view_style"/>
+        
+        <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
+            android:text="@string/menu_vodka"
+            style="@style/sub_menu_text_view_style"/>
+
+        <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
+            android:text="@string/menu_gin"
+            style="@style/sub_menu_text_view_style"/>
+
+        <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
+            android:text="@string/menu_licor"
+            style="@style/sub_menu_text_view_style"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll_process"
+        android:tag="false"
+        android:layout_marginBottom="10sp">
+
+        <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
+            android:text="@string/menu_intro"
+            style="@style/sub_menu_text_view_style"/>
+
+        <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
+            android:text="@string/menu_process_cognac"
+            style="@style/sub_menu_text_view_style"/>
+
+        <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
+            android:text="@string/menu_process_ginebra"
+            style="@style/sub_menu_text_view_style"/>
+
+        <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
+            android:text="@string/menu_process_ron"
+            style="@style/sub_menu_text_view_style"/>
+
+        <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
+            android:text="@string/menu_process_vodka"
+            style="@style/sub_menu_text_view_style"/>
+
+        <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
+            android:text="@string/menu_process_whisky"
+            style="@style/sub_menu_text_view_style"/>
+
+        <com.ioblok.aliadosdiageo.utilis.CustomTextViewMenu
+            android:text="@string/menu_process_tequila"
+            style="@style/sub_menu_text_view_style"/>
+    </LinearLayout>
+
+</LinearLayout>

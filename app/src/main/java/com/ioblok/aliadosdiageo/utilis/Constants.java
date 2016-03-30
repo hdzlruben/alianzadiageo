@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.graphics.drawable.Drawable;
 
 import com.ioblok.aliadosdiageo.R;
+import com.ioblok.aliadosdiageo.models.ListModelMenu;
 
 import java.util.ArrayList;
 
@@ -14,6 +15,21 @@ public class Constants {
 
     public static String baseURL;
     public static ArrayList<String> replaceURLVideos = new ArrayList<>();
+    public static ArrayList<ListModelMenu> customListView = new ArrayList<ListModelMenu>(){{
+        add(new ListModelMenu("DIAGEO", R.color.menu_one_part));
+        add(new ListModelMenu("Familias", R.color.menu_two_part));
+        add(new ListModelMenu("Categorias", R.color.menu_three_part));
+        add(new ListModelMenu("Proceso de Elaboracion", R.color.menu_four_part));
+        add(new ListModelMenu("Plataformas", R.color.menu_five_part));
+        add(new ListModelMenu("Servicio Responsable", R.color.menu_six_part));
+
+    }};
+
+    ArrayList<String> list = new ArrayList<String>() {{
+        add("A");
+        add("B");
+        add("C");
+    }};
 
     public static int[] mainDrawableImage =
             {
@@ -163,4 +179,10 @@ public class Constants {
     public static int getHeaderDrawableImage(int positionDrawable){
         return headerImage[positionDrawable];
     }
+
+    public static ArrayList<ListModelMenu> getCustomListView(){
+        return customListView;
+    }
+
+
 }

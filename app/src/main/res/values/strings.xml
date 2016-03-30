@@ -647,4 +647,26 @@
     <string name="txt_pop_up_dos_blsl">Ícono de Doble B, es un nudo celta infinito que alude a la calidad, artesanía y origen irlandés</string>
     <string name="txt_pop_up_tres_blsl">Curvas doradas que evocan el delicioso Dulce de Leche</string>
 
+    <string name="menu_z">Zacapa</string>
+    <string name="menu_jw">Johnnie Walker</string>
+    <string name="menu_b">Buchanan\'s</string>
+    <string name="menu_t">Tanqueray</string>
+    <string name="menu_dj">Don Julio</string>
+
+    <string name="menu_whisky">Whisky</string>
+    <string name="menu_tequila">Tequila</string>
+    <string name="menu_ron">Ron</string>
+    <string name="menu_vodka">Vodka</string>
+    <string name="menu_gin">Gin</string>
+    <string name="menu_licor">Licor</string>
+
+    <string name="menu_intro">Introducción</string>
+    <string name="menu_process_cognac">Cognac</string>
+    <string name="menu_process_ginebra">Ginebra</string>
+    <string name="menu_process_ron">Ron</string>
+    <string name="menu_process_vodka">Vodka</string>
+    <string name="menu_process_whisky">Whisky</string>
+    <string name="menu_process_tequila">Tequila</string>
+
+
 </resources>
