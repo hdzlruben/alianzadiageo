@@ -18,4 +18,24 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="menu_text_view_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">10sp</item>
+        <item name="android:layout_marginLeft">10sp</item>
+        <item name="android:layout_marginRight">10sp</item>
+        <item name="android:layout_marginBottom">10sp</item>
+        <item name="android:textColor">@color/menu_text_white</item>
+    </style>
+
+    <style name="sub_menu_text_view_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">2sp</item>
+        <item name="android:layout_marginLeft">10sp</item>
+        <item name="android:layout_marginRight">10sp</item>
+        <item name="android:layout_marginBottom">2sp</item>
+        <item name="android:textColor">@color/menu_text_white</item>
+    </style>
+
 </resources>
