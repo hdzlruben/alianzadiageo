@@ -1,71 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:layout_gravity="right"
     android:background="#fff">
-    <include
-        layout="@layout/ui_jw_bl"
-        android:id="@+id/ui_jw"/>
 
-    <LinearLayout
+    <FrameLayout
+        android:id="@+id/content_frame"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ui_jw"
-        android:id="@+id/ll_dots">
+        android:layout_height="match_parent">
 
-        <include
-            android:id="@+id/tab_menu_diageo"
-            layout="@layout/ui_btn_dots"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical">
 
-    </LinearLayout>
+            <include
+                android:id="@+id/ui_jw"
+                layout="@layout/ui_jw_bl" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ll_dots"
-        android:id="@+id/ll_back">
+            <LinearLayout
+                android:id="@+id/ll_dots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ui_jw">
 
-        <include
-            android:id="@+id/tab_menu_diageo"
-            layout="@layout/ui_back_categorias_int"/>
-    </LinearLayout>
+                <include
+                    android:id="@+id/tab_menu_diageo"
+                    layout="@layout/ui_btn_dots" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/ll_back"
-        android:id="@+id/sv_main">
-    </ScrollView>
+            </LinearLayout>
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/fragment_container"
-        android:layout_below="@+id/ll_back"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_dots">
+
+                <include
+                    android:id="@+id/tab_menu_diageo"
+                    layout="@layout/ui_back_categorias_int" />
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/sv_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ll_back"></ScrollView>
+
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ll_back" />
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_dots"
+                android:background="#000000"
+                android:dividerHeight="10sp"
+                android:padding="10sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_hide_list"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ll_dots"
+                android:layout_margin="5sp"
+                android:background="@drawable/tache"
+                android:onClick="hideList"
+                android:visibility="gone" />
+
+            <include layout="@layout/ui_video" />
+
+        </RelativeLayout>
+    </FrameLayout>
 
     <ListView
-        android:id="@+id/list"
-        android:layout_below="@+id/ll_dots"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:visibility="gone"
-        android:background="#000000"
-        android:dividerHeight="10sp"
-        android:padding="10sp"/>
-
-    <Button
-        android:layout_width="25sp"
-        android:layout_height="25sp"
-        android:layout_below="@+id/ll_dots"
-        android:layout_alignParentRight="true"
-        android:layout_margin="5sp"
-        android:onClick="hideList"
-        android:visibility="gone"
-        android:id="@+id/btn_hide_list"
-        android:background="@drawable/tache"/>
-
-    <include layout="@layout/ui_video"/>
-    
-
-</RelativeLayout>
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:choiceMode="singleChoice"
+        android:divider="#fff"
+        android:dividerHeight="0dp" />
+</android.support.v4.widget.DrawerLayout>

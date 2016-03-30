@@ -99,10 +99,10 @@ public class DynamicDrinks extends AppCompatActivity{
     String idVideo = "";
 
 
-   /* private DrawerLayout mDrawer;
+    private DrawerLayout mDrawer;
     private ListView mDrawerOptions;
     CustomMenuAdapter adapterActivity;
-    public View lastView;*/
+    public View lastView;
 
 
 
@@ -123,7 +123,7 @@ public class DynamicDrinks extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dynamic_drinks_activity);
 
-         /* Menu list
+         /* Menu list*/
         mDrawerOptions = (ListView) findViewById(R.id.left_drawer);
         mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         adapterActivity = new CustomMenuAdapter(this, R.layout.custom_menu_item, Constants.getCustomListView());
@@ -159,7 +159,7 @@ public class DynamicDrinks extends AppCompatActivity{
                 }
 
             }
-        });/*/
+        });
 
 
 
@@ -277,7 +277,7 @@ public class DynamicDrinks extends AppCompatActivity{
 
 
 
-    /*private void hideSubmenu(View arg1, int position) {
+    private void hideSubmenu(View arg1, int position) {
         if (lastView != null && arg1 != lastView) {
             for (int i = 0; i < ((ViewGroup) lastView).getChildCount(); ++i) {
                 View nextChild = ((ViewGroup) lastView).getChildAt(i);
@@ -492,7 +492,7 @@ public class DynamicDrinks extends AppCompatActivity{
 
         }
 
-    }*/
+    }
 
 
     public void changeFragment() {
