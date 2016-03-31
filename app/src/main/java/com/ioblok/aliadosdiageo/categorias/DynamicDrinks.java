@@ -330,6 +330,7 @@ public class DynamicDrinks extends AppCompatActivity {
     }
 
     public void openMenu(View v) {
+        hidePopup();
         mDrawer.openDrawer(mDrawerOptions);
     }
 
