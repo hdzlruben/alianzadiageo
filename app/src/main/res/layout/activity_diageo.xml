@@ -44,7 +44,7 @@
                             android:background="@drawable/boton_video"
                             android:onClick="playVideo"
                             android:padding="0sp"
-                            android:tag="diajeo_aliados" />
+                            android:tag="diajeo_aliados_new" />
                     </LinearLayout>
                 </ScrollView>
             </LinearLayout>

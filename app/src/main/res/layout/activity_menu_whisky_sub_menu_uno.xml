@@ -36,7 +36,7 @@
                             android:layout_width="40sp"
                             android:layout_height="30sp"
                             android:onClick="adelante"
-                            android:background="@drawable/flechaafter"
+                            android:background="@drawable/flecha_rosa_adelante"
                             />
                     </LinearLayout>
 

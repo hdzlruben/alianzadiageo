@@ -1,15 +1,20 @@
 package com.ioblok.aliadosdiageo.plataformas.procesos;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.MediaController;
+import android.widget.RelativeLayout;
+import android.widget.VideoView;
 
 import com.ioblok.aliadosdiageo.MenuActivity;
 import com.ioblok.aliadosdiageo.R;
@@ -33,8 +38,12 @@ import com.ioblok.aliadosdiageo.family.MenuFamilyActivity;
 import com.ioblok.aliadosdiageo.procesos.MenuProcesosActivity;
 import com.ioblok.aliadosdiageo.servicio.MenuServicioActivity;
 import com.ioblok.aliadosdiageo.utilis.Constants;
+import com.ioblok.aliadosdiageo.utilis.URLVideosDataBase;
 
 import java.util.ArrayList;
+
+import io.realm.Realm;
+import io.realm.RealmResults;
 
 public class MenuPlataformasActivity extends AppCompatActivity {
 
@@ -49,7 +58,18 @@ public class MenuPlataformasActivity extends AppCompatActivity {
     public View lastView;
 
 
+    private VideoView myVideoView;
+    private RelativeLayout rlVideoView;
+    private MediaController mediaController;
+    private Button btnClose;
+    private int position = 0;
+    Realm realm;
+    String urlVideo = "NO VIDEO";
+
+    Button btnProcessPlataform;
+
     Button btn_back_home;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -101,6 +121,148 @@ public class MenuPlataformasActivity extends AppCompatActivity {
             }
         });
 
+        realm = Realm.getInstance(getBaseContext());
+        btnProcessPlataform = (Button) findViewById(R.id.btn_process_platform_diageo);
+
+        Bundle bundle = getIntent().getExtras();
+
+        if (bundle != null) {
+            String videoID = bundle.getString("videoID");
+            Log.e("videoID", videoID);
+            playVideo(videoID);
+        }
+
+
+    }
+
+    public void playVideo(View view) {
+
+        String btnTagVideo = view.getTag().toString();
+
+        switch (view.getId()) {
+            case R.id.btn_process_platform_diageo:
+                urlVideo = getTagFromDB(btnTagVideo);
+                break;
+            default:
+                urlVideo = "NO VIDEO";
+        }
+
+        Log.e("TAG RETURNED", urlVideo);
+
+        myVideoView = (VideoView) findViewById(R.id.video_view);
+        rlVideoView = (RelativeLayout) findViewById(R.id.rl_video_view);
+        btnClose = (Button) findViewById(R.id.btn_close);
+        rlVideoView.setVisibility(View.VISIBLE);
+
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myVideoView.pause();
+                rlVideoView.setVisibility(View.INVISIBLE);
+            }
+        });
+
+
+        if (mediaController == null) {
+            mediaController = new MediaController(this);
+        }
+        rlVideoView.setVisibility(View.VISIBLE);
+
+        try {
+            //set the media controller in the VideoView
+            myVideoView.setMediaController(mediaController);
+            myVideoView.setVideoPath(urlVideo);
+            myVideoView.start();
+
+        } catch (Exception e) {
+            Log.e("Error", e.getMessage());
+            e.printStackTrace();
+        }
+
+        myVideoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            public void onPrepared(MediaPlayer mediaPlayer) {
+                myVideoView.seekTo(position);
+                if (position == 0) {
+                    myVideoView.start();
+                } else {
+                    myVideoView.pause();
+                }
+            }
+        });
+
+        //VideoPlayer.playVideo(myVideoView, rlVideoView, btnClose, urlVideo,  this);
+
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        myVideoView.setLayoutParams(params);
+
+        //VideoPlayer.playVideo(myVideoView, rlVideoView, btnClose, urlVideo, this);
+
+    }
+
+    public void playVideo(String videoID) {
+
+        urlVideo = getTagFromDB(videoID);
+
+        myVideoView = (VideoView) findViewById(R.id.video_view);
+        rlVideoView = (RelativeLayout) findViewById(R.id.rl_video_view);
+        btnClose = (Button) findViewById(R.id.btn_close);
+        rlVideoView.setVisibility(View.VISIBLE);
+
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myVideoView.pause();
+                rlVideoView.setVisibility(View.INVISIBLE);
+            }
+        });
+
+
+        if (mediaController == null) {
+            mediaController = new MediaController(this);
+        }
+        rlVideoView.setVisibility(View.VISIBLE);
+
+        try {
+            //set the media controller in the VideoView
+            myVideoView.setMediaController(mediaController);
+            myVideoView.setVideoPath(urlVideo);
+            myVideoView.start();
+
+        } catch (Exception e) {
+            Log.e("Error", e.getMessage());
+            e.printStackTrace();
+        }
+
+        myVideoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            public void onPrepared(MediaPlayer mediaPlayer) {
+                myVideoView.seekTo(position);
+                if (position == 0) {
+                    myVideoView.start();
+                } else {
+                    myVideoView.pause();
+                }
+            }
+        });
+
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        myVideoView.setLayoutParams(params);
+
+    }
+
+    public String getTagFromDB(String tag) {
+        RealmResults<URLVideosDataBase> results = realm.where(URLVideosDataBase.class).findAll();
+
+        for (int i = 0; i < results.size(); i++) {
+
+            URLVideosDataBase u = results.get(i);
+            if (u.getUrlFileStorage().contains(tag)) {
+                tag = u.getUrlFileStorage();
+                return tag;
+            }
+
+        }
+
+        return "NOVIDEO";
     }
 
     private void hideSubmenu(View arg1, int position) {
